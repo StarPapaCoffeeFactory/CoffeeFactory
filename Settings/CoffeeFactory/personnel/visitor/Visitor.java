@@ -9,7 +9,7 @@ public class Visitor extends Personnel {
     public boolean is_permitted = false;
     public int visitCode;//maybe string
 
-    private LimitContext visitLimit;
+
 
 
     public Visitor(String name, int age, Personnel.Gender gender, String Phone_num) {

@@ -3,9 +3,11 @@
 package Settings.CoffeeFactory.personnel;
 
 import Settings.CoffeeFactory.areas.Area;
+import Settings.CoffeeFactory.personnel.visitlimit.LimitContext;
 
 
 public abstract class Personnel {
+
     protected String identity;
     protected String name;
     protected int age;
@@ -15,6 +17,7 @@ public abstract class Personnel {
 
     private float asset;//???
     protected Area location;//当前所在区域
+    protected LimitContext visitLimit;//区域访问限制
 
     public Personnel(String name, int age, Gender gender , String phnum) {
 
@@ -23,7 +26,7 @@ public abstract class Personnel {
         this.age = age;
         this.gender = gender;
         this.phonenum = phnum;
-
+        this.identity = "abstract person";
     }
 
     public String getName(){
