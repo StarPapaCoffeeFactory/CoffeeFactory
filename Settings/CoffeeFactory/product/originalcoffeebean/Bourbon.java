@@ -1,5 +1,6 @@
-package Settings.CoffeeFactory.product.OriginalCoffeeBean;
+package Settings.CoffeeFactory.product.originalcoffeebean;
 
+import Settings.CoffeeFactory.product.blendedcoffeebean.BlendedCoffee;
 import Settings.CoffeeFactory.product.coffeebeverage.Beverage;
 
 public class Bourbon extends Coffee{
@@ -7,8 +8,8 @@ public class Bourbon extends Coffee{
 
     public Bourbon(){super("Bourbon",24,10,0.95);}
 
-    public Bourbon(Beverage beverage){
-        super("Bourbon",24,10,0.95,beverage);
+    public Bourbon(BlendedCoffee blended){
+        super("Bourbon",24,10,0.95,blended);
         this.bourbonPortion = 0.95;
         this.initIngredientList();
     }
@@ -24,5 +25,5 @@ public class Bourbon extends Coffee{
     }
 
     @Override
-    public String getBlended(){return blended.getBlended()}
+    public String getBlendedCoffee(){return blended.getBlended();}
 }

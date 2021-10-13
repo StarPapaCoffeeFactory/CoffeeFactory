@@ -1,11 +1,12 @@
-package Settings.CoffeeFactory.product.OriginalCoffeeBean;
+package Settings.CoffeeFactory.product.originalcoffeebean;
 
-import Settings.CoffeeFactory.product.coffeebeverage.Beverage;
+import Settings.CoffeeFactory.product.blendedcoffeebean.BlendedCoffee;
 
 public class Arabica extends Coffee{
     public Arabica(){super("Arabica",24,10,1.00);}
-    public Arabica(String name, int shelfLife, int weight, double content, Beverage beverage) {
-        super("Arabica", 24, 10, 1.00, beverage);
+    
+    public Arabica(String name, int shelfLife, int weight, double content, BlendedCoffee blended) {
+        super("Arabica", 24, 10, 1.00, blended);
         this.initIngredientList();
     }
 
@@ -21,7 +22,7 @@ public class Arabica extends Coffee{
     }
 
     @Override
-    public String getBlended(){return beverage.getBeverage() + " Arabica Coffee";}
+    public String getBlendedCoffee(){return blended.getBlended()+ " Arabica Coffee";}
 
     @Override
     public String toString() {

@@ -1,4 +1,4 @@
-package Settings.CoffeeFactory.product.BlendedCoffeeBean;
+package Settings.CoffeeFactory.product.blendedcoffeebean;
 
 public interface BlendedCoffee {
     String getBlended();
