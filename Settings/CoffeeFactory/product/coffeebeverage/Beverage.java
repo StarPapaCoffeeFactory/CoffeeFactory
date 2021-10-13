@@ -1,10 +1,10 @@
-package Demo.CoffeeFactory.product.coffeebeverage;
+package Settings.CoffeeFactory.product.coffeebeverage;
 
 /**
  * @author Kaiyu Huang
  * @project CoffeeFactory
  * @classname Beverage
- * @description interface for coffee beverage; build for bridge
+ * @description interface for coffee beverage; build for Bridge
  * @date 2021/10/11 21:45
  */
 
