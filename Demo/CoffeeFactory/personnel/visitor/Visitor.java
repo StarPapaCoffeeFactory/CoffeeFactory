@@ -2,25 +2,24 @@ package Demo.CoffeeFactory.personnel.visitor;
 
 import Demo.CoffeeFactory.areas.Area;
 import Demo.CoffeeFactory.personnel.Personnel;
+import Demo.CoffeeFactory.personnel.visitlimit.LimitContext;
 
 public class Visitor extends Personnel {
-
-
-    public String identity = "Visitor";
 
     public boolean is_permitted = false;
     public int visitCode;//maybe string
 
-    private Context visitLimit;
+    private LimitContext visitLimit;
 
 
     public Visitor(String name, int age, Personnel.Gender gender, String Phone_num) {
 
 
         super(name, age, gender, Phone_num);
+        this.identity = "Visitor";
         String[] persons = {this.identity};
         String[] publicAreas = {"publicArea", "experienceRoom", "exhibitionRoom"};
-        this.visitLimit = new Context(persons, publicAreas);
+        this.visitLimit = new LimitContext(persons, publicAreas);
     }
 
 
@@ -28,9 +27,10 @@ public class Visitor extends Personnel {
 
 
         super(name, age, gender, Phone_num);
+        this.identity = "Visitor";
         String[] persons = {this.identity};
         String[] publicAreas = {"publicArea", "experienceRoom", "exhibitionRoom"};
-        this.visitLimit = new Context(persons, publicAreas);
+        this.visitLimit = new LimitContext(persons, publicAreas);
         this.visitCode = visitCode;
     }
 
@@ -59,7 +59,7 @@ public class Visitor extends Personnel {
 
     public boolean canEnter(String dest) {
         String move = this.identity + " enter " + dest;
-        if (this.visitLimit.canEnter(move)) {
+        if (this.visitLimit.canAccess(move)) {
             System.out.println(this.name + " can enter" + dest);
             return true;
         } else {
