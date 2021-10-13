@@ -4,7 +4,7 @@ import Settings.CoffeeFactory.product.blendedcoffeebean.BlendedCoffee;
 
 public class Arabica extends Coffee{
     public Arabica(){super("Arabica",24,10,1.00);}
-    
+
     public Arabica(String name, int shelfLife, int weight, double content, BlendedCoffee blended) {
         super("Arabica", 24, 10, 1.00, blended);
         this.initIngredientList();
@@ -17,19 +17,17 @@ public class Arabica extends Coffee{
     }
 
     @Override
-    public void dispaly() {
+    public void display() {
         System.out.println("This is Arabica Coffee!");
     }
 
     @Override
-    public String getBlendedCoffee(){return blended.getBlended()+ " Arabica Coffee";}
+    public String getBlendedCoffeeName(){return blended.getBlended()+ " Arabica Coffee";}
 
     @Override
     public String toString() {
-        return "subclass : DarkCoffee";
+        return "subclass : Arabica";
     }
 
-    @Override
-    public void display(){};
 
 }

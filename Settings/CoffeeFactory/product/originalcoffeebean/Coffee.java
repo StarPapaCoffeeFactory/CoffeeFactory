@@ -20,9 +20,9 @@ public abstract class Coffee extends Product {
         this.blended = new AutumnBlend();
     }
 
-    public abstract void dispaly();
+    public abstract void display();
 
-    public abstract String getBlendedCoffee();
+    public abstract String getBlendedCoffeeName();
 }
 
 

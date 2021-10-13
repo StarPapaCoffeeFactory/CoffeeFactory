@@ -25,5 +25,5 @@ public class Bourbon extends Coffee{
     }
 
     @Override
-    public String getBlendedCoffee(){return blended.getBlended();}
+    public String getBlendedCoffeeName(){return blended.getBlended();}
 }

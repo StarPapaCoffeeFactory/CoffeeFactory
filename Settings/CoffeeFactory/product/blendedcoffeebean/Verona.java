@@ -1,4 +1,8 @@
 package Settings.CoffeeFactory.product.blendedcoffeebean;
 
-public class Verona {
+public class Verona implements BlendedCoffee{
+    @Override
+    public String getBlended(){
+        return "Verona";
+    }
 }

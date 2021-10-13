@@ -1,37 +1,30 @@
 package Settings.CoffeeFactory.product.originalcoffeebean;
 
-public class Robusta {
-    protected double milkContent;
-    private double coffeeBeanNum = 100;
-    private double sugarNum = 5;
-    private double milkNum = 0.5;
+import Settings.CoffeeFactory.product.blendedcoffeebean.BlendedCoffee;
+
+public class Robusta extends Coffee{
+    protected double robustaContent;
+    private double coffeeBean = 100;
+    private double sugar = 5;
+    private double water = 0.5;
 
     //constructor
-    public MilkCoffee() {
-        super("Milk Coffee", 18, 15, 0.3);
+    public Robusta() {
+        super("Robusta", 24, 10, 0.9);
     }
 
     //constructor
-    public MilkCoffee(Sandwich sandwich) {
-        super("Milk Coffee", 18, 15, 0.3, sandwich);
-        this.milkContent = 0.4;
+    public Robusta(BlendedCoffee blended) {
+        super("Robusta", 24, 10, 0.9, blended);
+        this.robustaContent = 0.9;
         this.initIngredientList();
     }
 
     /**
      * @return milk's content
      */
-    public double getMilkContent() {
-        return this.milkContent;
-    }
-
-    /**
-     * how many grams' milk is needed;
-     *
-     * @return
-     */
-    public double getMilkWeight() {
-        return this.milkContent * this.weight;
+    public double getRobustaContent() {
+        return this.robustaContent;
     }
 
     /**
@@ -41,15 +34,15 @@ public class Robusta {
     protected void initIngredientList() {
         super.ingredientList.add(new CoffeeBean());
         super.ingredientList.add(new Sugar());
-        super.ingredientList.add(new Milk());
+        super.ingredientList.add(new Water());
     }
 
     /**
      * return the coffee's name with the sandwich it contains
      * @return
      */
-    public String getNameWithSandwich() {
-        return sandwich.getSandwich() + " MilkCoffee";
+    public String getBlendedCoffeeName() {
+        return blended.getBlended() + " Robusta";
     }
 
     /**
@@ -59,37 +52,13 @@ public class Robusta {
      */
     @Override
     public String toString() {
-        return "subclass : Milk Coffee";
+        return "subclass : Robusta";
     }
 
-
-    public void setCoffeeBeanNum(double coffeeBeanNum) {
-        this.coffeeBeanNum = coffeeBeanNum;
-    }
-
-    public void setSugarNum(double sugarNum) {
-        this.sugarNum = sugarNum;
-    }
-
-    public void setMilkNum(double milkNum) {
-        this.milkNum = milkNum;
-    }
-
-    public double getCoffeeBeanNum() {
-        return coffeeBeanNum;
-    }
-
-    public double getMilkNum() {
-        return milkNum;
-    }
-
-    public double getSugarNum() {
-        return sugarNum;
-    }
 
     @Override
-    public void dispaly() {
-        System.out.println("this is MilkCoffee!!");
+    public void display() {
+        System.out.println("This is Robusta :)");
     }
 
     @Override
@@ -97,7 +66,4 @@ public class Robusta {
         return super.clone();
     }
 
-    public boolean equals(MilkCoffee milkCoffee) {
-        return this.coffeeBeanNum == milkCoffee.getCoffeeBeanNum() && this.sugarNum == milkCoffee.getSugarNum() && this.milkNum == milkCoffee.getMilkNum();
-    }
 }
