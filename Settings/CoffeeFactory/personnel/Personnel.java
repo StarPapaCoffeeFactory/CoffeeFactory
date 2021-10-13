@@ -62,23 +62,17 @@ public abstract class Personnel {
     public abstract void Goto(Area dest);
     public abstract void SetVisitLimit();
 
-    public boolean HandleRequest(Message requestMessage) {
-   /*
-    *
-    * @param requestMessage
-    * @return boolean
-    * @author YXJ
-    * @description 由子类重载
-    * @date 2021/10/13 17:50
-    */
-
-
-
-
-
-
-        return false;
-    }
+//    public boolean HandleRequest(Message requestMessage) {
+//   /*
+//    *
+//    * @param requestMessage
+//    * @return boolean
+//    * @author YXJ
+//    * @description 由子类重载
+//    * @date 2021/10/13 17:50
+//    */
+//        return false;
+//    }
 
     public String toString() {
         
