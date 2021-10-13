@@ -1,4 +1,4 @@
-package Demo.CoffeeFactory.personnel.visitlimit;
+package Settings.CoffeeFactory.personnel.visitlimit;
 
 import java.util.Set;
 import java.util.HashSet;

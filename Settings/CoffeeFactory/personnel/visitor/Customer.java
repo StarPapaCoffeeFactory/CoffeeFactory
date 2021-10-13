@@ -1,7 +1,7 @@
-package Demo.CoffeeFactory.personnel.visitor;
+package Settings.CoffeeFactory.personnel.visitor;
 
-import Demo.CoffeeFactory.personnel.Personnel;
-import Demo.CoffeeFactory.product.Product;
+import Settings.CoffeeFactory.personnel.Personnel;
+import Settings.CoffeeFactory.product.Product;
 
 import java.util.HashMap;
 

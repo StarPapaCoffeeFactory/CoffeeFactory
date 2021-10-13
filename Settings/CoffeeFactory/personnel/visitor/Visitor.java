@@ -1,8 +1,8 @@
-package Demo.CoffeeFactory.personnel.visitor;
+package Settings.CoffeeFactory.personnel.visitor;
 
-import Demo.CoffeeFactory.areas.Area;
-import Demo.CoffeeFactory.personnel.Personnel;
-import Demo.CoffeeFactory.personnel.visitlimit.LimitContext;
+import Settings.CoffeeFactory.areas.Area;
+import Settings.CoffeeFactory.personnel.Personnel;
+import Settings.CoffeeFactory.personnel.visitlimit.LimitContext;
 
 public class Visitor extends Personnel {
 
