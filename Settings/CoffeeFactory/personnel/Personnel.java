@@ -1,9 +1,13 @@
+
+
 package Settings.CoffeeFactory.personnel;
 
 import Settings.CoffeeFactory.areas.Area;
+import Settings.CoffeeFactory.personnel.visitlimit.LimitContext;
 
 
 public abstract class Personnel {
+
     protected String identity;
     protected String name;
     protected int age;
@@ -13,6 +17,7 @@ public abstract class Personnel {
 
     private float asset;//???
     protected Area location;//当前所在区域
+    protected LimitContext visitLimit;//区域访问限制
 
     public Personnel(String name, int age, Gender gender , String phnum) {
 
@@ -21,7 +26,8 @@ public abstract class Personnel {
         this.age = age;
         this.gender = gender;
         this.phonenum = phnum;
-
+        this.identity = "abstract person";
+        this.SetVisitLimit();
     }
 
     public String getName(){
@@ -54,20 +60,19 @@ public abstract class Personnel {
     }
 
     public abstract void Goto(Area dest);
+    public abstract void SetVisitLimit();
 
-    public boolean HandleRequest(Message requestMessage) {
-        /*
-         *
-         *
-         * @param requestMessage
-         * @return boolean
-         * @author YXJ
-         * @description  由继承类重构
-         * @date 2021/10/12 17:14
-         */
-
-        return false;
-    }
+//    public boolean HandleRequest(Message requestMessage) {
+//   /*
+//    *
+//    * @param requestMessage
+//    * @return boolean
+//    * @author YXJ
+//    * @description 由子类重载
+//    * @date 2021/10/13 17:50
+//    */
+//        return false;
+//    }
 
     public String toString() {
         
