@@ -27,6 +27,7 @@ public abstract class Personnel {
         this.gender = gender;
         this.phonenum = phnum;
         this.identity = "abstract person";
+        this.SetVisitLimit();
     }
 
     public String getName(){
@@ -59,17 +60,22 @@ public abstract class Personnel {
     }
 
     public abstract void Goto(Area dest);
+    public abstract void SetVisitLimit();
 
     public boolean HandleRequest(Message requestMessage) {
-        /*
-         *
-         *
-         * @param requestMessage
-         * @return boolean
-         * @author YXJ
-         * @description  由继承类重构
-         * @date 2021/10/12 17:14
-         */
+   /*
+    *
+    * @param requestMessage
+    * @return boolean
+    * @author YXJ
+    * @description 由子类重载
+    * @date 2021/10/13 17:50
+    */
+
+
+
+
+
 
         return false;
     }
