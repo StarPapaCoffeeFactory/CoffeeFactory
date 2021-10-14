@@ -36,6 +36,7 @@ public abstract class Staff extends Personnel implements Observer{
     public void updateSalary(double change)
     {
         this.salary += change;
+        System.out.println(this.name + "收到通知 ， 当前工资变更为："+ this.salary);
     }
 
 

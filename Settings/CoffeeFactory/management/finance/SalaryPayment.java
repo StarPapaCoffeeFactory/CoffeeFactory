@@ -4,7 +4,8 @@ package Settings.CoffeeFactory.management.finance;
 import Settings.CoffeeFactory.personnel.staff.Staff;
 import Settings.CoffeeFactory.areas.*;
 import java.util.ArrayList;
-
+import java.util.Calendar;
+import java.util.Date;
 /**
  * @ program: coffeefactory
  * @ description: 基本工资发放
@@ -12,16 +13,21 @@ import java.util.ArrayList;
  * @ date: 2021-10-14 18:36:12
  */
 public class SalaryPayment {
-    protected ArrayList<Staff> staffList;
-    protected double salary_change ;
 
+    protected ArrayList<Staff> staffList;
+    protected double salary_change;
+
+    protected Calendar curDate;
     protected SalaryPayment() {
         staffList = new ArrayList<Staff>();
         this.salary_change = 0;
+        curDate = Calendar.getInstance();
+
     }
 
 
     public void addStaff(Staff staff) {
+//        if(staffList.stream().findAny(staff) )
         staffList.add(staff);
         System.out.println("Add " + staff.getName() + " successfully.");
     }
@@ -46,14 +52,38 @@ public class SalaryPayment {
 
     }
 
+    public void setCurDate(Date date)
+    {/*
+     *
+     * @param date
+     * @return void
+     * @author YXJ
+     * @description 设置当前日期后判断 若当月日期大于或等于28日 则为员工发工资
+     * @date 2021/10/14 22:20
+     */
 
+        this.curDate.setTime(date);
+        if( this.curDate.get(Calendar.DAY_OF_MONTH) + 1 >= 28)
+        {
+            this.payOut();
 
-    public void payOut() {
-        for (Staff staff : staffList) {
-            staff.getPaid();
         }
     }
 
+    private void payOut() {
+        for (Staff staff : staffList) {
+            staff.getPaid();
+        }
+        System.out.println("已向所有员工发送通知：工资已发送");
+    }
 
+    public void changeSalary(double change)
+    {
+        for (Staff staff : staffList) {
+
+            staff.updateSalary(change);
+        }
+        System.out.println("已向所有员工发送通知：工资已修改");
+    }
 
 }
