@@ -9,17 +9,17 @@ public class receipt extends supplement {
         commonReceipt,purchaseReceipt,taxReceipt
     }
 
-    private receiptType type;
+    private receiptType receiptType;
     private String info;
 
-    public receipt(String model,String id,receiptType type,String info){
-        super(model, id);
-        this.type=type;
-        this.info=info;
+    public receipt(){
+        this.type="receipt";
+        this.receiptType=getReceiptType();
+        this.info=getInfo();
     }
 
     private receiptType getReceiptType(){
-        return type;
+        return receiptType;
     }
 
     private String getInfo(){
@@ -29,10 +29,10 @@ public class receipt extends supplement {
     public boolean canEnter(String dest) {
         String move = this.id + " enter " + dest;
         if (this.visitLimit.canAccess(move)) {
-            System.out.println(this.model + " can enter" + dest);
+            System.out.println(this.type + " can enter" + dest);
             return true;
         } else {
-            System.out.println("Sorry! " + this.model + " cannot enter " + dest);
+            System.out.println("Sorry! " + this.type + " cannot enter " + dest);
             return false;
         }
     }
@@ -42,9 +42,9 @@ public class receipt extends supplement {
 
         if (this.canEnter(dest.toString())) {
             this.location = dest;
-            System.out.println(this.id + " " + this.model + " can be allocated to " + dest.toString());
+            System.out.println(this.id + " " + this.type + " can be allocated to " + dest.toString());
         } else {
-            System.out.println("Sorry, " + this.id + " " + this.model + "can not be allocated to" + dest.toString());
+            System.out.println("Sorry, " + this.id + " " + this.type + "can not be allocated to" + dest.toString());
         }
     }
 
