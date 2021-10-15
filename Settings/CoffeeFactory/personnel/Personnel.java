@@ -15,7 +15,7 @@ public abstract class Personnel {
     public enum Gender {male, female};
     protected Gender gender;
 
-    private float asset;//???
+    //protected double account_balance;// 账户余额
     protected Area location;//当前所在区域
     protected LimitContext visitLimit;//区域访问限制
 
