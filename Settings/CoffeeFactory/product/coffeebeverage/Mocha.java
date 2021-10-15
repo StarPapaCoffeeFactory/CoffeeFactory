@@ -6,27 +6,30 @@ import Settings.CoffeeFactory.material.foodmaterial.*;
 /**
  * @author Kaiyu Huang
  * @project CoffeeFactory
- * @classname Americano
- * @description Americano Beverage; Imitate Starbucks
+ * @classname Beverage
+ * @description Mocha Beverage; Imitate Nestle
  * @date 2021/10/11 21:45
  */
 
-public class Americano extends Product {
+public class Mocha extends Product {
     // constructor
-    public Americano() {
-        super("Americano", 9, 228);
+    public Mocha() {
+        super("Mocha", 10, 268);
         this.initIngredientList();
     }
     // methods
-    // initialize the ingredient list of Americano
+    // initialize the ingredient list of Mocha
     @Override
     protected void initIngredientList() {
         super.ingredientList.add(new CoffeeBean());
         super.ingredientList.add(new Water());
+        super.ingredientList.add(new Milk());
+        super.ingredientList.add(new Cream());
+        super.ingredientList.add(new Chocolate());
     }
     // override the getProductName method
     @Override
     public String getProductName() {
-        return "Americano";
+        return "Mocha";
     }
 }

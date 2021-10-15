@@ -1,7 +1,6 @@
 package Settings.CoffeeFactory.product.originalcoffeebean;
 
 import Settings.CoffeeFactory.product.blendedcoffeebean.BlendedCoffee;
-import Settings.CoffeeFactory.product.coffeebeverage.Beverage;
 
 public class Bourbon extends Coffee{
     protected double bourbonPortion;

@@ -1,16 +1,33 @@
 package Settings.CoffeeFactory.product.coffeebeverage;
 
+import Settings.CoffeeFactory.product.Product;
+import Settings.CoffeeFactory.material.foodmaterial.*;
+
 /**
  * @author Kaiyu Huang
  * @project CoffeeFactory
  * @classname Beverage
- * @description Latte Beverage; build for Bridge
+ * @description Latte Beverage; Imitate COSTA
  * @date 2021/10/11 21:45
  */
 
-public class Latte implements Beverage {
+public class Latte extends Product {
+    // constructor
+    public Latte() {
+        super("Latte", 10, 300);
+        this.initIngredientList();
+    }
+    // methods
+    // initialize the ingredient list of Latte
     @Override
-    public String getBeverage() {
+    protected void initIngredientList() {
+        super.ingredientList.add(new CoffeeBean());
+        super.ingredientList.add(new Water());
+        super.ingredientList.add(new Milk());
+    }
+    // override the getProductName method
+    @Override
+    public String getProductName() {
         return "Latte";
     }
 }
