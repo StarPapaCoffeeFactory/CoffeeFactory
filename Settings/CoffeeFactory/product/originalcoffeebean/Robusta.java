@@ -2,6 +2,10 @@ package Settings.CoffeeFactory.product.originalcoffeebean;
 
 import Settings.CoffeeFactory.product.blendedcoffeebean.BlendedCoffee;
 
+/**
+ * @author LouTianyu
+ * @description Robusta coffee
+ */
 public class Robusta extends Coffee{
     protected double robustaContent;
     private double coffeeBean = 100;
@@ -20,16 +24,10 @@ public class Robusta extends Coffee{
         this.initIngredientList();
     }
 
-    /**
-     * @return milk's content
-     */
     public double getRobustaContent() {
         return this.robustaContent;
     }
 
-    /**
-     * initialize the ingredient list of the milk coffee
-     */
     @Override
     protected void initIngredientList() {
         super.ingredientList.add(new CoffeeBean());
@@ -37,19 +35,10 @@ public class Robusta extends Coffee{
         super.ingredientList.add(new Water());
     }
 
-    /**
-     * return the coffee's name with the sandwich it contains
-     * @return
-     */
     public String getBlendedCoffeeName() {
         return blended.getBlended() + " Robusta";
     }
 
-    /**
-     * override the toString method
-     *
-     * @return
-     */
     @Override
     public String toString() {
         return "subclass : Robusta";

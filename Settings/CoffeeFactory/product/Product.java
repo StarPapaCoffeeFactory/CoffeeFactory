@@ -5,7 +5,10 @@ import Settings.CoffeeFactory.product.production.Packed;
 import Settings.CoffeeFactory.product.production.Producing;
 import Settings.CoffeeFactory.product.production.ProductionStage;
 
-import java.util.ArrayList;
+/**
+ * @author LouTianyu
+ * @description The basic abstract class for all products. All basic elements for a product is defined here.
+ */
 
 public abstract class Product {
     private String productName;
@@ -33,7 +36,7 @@ public abstract class Product {
         this.wrapperMachine = new WrapperMachine("PA", "118", 40, 1, 500);
     }
 
-    protected void setProductNameName(String name) {
+    protected void setProductName(String name) {
         this.productName = name;
     }
     public String getProductName() {

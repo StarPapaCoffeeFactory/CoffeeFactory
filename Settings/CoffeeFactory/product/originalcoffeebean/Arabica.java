@@ -2,6 +2,10 @@ package Settings.CoffeeFactory.product.originalcoffeebean;
 
 import Settings.CoffeeFactory.product.blendedcoffeebean.BlendedCoffee;
 
+/**
+ * @author LouTianyu
+ * @description Arabica coffee
+ */
 public class Arabica extends Coffee{
     public Arabica(){super("Arabica",24,10,1.00);}
 
@@ -18,7 +22,7 @@ public class Arabica extends Coffee{
 
     @Override
     public void display() {
-        System.out.println("This is Arabica Coffee!");
+        System.out.println("This is Arabica :)");
     }
 
     @Override
