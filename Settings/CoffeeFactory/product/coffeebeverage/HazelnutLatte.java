@@ -21,7 +21,7 @@ public class HazelnutLatte extends Product {
     // initialize the ingredient list of HazelnutLatte
     @Override
     protected void initIngredientList() {
-        super.ingredientList.add(new CocoaBean());
+        super.ingredientList.add(new CoffeeBean());
         super.ingredientList.add(new Water());
         super.ingredientList.add(new Milk());
         super.ingredientList.add(new Hazelnut());
