@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class BridgeTest {
     static public void bridgeTest() {
+        //测试流程
         System.out.println("");
         System.out.println("┌─────────────────────────   Bridge Test   ──────────────────────────┐");
         System.out.println("│                  1. choose coffee bean                             │");
@@ -12,8 +13,9 @@ public class BridgeTest {
         System.out.println("└────────────────────────────────────────────────────────────────────┘");
         System.out.println("");
         Scanner scanner = new Scanner(System.in);
-        System.out.println("首先新建一个Sandwich对象……");
-        System.out.println("请选择夹心类型：1.榛仁  2.酒心");
+        //第一步：选择咖啡豆
+        System.out.println("1. choose coffee bean");
+        System.out.println("Optional：1.榛仁  2.酒心");
         Sandwich sandwich;
         int tmp;
         while (true) {
@@ -34,7 +36,8 @@ public class BridgeTest {
                 System.out.println("请重新选择夹心类型。");
             }
         }
-        System.out.println("新建Chocolate对象……");
+        //第二步：选择制作方法
+        System.out.println("2. choose manufacturing method");
         int cmd;
         while (true) {
             try {
