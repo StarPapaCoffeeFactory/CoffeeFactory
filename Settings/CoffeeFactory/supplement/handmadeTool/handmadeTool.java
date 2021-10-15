@@ -15,18 +15,44 @@ public class handmadeTool extends supplement{
         this.description=getDescription();
         this.stock=getStock();
     }
+    
+//    @Override
+//    public String getType()
+//    {/*
+//     *
+//     * @return java.lang.String
+//     * @author YXJ
+//     * @description
+//     * @date 2021/10/15 11:55
+//     */
+//
+//        return this.type;
+//    }
+    public long getBatchNumber(){
+        /*
+         *
+         * @return long
+         * @author YXJ
+         * @description private 改 public
+         * @date 2021/10/15 11:43
+         */
 
-
-
-    private long getBatchNumber(){
         return this.batchNumber;
     }
 
     private String getDescription(){
         return this.description;
     }
+    
+    public int getStock(){
+        /*
+         *
+         * @return int
+         * @author YXJ
+         * @description 改public
+         * @date 2021/10/15 11:45
+         */
 
-    private int getStock(){
         return this.stock;
     }
 
