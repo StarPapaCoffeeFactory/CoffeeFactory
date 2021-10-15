@@ -1,5 +1,6 @@
 package Settings.CoffeeFactory.product;
 
+import Settings.CoffeeFactory.machine.processmachine.ProcessMachine;
 import Settings.CoffeeFactory.product.production.Packed;
 import Settings.CoffeeFactory.product.production.Producing;
 import Settings.CoffeeFactory.product.production.ProductionStage;
@@ -9,12 +10,16 @@ import java.util.ArrayList;
 public abstract class Product {
     private String productName;
     private String productionDate;
-    private int shelfLife;
-    private int weight;
+    public int shelfLife;
+    public int weight;
     public ProcessMachine produceMachine, wrapperMachine;
     protected ProductionStage stage;
     protected PackageMaterial pack;
     public ArrayList<RawMaterial> ingredientList;
+
+    protected Product() {
+    }
+
     protected abstract void initIngredientList();
 
     public Product(String name, int shelfLife, int weight) {
