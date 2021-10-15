@@ -18,6 +18,17 @@ public abstract class supplement {
         this.type="abstractSupplement";
     }
 
+    public String getType()
+    {
+        /*
+         *
+         * @return java.lang.String
+         * @author YXJ
+         * @description
+         * @date 2021/10/15 11:50
+         */
+        return this.type;
+    }
 
 
     public String toString() {

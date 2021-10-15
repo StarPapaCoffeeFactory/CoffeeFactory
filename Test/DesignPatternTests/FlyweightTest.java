@@ -1,4 +1,4 @@
 package Test.DesignPatternTests;
 
-public class Whatever {
+public class FlyweightTest {
 }

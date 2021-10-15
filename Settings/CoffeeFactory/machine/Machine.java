@@ -18,4 +18,6 @@ public abstract class Machine {
     protected int breakLevel = 0;
 
     protected abstract int work(Product product);
+
+
 }
