@@ -26,7 +26,9 @@ public class LogisticsManager extends Staff{
     {
         this.works = work;
     }
+
     /*              for facade              */
+
     public void machinesCheck()
     {
         this.works.checkMachines();
@@ -39,6 +41,7 @@ public class LogisticsManager extends Staff{
     public void submitReport(){
         this.works.report();
     }
+
     /*              end for facade              */
 
     public void Goto(Area dest)

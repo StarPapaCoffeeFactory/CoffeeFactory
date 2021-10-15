@@ -5,7 +5,12 @@ package Settings.CoffeeFactory.personnel;
 import Settings.CoffeeFactory.areas.Area;
 import Settings.CoffeeFactory.personnel.visitlimit.LimitContext;
 
-
+/**
+ * @ program: coffeefactory
+ * @ description: personnel 基类
+ * @ author: YXJ
+ * @ date: 2021-10-12 12:12:45
+ */
 public abstract class Personnel {
 
     protected String identity;
