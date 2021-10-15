@@ -15,14 +15,14 @@ import java.util.Date;
 public class SalaryPayment {
 
     protected ArrayList<Staff> staffList;
-    protected double salary_change;
-
+    private int payDay;
     protected Calendar curDate;
+
+
     protected SalaryPayment() {
         staffList = new ArrayList<Staff>();
-        this.salary_change = 0;
         curDate = Calendar.getInstance();
-
+        payDay = 28;
     }
 
 
@@ -58,12 +58,12 @@ public class SalaryPayment {
      * @param date
      * @return void
      * @author YXJ
-     * @description 设置当前日期后判断 若当月日期大于或等于28日 则为员工发工资
+     * @description 设置当前日期后判断 若当月日期大于或等于payday 则为员工发工资
      * @date 2021/10/14 22:20
      */
 
         this.curDate.setTime(date);
-        if( this.curDate.get(Calendar.DAY_OF_MONTH) + 1 >= 28)
+        if( this.curDate.get(Calendar.DAY_OF_MONTH) + 1 >= payDay)
         {
             this.payOut();
 
