@@ -1,9 +1,11 @@
 package Settings.CoffeeFactory.personnel;
 
+import java.util.ArrayList;
 
 import Settings.CoffeeFactory.areas.Area;
 import Settings.CoffeeFactory.personnel.Personnel;
 import Settings.CoffeeFactory.personnel.staff.Staff;
+import Settings.CoffeeFactory.personnel.staff.Manager;
 
 /**
  * @author CZQ

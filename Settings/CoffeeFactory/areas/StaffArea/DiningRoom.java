@@ -1,5 +1,6 @@
 package Settings.CoffeeFactory.areas.StaffArea;
 
+import Settings.CoffeeFactory.personnel.ChiefManager;
 import areas.AreaName;
 
 public class DiningRoom extends StaffArea {
@@ -15,7 +16,7 @@ public class DiningRoom extends StaffArea {
     public DiningRoom(String location, double cost, double area) {
         super(location, cost, area, Manager.getDiningRoomManager());
         Manager.getDiningRoomManager().addDepartment(this);
-        GeneralManager.getInstance().addManager(Manager.getDiningRoomManager());
+        ChiefManager.getInstance().addManager(Manager.getDiningRoomManager());
     }
 
     /**
