@@ -28,14 +28,31 @@ public abstract class Machine {
     //the degree of machine failure
 
 
-    public Machine(String type, String ID, double age, double lifeSpan, int maxProcessNum,  double baseLoss, double totalLoss) {
+    public Machine(String type, String ID, double age, double lifeSpan, int maxProcessNum,  double baseLoss, double productionLoss) {
         this.type = type;
         this.ID = ID;
         this.age = age;
         this.lifeSpan = lifeSpan;
         this.maxProcessNum = maxProcessNum;
         this.baseLoss = baseLoss;
-        this.productionLoss = totalLoss;
+        this.productionLoss = productionLoss;
+    }
+
+    public Machine(String type, String ID, double age, double lifeSpan, int maxProcessNum, double baseLoss) {
+        this.type = type;
+        this.ID = ID;
+        this.age = age;
+        this.lifeSpan = lifeSpan;
+        this.maxProcessNum = maxProcessNum;
+        this.baseLoss = baseLoss;
+    }
+
+    public Machine(String type, String ID, double lifeSpan, int maxProcessNum, double baseLoss) {
+        this.type = type;
+        this.ID = ID;
+        this.lifeSpan = lifeSpan;
+        this.maxProcessNum = maxProcessNum;
+        this.baseLoss = baseLoss;
     }
 
     public Machine(String type, String ID) {
