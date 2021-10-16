@@ -1,6 +1,6 @@
 package Settings.CoffeeFactory.machine.transportmachine.UAVs;
 
-import team.charliechocolatefactory.product.Product;
+import Settings.CoffeeFactory.product.Product;
 
 /**
  * @project chocolateFactory
