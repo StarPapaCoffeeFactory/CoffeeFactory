@@ -1,4 +1,4 @@
 package Settings.CoffeeFactory.machine.processmachine;
 
-public class ProcessMachine {
+public abstract class ProcessMachine {
 }
