@@ -1,6 +1,8 @@
 package Settings.CoffeeFactory.machine.transportmachine.UAVs;
 
 
+import Settings.CoffeeFactory.machine.transportmachine.TransportMachine;
+import Settings.CoffeeFactory.product.Product;
 
 /**
  * @project chocolateFactory
@@ -16,6 +18,8 @@ public class Adapter implements UAV {
     public Adapter() {
     }
 
+
+
     public Adapter(TransportMachine adaptee) {
         this.adaptee = adaptee;
     }
@@ -26,6 +30,7 @@ public class Adapter implements UAV {
         adaptee.run(product);
         return 0;
     }
+
 
     @Override
     public void setID(String ID) {

@@ -1,6 +1,6 @@
 package Settings.CoffeeFactory.machine.transportmachine;
+import Settings.CoffeeFactory.product.Product;
 
-import team.charliechocolatefactory.product.Product;
 
 /**
  * @author Yuan.Cai
@@ -9,12 +9,12 @@ import team.charliechocolatefactory.product.Product;
  * @description Machine for transporting a small quantity of items.
  * @date 2020/11/8 19:34
  */
-public class SmallCar extends TransportMachine {
-    public SmallCar(String type, String machineNum) {
+public class SCAR extends TransportMachine {
+    public SCAR(String type, String machineNum) {
         super(type, machineNum, 20, 0.6, 50);
     }
 
-    public SmallCar(String type, String machineNum, double age) {
+    public SCAR(String type, String machineNum, double age) {
         super(type, machineNum, age, 20, 0.6, 50);
     }
 
@@ -27,7 +27,10 @@ public class SmallCar extends TransportMachine {
             return 0;
         }
     }
-
+    protected int work() {
+        System.out.println(aimProcessNum + " items transported successfully.");
+        return 0;
+    }
     @Override
     protected void load(Product product) {
         System.out.println("Four people are getting on the small car.");

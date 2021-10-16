@@ -1,6 +1,6 @@
 package Settings.CoffeeFactory.machine.transportmachine;
 
-import team.charliechocolatefactory.product.Product;
+import Settings.CoffeeFactory.product.Product;
 
 /**
  * @author Yuan.Cai
@@ -9,12 +9,14 @@ import team.charliechocolatefactory.product.Product;
  * @description Machine for transporting a medium quantity of items.
  * @date 2020/11/8 19:54
  */
-public class Van extends TransportMachine {
-    public Van(String type, String machineNum) {
+public class MCAR extends TransportMachine {
+    public MCAR(String type, String machineNum) {
         super(type, machineNum, 15, 0.8, 150);
     }
 
-    public Van(String type, String machineNum, double age) {
+
+
+    public MCAR(String type, String machineNum, double age) {
         super(type, machineNum, age, 15, 0.8, 150);
     }
 
