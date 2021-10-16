@@ -1,51 +1,67 @@
 package Settings.CoffeeFactory.supplement.receipt;
 
-import Settings.CoffeeFactory.areas.Area;
-import Settings.CoffeeFactory.supplement.supplement;
+import Settings.CoffeeFactory.supplement.receipt.provider.provider;
 
-public class receipt extends supplement {
 
-    enum receiptType{
-        commonReceipt,purchaseReceipt,taxReceipt
+public abstract class receipt {
+
+    public enum receiptType{
+        commonReceipt,taxReceipt,purchaseReceipt
     }
 
-    private receiptType receiptType;
+    /**
+     * Amount of invoice
+     */
+    private Double money = 9999.91;
+
+    /**
+     * Provider information of invoice
+     */
+    private provider provider;
+
+
+    /**
+     * Details of the receipt
+     */
     private String info;
 
-    public receipt(){
-        this.type="receipt";
-        this.receiptType=getReceiptType();
-        this.info=getInfo();
+
+    /**
+     * type of receipt,
+     * It is divided into three parts:TAXRECEIPT, COMMONRECEIPT, PURCHASERECEIPT;
+     */
+    private receiptType type;
+
+    /**
+     *
+     * @param info: message of the receipt;
+     * @param type: type of the receipt
+     */
+    protected receipt(String info, receiptType type, provider provider) {
+        this.provider = provider;
+        this.info = info;
+        this.type = type;
     }
 
-    private receiptType getReceiptType(){
-        return receiptType;
-    }
-
-    private String getInfo(){
-        return this.info;
-    }
-
-    public boolean canEnter(String dest) {
-        String move = this.id + " enter " + dest;
-        if (this.visitLimit.canAccess(move)) {
-            System.out.println(this.type + " can enter" + dest);
-            return true;
-        } else {
-            System.out.println("Sorry! " + this.type + " cannot enter " + dest);
-            return false;
-        }
-    }
-
+    /**
+     * @return: String type of this Receipt;
+     */
     @Override
-    public void Goto(Area dest) {
-
-        if (this.canEnter(dest.toString())) {
-            this.location = dest;
-            System.out.println(this.id + " " + this.type + " can be allocated to " + dest.toString());
-        } else {
-            System.out.println("Sorry, " + this.id + " " + this.type + "can not be allocated to" + dest.toString());
-        }
+    public String toString() {
+        return "receipt{" +
+                "money=" + money +
+                ", provider=" + provider +
+                ", info='" + info + '\'' +
+                ", type=" + type +
+                '}';
     }
 
+    public void displayAll() {
+        System.out.println("----------------------------------------------------------"+ this.type +"--------------------------------------------------------------");
+        System.out.printf("%-10s%-30s%-20s%-30s%-30s%-30s", "|money", "|info", "|type", "|providerName", "|providerTel", "|providerAdd");
+        System.out.println();
+        System.out.printf("%-10s%-30s%-20s%-30s%-30s%-30s", "|" + this.money, "|" + this.info, "|" + this.type, "|" + this.provider.getProviderName(),"|" + this.provider.getProviderTel(),"|" + this.provider.getProviderAdd());
+        System.out.println();
+        System.out.println("---------------------------------------------------------------------------------------------------------------------------------------");
+    }
 }
