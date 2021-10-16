@@ -16,7 +16,7 @@ public abstract class Machine {
     //the maximum expected life of the machine,unit:year
     private int maxProcessNum = 500;
     //The maximum number that the machine can process at one time
-    private boolean isBroken = false;
+    protected boolean isBroken = false;
     // Whether the machine is damaged
     private double baseLoss = 0.5;
     //The foundation loss caused by each use reduces the service life
@@ -60,9 +60,13 @@ public abstract class Machine {
         this.ID = ID;
     }
 
+    public Machine(String type) {
+        this.type=type;
+    }
+
     protected void malfunction() {
         isBroken = true;
-        System.out.println("Oh no! " + type + ID + " breaks down! Please fix!\n");
+        System.out.println("Sorry, " + type + ID + " breaks down! Please fix!\n");
     }
     public void markFault(int breakLevel) {
         isBroken = true;
@@ -73,7 +77,7 @@ public abstract class Machine {
 // FixRookie worker1 = new FixRookie("Kerr", 18, Person.Sex.MALE, 10, null);
 // FixProfession worker2 = new FixProfession("Young", 19, Person.Sex.MALE, 10, null);
 // FixExpert worker3 = new FixExpert("Brian", 18, Person.Sex.MALE, 10000, null);
-        FixWorker worker = new FixWorker("Kerr", 18);
+        FixWorker worker = new FixWorker("Kane", 18);
 
         if (isBroken) {
             breakLevel = 0;

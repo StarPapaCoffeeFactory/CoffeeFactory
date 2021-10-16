@@ -1,5 +1,7 @@
 package Test.DesignPatternTests;
 
+import Settings.CoffeeFactory.machine.processmachine.productmachine.BasicProductMachine;
+
 import java.util.Scanner;
 
 /**

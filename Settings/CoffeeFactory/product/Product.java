@@ -1,6 +1,7 @@
 package Settings.CoffeeFactory.product;
 
 import Settings.CoffeeFactory.machine.processmachine.ProcessMachine;
+import Settings.CoffeeFactory.machine.processmachine.productmachine.BasicProductMachine;
 import Settings.CoffeeFactory.product.production.Packed;
 import Settings.CoffeeFactory.product.production.Producing;
 import Settings.CoffeeFactory.product.production.ProductionStage;
