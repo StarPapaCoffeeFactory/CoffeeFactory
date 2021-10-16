@@ -88,6 +88,8 @@ public abstract class Machine {
             System.out.println("There is nothing to be fixed.\n");
         }
     }
+
+
     public void maintenance() {
         Random rand = new Random();
         int ageLonged = rand.nextInt(5);
