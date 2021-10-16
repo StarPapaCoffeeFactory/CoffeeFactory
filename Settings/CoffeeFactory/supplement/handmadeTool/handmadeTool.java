@@ -6,7 +6,7 @@ import Settings.CoffeeFactory.areas.Area;
 public class handmadeTool extends supplement{
 
     private long batchNumber;//生产批号
-    private String description;//描述
+    public String description;//描述
     private int stock;//库存
 
     public handmadeTool (){
