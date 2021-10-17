@@ -1,6 +1,6 @@
-package Settings.CoffeeFactory.product.originalcoffeebean;
+package Settings.CoffeeFactory.product.originalcoffee;
 
-import Settings.CoffeeFactory.product.blendedcoffeebean.BlendedCoffee;
+import Settings.CoffeeFactory.product.blendedcoffee.BlendedCoffee;
 
 /**
  * @author LouTianyu

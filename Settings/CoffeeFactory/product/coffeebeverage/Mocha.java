@@ -12,9 +12,11 @@ import Settings.CoffeeFactory.material.foodmaterial.*;
  */
 
 public class Mocha extends Product {
+    protected int quantity;
     // constructor
-    public Mocha() {
-        super("Mocha", 10, 268);
+    public Mocha(int quantity) {
+        super("Mocha", 10, 268 * quantity);
+        this.quantity = quantity;
         this.initIngredientList();
     }
     // methods

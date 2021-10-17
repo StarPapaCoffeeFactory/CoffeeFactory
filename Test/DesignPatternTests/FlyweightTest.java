@@ -1,10 +1,10 @@
 package Test.DesignPatternTests;
 
-import Settings.CoffeeFactory.product.blendedcoffeebean.houseblend.HouseBlend;
-import Settings.CoffeeFactory.product.originalcoffeebean.Arabica;
-import Settings.CoffeeFactory.product.originalcoffeebean.Bourbon;
-import Settings.CoffeeFactory.product.originalcoffeebean.Coffee;
-import Settings.CoffeeFactory.product.originalcoffeebean.Robusta;
+import Settings.CoffeeFactory.product.blendedcoffee.houseblend.HouseBlend;
+import Settings.CoffeeFactory.product.originalcoffee.Arabica;
+import Settings.CoffeeFactory.product.originalcoffee.Bourbon;
+import Settings.CoffeeFactory.product.originalcoffee.Coffee;
+import Settings.CoffeeFactory.product.originalcoffee.Robusta;
 
 import java.util.ArrayList;
 import java.util.Scanner;

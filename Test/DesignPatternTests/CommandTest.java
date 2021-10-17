@@ -4,24 +4,24 @@ import java.util.Scanner;
 
 public class CommandTest {
     public static void main(String[] args) {
-        System.out.println("------------------------------------ [Command] Test ------------------------------------");
+        System.out.println("─────────────────────────   [Command] Test   ─────────────────────────");
 
         System.out.println("");
-        System.out.println("Worker : produceDarkChocolate : Let the worker send a command to produce dark chocolate.");
-        System.out.println("Product : producing : Transmit the command to a specific machine .");
-        System.out.println("ProductMachine : process : Execute specific production process.");
+        System.out.println("Worker : produceAmericano : Let the worker send a command to produce Americano");
+        System.out.println("Product : producing : Transmit the command to a specific machine");
+        System.out.println("ProductMachine : process : Execute specific production process");
         System.out.println("");
 
         System.out.println("Firstly, we need to create a worker.");
         Worker worker = new WorkshopWorker("worker", 18, Person.Sex.MALE, 10);
 
         System.out.println("");
-        System.out.println("*******************             Command Test        *******************");
-        System.out.println("***                 1. produce some dark chocolate                  ***");
-        System.out.println("***                 2. produce chocolate cake                       ***");
-        System.out.println("***                 3. produce chocolate cookie                     ***");
-        System.out.println("***                 4. produce chocolate ice cream                  ***");
-        System.out.println("***********************************************************************");
+        System.out.println("┌─────────────────────────   Command Test   ─────────────────────────┐");
+        System.out.println("│                       1. produce Americano                         │");
+        System.out.println("│                       2. produce Arabica                           │");
+        System.out.println("│                       3. produce AutumnBlend                       │");
+        System.out.println("│                       4. produce HouseBlend                        │");
+        System.out.println("└────────────────────────────────────────────────────────────────────┘");
         System.out.println("");
 
         Scanner input = new Scanner(System.in);
@@ -38,19 +38,19 @@ public class CommandTest {
                     flag = false;
                     break;
                 case 1: {
-                    worker.produceDarkChocolate();
+                    worker.produceAmericano();
                     break;
                 }
                 case 2: {
-                    worker.produceChocolateCake();
+                    worker.produceArabica();
                     break;
                 }
                 case 3: {
-                    worker.produceChocolateCookie();
+                    worker.produceAutumnBlend();
                     break;
                 }
                 case 4: {
-                    worker.produceChocolateIceCream();
+                    worker.produceHouseBlend();
                     break;
                 }
                 default:{

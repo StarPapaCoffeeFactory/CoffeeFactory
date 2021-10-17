@@ -12,9 +12,11 @@ import Settings.CoffeeFactory.material.foodmaterial.*;
  */
 
 public class CaramelMacchiato extends Product {
+    protected int quantity;
     // constructor
-    public CaramelMacchiato() {
-        super("CaramelMacchiato", 9, 228);
+    public CaramelMacchiato(int quantity) {
+        super("CaramelMacchiato", 9, 228 * quantity);
+        this.quantity = quantity;
         this.initIngredientList();
     }
     // methods

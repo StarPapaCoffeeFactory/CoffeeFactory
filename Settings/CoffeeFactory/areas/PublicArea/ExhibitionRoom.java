@@ -1,6 +1,6 @@
 package Settings.CoffeeFactory.areas.PublicArea;
 
-import areas.AreaName;
+import Settings.CoffeeFactory.areas.AreaName;
 
 import java.util.ArrayList;
 
