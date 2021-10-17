@@ -1,6 +1,6 @@
 package Settings.CoffeeFactory.machine.processmachine.productmachine.coffeemachine;
 
-import Settings.CoffeeFactory.product.originalcoffeebean.Arabica;
+import Settings.CoffeeFactory.product.originalcoffee.Arabica;
 
 public class CoffeeArabicaMachine extends CoffeeBasicMachine{
     public CoffeeArabicaMachine() {

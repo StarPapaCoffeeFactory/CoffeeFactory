@@ -1,6 +1,6 @@
 package Settings.CoffeeFactory.machine.processmachine.productmachine.coffeemachine;
 
-import Settings.CoffeeFactory.product.originalcoffeebean.Coffee;
+import Settings.CoffeeFactory.product.originalcoffee.Coffee;
 
 public class CoffeeMachineController {
     public CoffeeBasicMachine coffeeBasicMachine;
