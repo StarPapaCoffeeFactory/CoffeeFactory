@@ -6,7 +6,7 @@ import Settings.CoffeeFactory.areas.Area;
 public class handmadeTool extends supplement{
 
     private long batchNumber;//生产批号
-    private String description;//描述
+    public String description;//描述
     private int stock;//库存
 
     public handmadeTool (){
@@ -29,18 +29,10 @@ public class handmadeTool extends supplement{
 //        return this.type;
 //    }
     public long getBatchNumber(){
-        /*
-         *
-         * @return long
-         * @author YXJ
-         * @description private 改 public
-         * @date 2021/10/15 11:43
-         */
-
         return this.batchNumber;
     }
 
-    private String getDescription(){
+    public String getDescription(){
         return this.description;
     }
     
@@ -57,12 +49,12 @@ public class handmadeTool extends supplement{
     }
 
     //
-    private void ref() {
-        this.stock++;
+    public void ref() {
+        stock++;
     }
 
-    private void deref(){
-        this.stock--;
+    public void deref(){
+        stock--;
     }
 
     public boolean canEnter(String dest) {

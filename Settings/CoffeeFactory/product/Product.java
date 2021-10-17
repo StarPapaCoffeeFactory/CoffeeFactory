@@ -1,20 +1,29 @@
 package Settings.CoffeeFactory.product;
 
+import Settings.CoffeeFactory.machine.processmachine.ProcessMachine;
+import Settings.CoffeeFactory.machine.processmachine.productmachine.BasicProductMachine;
 import Settings.CoffeeFactory.product.production.Packed;
 import Settings.CoffeeFactory.product.production.Producing;
 import Settings.CoffeeFactory.product.production.ProductionStage;
 
-import java.util.ArrayList;
+/**
+ * @author LouTianyu
+ * @description The basic abstract class for all products. All basic elements for a product is defined here.
+ */
 
 public abstract class Product {
     private String productName;
     private String productionDate;
-    private int shelfLife;
-    private int weight;
+    public int shelfLife;
+    public int weight;
     public ProcessMachine produceMachine, wrapperMachine;
     protected ProductionStage stage;
     protected PackageMaterial pack;
     public ArrayList<RawMaterial> ingredientList;
+
+    protected Product() {
+    }
+
     protected abstract void initIngredientList();
 
     public Product(String name, int shelfLife, int weight) {
@@ -28,7 +37,7 @@ public abstract class Product {
         this.wrapperMachine = new WrapperMachine("PA", "118", 40, 1, 500);
     }
 
-    protected void setProductNameName(String name) {
+    protected void setProductName(String name) {
         this.productName = name;
     }
     public String getProductName() {

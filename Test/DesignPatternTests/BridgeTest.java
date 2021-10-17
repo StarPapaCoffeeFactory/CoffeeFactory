@@ -7,13 +7,13 @@ public class BridgeTest {
         //测试流程
         System.out.println("");
         System.out.println("┌─────────────────────────   Bridge Test   ──────────────────────────┐");
-        System.out.println("│                  1. choose coffee bean                             │");
-        System.out.println("│                  2. choose manufacturing method                    │");
-        System.out.println("│                  3. wait for manufacturing                         │");
+        System.out.println("│                  1. Choose coffee bean                             │");
+        System.out.println("│                  2. Choose manufacturing method                    │");
+        System.out.println("│                  3. Wait for manufacturing                         │");
         System.out.println("└────────────────────────────────────────────────────────────────────┘");
         System.out.println("");
-        Scanner scanner = new Scanner(System.in);
         //第一步：选择咖啡豆
+        Scanner scanner = new Scanner(System.in);
         System.out.println("1. choose coffee bean");
         System.out.println("Optional：1.榛仁  2.酒心");
         Sandwich sandwich;
