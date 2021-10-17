@@ -12,9 +12,11 @@ import Settings.CoffeeFactory.material.foodmaterial.*;
  */
 
 public class Americano extends Product {
+    protected int quantity;
     // constructor
-    public Americano() {
-        super("Americano", 9, 228);
+    public Americano(int quantity) {
+        super("Americano", 9, 228 * quantity);
+        this.quantity = quantity;
         this.initIngredientList();
     }
     // methods

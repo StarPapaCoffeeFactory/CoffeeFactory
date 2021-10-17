@@ -2,17 +2,17 @@ package Settings.CoffeeFactory.product.productmemento;
 
 public class ProductMemento {
 
-    private int quantity;
+    private int weight;
 
-    public ProductMemento(int quantity) {
-        this.quantity = quantity;
+    public ProductMemento(int weight) {
+        this.weight = weight;
     }
 
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
+    public void setWeight(int weight) {
+        this.weight = weight;
     }
 
-    public int getQuantity() {
-        return quantity;
+    public int getWeight() {
+        return weight;
     }
 }

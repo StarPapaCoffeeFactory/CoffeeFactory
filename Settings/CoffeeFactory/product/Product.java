@@ -5,6 +5,7 @@ import Settings.CoffeeFactory.machine.processmachine.productmachine.BasicProduct
 import Settings.CoffeeFactory.product.production.Packed;
 import Settings.CoffeeFactory.product.production.Producing;
 import Settings.CoffeeFactory.product.production.ProductionStage;
+import Settings.CoffeeFactory.product.productmemento.*;
 
 /**
  * @author LouTianyu
@@ -102,6 +103,14 @@ public abstract class Product {
         }
         System.out.println("Transporting " + getProductName() + " to the warehouse.");
         this.nextStage();
+    }
+
+    public ProductMemento createMemento() {
+        return new ProductMemento(this.weight);
+    }
+
+    public void restoreMemento(ProductMemento memento) {
+        this.weight = memento.getWeight();
     }
 
 

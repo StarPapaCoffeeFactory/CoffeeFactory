@@ -12,9 +12,11 @@ import Settings.CoffeeFactory.material.foodmaterial.*;
  */
 
 public class Latte extends Product {
+    protected int quantity;
     // constructor
-    public Latte() {
-        super("Latte", 10, 300);
+    public Latte(int quantity) {
+        super("Latte", 10, 300 * quantity);
+        this.quantity = quantity;
         this.initIngredientList();
     }
     // methods
