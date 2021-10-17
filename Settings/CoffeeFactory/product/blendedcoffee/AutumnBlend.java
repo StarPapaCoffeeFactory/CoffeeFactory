@@ -1,4 +1,4 @@
-package Settings.CoffeeFactory.product.blendedcoffeebean;
+package Settings.CoffeeFactory.product.blendedcoffee;
 
 /**
  * @author LouTianyu

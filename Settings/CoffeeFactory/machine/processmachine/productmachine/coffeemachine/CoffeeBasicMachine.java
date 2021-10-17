@@ -1,8 +1,7 @@
 package Settings.CoffeeFactory.machine.processmachine.productmachine.coffeemachine;
 
 import Settings.CoffeeFactory.machine.processmachine.productmachine.BasicProductMachine;
-import Settings.CoffeeFactory.product.Product;
-import Settings.CoffeeFactory.product.originalcoffeebean.Coffee;
+import Settings.CoffeeFactory.product.originalcoffee.Coffee;
 
 public abstract class CoffeeBasicMachine extends BasicProductMachine {
     protected Coffee coffee;
