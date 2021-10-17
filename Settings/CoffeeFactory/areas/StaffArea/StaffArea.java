@@ -4,6 +4,7 @@ import areas.Area;
 import areas.WorkerIterator.Aggregate;
 import areas.WorkerIterator.Iterator;
 import areas.WorkerIterator.WorkerListIterator;
+import Settings.CoffeeFactory.personnel.staff.Manager;
 
 import java.util.ArrayList;
 

@@ -1,6 +1,7 @@
 package Settings.CoffeeFactory.areas.StaffArea;
 
 import Settings.CoffeeFactory.personnel.ChiefManager;
+import Settings.CoffeeFactory.personnel.staff.Manager;
 import areas.AreaName;
 
 public class DiningRoom extends StaffArea {
