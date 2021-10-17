@@ -1,7 +1,7 @@
 package Settings.CoffeeFactory.areas.ManufacturingArea.Warehouse;
 
-import areas.AreaName;
-import areas.ManufacturingArea.ManufacturingArea;
+import Settings.CoffeeFactory.areas.AreaName;
+import Settings.CoffeeFactory.areas.ManufacturingArea.ManufacturingArea;
 
 import java.util.HashMap;
 

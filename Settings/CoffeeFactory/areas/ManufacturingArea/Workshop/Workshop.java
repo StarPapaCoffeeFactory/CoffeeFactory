@@ -1,7 +1,7 @@
 package Settings.CoffeeFactory.areas.ManufacturingArea.Workshop;
 
 import Settings.CoffeeFactory.machine.processmachine.productmachine.ProductMachine;
-import areas.ManufacturingArea.ManufacturingArea;
+import Settings.CoffeeFactory.areas.ManufacturingArea.ManufacturingArea;
 
 //产品生产车间
 public abstract class Workshop extends ManufacturingArea {

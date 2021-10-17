@@ -2,7 +2,7 @@ package Settings.CoffeeFactory.areas.StaffArea;
 
 import Settings.CoffeeFactory.personnel.ChiefManager;
 import Settings.CoffeeFactory.personnel.staff.Manager;
-import areas.AreaName;
+import Settings.CoffeeFactory.areas.AreaName;
 
 public class Office extends StaffArea {
 

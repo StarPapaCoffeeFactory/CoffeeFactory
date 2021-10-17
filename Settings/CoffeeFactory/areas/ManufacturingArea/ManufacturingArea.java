@@ -1,6 +1,6 @@
 package Settings.CoffeeFactory.areas.ManufacturingArea;
 
-import areas.Area;
+import Settings.CoffeeFactory.areas.Area;
 
 public abstract class ManufacturingArea extends Area{
 }

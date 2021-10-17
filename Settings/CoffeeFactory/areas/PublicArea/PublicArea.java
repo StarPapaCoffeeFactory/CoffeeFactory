@@ -1,6 +1,6 @@
 package Settings.CoffeeFactory.areas.PublicArea;
 
-import areas.Area;
+import Settings.CoffeeFactory.areas.Area;
 
 import java.util.LinkedList;
 
