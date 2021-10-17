@@ -9,6 +9,6 @@ package Test.DesignPatternTests;
 import Settings.CoffeeFactory.management.logistics.logisticsWork;
 import Settings.CoffeeFactory.personnel.staff.*;
 
-public class Facade {
-
+public class FacadeTest {
+    
 }
