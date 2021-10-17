@@ -34,7 +34,5 @@ public class SCAR extends TransportMachine {
         System.out.println("Four people arrive at the destination.");
     }
 
-    public String toString() {
-        return "class SmallCar";
-    }
+
 }
