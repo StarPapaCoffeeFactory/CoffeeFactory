@@ -1,13 +1,15 @@
-package Settings.CoffeeFactory.machine.processmachine.quatifymachine;
+package Settings.CoffeeFactory.machine.processmachine.qualifymachine;
+
 import Settings.CoffeeFactory.machine.processmachine.ProcessMachine;
 import Settings.CoffeeFactory.product.Product;
-public class QuatifyMachine extends ProcessMachine{
-    public QuatifyMachine(String type)
+
+public class QualifyMachine extends ProcessMachine {
+    public QualifyMachine(String type)
     {
         super(type);
     }
 
-    public QuatifyMachine(String type, String ID, double lifeSpan, int maxProcessNum,double basicLoss) {
+    public QualifyMachine(String type, String ID, double lifeSpan, int maxProcessNum,double basicLoss) {
         super(type, ID, lifeSpan, maxProcessNum, basicLoss);
     }
 
@@ -17,6 +19,6 @@ public class QuatifyMachine extends ProcessMachine{
     }
 
     public String toString() {
-        return "class QualityTestMachine";
+        return "class QualifyMachine";
     }
 }

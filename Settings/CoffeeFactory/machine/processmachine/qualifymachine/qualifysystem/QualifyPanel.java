@@ -1,12 +1,12 @@
-package Settings.CoffeeFactory.machine.processmachine.quatifymachine.quatifysystem;
+package Settings.CoffeeFactory.machine.processmachine.qualifymachine.qualifysystem;
 
-public class QuatifyPanel extends QuatifySystem{
-    public QuatifyPanel(String species){
-        super(species);
+public class QualifyPanel extends QualifySystem{
+    public QualifyPanel(String kind){
+        super(kind);
     }
 
     @Override
-    protected void add(QuatifySystem QuatifySystem) { }
+    protected void add(QualifySystem qualityTestSystem) { }
 
     /**
      * Show the structure of the system
@@ -20,6 +20,6 @@ public class QuatifyPanel extends QuatifySystem{
     }
 
     public String toString() {
-        return "class QuatifyPanel";
+        return "class QualifyPanel";
     }
 }

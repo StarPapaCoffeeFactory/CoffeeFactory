@@ -32,9 +32,9 @@ public class logisticsWork {
         System.out.println("现在开始对机器进行常规检查。");
 
         for (Machine machine : machines) {
-            System.out.println("现在开始对" + machine.getMachineID() + "号机器设备进行检查。");
-            item.fix();
-            System.out.println("已完成对机器设备" + item.getMachineID() + "号的安全检查。");
+            System.out.println("现在开始对" + machine.getID() + "号机器设备进行检查。");
+            machine.fix();
+            System.out.println("已完成对机器设备" + machine.getMachineID() + "号的安全检查。");
         }
         System.out.println("所有机器设备检查完毕。");
         machineChecked = true;
