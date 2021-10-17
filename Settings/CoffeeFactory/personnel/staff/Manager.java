@@ -4,6 +4,8 @@ import Settings.CoffeeFactory.areas.Area;
 import Settings.CoffeeFactory.areas.StaffArea.StaffArea;
 import Settings.CoffeeFactory.personnel.Personnel;
 import Settings.CoffeeFactory.personnel.staff.Staff;
+import Settings.CoffeeFactory.personnel.ChiefManager;
+
 
 import java.util.ArrayList;
 
@@ -35,14 +37,31 @@ public class Manager extends Staff{
         officeManager = null;
     }
 
+
+
+
+    /**
+     * 从总经理处获得任务
+     */
     public void dispatchTask()
     {
         System.out.println(this.name + " get task.");
     }
 
+    /**
+     * 发怒
+     */
     public void getangry()
     {
-        System.out.println(this.name + " get angry.");
+        System.out.println(this.name + " get angry. &%$*%&$**%$%*$");
+    }
+
+    /**
+     * send feedback to the ChiefManager
+     */
+    private void reporttoChiefManager() {
+        System.out.println(this.name + " report to the Chief manager.");
+        ChiefManager.getInstance().getFeedBack();
     }
 
     /**

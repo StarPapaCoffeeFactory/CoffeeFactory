@@ -5,6 +5,7 @@ import areas.WorkerIterator.Aggregate;
 import areas.WorkerIterator.Iterator;
 import areas.WorkerIterator.WorkerListIterator;
 import Settings.CoffeeFactory.personnel.staff.Manager;
+import Settings.CoffeeFactory.personnel.ChiefManager;
 
 import java.util.ArrayList;
 
@@ -32,7 +33,7 @@ public abstract class StaffArea extends Area implements Aggregate {
         super(location, cost, area);
         workerList = new ArrayList<Worker>();
         manager = newManager;
-        GeneralManager.getInstance().addManager(manager);
+        ChiefManager.getInstance().addManager(manager);
     }
 
     /**
