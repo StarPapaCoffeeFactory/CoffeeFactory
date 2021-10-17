@@ -44,11 +44,11 @@ public class MementoTest {
         System.out.println("Message in the memento : The weight of Americano in the memento is " +
                 caretaker.getProductMemento().getWeight() + " grams.");
         System.out.println("");
-        //第三步：设置产品的新数量
+        //第三步：设置产品的数量变化
         System.out.println("3. Set the change of product quantity : ");
         int change;
         change = input.nextInt();
-        americano.setWeight(americano.getWeight() * (quantity - change) / quantity);
+        americano.setWeight(americano.getWeight() * (quantity + change) / quantity);
         System.out.println("");
         System.out.println("Now the weight of Americano is " + americano.getWeight() + " grams");
         System.out.println("");
