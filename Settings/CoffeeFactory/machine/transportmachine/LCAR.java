@@ -29,7 +29,8 @@ public class LCAR extends TransportMachine {
         System.out.println(this.aimProcessNum + " " + product.getName() + " transport successfully.");
     }
 
+    @Override
     public String toString() {
-        return "class BigTruck";
+        return "LCAR";
     }
 }

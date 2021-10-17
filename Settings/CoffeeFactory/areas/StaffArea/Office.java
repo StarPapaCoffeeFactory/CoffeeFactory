@@ -1,6 +1,8 @@
 package Settings.CoffeeFactory.areas.StaffArea;
 
-import areas.AreaName;
+import Settings.CoffeeFactory.personnel.ChiefManager;
+import Settings.CoffeeFactory.personnel.staff.Manager;
+import Settings.CoffeeFactory.areas.AreaName;
 
 public class Office extends StaffArea {
 
@@ -15,7 +17,7 @@ public class Office extends StaffArea {
     public Office(String location, double cost, double area) {
         super(location, cost, area, Manager.getOfficeManager());
         Manager.getOfficeManager().addDepartment(this);
-        GeneralManager.getInstance().addManager(Manager.getOfficeManager());
+        ChiefManager.getInstance().addManager(Manager.getOfficeManager());
     }
 
     /**

@@ -1,21 +1,14 @@
-package Settings.CoffeeFactory.machine.transportmachine.UAVs;
-
+package Settings.CoffeeFactory.machine.transportmachine.adapter;
 
 import Settings.CoffeeFactory.machine.transportmachine.TransportMachine;
 import Settings.CoffeeFactory.product.Product;
 
-/**
- * @project chocolateFactory
- * @author: Miracle Ray
- * @classname Adapter
- * @description: Adapter Pattern to implement UAV's work function
- * @date: 2020/11/17 16:35
- */
-public class Adapter implements UAV {
+public class Adapter implements Aircraft {
     private TransportMachine adaptee;
     private String mID;
 
     public Adapter() {
+
     }
 
 
@@ -50,7 +43,7 @@ public class Adapter implements UAV {
 
     @Override
     public void navigate() {
-        System.out.println("UAV " + this.mID + " is navigating to destination.\n");
+        System.out.println("Aircraft " + this.mID + " is navigating to destination.\n");
     }
 
 
@@ -64,6 +57,6 @@ public class Adapter implements UAV {
 
     @Override
     public String toString() {
-        return "class Adapter implements UAV";
+        return "class Adapter implements Aircraft";
     }
 }

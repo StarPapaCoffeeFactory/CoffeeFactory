@@ -1,6 +1,7 @@
 package Settings.CoffeeFactory.areas.PublicArea;
 
-import areas.AreaName;
+import Settings.CoffeeFactory.areas.AreaName;
+import Settings.CoffeeFactory.areas.AreaName;
 
 public class ExperienceRoom extends PublicArea {
 
@@ -61,8 +62,7 @@ public class ExperienceRoom extends PublicArea {
 
     @Override
     public String toString() {
-        return AreaName.COFFEE_EXPERIENCE_ROOM;
-    }
+        return AreaName.COFFEE_EXPERIENCE_ROOM;}
 
     /**
      * Visitor Pattern: accept a utility worker to maintenance the scene

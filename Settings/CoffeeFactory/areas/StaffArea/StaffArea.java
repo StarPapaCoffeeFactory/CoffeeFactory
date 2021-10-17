@@ -1,9 +1,10 @@
 package Settings.CoffeeFactory.areas.StaffArea;
 
-import areas.Area;
-import areas.WorkerIterator.Aggregate;
-import areas.WorkerIterator.Iterator;
-import areas.WorkerIterator.WorkerListIterator;
+import Settings.CoffeeFactory.areas.Area;
+import Settings.CoffeeFactory.areas.WorkerIterator.Aggregate;
+import Settings.CoffeeFactory.areas.WorkerIterator.Iterator;
+import Settings.CoffeeFactory.areas.WorkerIterator.WorkerListIterator;
+import Settings.CoffeeFactory.personnel.staff.Manager;
 
 import java.util.ArrayList;
 

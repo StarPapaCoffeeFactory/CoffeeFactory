@@ -2,13 +2,6 @@ package Settings.CoffeeFactory.machine.transportmachine;
 import Settings.CoffeeFactory.product.Product;
 
 
-/**
- * @author Yuan.Cai
- * @project chocolateFactory
- * @classname SmallCar
- * @description Machine for transporting a small quantity of items.
- * @date 2020/11/8 19:34
- */
 public class SCAR extends TransportMachine {
     public SCAR(String type, String machineNum) {
         super(type, machineNum, 20, 0.6, 50);
@@ -41,7 +34,5 @@ public class SCAR extends TransportMachine {
         System.out.println("Four people arrive at the destination.");
     }
 
-    public String toString() {
-        return "class SmallCar";
-    }
+
 }

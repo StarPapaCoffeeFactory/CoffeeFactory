@@ -1,14 +1,15 @@
-package Settings.CoffeeFactory.machine.processmachine.quatifymachine.quatifysystem;
+package Settings.CoffeeFactory.machine.processmachine.qualifymachine.qualifysystem;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class QuatifyPanelGroup extends QuatifySystem{
-    private List<QuatifySystem> succulents = new ArrayList<QuatifySystem>();
+public class QualifyPanelGroup extends QualifySystem{
+    private List<QualifySystem> succulents = new ArrayList<QualifySystem>();
 
     /**
      * Represent quality inspection panel group
      */
-    public QuatifyPanelGroup(String kind){
+    public QualifyPanelGroup(String kind){
         super(kind);
     }
 
@@ -16,8 +17,8 @@ public class QuatifyPanelGroup extends QuatifySystem{
      * Add quality test system
      */
     @Override
-    public void add(QuatifySystem QuatifySystem){
-        succulents.add(QuatifySystem);
+    public void add(QualifySystem qualifySystem){
+        succulents.add(qualifySystem);
     }
 
 //    @Override
@@ -34,7 +35,7 @@ public class QuatifyPanelGroup extends QuatifySystem{
             System.out.print("-");
         }
         System.out.println("Group"+this.getKind() );
-        for (QuatifySystem suc : succulents) {
+        for (QualifySystem suc : succulents) {
             suc.show(depth + 2);
         }
     }

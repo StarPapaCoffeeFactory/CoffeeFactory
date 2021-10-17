@@ -29,12 +29,12 @@ public class LogisticsManager extends Staff{
 
     /*              for facade              */
 
-    public void machinesCheck()
+    public void checkMachines()
     {
         this.works.checkMachines();
     }
 
-    public void toolsCheck(){
+    public void checkTools(){
         this.works.checkTools();
     }
 

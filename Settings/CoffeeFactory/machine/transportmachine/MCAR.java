@@ -32,7 +32,4 @@ public class MCAR extends TransportMachine {
                 this.aimProcessNum + " " + product.getName() + " arrive at the destination.");
     }
 
-    public String toString() {
-        return "class Van";
-    }
 }
