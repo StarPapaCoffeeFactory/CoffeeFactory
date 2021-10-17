@@ -1,8 +1,9 @@
-package Settings.CoffeeFactory.product.blendedcoffeebean.houseblend;
+package Settings.CoffeeFactory.product.blendedcoffee.houseblend;
 
 import Settings.CoffeeFactory.product.Product;
-import Settings.CoffeeFactory.product.originalcoffeebean.Coffee;
+import Settings.CoffeeFactory.product.originalcoffee.Coffee;
 
+import javax.swing.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;

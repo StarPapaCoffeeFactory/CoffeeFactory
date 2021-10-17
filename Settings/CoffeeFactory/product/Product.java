@@ -1,6 +1,7 @@
 package Settings.CoffeeFactory.product;
 
 import Settings.CoffeeFactory.machine.processmachine.ProcessMachine;
+import Settings.CoffeeFactory.machine.processmachine.packmachine.PackMachine;
 import Settings.CoffeeFactory.machine.processmachine.productmachine.BasicProductMachine;
 import Settings.CoffeeFactory.product.production.Packed;
 import Settings.CoffeeFactory.product.production.Producing;
@@ -35,7 +36,7 @@ public abstract class Product {
         this.weight = weight;
         this.ingredientList = new ArrayList<RawMaterial>();
         this.produceMachine = new BasicProductMachine("PR", "220");
-        this.wrapperMachine = new WrapperMachine("PA", "118", 40, 1, 500);
+        this.wrapperMachine = new PackMachine("PA", "118", 40, 1, 500);
     }
 
     protected void setProductName(String name) {
