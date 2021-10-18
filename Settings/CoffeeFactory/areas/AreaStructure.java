@@ -1,5 +1,7 @@
 package Settings.CoffeeFactory.areas;
 
+import Settings.CoffeeFactory.personnel.staff.worker.UtilityWorker;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,17 +28,6 @@ public class AreaStructure {
     }
 
     /**
-     * worker maintains all areas in the list
-     *
-     * @param worker the worker to maintain the area
-     */
-    public void accept(UtilityWorker worker) {
-        for (Object obj : areas) {
-            ((Area) obj).accept(worker);
-        }
-    }
-
-    /**
      * get a area object from the scene list by its name
      *
      * @param name name of the area to be found
@@ -51,4 +42,14 @@ public class AreaStructure {
         return null;
     }
 
+    /**
+     * worker maintains all scenes in the list
+     *
+     * @param worker the worker to maintain the scene
+     */
+    public void accept(UtilityWorker worker) {
+        for (Object obj : areas) {
+            ((Area) obj).accept(worker);
+        }
+    }
 }

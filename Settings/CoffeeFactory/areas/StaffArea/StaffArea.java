@@ -4,8 +4,11 @@ import Settings.CoffeeFactory.areas.Area;
 import Settings.CoffeeFactory.areas.WorkerIterator.Aggregate;
 import Settings.CoffeeFactory.areas.WorkerIterator.Iterator;
 import Settings.CoffeeFactory.areas.WorkerIterator.WorkerListIterator;
+import Settings.CoffeeFactory.personnel.staff.EmptyStaff;
 import Settings.CoffeeFactory.personnel.staff.Manager;
 import Settings.CoffeeFactory.personnel.ChiefManager;
+import Settings.CoffeeFactory.personnel.staff.Staff;
+import Settings.CoffeeFactory.personnel.staff.worker.UtilityWorker;
 
 import java.util.ArrayList;
 
@@ -19,7 +22,7 @@ public abstract class StaffArea extends Area implements Aggregate {
     /**
      * 区域员工列表
      **/
-    protected ArrayList<Worker> workerList = null;
+    protected ArrayList<Staff> workerList = null;
 
 
     public StaffArea() {
@@ -31,7 +34,7 @@ public abstract class StaffArea extends Area implements Aggregate {
      */
     public StaffArea(String location, double cost, double area, Manager newManager) {
         super(location, cost, area);
-        workerList = new ArrayList<Worker>();
+        workerList = new ArrayList<Staff>();
         manager = newManager;
         ChiefManager.getInstance().addManager(manager);
     }
@@ -53,7 +56,7 @@ public abstract class StaffArea extends Area implements Aggregate {
     /**
      * 在工人列表中添加一个新员工
      */
-    public void addWorker(Worker workerObj) {
+    public void addWorker(Staff workerObj) {
         if (!workerList.contains(workerObj)) {
             workerList.add(workerObj);
         } else {
@@ -64,7 +67,7 @@ public abstract class StaffArea extends Area implements Aggregate {
     /**
      * 删除该区域的单个员工（如果要删除的员工在该区域）
      */
-    public void removeWorker(Worker workerObj) {
+    public void removeWorker(Staff workerObj) {
         if (workerList.contains(workerObj)) {
             workerList.remove(workerObj);
         } else {
@@ -83,7 +86,7 @@ public abstract class StaffArea extends Area implements Aggregate {
     /**
      * 获取本区域的员工列表
      */
-    public ArrayList<Worker> getWorkerList() {
+    public ArrayList<Staff> getWorkerList() {
         return workerList;
     }
 
@@ -93,7 +96,7 @@ public abstract class StaffArea extends Area implements Aggregate {
     public void displayAllStaffs() {
         System.out.printf("%-10s%-20s%-5s%-10s%s%n", "Id", "Name", "Age", "Sex", "Department");
         manager.display();
-        for (Worker obj : workerList) {
+        for (Staff obj : workerList) {
             obj.display();
         }
     }
@@ -106,7 +109,7 @@ public abstract class StaffArea extends Area implements Aggregate {
             manager.display();
             return;
         }
-        for (Worker obj : workerList) {
+        for (Staff obj : workerList) {
             if (obj.getId().equals(id)) {
                 obj.display();
                 return;
@@ -129,10 +132,4 @@ public abstract class StaffArea extends Area implements Aggregate {
      * @param worker the utility worker
      */
     public abstract void accept(UtilityWorker worker);
-
-    @Override
-    public String toString() {
-        return SceneNameConst.STAFF_AREA;
-    }
-
 }

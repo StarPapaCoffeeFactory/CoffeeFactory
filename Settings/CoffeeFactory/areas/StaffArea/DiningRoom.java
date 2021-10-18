@@ -3,6 +3,7 @@ package Settings.CoffeeFactory.areas.StaffArea;
 import Settings.CoffeeFactory.personnel.ChiefManager;
 import Settings.CoffeeFactory.personnel.staff.Manager;
 import Settings.CoffeeFactory.areas.AreaName;
+import Settings.CoffeeFactory.personnel.staff.worker.UtilityWorker;
 
 public class DiningRoom extends StaffArea {
 

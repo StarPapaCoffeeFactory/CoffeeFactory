@@ -3,6 +3,7 @@ package Settings.CoffeeFactory.areas.StaffArea;
 import Settings.CoffeeFactory.personnel.ChiefManager;
 import Settings.CoffeeFactory.personnel.staff.Manager;
 import Settings.CoffeeFactory.areas.AreaName;
+import Settings.CoffeeFactory.personnel.staff.worker.UtilityWorker;
 
 public class Office extends StaffArea {
 
@@ -21,6 +22,14 @@ public class Office extends StaffArea {
     }
 
     /**
+     * @return 区域名字字符串
+     */
+    @Override
+    public String toString() {
+        return AreaName.OFFICE;
+    }
+
+    /**
      * Visitor Pattern: accept a utility worker to maintenance the scene
      *
      * @param worker the utility worker
@@ -28,13 +37,5 @@ public class Office extends StaffArea {
     @Override
     public void accept(UtilityWorker worker) {
         worker.visit(this);
-    }
-
-    /**
-     * @return 区域名字字符串
-     */
-    @Override
-    public String toString() {
-        return AreaName.OFFICE;
     }
 }

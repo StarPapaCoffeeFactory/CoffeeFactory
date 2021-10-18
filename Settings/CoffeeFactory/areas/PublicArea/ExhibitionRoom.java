@@ -1,6 +1,7 @@
 package Settings.CoffeeFactory.areas.PublicArea;
 
 import Settings.CoffeeFactory.areas.AreaName;
+import Settings.CoffeeFactory.personnel.staff.worker.UtilityWorker;
 
 import java.util.ArrayList;
 

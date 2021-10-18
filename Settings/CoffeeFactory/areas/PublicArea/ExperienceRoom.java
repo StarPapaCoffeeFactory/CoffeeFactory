@@ -2,6 +2,7 @@ package Settings.CoffeeFactory.areas.PublicArea;
 
 import Settings.CoffeeFactory.areas.AreaName;
 import Settings.CoffeeFactory.areas.AreaName;
+import Settings.CoffeeFactory.personnel.staff.worker.UtilityWorker;
 
 public class ExperienceRoom extends PublicArea {
 
