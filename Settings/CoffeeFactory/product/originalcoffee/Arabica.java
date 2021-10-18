@@ -1,5 +1,6 @@
 package Settings.CoffeeFactory.product.originalcoffee;
 
+import Settings.CoffeeFactory.material.Food.*;
 import Settings.CoffeeFactory.product.blendedcoffee.BlendedCoffee;
 
 /**
@@ -16,7 +17,7 @@ public class Arabica extends Coffee{
 
     @Override
     protected void initIngredientList() {
-        super.ingredientList.add(new CoffeeBean());
+        super.ingredientList.add(new ArabicaCoffeeBean());
         super.ingredientList.add(new Water());
     }
 

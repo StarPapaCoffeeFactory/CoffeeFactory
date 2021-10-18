@@ -1,9 +1,10 @@
 package Settings.CoffeeFactory.product.blendedcoffee.houseblend;
 
+import Settings.CoffeeFactory.material.Material;
+import Settings.CoffeeFactory.material.Package.Box;
 import Settings.CoffeeFactory.product.Product;
 import Settings.CoffeeFactory.product.originalcoffee.Coffee;
 
-import javax.swing.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -64,10 +65,10 @@ public class HouseBlend extends Product {
     @Override
     public void pack() {
         super.nextStage();
-        System.out.println("Start packaging HouseBlend coffee bean...");
-        super.pack = new Box(0);
+        System.out.println("Start packing HouseBlend coffee bean...");
+        super.pack = new Box(1);
         super.nextStage();
-        System.out.println("Finish packaging HouseBlend coffee bean.");
+        System.out.println("Finish packing HouseBlend coffee bean.");
         super.nextStage();
 
         Date day = new Date();
@@ -78,7 +79,7 @@ public class HouseBlend extends Product {
     @Override
     protected void initIngredientList() {
         for (Coffee coffee : coffeeList) {
-            for (RawMaterial material : coffee.ingredientList) {
+            for (Material material : coffee.ingredientList) {
                 if (!ingredientList.contains(material)) {
                     ingredientList.add(material);
                 }

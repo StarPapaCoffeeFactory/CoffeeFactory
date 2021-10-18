@@ -3,10 +3,15 @@ package Settings.CoffeeFactory.product;
 import Settings.CoffeeFactory.machine.processmachine.ProcessMachine;
 import Settings.CoffeeFactory.machine.processmachine.packmachine.PackMachine;
 import Settings.CoffeeFactory.machine.processmachine.productmachine.BasicProductMachine;
+import Settings.CoffeeFactory.material.Material;
+import Settings.CoffeeFactory.material.Package.PackageInfo;
 import Settings.CoffeeFactory.product.production.Packed;
 import Settings.CoffeeFactory.product.production.Producing;
 import Settings.CoffeeFactory.product.production.ProductionStage;
-import Settings.CoffeeFactory.product.productmemento.*;
+import Settings.CoffeeFactory.product.productmemento.ProductMemento;
+
+import javax.swing.*;
+import java.util.ArrayList;
 
 /**
  * @author LouTianyu
@@ -20,8 +25,8 @@ public abstract class Product {
     public int weight;
     public ProcessMachine produceMachine, wrapperMachine;
     protected ProductionStage stage;
-    protected PackageMaterial pack;
-    public ArrayList<RawMaterial> ingredientList;
+    protected PackageInfo pack;
+    public ArrayList<Material> ingredientList;
 
     protected Product() {
     }
@@ -34,7 +39,7 @@ public abstract class Product {
         this.productionDate = null;
         this.stage = new Producing();
         this.weight = weight;
-        this.ingredientList = new ArrayList<RawMaterial>();
+        this.ingredientList = new ArrayList<Material>();
         this.produceMachine = new BasicProductMachine("PR", "220");
         this.wrapperMachine = new PackMachine("PA", "118", 40, 1, 500);
     }
@@ -82,7 +87,7 @@ public abstract class Product {
         return this.weight;
     }
 
-    public void setPackage(PackageMaterial pack) {this.pack = pack;}
+    public void setPackage(PackageInfo pack) {this.pack = pack;}
 
     public void setWrapperMachine(ProcessMachine wrapperMachine) {
         this.wrapperMachine = wrapperMachine;

@@ -1,5 +1,6 @@
 package Settings.CoffeeFactory.product.originalcoffee;
 
+import Settings.CoffeeFactory.material.Food.*;
 import Settings.CoffeeFactory.product.blendedcoffee.BlendedCoffee;
 
 /**
@@ -30,7 +31,7 @@ public class Robusta extends Coffee{
 
     @Override
     protected void initIngredientList() {
-        super.ingredientList.add(new CoffeeBean());
+        super.ingredientList.add(new RobustaCoffeeBean());
         super.ingredientList.add(new Sugar());
         super.ingredientList.add(new Water());
     }
