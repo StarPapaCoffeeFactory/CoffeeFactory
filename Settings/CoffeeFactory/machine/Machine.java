@@ -1,5 +1,10 @@
 package Settings.CoffeeFactory.machine;
 
+import Settings.CoffeeFactory.personnel.Personnel;
+import Settings.CoffeeFactory.personnel.staff.Maintainer.FreshmanMaintainer;
+import Settings.CoffeeFactory.personnel.staff.Maintainer.InternshipMaintainer;
+import Settings.CoffeeFactory.personnel.staff.Maintainer.SeasonedMaintainer;
+import Settings.CoffeeFactory.personnel.staff.Maintainer.SkilledMaintainer;
 import Settings.CoffeeFactory.product.Product;
 
 import java.util.Random;
@@ -68,23 +73,29 @@ public abstract class Machine {
         isBroken = true;
         System.out.println("Sorry, " + type + ID + " breaks down! Please fix!\n");
     }
+
     public void markFault(int breakLevel) {
         isBroken = true;
         this.breakLevel = breakLevel;
         fix();
     }
+
     public void fix() {
-// FixRookie worker1 = new FixRookie("Kerr", 18, Person.Sex.MALE, 10, null);
-// FixProfession worker2 = new FixProfession("Young", 19, Person.Sex.MALE, 10, null);
-// FixExpert worker3 = new FixExpert("Brian", 18, Person.Sex.MALE, 10000, null);
-        FixWorker worker = new FixWorker("Kane", 18);
+        InternshipMaintainer maintainer1=new InternshipMaintainer("Tom", 18, Personnel.Gender.male, "1008611", 100);
+        FreshmanMaintainer maintainer2=new FreshmanMaintainer("Jack", 19, Personnel.Gender.male, "1008612", 110);
+        SkilledMaintainer maintainer3=new SkilledMaintainer("Robin", 20, Personnel.Gender.male, "1008613", 120);
+        SeasonedMaintainer maintainer4=new SeasonedMaintainer("Mary", 21, Personnel.Gender.female, "1008614", 140);
 
         if (isBroken) {
-            breakLevel = 0;
-            isBroken = false;
-            System.out.println("Fix finished, " + type + ID + " can work again!\n");
-        }
-        else {
+            maintainer1.setNext(maintainer2);
+            maintainer2.setNext(maintainer3);
+            maintainer3.setNext(maintainer4);
+            if (maintainer1.handle(breakLevel)) {
+                breakLevel = 0;
+                isBroken = false;
+                System.out.println("Fix finished, " + type + ID + " can work again!\n");
+            }
+        } else {
             System.out.println("There is nothing to be fixed.\n");
         }
     }

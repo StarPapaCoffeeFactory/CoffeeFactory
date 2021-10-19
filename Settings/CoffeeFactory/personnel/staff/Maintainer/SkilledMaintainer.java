@@ -15,7 +15,7 @@ import Settings.CoffeeFactory.personnel.staff.Maintainer.Maintainer;
 public class SkilledMaintainer extends Maintainer{
 
 
-    protected SkilledMaintainer(String name, int age, Personnel.Gender gender, String phnum, double salary ) {
+    public SkilledMaintainer(String name, int age, Personnel.Gender gender, String phnum, double salary ) {
         super(name, age, gender ,phnum ,salary);
         this.Maintain_ability=75;
     }
