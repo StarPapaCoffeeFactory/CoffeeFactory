@@ -11,7 +11,7 @@ public class BottleStrategy extends PackStrategy {
     public void packaging(Product product) {
 
         System.out.println("Start packaging " + product.toString() + " with a bottle...");
-        product.setPack(new Cup());
+        product.setPack(new Bottle());
         product.gotoNextState();
         System.out.println("Finish packaging.");
         product.gotoNextState();
