@@ -1,6 +1,8 @@
 package Settings.CoffeeFactory.areas.PublicArea;
 
-import areas.Area;
+import Settings.CoffeeFactory.areas.Area;
+import Settings.CoffeeFactory.personnel.staff.worker.UtilityWorker;
+import Settings.CoffeeFactory.personnel.visitor.Visitor;
 
 import java.util.LinkedList;
 

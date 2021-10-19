@@ -111,6 +111,10 @@ public abstract class Machine {
         return age;
     }
 
+    public String getID() {
+        return ID;
+    }
+
     public void setAimProcessNum(int aimProcessNum) {
         if (aimProcessNum > maxProcessNum) {
             System.out.println("Exceed maxCapacity!\n");

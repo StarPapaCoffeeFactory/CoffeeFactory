@@ -1,9 +1,11 @@
 package Settings.CoffeeFactory.personnel;
 
+import java.util.ArrayList;
 
 import Settings.CoffeeFactory.areas.Area;
 import Settings.CoffeeFactory.personnel.Personnel;
 import Settings.CoffeeFactory.personnel.staff.Staff;
+import Settings.CoffeeFactory.personnel.staff.Manager;
 
 /**
  * @author CZQ
@@ -15,7 +17,7 @@ import Settings.CoffeeFactory.personnel.staff.Staff;
  */
 
 public class ChiefManager extends Personnel {
-    public String identity = "Chief Manager";
+    public String identity;/// = "Chief Manager";
 
     private static ChiefManager instance = null;
 
@@ -23,7 +25,7 @@ public class ChiefManager extends Personnel {
 
     /**
      *取得唯一ChiefManager对象
-     * @return instance of general manager
+     * @return instance of Chief manager
      */
     public static ChiefManager getInstance() {
         if (instance == null) {
@@ -93,6 +95,7 @@ public class ChiefManager extends Personnel {
     private ChiefManager(String name, int age, Gender gender, String phnum) {
         super(name, age, gender, phnum);
         managerList = new ArrayList<Manager>();
+        identity = "Chief Manager";
     }
 
 }

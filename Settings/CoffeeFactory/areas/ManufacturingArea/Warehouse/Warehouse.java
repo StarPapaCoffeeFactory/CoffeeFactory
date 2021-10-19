@@ -1,7 +1,8 @@
 package Settings.CoffeeFactory.areas.ManufacturingArea.Warehouse;
 
-import areas.AreaName;
-import areas.ManufacturingArea.ManufacturingArea;
+import Settings.CoffeeFactory.areas.AreaName;
+import Settings.CoffeeFactory.areas.ManufacturingArea.ManufacturingArea;
+import Settings.CoffeeFactory.personnel.staff.worker.UtilityWorker;
 
 import java.util.HashMap;
 
@@ -36,9 +37,9 @@ public class Warehouse extends ManufacturingArea{
         return new HashMap<String, Double>(materialAmount);
     }
 
-    //Visitor:接受公用事业工人维护区域
-//    @Override
-//    public void accept(UtilityWorker worker) {
-//        worker.visit(this);
-//    }
+//    Visitor:接受公用事业工人维护区域
+    @Override
+    public void accept(UtilityWorker worker) {
+        worker.visit(this);
+    }
 }

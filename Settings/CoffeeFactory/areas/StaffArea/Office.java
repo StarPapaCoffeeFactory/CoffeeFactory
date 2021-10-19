@@ -1,6 +1,9 @@
 package Settings.CoffeeFactory.areas.StaffArea;
 
-import areas.AreaName;
+import Settings.CoffeeFactory.personnel.ChiefManager;
+import Settings.CoffeeFactory.personnel.staff.Manager;
+import Settings.CoffeeFactory.areas.AreaName;
+import Settings.CoffeeFactory.personnel.staff.worker.UtilityWorker;
 
 public class Office extends StaffArea {
 
@@ -15,7 +18,15 @@ public class Office extends StaffArea {
     public Office(String location, double cost, double area) {
         super(location, cost, area, Manager.getOfficeManager());
         Manager.getOfficeManager().addDepartment(this);
-        GeneralManager.getInstance().addManager(Manager.getOfficeManager());
+        ChiefManager.getInstance().addManager(Manager.getOfficeManager());
+    }
+
+    /**
+     * @return 区域名字字符串
+     */
+    @Override
+    public String toString() {
+        return AreaName.OFFICE;
     }
 
     /**
@@ -26,13 +37,5 @@ public class Office extends StaffArea {
     @Override
     public void accept(UtilityWorker worker) {
         worker.visit(this);
-    }
-
-    /**
-     * @return 区域名字字符串
-     */
-    @Override
-    public String toString() {
-        return AreaName.OFFICE;
     }
 }

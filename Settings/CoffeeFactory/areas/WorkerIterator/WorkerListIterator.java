@@ -1,5 +1,7 @@
 package Settings.CoffeeFactory.areas.WorkerIterator;
 
+import Settings.CoffeeFactory.personnel.staff.Staff;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,7 +10,7 @@ public class WorkerListIterator implements Iterator {
     /**
      * 工人列表
      */
-    private ArrayList<Worker> workerList = null;
+    private ArrayList<Staff> workerList = null;
 
     /**
      * 当前索引
@@ -16,10 +18,10 @@ public class WorkerListIterator implements Iterator {
     private int index = -1;
 
     public WorkerListIterator() {
-        workerList = new ArrayList<Worker>();
+        workerList = new ArrayList<Staff>();
     }
 
-    public WorkerListIterator(ArrayList<Worker> workerList) {
+    public WorkerListIterator(ArrayList<Staff> workerList) {
         this.workerList = workerList;
     }
 
@@ -30,7 +32,7 @@ public class WorkerListIterator implements Iterator {
      * @return 第一个元素
      */
     @Override
-    public Worker first() {
+    public Staff first() {
         index = 0;
         return workerList.get(index);
     }
@@ -41,7 +43,7 @@ public class WorkerListIterator implements Iterator {
      * @return 下一个元素
      */
     @Override
-    public Worker next() {
+    public Staff next() {
         if (this.hasNext()) {
             return workerList.get(++index);
         }
@@ -63,7 +65,7 @@ public class WorkerListIterator implements Iterator {
      *
      * @return 最后一个元素
      */
-    public Worker last() {
+    public Staff last() {
         index = workerList.size() - 1;
         return workerList.get(index);
     }
@@ -73,17 +75,17 @@ public class WorkerListIterator implements Iterator {
      *
      * @return 前一个元素
      */
-    public Worker previous() {
+    public Staff previous() {
         return workerList.get(--index);
     }
 
 
-    public List<Worker> getWorkerList() {
+    public List<Staff> getWorkerList() {
         return new ArrayList<>(workerList);
     }
 
-    public void setWorkerList(ArrayList<Worker> workerList) {
-        this.workerList = new ArrayList<Worker>(workerList);
+    public void setWorkerList(ArrayList<Staff> workerList) {
+        this.workerList = new ArrayList<Staff>(workerList);
     }
 
     public int getIndex() {

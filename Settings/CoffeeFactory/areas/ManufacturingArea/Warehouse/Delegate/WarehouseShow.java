@@ -1,5 +1,7 @@
 package Settings.CoffeeFactory.areas.ManufacturingArea.Warehouse.Delegate;
 
+import Settings.CoffeeFactory.material.Material;
+
 //展示层
 public class WarehouseShow {
     WarehouseDelegate warehouseDelegate;

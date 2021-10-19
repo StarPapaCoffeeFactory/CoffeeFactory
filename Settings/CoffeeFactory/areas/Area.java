@@ -1,5 +1,11 @@
 package Settings.CoffeeFactory.areas;
 
+import Settings.CoffeeFactory.personnel.staff.EmptyStaff;
+import Settings.CoffeeFactory.personnel.staff.LogisticsManager;
+import Settings.CoffeeFactory.personnel.staff.Manager;
+import Settings.CoffeeFactory.personnel.staff.Staff;
+import Settings.CoffeeFactory.personnel.staff.worker.UtilityWorker;
+
 public abstract class Area {
 
     /*
@@ -51,6 +57,21 @@ public abstract class Area {
         this.area = newArea;
     }
 
-    public boolean relocate(Person executor, String newLocation) {return true;}
+    public boolean relocate(Staff executor, String newLocation) {
+        if (executor instanceof Manager || executor instanceof LogisticsManager||executor instanceof EmptyStaff) {
+        this.location = newLocation;
+        return true;
+        }
+        else {
+        System.out.println("Sorry, you have no authority to move the sites.");
+        return false;
+        }
+    }
 
+    /**
+     * Visitor Pattern: accept a utility worker to maintain the scene
+     *
+     * @param worker the utility worker
+     */
+    public abstract void accept(UtilityWorker worker);
 }

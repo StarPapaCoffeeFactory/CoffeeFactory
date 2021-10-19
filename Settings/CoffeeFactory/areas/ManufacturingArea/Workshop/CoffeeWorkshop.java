@@ -1,6 +1,6 @@
 package Settings.CoffeeFactory.areas.ManufacturingArea.Workshop;
 
-import areas.AreaName;
+import Settings.CoffeeFactory.areas.AreaName;
 
 //这个车间生产coffee
 public class CoffeeWorkshop extends Workshop{

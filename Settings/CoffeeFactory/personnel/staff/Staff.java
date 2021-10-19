@@ -39,5 +39,13 @@ public abstract class Staff extends Personnel implements Observer{
         System.out.println(this.name + "收到通知 ， 当前工资变更为："+ this.salary);
     }
 
+    public void display()
+    {
+        System.out.println("姓名："+name+"  Id:"+ Id+"  工作部门:"+department.toString());
+    }
 
+    public String getId()
+    {
+        return this.Id;
+    }
 }
