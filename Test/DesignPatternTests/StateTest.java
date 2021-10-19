@@ -1,6 +1,7 @@
 package Test.DesignPatternTests;
 
 import Settings.CoffeeFactory.machine.processmachine.packmachine.PackMachine;
+import Settings.CoffeeFactory.machine.processmachine.packmachine.strategy.BagStrategy;
 import Settings.CoffeeFactory.machine.processmachine.productmachine.BasicProductMachine;
 import Settings.CoffeeFactory.product.Product;
 import Settings.CoffeeFactory.product.coffeebeverage.Americano;
@@ -70,7 +71,7 @@ public class StateTest {
                     System.out.println("Let's package the coffee cake.");
                     System.out.println("Create a wrapper machine...");
                     PackMachine packMachine = new PackMachine("PA","101");
-                    packMachine.setStrategy(new BagWrapStrategy());
+                    packMachine.setStrategy(new BagStrategy());
                     product.setWrapperMachine(packMachine);
                     product.pack();
 
