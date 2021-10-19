@@ -1,5 +1,6 @@
 package Settings.CoffeeFactory.machine.processmachine.packmachine.strategy;
 
+import Settings.CoffeeFactory.material.Package.Bag;
 import Settings.CoffeeFactory.product.Product;
 
 import java.text.SimpleDateFormat;
@@ -10,13 +11,13 @@ public class BagStrategy extends PackStrategy{
     public void packaging(Product product) {
 
         System.out.println("Start packaging " + product.toString() + " with a bag...");
-        product.setPack(new Bag());
-        product.gotoNextState();
+        product.setPackage(new Bag());
+        product.nextStage();
         System.out.println("Finish packaging.");
-        product.gotoNextState();
+        product.nextStage();
 
         Date day = new Date();
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
-        product.setProducedDate(df.format(day));
+        product.setProductionDate(df.format(day));
     }
 }
