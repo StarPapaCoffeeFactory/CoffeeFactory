@@ -15,7 +15,7 @@ public class QualifyMachine extends ProcessMachine {
 
     @Override
     public void process(Product product, int productNum) {
-        product.packaging();
+        product.pack();
     }
 
     public String toString() {

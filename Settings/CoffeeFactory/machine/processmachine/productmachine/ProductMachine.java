@@ -13,8 +13,8 @@ public abstract class ProductMachine extends ProcessMachine {
 
     @Override
     public void process(Product product, int productNum) {
-        System.out.println("Successfully produce " + productNum + " " + product.getName());
-        product.gotoNextState();
+        System.out.println("Successfully produce " + productNum + " " + product.getProductName());
+        product.nextStage();
     }
 
     public String toString() {
