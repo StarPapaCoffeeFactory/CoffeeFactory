@@ -15,7 +15,7 @@ import Settings.CoffeeFactory.personnel.staff.worker.worker;
 
 public class UtilityWorker extends worker{
 
-    protected UtilityWorker(String name, int age, Personnel.Gender gender, String phnum, double salary ) {
+    public UtilityWorker(String name, int age, Personnel.Gender gender, String phnum, double salary ) {
         super(name, age, gender ,phnum ,salary);
     }
 

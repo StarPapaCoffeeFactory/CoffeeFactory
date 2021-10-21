@@ -1,14 +1,17 @@
 package Settings.CoffeeFactory.management.finance;
 
 
-import Settings.CoffeeFactory.personnel.staff.Staff;
-import Settings.CoffeeFactory.areas.*;
+import Settings.CoffeeFactory.personnel.staff.*;
+import Settings.CoffeeFactory.areas.StaffArea.*;
+import Settings.CoffeeFactory.personnel.staff.worker.worker;
+
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+
 /**
  * @ program: coffeefactory
- * @ description: 基本工资发放
+ * @ description: 基本工资发放与修改
  * @ author: YXJ
  * @ date: 2021-10-14 18:36:12
  */
@@ -19,7 +22,7 @@ public class SalaryPayment {
     protected Calendar curDate;
 
 
-    protected SalaryPayment() {
+    public SalaryPayment() {
         staffList = new ArrayList<Staff>();
         curDate = Calendar.getInstance();
         payDay = 28;
@@ -33,8 +36,9 @@ public class SalaryPayment {
     }
 
 
+
     public void addAllStaffs(StaffArea staffArea) {
-        ArrayList<Worker> list = staffArea.getWorkerList();
+        ArrayList<Staff> list = staffArea.getWorkerList();
         staffList.addAll(list);
         System.out.println("Add all staffs in " + staffArea.toString() + " successfully.");
     }

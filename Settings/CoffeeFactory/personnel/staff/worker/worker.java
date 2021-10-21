@@ -21,7 +21,7 @@ public class worker extends Staff{
 
     protected String state;
 
-    protected worker(String name, int age, Personnel.Gender gender, String phnum,double salary ) {
+    public worker(String name, int age, Personnel.Gender gender, String phnum,double salary ) {
         super(name, age, gender ,phnum ,salary);
         state="rest";
     }

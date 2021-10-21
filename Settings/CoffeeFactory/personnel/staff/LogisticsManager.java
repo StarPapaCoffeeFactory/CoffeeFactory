@@ -13,7 +13,7 @@ import java.util.List;
  * @ date: 2021-10-15 12:12:45
  */
 public class LogisticsManager extends Staff{
-    private logisticsWork works;
+    private logisticsWork works;//facade of work
 
     public LogisticsManager(String name, int age, Gender gender , String phnum ,double salary)
     {
