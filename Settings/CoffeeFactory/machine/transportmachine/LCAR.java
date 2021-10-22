@@ -21,12 +21,12 @@ public class LCAR extends TransportMachine {
 
     @Override
     protected void load(Product product) {
-        System.out.println(this.aimProcessNum + " " + product.getName() + " are being loaded on the big truck.");
+        System.out.println(this.aimProcessNum + " " + product.getProductName() + " are being loaded on the big truck.");
     }
 
     @Override
     protected void arrive(Product product) {
-        System.out.println(this.aimProcessNum + " " + product.getName() + " transport successfully.");
+        System.out.println(this.aimProcessNum + " " + product.getProductName() + " transport successfully.");
     }
 
     @Override
