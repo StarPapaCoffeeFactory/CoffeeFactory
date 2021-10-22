@@ -8,7 +8,7 @@ public class CoffeeMachineController {
     public CoffeeMachineController(CoffeeBasicMachine coffeeBasicMachine) {
         this.coffeeBasicMachine = coffeeBasicMachine;
         String name = coffeeBasicMachine.getID();
-        System.out.println(name + " has been set to produce.\n");
+        System.out.println(name + " is ready.\n");
         coffeeBasicMachine.setAimProcessNum(100);
     }
 

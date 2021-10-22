@@ -19,28 +19,24 @@ public class BuilderTest {
         System.out.println("└────────────────────────────────────────────────────────────────────┘");
         System.out.println("Enter the command [0 to quit]:");
         System.out.println("");
-//        System.out.println("MilkChocController : startProduce() : Let the specific MilkChocMachine produce milk chocolate with a specific composition");
-//        System.out.println("MilkChocController : getMilkChocolate() : Get the milk chocolate produced");
-//        System.out.println("");
-        CoffeeBasicMachine temp=new CoffeeBasicMachine() {
+        CoffeeBasicMachine temp1=new CoffeeBasicMachine() {
             @Override
             public void useCoffeeBean() {
 
             }
-        };
+        };temp1.setID("001");
+        CoffeeBasicMachine temp2=new CoffeeBasicMachine() {
+            @Override
+            public void useCoffeeBean() {
 
+            }
+        };temp2.setID("002");
+        CoffeeMachineController ArabicaController = new CoffeeMachineController(temp1);
+        CoffeeMachineController RobustaController = new CoffeeMachineController(temp2);
         Scanner input = new Scanner(System.in);
         boolean flag = true;
 
         do {
-//            System.out.println("");
-//            System.out.println("********************** TIPS **********************");
-//            System.out.println("***      1. Input 1 to start testing           ***");
-//            System.out.println("***      2. Input 2 to fix machines            ***");
-//            System.out.println("***      3. Input 3 to create new machines     ***");
-//            System.out.println("***      4. Input 0 to exit                    ***");
-//            System.out.println("**************************************************");
-//            System.out.println("");
             System.out.println("");
             int op = input.nextInt();
             switch(op) {
@@ -48,14 +44,16 @@ public class BuilderTest {
                     flag = false;
                     break;
                 case 1:
-                    System.out.println("Create a new CoffeeMachineController producing Arabica and give control of it to a controller...");
-                    CoffeeMachineController ArabicaController = new CoffeeMachineController(temp);
-                    System.out.println("Create a new CoffeeMachineController producing Robusta and give control of it to a controller...");
-                    CoffeeMachineController RobustaController = new CoffeeMachineController(temp);
+                    System.out.println("Create a new CoffeeMachineController ...");
+                    ArabicaController = new CoffeeMachineController(temp1);
+                    System.out.println("Create another new CoffeeMachineController ...");
+                    RobustaController = new CoffeeMachineController(temp2);
                     break;
                 case 2:
-                    ArabicaController = new CoffeeMachineController(new CoffeeArabicaMachine());
-                    RobustaController = new CoffeeMachineController(new CoffeeRobustaMachine());
+                    System.out.println("Create a new CoffeeMachineController producing Arabica and give control of it to a controller...");
+                    ArabicaController = new CoffeeMachineController(new CoffeeArabicaMachine("001"));
+                    System.out.println("Create a new CoffeeMachineController producing Robusta and give control of it to a controller...");
+                    RobustaController = new CoffeeMachineController(new CoffeeRobustaMachine("002"));
                     break;
                 case 3:
                     System.out.println("Let CoffeeArabicaMachine start producing...");
