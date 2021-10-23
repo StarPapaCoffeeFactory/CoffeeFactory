@@ -82,6 +82,10 @@ public class Manager extends Staff{
         return diningRoomManager;
     }
 
+    public void getFeedBack() {
+        System.out.println("Manager \""+this.name+"\" has gotten the feedback and solve it.");
+    }
+
     /**
      * @return Manager
      */
@@ -109,6 +113,15 @@ public class Manager extends Staff{
     public void SetVisitLimit()
     {
 
+    }
+
+    public void hireWorker(String name, Sex sex, int age, int salary, StaffArea staffArea) {
+        if (this.departmentList.contains(staffArea)) {
+            WorkerAddingController.addWorker(name, age, sex, salary, staffArea);
+        }
+        else {
+            System.out.println("The manager does not match the staff area.");
+        }
     }
 
 
