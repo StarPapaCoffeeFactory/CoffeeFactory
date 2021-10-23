@@ -21,9 +21,10 @@ public class ObserverTest {
     public static void main(String[] args) {
         System.out.println("");
         System.out.println("┌─────────────────────────   Observer Test ──────────────────────────┐");
-        System.out.println("│                  1.                                                │");
-        System.out.println("│                  2.      this is a  test                           │");
-        System.out.println("│                  3.                                                │");
+        System.out.println("│                  1.  初始化员工列表                                 │");
+        System.out.println("│                  2.  修改当前日期                                   │");
+        System.out.println("│                  3.  为列表中所有员工发工资并通知                     │");
+        System.out.println("│                  4.  修改员工月薪并通知                              │");
         System.out.println("└────────────────────────────────────────────────────────────────────┘");
         System.out.println("");
 

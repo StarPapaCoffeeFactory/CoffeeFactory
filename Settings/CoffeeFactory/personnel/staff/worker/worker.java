@@ -5,6 +5,7 @@ import Settings.CoffeeFactory.areas.PublicArea.PublicArea;
 import Settings.CoffeeFactory.areas.StaffArea.StaffArea;
 import Settings.CoffeeFactory.personnel.Personnel;
 import Settings.CoffeeFactory.personnel.staff.Staff;
+import Settings.CoffeeFactory.personnel.visitlimit.LimitContext;
 
 import java.util.ArrayList;
 
@@ -55,7 +56,10 @@ public class worker extends Staff{
 
     public void SetVisitLimit()
     {
-
+        String[] persons = {this.identity};
+        String[] publicAreas = {"publicArea", "experienceRoom", "exhibitionRoom" ,
+                "manufacturingArea" , "staffArea" , "diningRoom" , "office"};
+        this.visitLimit = new LimitContext(persons, publicAreas);
     }
 
 }

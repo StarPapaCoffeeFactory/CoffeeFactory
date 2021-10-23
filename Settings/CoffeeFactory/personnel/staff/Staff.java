@@ -16,6 +16,14 @@ public abstract class Staff extends Personnel implements Observer{
     protected double payroll_card;//工资卡
     protected StaffArea department;//工作部门
 
+    public StaffArea getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(StaffArea department) {
+        this.department = department;
+    }
+
     public Staff(String name, int age, Gender gender , String phnum ,double salary)
     {
         super(name, age, gender, phnum);
@@ -23,6 +31,7 @@ public abstract class Staff extends Personnel implements Observer{
         this.department = null;
         this.Id = generate_ID();
     }
+
     protected String generate_ID()
     {
         return UUID.randomUUID().toString().replaceAll("-", "");
