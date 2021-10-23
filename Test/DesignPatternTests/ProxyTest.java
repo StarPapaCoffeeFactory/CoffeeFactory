@@ -28,12 +28,12 @@ public class ProxyTest {
 
             Scanner sc = new Scanner(System.in);
             System.out.println("");
-            System.out.print("Input your order：");
+            System.out.print("请输入指令：");
             int order = 0;
             try {
                 order = sc.nextInt();
             } catch (ArrayIndexOutOfBoundsException | InputMismatchException e) {
-                System.out.println("Invalid Input, Please input again.\n");
+                System.out.println("无效的指令，请重新输入。\n");
                 System.out.println("");
             }
             switch (order) {
@@ -65,10 +65,10 @@ public class ProxyTest {
                         if (tool_num > 0 && tool_num <= ProxyList.size() + 1) {
                             ProxyList.get(tool_num - 1).get();
                         } else {
-                            System.out.println("Invalid Input, Please input again.\n");
+                            System.out.println("无效的指令，请重新输入。\n");
                         }
                     } catch (ArrayIndexOutOfBoundsException | InputMismatchException e) {
-                        System.out.println("Invalid Input, Please input again.\n");
+                        System.out.println("无效的指令，请重新输入。\n");
                         System.out.println("");
                     }
                     break;
@@ -81,10 +81,10 @@ public class ProxyTest {
                         if (tool_num > 0 && tool_num <= ProxyList.size() + 1) {
                             ProxyList.get(tool_num - 1).returnPowerBank();
                         } else {
-                            System.out.println("Invalid Input, Please input again.\n");
+                            System.out.println("无效的指令，请重新输入。\n");
                         }
                     } catch (ArrayIndexOutOfBoundsException | InputMismatchException e) {
-                        System.out.println("Invalid Input, Please input again.\n");
+                        System.out.println("无效的指令，请重新输入。\n");
                         System.out.println("");
                     }
 
@@ -94,7 +94,7 @@ public class ProxyTest {
                     return;
                 }
                 default: {
-                    System.out.println("Invalid Input, Please input again.\n");
+                    System.out.println("无效的指令，请重新输入。\n");
                 }
             }
         }
