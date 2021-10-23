@@ -69,6 +69,7 @@ public class ExperienceRoom extends PublicArea {
      * Visitor Pattern
      *
      */
+
     public void accept(Visitor v) {
         v.visit(this);
     }
