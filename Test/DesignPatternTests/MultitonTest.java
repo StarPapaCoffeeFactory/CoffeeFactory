@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class MultitonTest {
 
     public static void main(String[] args) {
-        System.out.println("------------------------------------ [Multiton] Test ------------------------------------");
+        System.out.println("—————————————-------------------------------------———— Test[Multiton]Pattern —————————————-------------------------------------————");
 
         System.out.println("");
         System.out.println("Manager : getDiningRoomManager() : Get dining room's manager which is single.");
@@ -21,12 +21,12 @@ public class MultitonTest {
         System.out.println("");
 
         System.out.println("");
-        System.out.println("********************************* Multiton Test ************************************");
-        System.out.println("***                 1. get instance of dining room's manager                     ***");
-        System.out.println("***                 2. get instance of office's manager                          ***");
-        System.out.println("***                 3. get instance of workshop's manager                        ***");
-        System.out.println("***                 4. get instance of warehouse's manager                       ***");
-        System.out.println("************************************************************************************");
+        System.out.println("┌─────────────────────────────────   State Test   ───────────────────────────┐");
+        System.out.println("│              1. get instance of dining room's manager                      │");
+        System.out.println("│              2. get instance of office's manager                           │");
+        System.out.println("│              3. get instance of workshop's manager                         │");
+        System.out.println("│              3. get instance of warehouse's manager                        │");
+        System.out.println("└────────────────────────────────────────────────────────────────────────────┘");
         System.out.println("");
 
         Scanner input = new Scanner(System.in);
