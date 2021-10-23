@@ -31,12 +31,13 @@ public abstract class Staff extends Personnel implements Observer{
     public void getPaid()
     {
         this.payroll_card += this.salary;
+        System.out.println( this.getId() +"号: "+this.name +" 收到工资："+ this.salary + "元,当前总资产为：" + String.valueOf(this.payroll_card));
     }
 
     public void updateSalary(double change)
     {
         this.salary += change;
-        System.out.println(this.name + "收到通知 ， 当前工资变更为："+ this.salary);
+        System.out.println(this.getId() +"号: "+this.name + "收到通知 ， 当前工资变更为："+ this.salary);
     }
 
     public void display()
