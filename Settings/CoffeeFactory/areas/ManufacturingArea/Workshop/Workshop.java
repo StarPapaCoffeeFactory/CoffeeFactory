@@ -1,8 +1,8 @@
 package Settings.CoffeeFactory.areas.ManufacturingArea.Workshop;
 
+import Settings.CoffeeFactory.areas.Visitor.Visitor;
 import Settings.CoffeeFactory.machine.processmachine.productmachine.ProductMachine;
 import Settings.CoffeeFactory.areas.ManufacturingArea.ManufacturingArea;
-import Settings.CoffeeFactory.personnel.staff.worker.UtilityWorker;
 
 //产品生产车间
 public abstract class Workshop extends ManufacturingArea {
@@ -15,10 +15,9 @@ public abstract class Workshop extends ManufacturingArea {
     @Override
     public abstract String toString();
 
-    //Visitor:接受公用事业工人维护现场
-    @Override
-    public void accept(UtilityWorker worker) {
-        worker.visit(this);
+    //Visitor
+    public void accept(Visitor v) {
+        v.visit(this);
     }
 
     //生产coffee

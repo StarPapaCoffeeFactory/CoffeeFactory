@@ -1,7 +1,7 @@
 package Settings.CoffeeFactory.areas.PublicArea;
 
 import Settings.CoffeeFactory.areas.AreaName;
-import Settings.CoffeeFactory.personnel.staff.worker.UtilityWorker;
+import Settings.CoffeeFactory.areas.Visitor.Visitor;
 
 import java.util.ArrayList;
 
@@ -78,13 +78,11 @@ public class ExhibitionRoom extends PublicArea {
     }
 
     /**
-     * Visitor Pattern: accept a utility worker to maintenance the scene
+     * Visitor Pattern
      *
-     * @param worker the utility worker
      */
-    @Override
-    public void accept(UtilityWorker worker) {
-        worker.visit(this);
+    public void accept(Visitor v) {
+        v.visit(this);
     }
 
 }

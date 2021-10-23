@@ -44,7 +44,7 @@ public class COWTest {
         ExperienceRoom[] experienceRooms = new ExperienceRoom[2];
         experienceRooms[0] = new ExperienceRoom();
         experienceRooms[1] = new ExperienceRoom();
-        System.out.println("已成功创建两个体验室：体验室0 和 体验室1");
+        System.out.println("已成功创建两个房间：房间0 和 房间1");
         System.out.println(HINT);
 
         Scanner input = new Scanner(System.in);
