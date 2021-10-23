@@ -1,24 +1,13 @@
 package Test.DesignPatternTests;
+import Settings.CoffeeFactory.areas.StaffArea.Office;
+import Settings.CoffeeFactory.personnel.Personnel;
+import Settings.CoffeeFactory.personnel.staff.Manager;
 
 /**
  * @author LouTianyu
  * @description Test for Mediator
  */
-
-
-import Settings.CoffeeFactory.areas.StaffArea.Office;
-import Settings.CoffeeFactory.personnel.Personnel;
-import Settings.CoffeeFactory.personnel.staff.Manager;
-
 import java.util.Scanner;
-
-/**
- * @author Zheng
- * @project chocolateFactory
- * @classname MediatorTest
- * @description MediatorTest
- * @date 2020/11/22 10:14
- */
 public class MediatorTest {
 
     public static void main(String[] args) {
@@ -38,9 +27,9 @@ public class MediatorTest {
         Manager officeManager = Manager.getOfficeManager();
 
         System.out.println("Then, office manager should hired some office workers... ");
-        officeManager.hireWorker("worker1", Personnel.Gender.male, 18, 10, office);
-        officeManager.hireWorker("worker2", Person.Sex.FEMALE, 22, 10, office);
-        officeManager.hireWorker("worker3", Person.Sex.MALE, 20, 10, office);
+        officeManager.hireWorker("worker1", Personnel.Gender.male, 21, 10, "12345", office);
+        officeManager.hireWorker("worker2", Personnel.Gender.male, 22, 10, "23456", office);
+        officeManager.hireWorker("worker3", Personnel.Gender.male, 19, 10, "34567", office);
 
         System.out.println("");
         System.out.println("*******************                        Mediator Test                           *******************");

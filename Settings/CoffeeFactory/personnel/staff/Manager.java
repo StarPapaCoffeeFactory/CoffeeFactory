@@ -2,10 +2,9 @@ package Settings.CoffeeFactory.personnel.staff;
 
 import Settings.CoffeeFactory.areas.Area;
 import Settings.CoffeeFactory.areas.StaffArea.StaffArea;
-import Settings.CoffeeFactory.personnel.Personnel;
-import Settings.CoffeeFactory.personnel.staff.Staff;
+import Settings.CoffeeFactory.management.staff.WorkerController;
 import Settings.CoffeeFactory.personnel.ChiefManager;
-
+import Settings.CoffeeFactory.personnel.Personnel;
 
 import java.util.ArrayList;
 
@@ -115,9 +114,9 @@ public class Manager extends Staff{
 
     }
 
-    public void hireWorker(String name, Gender sex, int age, int salary, StaffArea staffArea) {
+    public void hireWorker(String name, Gender gender, int age, double salary, String phnum, StaffArea staffArea) {
         if (this.departmentList.contains(staffArea)) {
-            WorkerAddingController.addWorker(name, age, sex, salary, staffArea);
+            WorkerController.addWorker(name, age, gender, phnum, salary, staffArea);
         }
         else {
             System.out.println("The manager does not match the staff area.");

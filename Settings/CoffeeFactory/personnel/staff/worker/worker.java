@@ -1,13 +1,10 @@
 package Settings.CoffeeFactory.personnel.staff.worker;
 
 import Settings.CoffeeFactory.areas.Area;
-import Settings.CoffeeFactory.areas.PublicArea.PublicArea;
 import Settings.CoffeeFactory.areas.StaffArea.StaffArea;
 import Settings.CoffeeFactory.personnel.Personnel;
 import Settings.CoffeeFactory.personnel.staff.Staff;
 import Settings.CoffeeFactory.personnel.visitlimit.LimitContext;
-
-import java.util.ArrayList;
 
 /**
  * @author CZQ
@@ -21,10 +18,15 @@ import java.util.ArrayList;
 public class worker extends Staff{
 
     protected String state;
+    protected String defaultarea;
 
     public worker(String name, int age, Personnel.Gender gender, String phnum,double salary ) {
         super(name, age, gender ,phnum ,salary);
         state="rest";
+    }
+
+    public worker(String name, int age, Personnel.Gender gender, String phnum,double salary, StaffArea area ) {
+        super(name, age, gender, phnum, salary, area);
     }
 
     public void work()

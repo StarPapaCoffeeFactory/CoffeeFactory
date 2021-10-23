@@ -32,6 +32,15 @@ public abstract class Staff extends Personnel implements Observer{
         this.Id = generate_ID();
     }
 
+    public Staff(String name, int age, Gender gender , String phnum ,double salary, StaffArea area)
+    {
+        super(name, age, gender, phnum);
+        this.salary = salary;
+        this.department = null;
+        this.Id = generate_ID();
+        this.department = area;
+    }
+
     protected String generate_ID()
     {
         return UUID.randomUUID().toString().replaceAll("-", "");
