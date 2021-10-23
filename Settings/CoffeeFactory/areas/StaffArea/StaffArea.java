@@ -1,6 +1,7 @@
 package Settings.CoffeeFactory.areas.StaffArea;
 
 import Settings.CoffeeFactory.areas.Area;
+import Settings.CoffeeFactory.areas.Visitor.Visitor;
 import Settings.CoffeeFactory.areas.WorkerIterator.Aggregate;
 import Settings.CoffeeFactory.areas.WorkerIterator.Iterator;
 import Settings.CoffeeFactory.areas.WorkerIterator.WorkerListIterator;
@@ -8,7 +9,6 @@ import Settings.CoffeeFactory.personnel.staff.EmptyStaff;
 import Settings.CoffeeFactory.personnel.staff.Manager;
 import Settings.CoffeeFactory.personnel.ChiefManager;
 import Settings.CoffeeFactory.personnel.staff.Staff;
-import Settings.CoffeeFactory.personnel.staff.worker.UtilityWorker;
 
 import java.util.ArrayList;
 
@@ -129,7 +129,6 @@ public abstract class StaffArea extends Area implements Aggregate {
     /**
      * Visitor Pattern: accept a utility worker to maintain the scene
      *
-     * @param worker the utility worker
      */
-    public abstract void accept(UtilityWorker worker);
+    public abstract void accept(Visitor v);
 }

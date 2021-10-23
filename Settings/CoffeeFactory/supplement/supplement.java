@@ -35,6 +35,6 @@ public abstract class supplement {
         return "abstract class Personnel";
     }
 
-    public abstract void Goto(Area dest);
+    //public abstract void Goto(Area dest);
 
 }

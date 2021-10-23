@@ -1,7 +1,6 @@
 package Settings.CoffeeFactory.areas.PublicArea;
 
 import Settings.CoffeeFactory.areas.Area;
-import Settings.CoffeeFactory.personnel.staff.worker.UtilityWorker;
 import Settings.CoffeeFactory.personnel.visitor.Visitor;
 
 import java.util.LinkedList;
@@ -87,9 +86,7 @@ public abstract class PublicArea extends Area {
     }
 
     /**
-     * Visitor Pattern: accept a utility worker to maintenance the scene
-     *
-     * @param worker the utility worker
+     * Visitor Pattern
      */
-    public abstract void accept(UtilityWorker worker);
+    public abstract void accept(Visitor v);
 }

@@ -1,12 +1,12 @@
 package Settings.CoffeeFactory.areas.PublicArea;
 
 import Settings.CoffeeFactory.areas.AreaName;
-import Settings.CoffeeFactory.areas.AreaName;
-import Settings.CoffeeFactory.personnel.staff.worker.UtilityWorker;
+import Settings.CoffeeFactory.areas.Visitor.Visitor;
+import Settings.CoffeeFactory.supplement.handmadeTool.*;
 
 public class ExperienceRoom extends PublicArea {
 
-    private HandmadeTool tool = HandmadeToolFactory.getHandMadeTool();
+    private handmadeTool tool = handmadeToolFactory.getHandMadeTool();
 
     /**
      * number of this exp-room
@@ -27,7 +27,7 @@ public class ExperienceRoom extends PublicArea {
     /**
      * @return the tool
      */
-    public HandmadeTool getTool() {
+    public handmadeTool getTool() {
         return tool;
     }
 
@@ -46,9 +46,9 @@ public class ExperienceRoom extends PublicArea {
      * @return description
      */
     public void setToolDescription(String description) {
-        if (tool.getRefCount() > 1 || tool == HandmadeToolFactory.getDefaultHandmadeTool()) {
+        if (tool.getStock() > 1 || tool == handmadeToolFactory.getDefaultHandmadeTool()) {
             tool.deref();
-            tool = new HandmadeTool(tool);
+            tool = new handmadeTool(tool);
         }
         tool.setDescription(description);
     }
@@ -66,12 +66,11 @@ public class ExperienceRoom extends PublicArea {
         return AreaName.COFFEE_EXPERIENCE_ROOM;}
 
     /**
-     * Visitor Pattern: accept a utility worker to maintenance the scene
+     * Visitor Pattern
      *
-     * @param worker the utility worker
      */
-    @Override
-    public void accept(UtilityWorker worker) {
-        worker.visit(this);
+
+    public void accept(Visitor v) {
+        v.visit(this);
     }
 }

@@ -45,11 +45,10 @@ public class AreaStructure {
     /**
      * worker maintains all scenes in the list
      *
-     * @param worker the worker to maintain the scene
      */
-    public void accept(UtilityWorker worker) {
+    /*public void accept(Visitor v) {
         for (Object obj : areas) {
-            ((Area) obj).accept(worker);
+            ((Area) obj).accept(v);
         }
-    }
+    }*/
 }

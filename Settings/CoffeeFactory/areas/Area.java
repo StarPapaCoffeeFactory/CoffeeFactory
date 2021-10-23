@@ -72,6 +72,6 @@ public abstract class Area {
      * Visitor Pattern: accept a utility worker to maintain the scene
      *
      * @param worker the utility worker
-     */
-    public abstract void accept(UtilityWorker worker);
+     *//*
+    public abstract void accept(Visitor v);*/
 }

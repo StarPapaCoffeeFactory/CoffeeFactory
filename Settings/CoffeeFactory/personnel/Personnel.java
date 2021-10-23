@@ -60,7 +60,27 @@ public abstract class Personnel {
         return this.gender;
     }
 
-    public abstract void Goto(Area dest);
+    public boolean canEnter(Area dest) {
+        String moveinfo = this.identity + " access " + dest.toString();
+        if (this.visitLimit.canAccess(moveinfo)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public void Goto(Area dest) {
+
+        if (this.canEnter(dest)) {
+
+            this.location = dest;
+
+            System.out.println(this.identity + " " + this.name + "进入了" + dest.toString());
+
+        } else {
+            System.out.println("抱歉，" + this.identity + " " + this.name + "无访问权限，不能进入" + dest.toString());
+        }
+    }
     public abstract void SetVisitLimit();
 
 //    public boolean HandleRequest(Message requestMessage) {

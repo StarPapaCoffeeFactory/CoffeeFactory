@@ -1,9 +1,9 @@
 package Settings.CoffeeFactory.areas.StaffArea;
 
+import Settings.CoffeeFactory.areas.Visitor.Visitor;
 import Settings.CoffeeFactory.personnel.ChiefManager;
 import Settings.CoffeeFactory.personnel.staff.Manager;
 import Settings.CoffeeFactory.areas.AreaName;
-import Settings.CoffeeFactory.personnel.staff.worker.UtilityWorker;
 
 public class DiningRoom extends StaffArea {
 
@@ -37,13 +37,11 @@ public class DiningRoom extends StaffArea {
     }
 
     /**
-     * Visitor Pattern: accept a utility worker to maintenance the scene
+     * Visitor Pattern
      *
-     * @param worker the utility worker
      */
-    @Override
-    public void accept(UtilityWorker worker) {
-        worker.visit(this);
+    public void accept(Visitor v) {
+        v.visit(this);
     }
 
 }

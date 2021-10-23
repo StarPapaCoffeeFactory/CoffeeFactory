@@ -19,11 +19,11 @@ public class UtilityWorker extends worker{
         super(name, age, gender ,phnum ,salary);
     }
 
-    public void visit(Area area)
+    /*public void visit(Area area)
     {
         String loc=area.getLocation();
         System.out.println("UtilityWorker "+this.name+" visits "+loc);
-    }
+    }*/
 
     @Override
     public void work()
