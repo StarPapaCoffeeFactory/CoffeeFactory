@@ -20,8 +20,6 @@ public abstract class Personnel {
     protected String phonenum;
     public enum Gender {male, female};
     protected Gender gender;
-
-    //protected double account_balance;// 账户余额
     protected Area location;//当前所在区域
     protected LimitContext visitLimit;//区域访问限制
 
@@ -87,25 +85,15 @@ public abstract class Personnel {
 
             this.location = dest;
 
-            System.out.println(this.identity + " " + this.name + "进入了" + dest.toString());
+            System.out.println(this.identity + " " + this.name + "has entered " + dest.toString());
 
         } else {
-            System.out.println("抱歉，" + this.identity + " " + this.name + "无访问权限，不能进入" + dest.toString());
+            System.out.println("sorry，" + this.identity + " " + this.name + "has no access permission and fail to enter" + dest.toString());
         }
     }
+
     public abstract void SetVisitLimit();
 
-//    public boolean HandleRequest(Message requestMessage) {
-//   /*
-//    *
-//    * @param requestMessage
-//    * @return boolean
-//    * @author YXJ
-//    * @description 由子类重载
-//    * @date 2021/10/13 17:50
-//    */
-//        return false;
-//    }
 
     public String toString() {
         
