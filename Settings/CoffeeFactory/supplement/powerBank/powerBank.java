@@ -79,6 +79,7 @@ public class powerBank extends supplement {
         }
     }
 
+    /*
     @Override
     public void Goto(Area dest) {
 
@@ -89,6 +90,8 @@ public class powerBank extends supplement {
             System.out.println("Sorry, " + this.id + " " + this.type + "can not be allocated to" + dest.toString());
         }
     }
+
+     */
 
     @Override
     public String toString() {
