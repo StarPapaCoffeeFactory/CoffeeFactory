@@ -78,7 +78,7 @@ public class SalaryPayment {
         for (Staff staff : staffList) {
             staff.getPaid();
         }
-        System.out.println("已向所有员工发送通知：工资已发送");
+        System.out.println("Notification sent to all employees: salary paid");
     }
 
     public void changeSalary(double change)
@@ -87,7 +87,7 @@ public class SalaryPayment {
 
             staff.updateSalary(change);
         }
-        System.out.println("已向所有员工发送通知：工资已修改");
+        System.out.println("Notification sent to all employees: salary changed");
     }
 
 }

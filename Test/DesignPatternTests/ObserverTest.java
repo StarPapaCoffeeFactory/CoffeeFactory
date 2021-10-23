@@ -19,14 +19,14 @@ import java.util.*;
 
 public class ObserverTest {
     public static void main(String[] args) {
-        System.out.println("");
+        System.out.println();
         System.out.println("┌─────────────────────────   Observer Test ──────────────────────────┐");
-        System.out.println("│                  1.  初始化员工列表                                 │");
-        System.out.println("│                  2.  修改当前日期                                   │");
-        System.out.println("│                  3.  为列表中所有员工发工资并通知                     │");
-        System.out.println("│                  4.  修改员工月薪并通知                              │");
+        System.out.println("│                  1.  Initialize worker list (as observers)         │");
+        System.out.println("│                  2.  change current date                           │");
+        System.out.println("│                  3.  Pay and notify all workers in the list        │");
+        System.out.println("│                  4.  Modify worker salary and notify               │");
         System.out.println("└────────────────────────────────────────────────────────────────────┘");
-        System.out.println("");
+        System.out.println();
 
         List<Staff> obstaffList = new ArrayList<>(){{
             add(new worker("zhangsan",18, Personnel.Gender.male, "151515151", 2000));
@@ -57,8 +57,9 @@ public class ObserverTest {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        System.out.println("当前日期设置为："+ curDate.toString());
+        System.out.println("set current date to："+ curDate.toString());
         salaryPay.setCurDate(curDate);
+        System.out.println();
 
         try {
             curDate = dateFormat.parse("2021-10-28");
@@ -66,17 +67,18 @@ public class ObserverTest {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        System.out.println("当前日期设置为："+ curDate.toString());
+        System.out.println("set current date to："+ curDate.toString());
         salaryPay.setCurDate(curDate);
 
         System.out.println();
         double salaryChange =  1000.0;
-        System.out.println("因本季度绩效喜人，所有员工工资增加" + String.valueOf(salaryChange) + "元");
+        System.out.println("Due to the satisfactory performance in this quarter, the salary of all workers increased"
+                + String.valueOf(salaryChange) + "yuan");
         System.out.println();
         salaryPay.changeSalary(salaryChange);
 
         System.out.println();
-        System.out.println("───────────  Observer Test End  ──────────");
+        System.out.println("──────────────────────────   Observer Test End  ──────────────────────");
     }
 
 

@@ -12,13 +12,13 @@ import java.util.List;
  * @ author: YXJ
  * @ date: 2021-10-15 12:12:45
  */
-public class LogisticsManager extends Staff{
+public class LogisticsAdministrator extends Staff{
     private logisticsWork works;//facade of work
 
-    public LogisticsManager(String name, int age, Gender gender , String phnum ,double salary)
+    public LogisticsAdministrator(String name, int age, Gender gender , String phnum ,double salary)
     {
         super(name, age, gender, phnum,salary);
-        this.identity = "LogisticsManager";
+        this.identity = "LogisticsAdministrator";
 
     }
 

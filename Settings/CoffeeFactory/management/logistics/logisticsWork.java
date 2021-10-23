@@ -29,7 +29,7 @@ public class logisticsWork {
     }
 
     public void checkMachines() {
-        System.out.println("现在开始对机器进行常规检查。");
+        System.out.println("现在开始对机器进行常规检查...");
 
         for (Machine machine : machines) {
             System.out.println("现在开始对" + machine.getID() + "号机器设备进行检查。");

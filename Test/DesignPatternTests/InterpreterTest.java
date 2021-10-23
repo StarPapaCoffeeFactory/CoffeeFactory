@@ -15,8 +15,8 @@ import Settings.CoffeeFactory.personnel.visitor.Visitor;
 import java.util.*;
 public class InterpreterTest {
     public static void main(String[] args) {
-        worker workera = new worker("张三",18, Personnel.Gender.male , "15007124567" , 5000.0);
-        Visitor visitora = new Visitor("李四" , 19 , Personnel.Gender.female , "1234567895" );
+        worker workera = new worker("zhangsan",18, Personnel.Gender.male , "15007124567" , 5000.0);
+        Visitor visitora = new Visitor("lisi" , 19 , Personnel.Gender.female , "1234567895" );
 
         List<Area> testAreas = new ArrayList<>(){{
 //            add(new Area)

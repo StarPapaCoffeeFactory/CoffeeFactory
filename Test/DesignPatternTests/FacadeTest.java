@@ -19,13 +19,13 @@ public class FacadeTest {
     public static void main(String[] args) {
 //        facade test
 
-        System.out.println("");
+        System.out.println();
         System.out.println("┌─────────────────────────   Facade Test   ──────────────────────────┐");
         System.out.println("│                  1.                                                │");
         System.out.println("│                  2.      this is a  test                           │");
         System.out.println("│                  3.                                                │");
         System.out.println("└────────────────────────────────────────────────────────────────────┘");
-        System.out.println("");
+        System.out.println();
 
         //在此初始化一批machine
         List<Machine> machines = new ArrayList<>(){{
@@ -39,17 +39,18 @@ public class FacadeTest {
 
 
         logisticsWork someWork = new logisticsWork(machines, tools);
-        LogisticsManager logisManager = new LogisticsManager("YXJ" , 22 , Personnel.Gender.male , "1234567894" , 1000);
-        System.out.println("打印后期管理员基本信息：");
-        logisManager.display();
-        System.out.println("为该后勤管理员设置工作任务...");
-        logisManager.setWorks(someWork);
-
-        logisManager.checkMachines();
-        logisManager.checkTools();
-        logisManager.submitReport();
-
-//        facade end
+        LogisticsAdministrator logisticsAdministrator = new LogisticsAdministrator("Yuanxinjie" , 22 , Personnel.Gender.male , "1234567894" , 1000);
+        System.out.println("Print basic information of the logistics administrator:");
+        logisticsAdministrator.display();
+        System.out.println("Set work tasks for the logistics administrator...");
+        logisticsAdministrator.setWorks(someWork);
+        System.out.println("work setup completed , start logistics check tasks...");
+        logisticsAdministrator.checkMachines();
+        logisticsAdministrator.checkTools();
+        logisticsAdministrator.submitReport();
+        System.out.println("logistics check tasks completed");
+        System.out.println("End of the facade test");
+        System.out.println("──────────────────────────────────────────");
 
     }
 }
