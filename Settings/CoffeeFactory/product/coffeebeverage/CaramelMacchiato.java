@@ -1,7 +1,8 @@
 package Settings.CoffeeFactory.product.coffeebeverage;
 
+import Settings.CoffeeFactory.material.Food.CoffeeBean;
+import Settings.CoffeeFactory.material.Food.*;
 import Settings.CoffeeFactory.product.Product;
-import Settings.CoffeeFactory.material.foodmaterial.*;
 
 /**
  * @author Kaiyu Huang

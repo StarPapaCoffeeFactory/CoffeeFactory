@@ -1,7 +1,7 @@
 package Test.DesignPatternTests;
 
 /**
- * @author LouTianyu 
+ * @author LouTianyu
  */
 public class TransferObjectTest {
 }
