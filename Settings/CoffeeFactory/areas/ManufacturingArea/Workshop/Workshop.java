@@ -16,9 +16,7 @@ public abstract class Workshop extends ManufacturingArea {
     public abstract String toString();
 
     //Visitor
-    public void accept(Visitor v) {
-        v.visit(this);
-    }
+    public abstract void accept(Visitor v);
 
     //生产coffee
     public abstract void produceCoffee();
