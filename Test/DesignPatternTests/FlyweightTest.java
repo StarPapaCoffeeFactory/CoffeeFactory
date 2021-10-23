@@ -17,6 +17,10 @@ import java.util.Scanner;
 public class FlyweightTest {
 
     public static void main(String[] args) {
+
+        System.out.println(
+                "—————————————-------------------------------------———— Test[Flyweight]Pattern —————————————-------------------------------------————");
+
         final String HINT1 = "\n"
                 + "┌─────────────────────────   Flyweight Test   ──────────────────────────┐\n"
                 + "│                  <Phase 1: Create an Array of Coffee>                 │\n"
@@ -37,8 +41,7 @@ public class FlyweightTest {
                 + "│                  Index start from 0.                                  │\n"
                 + "└───────────────────────────────────────────────────────────────────────┘\n";
 
-        System.out.println(
-                "—————————————-------------------------------------———— Test[Flyweight]Pattern —————————————-------------------------------------————");
+
 
         System.out.println("");
         System.out

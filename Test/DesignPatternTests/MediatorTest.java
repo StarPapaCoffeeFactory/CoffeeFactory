@@ -11,11 +11,11 @@ import java.util.Scanner;
 public class MediatorTest {
 
     public static void main(String[] args) {
-        System.out.println("------------------------------------ [Mediator] Test ------------------------------------");
+        System.out.println(
+                "—————————————-------------------------------------———— Test[Mediator]Pattern —————————————-------------------------------------————");
 
         System.out.println("");
-        System.out.println("GeneralManager : getInstance() : Get the only instance of the general manager " +
-                "and create an instance if there's none,");
+        System.out.println("GeneralManager : getInstance() : Get the only instance of the general manager " + "and create an instance if there's none,");
         System.out.println("Manager : getOfficeManager() : Get office's manager which is single.");
         System.out.println("Manager : hireWorker() : Add workers to a specific department.");
         System.out.println("Manager : dispatchTask() : Manager dispatch the task that general manager dispatch to him to the office workers.");
@@ -32,12 +32,12 @@ public class MediatorTest {
         officeManager.hireWorker("worker3", Personnel.Gender.male, 19, 10, "34567", office);
 
         System.out.println("");
-        System.out.println("*******************                        Mediator Test                           *******************");
-        System.out.println("*** 1. Office manager dispatch the task that general manager dispatch to him to the office workers ***");
-        System.out.println("*** 2. Office manager send feedback received from workers to the general manager                   ***");
-        System.out.println("***                                                                                                ***");
-        System.out.println("******************************************************************************************************");
+        System.out.println("┌───────────────────────────────────────────────────   Mediator Test   ─────────────────────────────────────────────────┐");
+        System.out.println("│              1.Office manager dispatch the task which general manager dispatched to him to the office workers         │");
+        System.out.println("│              2.Office manager send feedback received from workers to the general manager                              │");
+        System.out.println("└───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘");
         System.out.println("");
+
 
         Scanner input = new Scanner(System.in);
         int op;
