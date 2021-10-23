@@ -1,6 +1,7 @@
 package Settings.CoffeeFactory.personnel.visitor;
 
 import Settings.CoffeeFactory.areas.*;
+import Settings.CoffeeFactory.areas.PublicArea.PublicArea;
 import Settings.CoffeeFactory.personnel.Personnel;
 import Settings.CoffeeFactory.personnel.visitlimit.LimitContext;
 
@@ -107,13 +108,7 @@ public class Visitor extends Personnel {
         //System.out.print(this.visitLimit.canEnter(uniarea));
     }
 
-    /**
-     * set the initial asset of the visitor;
-     */
-    @Override
-    protected void setInitialAsset() {
-        this.asset = 1000;
-    }
+
 
     @Override
     public String toString() {

@@ -25,8 +25,6 @@ public abstract class Personnel {
     protected LimitContext visitLimit;//区域访问限制
 
     public Personnel(String name, int age, Gender gender , String phnum) {
-
-
         this.name = name;
         this.age = age;
         this.gender = gender;
@@ -40,8 +38,6 @@ public abstract class Personnel {
     }
     
     public int getAge(){
-
-
         return this.age;
     }
 
