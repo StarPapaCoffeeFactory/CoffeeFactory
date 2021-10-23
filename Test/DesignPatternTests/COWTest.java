@@ -44,7 +44,7 @@ public class COWTest {
         ExperienceRoom[] experienceRooms = new ExperienceRoom[2];
         experienceRooms[0] = new ExperienceRoom();
         experienceRooms[1] = new ExperienceRoom();
-        System.out.println("We created 2 room with tools: Room 0 and Room 1.");
+        System.out.println("已成功创建两个房间：房间0 和 房间1");
         System.out.println(HINT);
 
         Scanner input = new Scanner(System.in);
@@ -53,7 +53,7 @@ public class COWTest {
 
         do {
             System.out.println("");
-            System.out.print("Enter the order [0 to quit]:");
+            System.out.print("Enter the order [0 to quit]:");//[0] to quit
             op = input.nextInt();
 
 
@@ -84,7 +84,7 @@ public class COWTest {
                     break;
                 }
                 default:{
-                    System.out.println("Invalid Input, Please input again.");
+                    System.out.println("无效的指令，请重新输入。");
                 }
             }
         } while (flag);

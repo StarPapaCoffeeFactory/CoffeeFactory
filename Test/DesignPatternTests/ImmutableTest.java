@@ -45,24 +45,24 @@ public class ImmutableTest {
                     break;
                 case 1: {
                     // init common receipt;
-                    commonReceipt receipt = new commonReceipt("this is CommonReceipt");
+                    commonReceipt receipt = new commonReceipt("普通发票");
                     receipt.displayAll();
                     break;
                 }
                 case 2: {
                     // init TaxReceipt;
-                    taxReceipt receipt = new taxReceipt("this is TaxReceipt");
+                    taxReceipt receipt = new taxReceipt("税务发票");
                     receipt.displayAll();
                     break;
                 }
                 case 3: {
                     // init PurchaseReceipt;
-                    purchaseReceipt receipt = new purchaseReceipt("this is PurchaseReceipt");
+                    purchaseReceipt receipt = new purchaseReceipt("采购发票");
                     receipt.displayAll();
                     break;
                 }
                 default: {
-                    System.out.println("Invalid Input, Please input again.");
+                    System.out.println("无效的指令，请重新输入。");
                 }
             }
         } while (flag);
