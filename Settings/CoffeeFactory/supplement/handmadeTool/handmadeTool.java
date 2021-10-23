@@ -2,19 +2,27 @@ package Settings.CoffeeFactory.supplement.handmadeTool;
 
 import Settings.CoffeeFactory.supplement.supplement;
 
+import java.util.Date;
+
 public class handmadeTool extends supplement{
 
     private long batchNumber;//生产批号
     public String description;//描述
-    private int stock;//库存
+    private int stock=999;//库存
 
     public handmadeTool (){
         this.type="handmadeTool";
-        this.batchNumber=getBatchNumber();
-        this.description=getDescription();
+        this.batchNumber= new Date().getTime();
+        this.description="Default Description";
         this.stock=getStock();
     }
-    
+
+    public handmadeTool(handmadeTool tool) {
+        batchNumber = tool.batchNumber;
+        description = tool.description;
+        System.out.println("Copy Handmade Tool!");
+    }
+
 //    @Override
 //    public String getType()
 //    {/*
@@ -33,6 +41,11 @@ public class handmadeTool extends supplement{
         return this.type;
     }
 
+    public void setDescription(String description)
+    {
+        this.description=description;
+    }
+
     public long getBatchNumber(){
         return this.batchNumber;
     }
@@ -40,7 +53,7 @@ public class handmadeTool extends supplement{
     public String getDescription(){
         return this.description;
     }
-    
+
     public int getStock(){
         return this.stock;
     }
