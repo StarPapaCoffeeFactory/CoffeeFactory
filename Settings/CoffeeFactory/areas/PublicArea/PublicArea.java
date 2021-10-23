@@ -88,5 +88,5 @@ public abstract class PublicArea extends Area {
     /**
      * Visitor Pattern
      */
-    public abstract void accept(Visitor v);
+    public abstract void accept(Settings.CoffeeFactory.areas.Visitor.Visitor v);
 }
