@@ -171,13 +171,13 @@ public class CompositeTest {
         System.out.println("QualityPanelGroup : show() : Show all elements in the list of group.");
         System.out.println("QualityPanel : add() : Add a element to the list of panel.");
         System.out.println("QualityPanel : show() : Show all elements in the list of panel.");
-        System.out.println("");
+        System.out.println(" ");
 
         while(true) {
             while(true) {
                 Scanner sc = new Scanner(System.in);
 
-                System.out.println("");
+                System.out.println(" ");
                 System.out.println("┌───────────────────────   Composite Test   ─────────────────────────┐");
                 System.out.println("│        1. Create a QualityInspection Panel Group(Multiple)         │");
                 System.out.println("│        2. Create a QualityInspection Panel (Single)                │");
@@ -185,7 +185,7 @@ public class CompositeTest {
                 System.out.println("│        4. Show the  QualityTestSystem  structure                   │");
                 System.out.println("│        5. Exit                                                     │");
                 System.out.println("└────────────────────────────────────────────────────────────────────┘");
-                System.out.println("");
+                System.out.println(" ");
                 System.out.println("----------------------------------------------------------------------");
                 String choice = sc.next();
                 if (choice.equals("1")) {
