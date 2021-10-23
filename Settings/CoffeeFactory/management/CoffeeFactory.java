@@ -1,6 +1,6 @@
 package Settings.CoffeeFactory.management;
 
-import Demo.CoffeeFactory.areas.AreaUtil;
+import Settings.CoffeeFactory.areas.*;
 public class CoffeeFactory {
 
     private static CoffeeFactory instance = null; //Only one factory instance should exist.
