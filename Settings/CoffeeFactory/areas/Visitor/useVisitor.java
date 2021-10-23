@@ -8,7 +8,7 @@ import Settings.CoffeeFactory.areas.StaffArea.DiningRoom;
 import Settings.CoffeeFactory.areas.StaffArea.Office;
 
 //使用Visitor设计模式，即产生Visitor的子类useVisitor
-public class useVisitor {
+public class useVisitor extends Visitor{
     public void visit(Warehouse warehouse){
         System.out.println("using Visitor Pattern of Warehouse");
     }
