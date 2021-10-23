@@ -18,7 +18,7 @@ public class Customer extends Visitor{
     public Customer(String name, int age, Personnel.Gender gender, String Phone_num, int visitCode)
     {
 
-        super(name, age, gender, Phone_num , visitCode);
+       super(name, age, gender, Phone_num );
         identity = "Customer";
 
     }
