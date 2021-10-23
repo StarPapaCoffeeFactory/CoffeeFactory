@@ -7,27 +7,14 @@ import Settings.CoffeeFactory.personnel.visitlimit.LimitContext;
 
 public class Visitor extends Personnel {
 
-    public boolean is_permitted = false;
-    public int visitCode;//maybe string
 
     public Visitor(String name, int age, Personnel.Gender gender, String Phone_num) {
-
-
         super(name, age, gender, Phone_num);
         this.identity = "Visitor";
         this.SetVisitLimit();
     }
 
 
-    public Visitor(String name, int age, Personnel.Gender gender, String Phone_num, int visitCode) {
-
-
-        super(name, age, gender, Phone_num);
-        this.identity = "Visitor";
-        this.SetVisitLimit();
-        this.visitCode = visitCode;
-        is_permitted = true;
-    }
 
     public void get_visit_permission() {
         //获取进入权限
@@ -64,16 +51,14 @@ public class Visitor extends Personnel {
         }
     }
 
-    public boolean canEnter(String dest) {
-        String movestr = this.identity + " enter " + dest;
-        if (this.visitLimit.canAccess(movestr)) {
-            //System.out.println(this.name + " can enter" + dest);
-            return true;
-        } else {
-            //System.out.println("Sorry! " + this.name + " cannot enter " + dest);
-            return false;
-        }
-    }
+//    public boolean canEnter(Area dest) {
+//        String movestr = this.identity + " enter " + dest.toString();
+//        if (this.visitLimit.canAccess(movestr)) {
+//            return true;
+//        } else {
+//            return false;
+//        }
+//    }
 
 
 //    public void transfer(Area dest) {
@@ -85,22 +70,22 @@ public class Visitor extends Personnel {
 //        }
 //    }
 
-    @Override
-    public void Goto(Area dest) {
+//    @Override
+//    public void Goto(Area dest) {
+//
+//        if (this.canEnter(dest)) {
+//            this.location = dest;
+//
+//            System.out.println(this.identity + " " + this.name + " goes to " + dest.toString());
+//
+//        } else {
+//            System.out.println("Sorry, " + this.identity + " " + this.name + "can 't go to" + dest.toString());
+//        }
+//    }
 
-        if (this.canEnter(dest.toString())) {
-            this.location = dest;
-
-            System.out.println(this.identity + " " + this.name + " goes to " + dest.toString());
-
-        } else {
-            System.out.println("Sorry, " + this.identity + " " + this.name + "can 't go to" + dest.toString());
-        }
-    }
-
-    public int getVisitCode() {
-        return visitCode;
-    }
+//    public int getVisitCode() {
+//        return visitCode;
+//    }
 
     public void Show_all_accessible_areas() {
         //待实现

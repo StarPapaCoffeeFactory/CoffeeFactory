@@ -18,8 +18,13 @@ public class AndExpression implements AbstractExpression {
     }
 
     public boolean interpret(String info) {
-        //info格式 ： person enter area
-        String[] s = info.split(" enter ");
+        //info格式 ： person access area
+        String[] s = info.split(" access ");
+        if(s.length !=2)
+        {
+            System.out.println("错误 : 非法的表达式  —— AndExpression.interpret");
+            return false;
+        }
         return person.interpret(s[0]) && area.interpret(s[1]);
     }
 
