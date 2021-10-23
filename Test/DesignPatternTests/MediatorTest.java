@@ -38,7 +38,7 @@ public class MediatorTest {
         Manager officeManager = Manager.getOfficeManager();
 
         System.out.println("Then, office manager should hired some office workers... ");
-        officeManager.hireWorker("worker1", Personnel.Gender.MALE, 18, 10, office);
+        officeManager.hireWorker("worker1", Personnel.Gender.male, 18, 10, office);
         officeManager.hireWorker("worker2", Person.Sex.FEMALE, 22, 10, office);
         officeManager.hireWorker("worker3", Person.Sex.MALE, 20, 10, office);
 

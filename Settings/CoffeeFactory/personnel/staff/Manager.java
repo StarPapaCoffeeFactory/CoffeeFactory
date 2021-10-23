@@ -115,7 +115,7 @@ public class Manager extends Staff{
 
     }
 
-    public void hireWorker(String name, Sex sex, int age, int salary, StaffArea staffArea) {
+    public void hireWorker(String name, Gender sex, int age, int salary, StaffArea staffArea) {
         if (this.departmentList.contains(staffArea)) {
             WorkerAddingController.addWorker(name, age, sex, salary, staffArea);
         }

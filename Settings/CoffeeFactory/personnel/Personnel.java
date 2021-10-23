@@ -3,6 +3,7 @@
 package Settings.CoffeeFactory.personnel;
 
 import Settings.CoffeeFactory.areas.Area;
+import Settings.CoffeeFactory.areas.PublicArea.PublicArea;
 import Settings.CoffeeFactory.personnel.visitlimit.LimitContext;
 
 /**
@@ -31,6 +32,17 @@ public abstract class Personnel {
         this.phonenum = phnum;
         this.identity = "abstract person";
         this.SetVisitLimit();
+        this.location = null;
+
+    }
+    public Personnel(String name, int age, Gender gender , String phnum , Area area) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        this.phonenum = phnum;
+        this.identity = "abstract person";
+        this.SetVisitLimit();
+        this.location = area;
     }
 
     public String getName(){
