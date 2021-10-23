@@ -28,6 +28,12 @@ public class handmadeTool extends supplement{
 //
 //        return this.type;
 //    }
+
+    @Override
+    public String getType(){
+        return this.type;
+    }
+
     public long getBatchNumber(){
         return this.batchNumber;
     }
@@ -37,14 +43,6 @@ public class handmadeTool extends supplement{
     }
     
     public int getStock(){
-        /*
-         *
-         * @return int
-         * @author YXJ
-         * @description 改public
-         * @date 2021/10/15 11:45
-         */
-
         return this.stock;
     }
 
@@ -68,7 +66,7 @@ public class handmadeTool extends supplement{
         }
     }
 
-
+    /*
     @Override
     public void Goto(Area dest) {
 
@@ -79,6 +77,7 @@ public class handmadeTool extends supplement{
             System.out.println("Sorry, " + this.id + " " + this.type + "can not be allocated to" + dest.toString());
         }
     }
+     */
 
     @Override
     public String toString() {
