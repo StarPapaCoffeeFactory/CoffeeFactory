@@ -8,6 +8,7 @@ import Settings.CoffeeFactory.areas.PublicArea.ExperienceRoom;
 import Settings.CoffeeFactory.areas.StaffArea.DiningRoom;
 import Settings.CoffeeFactory.areas.StaffArea.Office;
 
+//Visitor Design Mode
 public abstract class Visitor {
     public abstract void visit(Warehouse warehouse);
     public abstract void visit(CoffeeWorkshop coffeeWorkshop);

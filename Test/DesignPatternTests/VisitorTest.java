@@ -58,7 +58,7 @@ public class VisitorTest {
                 case 3:
                 {
                     System.out.println("Let's test method \"useVisitor\" of ExhibitionRoom");
-                    ExhibitionRoom exhibitionRoom = new ExhibitionRoom();
+                    ExhibitionRoom exhibitionRoom = new ExhibitionRoom("exhibitionroom1",1000,500,100);
                     exhibitionRoom.accept(test_Visitor_use);
                 }
                 case 4:
