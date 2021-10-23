@@ -25,6 +25,8 @@ public class Manager extends Staff{
 
     private static Manager diningRoomManager;
     private static Manager officeManager;
+    private static Manager workShopManager;
+    private static Manager warehouseManager;
 
 
 
@@ -34,6 +36,8 @@ public class Manager extends Staff{
 
         diningRoomManager = null;
         officeManager = null;
+        workShopManager = null;
+        warehouseManager = null;
     }
 
 
@@ -94,6 +98,27 @@ public class Manager extends Staff{
         }
         System.out.println("Our office manager is here.");
         return officeManager;
+    }
+
+    public static Manager getWorkShopManager() {
+        if (workShopManager == null) {
+            workShopManager = new Manager("workShopManager", 30, Gender.male, "123456");
+        }
+        System.out.println("Here is our workshop manager.");
+        return workShopManager;
+    }
+
+    /**
+     * return the warehouse's manager which is single!!
+     *
+     * @return Manager
+     */
+    public static Manager getWarehouseManager() {
+        if (warehouseManager == null) {
+            warehouseManager = new Manager("warehouseManager", 28, Gender.male, "234567");
+        }
+        System.out.println("Here is our warehouse manager.");
+        return warehouseManager;
     }
 
 
