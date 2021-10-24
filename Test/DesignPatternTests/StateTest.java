@@ -13,7 +13,7 @@ import java.util.Scanner;
 
 /**
  * @author LouTianyu
- * @description Test for State
+ * @description Test for State Pattern
  */
 public class StateTest {
 
