@@ -4,7 +4,12 @@ import Settings.CoffeeFactory.areas.*;
 import Settings.CoffeeFactory.areas.PublicArea.PublicArea;
 import Settings.CoffeeFactory.personnel.Personnel;
 import Settings.CoffeeFactory.personnel.visitlimit.LimitContext;
-
+/**
+ * @ program: coffeefactory
+ * @ description: 实际意义上的游客/参观者  区别于设计模式中的visitor
+ * @ author: YXJ
+ * @ date: 2021-10-12 21:15:35
+ */
 public class Visitor extends Personnel {
 
 
@@ -30,7 +35,7 @@ public class Visitor extends Personnel {
      * @date 2021/10/13 18:01
      */
         String[] persons = {this.identity};
-        String[] publicAreas = {"publicArea", "experienceRoom", "exhibitionRoom"};
+        String[] publicAreas = {AreaName.PUBLIC_AREA,AreaName.EXHIBITION_AREA, AreaName.COFFEE_EXPERIENCE_ROOM};
         this.visitLimit = new LimitContext(persons, publicAreas);
     }
 
