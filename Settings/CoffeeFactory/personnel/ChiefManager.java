@@ -29,6 +29,7 @@ public class ChiefManager extends Personnel {
      */
     public static ChiefManager getInstance() {
         if (instance == null) {
+            System.out.println("\n-》A Chief manager has been created! ---- MESSAGE FROM <class ChiefManager> ----");
             instance = new ChiefManager("Chief Lee", 50, Gender.male, "15858885888");
         }
         return instance;
@@ -83,6 +84,17 @@ public class ChiefManager extends Personnel {
     public void SetVisitLimit()
     {
 
+    }
+
+    public void display()
+    {
+        String gender_str;
+        if(gender.toString()=="male")
+            gender_str="男";
+        else
+            gender_str="女";
+
+        System.out.println("姓名："+name+"  性别："+gender_str+"  年龄："+getAge()+"  身份:"+ identity);
     }
 
     /**

@@ -10,6 +10,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 
+
 public class NullObjectTest {
 
     public static void main(String[] args) throws IOException  {
