@@ -77,7 +77,9 @@ public abstract class Machine {
     public void markFault(int breakLevel) {
         isBroken = true;
         this.breakLevel = breakLevel;
-        fix();
+        //fix();
+        //czq add in 2021/10/24
+        malfunction();
     }
 
     public void fix() {
@@ -94,6 +96,9 @@ public abstract class Machine {
                 breakLevel = 0;
                 isBroken = false;
                 System.out.println("Fix finished, " + type + ID + " can work again!\n");
+            }
+            else{
+                System.out.println("Nobody can fix" + type + ID + ".Its broken level is too high!\n");
             }
         } else {
             System.out.println("There is nothing to be fixed.\n");
