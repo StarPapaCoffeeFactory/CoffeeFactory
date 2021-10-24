@@ -42,7 +42,7 @@ public class EmptyStaff extends Staff {
      */
     @Override
     public void display() {
-        System.out.println("Empty Staff");
+        System.out.println("THIS IS AN EMPTY STAFF!");
     }
 
 }

@@ -60,7 +60,13 @@ public abstract class Staff extends Personnel implements Observer{
 
     public void display()
     {
-        System.out.println("姓名："+name+"  Id:"+ Id+"  工作部门:"+department.toString());
+        String gender_str;
+        if(gender.toString()=="male")
+            gender_str="男";
+        else
+            gender_str="女";
+
+        System.out.println("姓名："+name+"  性别："+gender_str+"  年龄："+getAge()+"  Id:"+ Id+"  工作部门:"+department.toString());
     }
 
     public String getId()
