@@ -1,10 +1,9 @@
 package Settings.CoffeeFactory.areas;
 
 import Settings.CoffeeFactory.personnel.staff.EmptyStaff;
-import Settings.CoffeeFactory.personnel.staff.LogisticsManager;
+import Settings.CoffeeFactory.personnel.staff.LogisticsAdministrator;
 import Settings.CoffeeFactory.personnel.staff.Manager;
 import Settings.CoffeeFactory.personnel.staff.Staff;
-import Settings.CoffeeFactory.personnel.staff.worker.UtilityWorker;
 
 public abstract class Area {
 
@@ -58,7 +57,7 @@ public abstract class Area {
     }
 
     public boolean relocate(Staff executor, String newLocation) {
-        if (executor instanceof Manager || executor instanceof LogisticsManager||executor instanceof EmptyStaff) {
+        if (executor instanceof Manager || executor instanceof LogisticsAdministrator||executor instanceof EmptyStaff) {
         this.location = newLocation;
         return true;
         }
