@@ -21,9 +21,11 @@ public class FacadeTest {
 
         System.out.println();
         System.out.println("┌─────────────────────────   Facade Test   ──────────────────────────┐");
-        System.out.println("│                  1.                                                │");
-        System.out.println("│                  2.      this is a  test                           │");
-        System.out.println("│                  3.                                                │");
+        System.out.println("│                  1. Initialize a logistic administrator            │");
+        System.out.println("│                  2. Initialize the logistic work task              │");
+        System.out.println("│                  3. set the work for the administrator             │");
+        System.out.println("│                  4. let the administrator do his work              │");
+        System.out.println("│                  5. submit the work report                         │");
         System.out.println("└────────────────────────────────────────────────────────────────────┘");
         System.out.println();
 
@@ -49,8 +51,8 @@ public class FacadeTest {
         logisticsAdministrator.checkTools();
         logisticsAdministrator.submitReport();
         System.out.println("logistics check tasks completed");
-        System.out.println("End of the facade test");
-        System.out.println("──────────────────────────────────────────");
+        System.out.println("");
+        System.out.println("───────────────────End of the facade test───────────────────────");
 
     }
 }

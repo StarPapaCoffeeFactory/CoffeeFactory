@@ -1,6 +1,7 @@
 package Settings.CoffeeFactory.personnel.staff.worker;
 
 import Settings.CoffeeFactory.areas.Area;
+import Settings.CoffeeFactory.areas.AreaName;
 import Settings.CoffeeFactory.areas.StaffArea.StaffArea;
 import Settings.CoffeeFactory.personnel.Personnel;
 import Settings.CoffeeFactory.personnel.staff.Staff;
@@ -59,8 +60,9 @@ public class worker extends Staff{
     public void SetVisitLimit()
     {
         String[] persons = {this.identity};
-        String[] publicAreas = {"publicArea", "experienceRoom", "exhibitionRoom" ,
-                "manufacturingArea" , "staffArea" , "diningRoom" , "office"};
+        String[] publicAreas = {AreaName.PUBLIC_AREA,AreaName.EXHIBITION_AREA, AreaName.COFFEE_EXPERIENCE_ROOM ,
+                AreaName.MANUFACTURING_AREA , AreaName.STAFF_AREA , AreaName.DINING_ROOM , AreaName.OFFICE};
+
         this.visitLimit = new LimitContext(persons, publicAreas);
     }
 

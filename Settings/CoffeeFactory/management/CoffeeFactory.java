@@ -4,11 +4,16 @@ import Settings.CoffeeFactory.areas.*;
 public class CoffeeFactory {
 
     private static CoffeeFactory instance = null; //Only one factory instance should exist.
-    private AreaUtil areaUtil;
+    private Area area;
 
     //Private constructor to ensure single instance .
     private CoffeeFactory(){
-        areaUtil = new AreaUtil();
+        area = new Area() {
+            @Override
+            public String toString() {
+                return null;
+            }
+        };
     }
 
     //Singleton
