@@ -45,9 +45,20 @@ public class WorkerListIterator implements Iterator {
     @Override
     public Staff next() {
         if (this.hasNext()) {
-            return workerList.get(++index);
+            index += 1;
+            return workerList.get(index);
         }
         return null;
+    }
+
+    /**
+     * 令索引指向前一个元素
+     *
+     * @return 前一个元素
+     */
+    public Staff previous() {
+        index -= 1;
+        return workerList.get(index);
     }
 
     /**
@@ -71,27 +82,38 @@ public class WorkerListIterator implements Iterator {
     }
 
     /**
-     * 令索引指向前一个元素
+     * 获取当前元素
      *
-     * @return 前一个元素
+     * @return 当前元素
      */
-    public Staff previous() {
-        return workerList.get(--index);
+    public Staff current(){
+        return workerList.get(index);
     }
 
-
+    /**
+    * 返回当前的工作人员列表（新开一个空间）
+    */
     public List<Staff> getWorkerList() {
         return new ArrayList<>(workerList);
     }
 
+    /**
+     * 设置一个工作人员列表
+     */
     public void setWorkerList(ArrayList<Staff> workerList) {
         this.workerList = new ArrayList<Staff>(workerList);
     }
 
+    /**
+     * 获取当前索引
+     */
     public int getIndex() {
         return index;
     }
 
+    /**
+     * 设置当前索引
+     */
     public void setIndex(int index) {
         this.index = index;
     }

@@ -60,7 +60,7 @@ public abstract class StaffArea extends Area implements Aggregate {
         if (!workerList.contains(workerObj)) {
             workerList.add(workerObj);
         } else {
-            System.out.println("The worker is in the scene");
+            System.out.println("The worker is in the area");
         }
     }
 
@@ -127,8 +127,7 @@ public abstract class StaffArea extends Area implements Aggregate {
     }
 
     /**
-     * Visitor Pattern: accept a utility worker to maintain the scene
-     *
+     * Visitor Pattern
      */
     public abstract void accept(Visitor v);
 }

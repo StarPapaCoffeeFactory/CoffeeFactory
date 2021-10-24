@@ -11,7 +11,9 @@ public class CoffeeWorkshop extends Workshop{
 
     //生产coffee
     @Override
-    public void produceCoffee() {}
+    public void produceCoffee() {
+        System.out.println("this function used to produce coffee!");
+    }
 
     //返回区域名字
     @Override
