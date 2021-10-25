@@ -1,5 +1,8 @@
 package Test.DesignPatternTests;
 
+import Settings.CoffeeFactory.personnel.Personnel;
+import Settings.CoffeeFactory.personnel.staff.worker.worker;
+
 import java.util.Scanner;
 
 public class CommandTest {
@@ -13,7 +16,7 @@ public class CommandTest {
         System.out.println("");
 
         System.out.println("Firstly, we need to create a worker.");
-        Worker worker = new WorkshopWorker("worker", 18, Person.Sex.MALE, 10);
+        worker concreteWorker = new worker("worker", 18, Personnel.Gender.male, "123456", 10);
 
         System.out.println("");
         System.out.println("┌─────────────────────────   Command Test   ─────────────────────────┐");
@@ -38,19 +41,19 @@ public class CommandTest {
                     flag = false;
                     break;
                 case 1: {
-                    worker.produceAmericano();
+                    concreteWorker.produceAmericano();
                     break;
                 }
                 case 2: {
-                    worker.produceArabica();
+                    concreteWorker.produceArabica();
                     break;
                 }
                 case 3: {
-                    worker.produceAutumnBlend();
+                    concreteWorker.produceAutumnBlend();
                     break;
                 }
                 case 4: {
-                    worker.produceHouseBlend();
+                    concreteWorker.produceHouseBlend();
                     break;
                 }
                 default:{
