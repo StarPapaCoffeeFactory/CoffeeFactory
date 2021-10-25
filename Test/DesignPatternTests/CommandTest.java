@@ -21,11 +21,9 @@ public class CommandTest {
         System.out.println("");
 
         System.out.println("Firstly, we need to create a worker.");
-<<<<<<< Updated upstream
+        
         worker concreteWorker = new worker("worker", 18, Personnel.Gender.male, "123456", 10);
-=======
-        worker concreteworker = new worker("worker", 18, Personnel.Gender.female,"18012345678" ,10);
->>>>>>> Stashed changes
+
 
         System.out.println("");
         System.out.println("┌─────────────────────────   Command Test   ─────────────────────────┐");
