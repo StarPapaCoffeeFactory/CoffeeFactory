@@ -67,10 +67,15 @@ public class IteratorTest {
                 }
                 case 2:
                 {
-                    nextStaff = workerIterator.next();
-                    System.out.println("Get the next worker:");
-                    System.out.println(" name: " + nextStaff.getName() + " sex: " + nextStaff.getGender() + " age: "
-                            + nextStaff.getAge() );
+                    if(workerIterator.hasNext()){
+                        nextStaff = workerIterator.next();
+                        System.out.println("Get the next worker:");
+                        System.out.println(" name: " + nextStaff.getName() + " sex: " + nextStaff.getGender() + " age: "
+                                + nextStaff.getAge() );
+                    }
+                    else{
+                        System.out.println("Don't have next worker!!!");
+                    }
                     break;
                 }
                 case 3:
@@ -78,7 +83,7 @@ public class IteratorTest {
                     currentStaff = staffIterator.first();
                     while (true) {
                         System.out.println("name: " + currentStaff.getName() + " sex: " + currentStaff.getGender() + " age: "
-                                + currentStaff.getAge() + "department: " + currentStaff.getDepartment());
+                                + currentStaff.getAge());
                         if (staffIterator.hasNext()) {
                             currentStaff = staffIterator.next();
                         } else {
