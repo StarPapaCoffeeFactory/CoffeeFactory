@@ -16,6 +16,7 @@ public class BusinessDelegateTest {
         System.out.println("│               0. Exit!!!                                                      │");
         System.out.println("│               1. Testing the storage material service                         │");
         System.out.println("│               2. Testing the get material service                             │");
+        System.out.println("│               3. Testing the wrong service                                    │");
         System.out.println("└───────────────────────────────────────────────────────────────────────────────┘");
         System.out.println("");
 
@@ -57,7 +58,12 @@ public class BusinessDelegateTest {
                     warehouseDelegate.doTask(new Milk());
                     break;
                 }
-
+                case 3:
+                {
+                    warehouseDelegate.setServiceType("WrongMaterial");
+                    warehouseDelegate.doTask(new Milk());
+                    break;
+                }
                 default:
                 {
                     System.out.println("Invalid Input, Please input again.");
