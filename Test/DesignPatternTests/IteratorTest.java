@@ -15,12 +15,12 @@ public class IteratorTest {
     public static void main(String[] args) {
         System.out.println("We will test the Iterator design model");
         System.out.println("");
-        System.out.println("┌─────────────────────────   Iterator Test   ──────────────────────────┐");
-        System.out.println("│               0. Exit!!!                                             │");
-        System.out.println("│               1. Get the first workers in the Coffee                 │");
-        System.out.println("│               2. Get the next workers in the Coffee                  │");
-        System.out.println("│               3. Traverse all staff of the staffs in the office      │");
-        System.out.println("└──────────────────────────────────────────────────────────────────────┘");
+        System.out.println("┌─────────────────────────   Iterator Test   ────────────────────────┐");
+        System.out.println("│             0. Exit!!!                                             │");
+        System.out.println("│             1. Get the first workers in the Coffee                 │");
+        System.out.println("│             2. Get the next workers in the Coffee                  │");
+        System.out.println("│             3. Traverse all staff of the staffs in the office      │");
+        System.out.println("└────────────────────────────────────────────────────────────────────┘");
         System.out.println("");
 
         // create a coffee workshop and add 3 workers.

@@ -12,23 +12,20 @@ public class BusinessDelegateTest {
 
         System.out.println("We will test the business delegate design model");
         System.out.println("");
-        System.out.println("┌─────────────────────────   Business Delegate Test   ──────────────────────────┐");
-        System.out.println("│               0. Exit!!!                                                      │");
-        System.out.println("│               1. Testing the storage material service                         │");
-        System.out.println("│               2. Testing the get material service                             │");
-        System.out.println("│               3. Testing the wrong service                                    │");
-        System.out.println("└───────────────────────────────────────────────────────────────────────────────┘");
+        System.out.println("┌────────────────────   Business Delegate Test   ────────────────────┐");
+        System.out.println("│               0. Exit!!!                                           │");
+        System.out.println("│               1. Testing the storage material service              │");
+        System.out.println("│               2. Testing the get material service                  │");
+        System.out.println("│               3. Testing the wrong service                         │");
+        System.out.println("└────────────────────────────────────────────────────────────────────┘");
         System.out.println("");
 
         WarehouseDelegate warehouseDelegate;
-        WarehouseClient warehouseClient;
 
         //Create a new warehouse
         Warehouse warehouse = new Warehouse();
         //Create a new warehouse delegate
         warehouseDelegate = new WarehouseDelegate(warehouse);
-        //Create a new warehouse client
-        warehouseClient = new WarehouseClient(warehouseDelegate);
 
         Scanner input = new Scanner(System.in);
         int op;

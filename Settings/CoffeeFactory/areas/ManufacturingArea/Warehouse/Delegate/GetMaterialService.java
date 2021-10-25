@@ -9,9 +9,9 @@ public class GetMaterialService implements WarehouseService{
     @Override
     public void doProcessing(Warehouse warehouse, Material Material)
     {
-        boolean judge = warehouse.useMaterial(Material.toString(), 1.0);
+        boolean judge = warehouse.useMaterial(Material.getClass().getName(), 1.0);
         if(judge == true) {
-            System.out.println("Finish pickup service for " + Material.toString());
+            System.out.println("Finish pickup service for " + Material.getClass().getName());
         }
         else{
             System.out.println("Getting material failed!!!");

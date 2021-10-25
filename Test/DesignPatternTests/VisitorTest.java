@@ -17,15 +17,15 @@ public class VisitorTest {
 
         System.out.println("We will test the \"Visitor\" design pattern using the methods represented by the \"useVisitor\" class");
         System.out.println("");
-        System.out.println("┌──────────────────────────────────────   Visitor Test   ────────────────────────────────┐");
-        System.out.println("│              0. Exit!!!                                                                │");
-        System.out.println("│              1. Test the \"Warehouse\" class                                           │");
-        System.out.println("│              2. Test the \"CoffeeWorkshop\" class                                      │");
-        System.out.println("│              3. Test the \"ExhibitionRoom\" class                                      │");
-        System.out.println("│              4. Test the \"ExperienceRoom\" class                                      │");
-        System.out.println("│              5. Test the \"DiningRoom\" class                                          │");
-        System.out.println("│              6. Test the \"Office\" class                                              │");
-        System.out.println("└────────────────────────────────────────────────────────────────────────────────────────┘");
+        System.out.println("┌─────────────────────────   Visitor Test   ─────────────────────────┐");
+        System.out.println("│              0. Exit!!!                                            │");
+        System.out.println("│              1. Test the Warehouse class                           │");
+        System.out.println("│              2. Test the CoffeeWorkshop class                      │");
+        System.out.println("│              3. Test the ExhibitionRoom class                      │");
+        System.out.println("│              4. Test the ExperienceRoom class                      │");
+        System.out.println("│              5. Test the DiningRoom class                          │");
+        System.out.println("│              6. Test the Office class                              │");
+        System.out.println("└────────────────────────────────────────────────────────────────────┘");
         System.out.println("");
 
         useVisitor test_Visitor_use = new useVisitor();
