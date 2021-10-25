@@ -37,6 +37,8 @@ public class worker extends Staff{
         super(name, age, gender, phnum, salary, area);
         this.identity = "worker";
         state = "rest";
+        this.SetVisitLimit();
+
     }
 
     public void work()
@@ -71,7 +73,7 @@ public class worker extends Staff{
             System.out.println("sorry，" + this.identity + " " + this.name + "has no access permission and fail to enter" + dest.toString());
         }
     }
-
+    @Override
     public void SetVisitLimit()
     {
         String[] persons = {this.identity};
