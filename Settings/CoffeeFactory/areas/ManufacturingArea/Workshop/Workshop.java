@@ -19,7 +19,7 @@ public abstract class Workshop extends ManufacturingArea {
     public abstract void accept(Visitor v);
 
     //生产coffee
-    public abstract void produceCoffee();
+    public abstract void produceArabicaProduct();
 
-
+    public abstract void produceRobustaProduct();
 }

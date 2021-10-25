@@ -14,6 +14,6 @@ public class CoffeeRobustaMachine extends CoffeeBasicMachine{
     @Override
     public void useCoffeeBean() {
         coffee=new Arabica();
-        System.out.println("Successfully produce Robusta coffee!\n");
+        System.out.println("Successfully produce Robusta coffee or coffee product!\n");
     }
 }

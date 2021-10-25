@@ -1,6 +1,7 @@
 package Settings.CoffeeFactory.areas.Visitor;
 
 import Settings.CoffeeFactory.areas.ManufacturingArea.Warehouse.Warehouse;
+import Settings.CoffeeFactory.areas.ManufacturingArea.Workshop.CoffeeProductWorkshop;
 import Settings.CoffeeFactory.areas.ManufacturingArea.Workshop.CoffeeWorkshop;
 import Settings.CoffeeFactory.areas.PublicArea.ExhibitionRoom;
 import Settings.CoffeeFactory.areas.PublicArea.ExperienceRoom;
@@ -16,6 +17,8 @@ public class useVisitor extends Visitor{
     public void visit(CoffeeWorkshop coffeeWorkshop){
         System.out.println("using Visitor Pattern of CoffeeWorkshop");
     }
+
+    public void visit(CoffeeProductWorkshop coffeeProductWorkshop){System.out.println("using Visitor Pattern of CoffeeProductWorkshop");}
 
     public void visit(ExhibitionRoom exhibitionRoom){
         System.out.println("using Visitor Pattern of ExhibitionRoom");

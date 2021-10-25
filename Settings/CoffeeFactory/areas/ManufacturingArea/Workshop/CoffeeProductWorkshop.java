@@ -5,24 +5,23 @@ import Settings.CoffeeFactory.areas.Visitor.Visitor;
 import Settings.CoffeeFactory.machine.processmachine.productmachine.coffeemachine.CoffeeArabicaMachine;
 import Settings.CoffeeFactory.machine.processmachine.productmachine.coffeemachine.CoffeeRobustaMachine;
 
-//这个车间生产coffee
-public class CoffeeWorkshop extends Workshop{
+public class CoffeeProductWorkshop extends Workshop {
     CoffeeArabicaMachine arabicaMachine=new CoffeeArabicaMachine();
     CoffeeRobustaMachine robustaMachine=new CoffeeRobustaMachine();
-    public CoffeeWorkshop() {
+    public CoffeeProductWorkshop() {
 
     }
 
     //生产coffee
     @Override
     public void produceArabicaProduct() {
-        System.out.println("Producing Arabica coffee...");
+        System.out.println("Producing Arabica coffee products...");
         arabicaMachine.useCoffeeBean();
     }
 
     @Override
-    public void produceRobustaProduct() {
-        System.out.println("Producing Robusta coffee...");
+    public void produceRobustaProduct(){
+        System.out.println("Producing Robusta coffee products...");
         robustaMachine.useCoffeeBean();
     }
 
