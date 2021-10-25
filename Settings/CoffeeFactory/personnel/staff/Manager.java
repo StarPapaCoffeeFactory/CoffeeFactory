@@ -29,7 +29,6 @@ public class Manager extends Staff{
     private static Manager warehouseManager;
 
 
-
     protected Manager(String name, int age, Personnel.Gender gender, String phnum ) {
         super(name, age, gender, phnum, 0.0);
         departmentList = new ArrayList<StaffArea>();

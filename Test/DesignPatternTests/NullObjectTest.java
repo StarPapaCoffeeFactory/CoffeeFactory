@@ -1,14 +1,13 @@
 package Test.DesignPatternTests;
 
-import Settings.CoffeeFactory.personnel.Personnel;
-import Settings.CoffeeFactory.personnel.staff.EmptyStaff;
-import Settings.CoffeeFactory.personnel.staff.Manager;
 import Settings.CoffeeFactory.areas.StaffArea.Office;
-import java.util.Scanner;
+import Settings.CoffeeFactory.personnel.Personnel;
+import Settings.CoffeeFactory.personnel.staff.Manager;
 
 import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Scanner;
 
 
 public class NullObjectTest {
