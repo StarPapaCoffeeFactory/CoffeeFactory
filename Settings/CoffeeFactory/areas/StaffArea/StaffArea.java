@@ -27,6 +27,7 @@ public abstract class StaffArea extends Area implements Aggregate {
 
     public StaffArea() {
         super();
+        workerList = new ArrayList<Staff>();
     }
 
     /**

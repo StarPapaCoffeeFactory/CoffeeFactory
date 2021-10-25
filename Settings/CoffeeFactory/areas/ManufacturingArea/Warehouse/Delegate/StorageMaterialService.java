@@ -8,9 +8,9 @@ public class StorageMaterialService implements WarehouseService {
     @Override
     public void doProcessing(Warehouse warehouse, Material Material)
     {
-        boolean judge = warehouse.addMaterial(Material.toString(), 1.0);
+        boolean judge = warehouse.addMaterial(Material.getClass().getName(), 1.0);
         if(judge == true){
-            System.out.println("Finish storage service for " + Material.toString());
+            System.out.println("Finish storage service for " + Material.getClass().getName());
         }
         else{
             System.out.println("Adding material failed!!!");
