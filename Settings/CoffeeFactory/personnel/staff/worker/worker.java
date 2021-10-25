@@ -6,7 +6,8 @@ import Settings.CoffeeFactory.areas.StaffArea.StaffArea;
 import Settings.CoffeeFactory.personnel.Personnel;
 import Settings.CoffeeFactory.personnel.staff.Staff;
 import Settings.CoffeeFactory.personnel.visitlimit.LimitContext;
-
+import Settings.CoffeeFactory.product.Product;
+import Settings.CoffeeFactory.product.coffeebeverage.*;
 /**
  * @author CZQ
  * @project CoffeeFactory
@@ -20,6 +21,8 @@ public class worker extends Staff{
 
     protected String state;
     protected String defaultarea;
+
+    static private Product americano,caramelMacchiato,hazelnutLatte,latte,mocha,arabica,autumnBlend,houseBlend;
 
     public worker(String name, int age, Personnel.Gender gender, String phnum,double salary ) {
         super(name, age, gender ,phnum ,salary);
@@ -65,5 +68,24 @@ public class worker extends Staff{
 
         this.visitLimit = new LimitContext(persons, publicAreas);
     }
+
+    public static void produceAmericano()
+    {
+        americano.produce();
+    }
+    public static void produceArabica()
+    {
+        arabica.produce();
+    }
+    public static void produceAutumnBlend()
+    {
+        autumnBlend.produce();
+    }
+    public static void produceHouseBlend()
+    {
+        houseBlend.produce();
+    }
+
+
 
 }

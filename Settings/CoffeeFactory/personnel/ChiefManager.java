@@ -1,11 +1,9 @@
 package Settings.CoffeeFactory.personnel;
 
-import java.util.ArrayList;
-
 import Settings.CoffeeFactory.areas.Area;
-import Settings.CoffeeFactory.personnel.Personnel;
-import Settings.CoffeeFactory.personnel.staff.Staff;
 import Settings.CoffeeFactory.personnel.staff.Manager;
+
+import java.util.ArrayList;
 
 /**
  * @author CZQ
@@ -29,7 +27,7 @@ public class ChiefManager extends Personnel {
      */
     public static ChiefManager getInstance() {
         if (instance == null) {
-            System.out.println("\n-》A Chief manager has been created! ---- MESSAGE FROM <class ChiefManager> ----");
+            //System.out.println("\n-》A Chief manager has been created! ---- MESSAGE FROM <class ChiefManager> ----");
             instance = new ChiefManager("Chief Lee", 50, Gender.male, "15858885888");
         }
         return instance;
