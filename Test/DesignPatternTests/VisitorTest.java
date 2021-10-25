@@ -79,6 +79,10 @@ public class VisitorTest {
                     Office office = new Office();
                     office.accept(test_Visitor_use);
                 }
+                default:
+                {
+                    System.out.println("Invalid Input, Please input again.");
+                }
             }
         }while (flag);
         System.out.println("Visior Design Mode Finished");
