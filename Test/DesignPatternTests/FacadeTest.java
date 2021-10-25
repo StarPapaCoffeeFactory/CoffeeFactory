@@ -6,14 +6,16 @@ package Test.DesignPatternTests;
  * @ author: YXJ
  * @ date: 2021-10-15 12:55:29
  */
-import Settings.CoffeeFactory.machine.*;
+
+import Settings.CoffeeFactory.machine.Machine;
 import Settings.CoffeeFactory.machine.transportmachine.SCAR;
-import Settings.CoffeeFactory.machine.transportmachine.TransportMachine;
 import Settings.CoffeeFactory.management.logistics.logisticsWork;
 import Settings.CoffeeFactory.personnel.Personnel;
+import Settings.CoffeeFactory.personnel.staff.LogisticsAdministrator;
 import Settings.CoffeeFactory.supplement.handmadeTool.handmadeTool;
-import Settings.CoffeeFactory.personnel.staff.*;
-import java.util.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class FacadeTest {
     public static void main(String[] args) {
@@ -30,12 +32,12 @@ public class FacadeTest {
         System.out.println();
 
         //在此初始化一批machine
-        List<Machine> machines = new ArrayList<>(){{
+        List<Machine> machines = new ArrayList<Machine>(){{
             add(new SCAR("test machine" , "123" ));
 
         }};
         //在此初始化一批handmadetool
-        List<handmadeTool> tools = new ArrayList<>(){{
+        List<handmadeTool> tools = new ArrayList<handmadeTool>(){{
             add(new handmadeTool());
         }};
 

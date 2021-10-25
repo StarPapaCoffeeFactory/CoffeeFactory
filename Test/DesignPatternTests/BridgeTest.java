@@ -1,5 +1,9 @@
 package Test.DesignPatternTests;
 
+import Settings.CoffeeFactory.product.blendedcoffee.*;
+import Settings.CoffeeFactory.product.originalcoffee.*;
+
+
 import java.util.Scanner;
 
 public class BridgeTest {
@@ -15,18 +19,18 @@ public class BridgeTest {
         //第一步：选择咖啡豆
         Scanner scanner = new Scanner(System.in);
         System.out.println("1. choose coffee bean");
-        System.out.println("Optional：1.榛仁  2.酒心");
-        Sandwich sandwich;
+        System.out.println("Option: 1.Arabica 2.Robusta");
+        BlendedCoffee blendedCoffee;
         int tmp;
         while (true) {
             try {
                 tmp = scanner.nextInt();
                 if (tmp == 1) {
-                    sandwich = new Hazelnut();
+                    blendedCoffee = new AutumnBlend();
                     System.out.println("选择夹心类型为：榛仁！");
                     break;
                 } else if (tmp == 2) {
-                    sandwich = new Liqueur();
+                    blendedCoffee = new PikePlace();
                     System.out.println("选择夹心类型为：酒心！");
                     break;
                 } else {
@@ -43,23 +47,20 @@ public class BridgeTest {
             try {
                 System.out.println("");
                 System.out.println("选择你想放入的巧克力。");
-                System.out.println("1.牛奶巧克力  2.抹茶巧克力  3.黑巧克力  4.白巧克力  5.退出测试");
+                System.out.println("1.Arabica  2.Bourbon  3.Robusta");
                 cmd = scanner.nextInt();
                 System.out.println("获取夹心巧克力的名字:");
-                Coffee sandwichCoffee;
+                Coffee coffee;
                 if (cmd == 1) {
-                    sandwichCoffee = new MilkCoffee(sandwich);
-                    System.out.println(sandwichCoffee.getNameWithSandwich());
+                    coffee = new Arabica();
+                    System.out.println(coffee.getBlendedCoffeeName());
                 } else if (cmd == 2) {
-                    sandwichCoffee = new MatchaCoffee(sandwich);
-                    System.out.println(sandwichCoffee.getNameWithSandwich());
+                    coffee = new Bourbon();
+                    System.out.println(coffee.getBlendedCoffeeName());
                 } else if (cmd == 3) {
-                    sandwichCoffee = new DarkCoffee(sandwich);
-                    System.out.println(sandwichCoffee.getNameWithSandwich());
+                    coffee = new Robusta();
+                    System.out.println(coffee.getBlendedCoffeeName());
                 } else if (cmd == 4) {
-                    sandwichCoffee = new WhiteCoffee(sandwich);
-                    System.out.println(sandwichCoffee.getNameWithSandwich());
-                } else if (cmd == 5) {
                     break;
                 } else {
                     System.out.println("输入指令无效，请重新输入。");
