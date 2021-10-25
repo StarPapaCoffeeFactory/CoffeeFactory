@@ -5,7 +5,6 @@ import Settings.CoffeeFactory.areas.StaffArea.Office;
 import Settings.CoffeeFactory.areas.WorkerIterator.WorkerListIterator;
 import Settings.CoffeeFactory.personnel.Personnel;
 import Settings.CoffeeFactory.personnel.staff.LogisticsAdministrator;
-import Settings.CoffeeFactory.personnel.staff.Manager;
 import Settings.CoffeeFactory.personnel.staff.Staff;
 import Settings.CoffeeFactory.personnel.staff.worker.worker;
 
