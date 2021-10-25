@@ -10,7 +10,7 @@ public class BusinessDelegateTest {
         System.out.println("┌─────────────────────────   Business Delegate Test   ──────────────────────────┐");
         System.out.println("│               0. Exit!!!                                                      │");
         System.out.println("│               1. Testing the get material service                             │");
-        System.out.println("│               2. Testing the storage material service                           │");
+        System.out.println("│               2. Testing the storage material service                         │");
         System.out.println("└───────────────────────────────────────────────────────────────────────────────┘");
         System.out.println("");
 
