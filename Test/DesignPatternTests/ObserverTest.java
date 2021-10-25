@@ -6,16 +6,17 @@ package Test.DesignPatternTests;
  * @ author: YXJ
  * @ date: 2021-10-15 12:53:54
  */
+
 import Settings.CoffeeFactory.management.finance.SalaryPayment;
 import Settings.CoffeeFactory.personnel.Personnel;
-import Settings.CoffeeFactory.personnel.staff.*;
+import Settings.CoffeeFactory.personnel.staff.Staff;
 import Settings.CoffeeFactory.personnel.staff.worker.worker;
 
-import java.io.OutputStream;
-import java.text.*;
-import java.util.List;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.*;
+import java.util.Date;
+import java.util.List;
 
 public class ObserverTest {
     public static void main(String[] args) {
@@ -28,7 +29,7 @@ public class ObserverTest {
         System.out.println("└────────────────────────────────────────────────────────────────────┘");
         System.out.println();
 
-        List<Staff> obstaffList = new ArrayList<>(){{
+        List<Staff> obstaffList = new ArrayList<Staff>(){{
             add(new worker("zhangsan",18, Personnel.Gender.male, "151515151", 2000));
             add(new worker("lisi",19, Personnel.Gender.male, "154655151", 2000));
             add(new worker("wangwu",20, Personnel.Gender.female, "145325151", 2000));

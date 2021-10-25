@@ -50,7 +50,7 @@ public class InterpreterTest {
             workera.Goto(a);
         }
 
-        System.out.println("──────────────────────────   Interpreter Test End  ───────────────────");
+        System.out.println("──────────────────────────   Interpreter Test End  ─────────────────────────");
     }
 
 }

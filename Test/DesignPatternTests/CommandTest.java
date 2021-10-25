@@ -1,11 +1,7 @@
 package Test.DesignPatternTests;
 
-import Settings.CoffeeFactory.personnel.Personnel;
-import Settings.CoffeeFactory.personnel.staff.worker.worker;
-
-import java.util.Scanner;
-
 public class CommandTest {
+    /*
     public static void main(String[] args) {
         System.out.println("─────────────────────────   [Command] Test   ─────────────────────────");
 
@@ -61,6 +57,6 @@ public class CommandTest {
                 }
             }
         } while (flag);
-    }
+    }*/
 }
 

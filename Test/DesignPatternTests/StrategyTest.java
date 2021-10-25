@@ -1,14 +1,8 @@
 package Test.DesignPatternTests;
 
-import Settings.CoffeeFactory.machine.processmachine.packmachine.PackMachine;
-import Settings.CoffeeFactory.machine.processmachine.packmachine.strategy.BagStrategy;
-import Settings.CoffeeFactory.machine.processmachine.packmachine.strategy.BoxStrategy;
-import Settings.CoffeeFactory.machine.processmachine.packmachine.strategy.CupStrategy;
-
-import java.util.Scanner;
-
 //被包装的产品的问题
 public class StrategyTest {
+    /*
     public static void main(String[] args) {
         System.out.println("------------------------------------ [Strategy] Test ------------------------------------");
 
@@ -85,5 +79,5 @@ public class StrategyTest {
             }
         } while (flag);
         
-    }
+    }*/
 }
