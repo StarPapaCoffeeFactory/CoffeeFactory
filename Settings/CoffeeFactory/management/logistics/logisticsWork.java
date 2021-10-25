@@ -29,10 +29,10 @@ public class logisticsWork {
     }
 
     public void checkMachines() {
-        System.out.println("现在开始对机器进行常规检查...");
+        System.out.println("Now start the routine inspection of the machines...");
 
         for (Machine machine : machines) {
-            System.out.println("现在开始对" + machine.getID() + "号机器设备进行检查。");
+            System.out.println("Now start check the " + machine.getID() + "号机器设备进行检查。");
             machine.fix();
             System.out.println("已完成对机器设备" + machine.getID() + "号的安全检查。");
         }
@@ -43,20 +43,21 @@ public class logisticsWork {
 
     public void checkTools() {
         System.out.println("现在开始对工具进行库存盘查。");
-        StringBuilder builder = new StringBuilder(this.toolCheckReport);
+        StringBuilder builder = new StringBuilder();
         for(handmadeTool tool : tools)
         {
             System.out.println("现在开始对" + tool.getBatchNumber() + "批工具进行库存盘查。");
             if(tool.getStock() < this.toolsMinStock)
             {
 //                this.ToolCheckReport += "警告："+ tool.getType() + "库存不足，请及时补充\n";
-                builder.append("警告："+ tool.getType() + "库存不足，请及时补充\n");
+                builder.append("警告：").append(tool.getType()).append("库存不足，请及时补充\n");
             }
             else{
                 builder.append( tool.getType() + "库存容量充足\n");
             }
 
         }
+        this.toolCheckReport += builder.toString();
         this.toolChecked = true;
         System.out.println("所有工具库存检查完毕。");
         machineChecked = true;
