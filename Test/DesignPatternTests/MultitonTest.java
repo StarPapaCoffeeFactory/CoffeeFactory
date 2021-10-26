@@ -9,7 +9,6 @@ import java.util.Scanner;
  * @description Test for multiton
  */
 public class MultitonTest {
-
     public static void main(String[] args) {
         System.out.println("—————————————-------------------------------------———— Test[Multiton]Pattern —————————————-------------------------------------————");
 
