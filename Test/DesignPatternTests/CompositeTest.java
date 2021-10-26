@@ -166,27 +166,27 @@ public class CompositeTest {
     }
 
     public static void main(String[] args) {
-        System.out.println("────────────────────────   Composite Test   ──────────────────────────");
-        System.out.println("QualityPanelGroup : add() : Add a element to the list of group.");
-        System.out.println("QualityPanelGroup : show() : Show all elements in the list of group.");
-        System.out.println("QualityPanel : add() : Add a element to the list of panel.");
-        System.out.println("QualityPanel : show() : Show all elements in the list of panel.");
+        System.out.println("────────────────────────   [Composite] Test   ────────────────────────");
+        System.out.println("QualityPanelGroup : add : Add a element to the list of group.");
+        System.out.println("QualityPanelGroup : show : Show all elements in the list of group.");
+        System.out.println("QualityPanel : add : Add a element to the list of panel.");
+        System.out.println("QualityPanel : show : Show all elements in the list of panel.");
         System.out.println(" ");
 
+        System.out.println(" ");
+        System.out.println("┌───────────────────────   [Composite] Test   ───────────────────────┐");
+        System.out.println("│        1. Create a QualityInspection Panel Group(Multiple)         │");
+        System.out.println("│        2. Create a QualityInspection Panel (Single)                │");
+        System.out.println("│        3. Enlarge the existing Group                               │");
+        System.out.println("│        4. Show the  QualityTestSystem  structure                   │");
+        System.out.println("└────────────────────────────────────────────────────────────────────┘");
+        System.out.println(" ");
+        System.out.println("Enter the order [0 to quit]:");
+        System.out.println("──────────────────────────────────────────────────────────────────────");
         while(true) {
             while(true) {
                 Scanner sc = new Scanner(System.in);
 
-                System.out.println(" ");
-                System.out.println("┌───────────────────────   Composite Test   ─────────────────────────┐");
-                System.out.println("│        1. Create a QualityInspection Panel Group(Multiple)         │");
-                System.out.println("│        2. Create a QualityInspection Panel (Single)                │");
-                System.out.println("│        3. Enlarge the existing Group                               │");
-                System.out.println("│        4. Show the  QualityTestSystem  structure                   │");
-                System.out.println("│        5. Exit                                                     │");
-                System.out.println("└────────────────────────────────────────────────────────────────────┘");
-                System.out.println(" ");
-                System.out.println("----------------------------------------------------------------------");
                 String choice = sc.next();
                 if (choice.equals("1")) {
                     createGroup();
@@ -197,7 +197,7 @@ public class CompositeTest {
                 } else if (choice.equals("4")) {
                     showLeaf();
                 } else {
-                    if (choice.equals("5")) {
+                    if (choice.equals("0")) {
                         System.out.println("───────────────────────────────  End  ────────────────────────────────");
                         return;
                     }

@@ -158,8 +158,7 @@ public abstract class Machine {
         //adjust the machine aging speed according to the target production number
         this.productionLoss = (1.0 * aimProcessNum) / maxProcessNum;
         double totalLoss=productionLoss+baseLoss;
-        System.out.println("Set aimProcessNum to " + aimProcessNum + ".");
-        System.out.println("The agingSpeed of " + type + ID + " changes to " + totalLoss + ".\n");
+     //   System.out.println("Set aimProcessNum to " + aimProcessNum + ".");
     }
 
     protected abstract int work(Product product);
