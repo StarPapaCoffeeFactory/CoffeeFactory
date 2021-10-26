@@ -3,6 +3,7 @@ package Test.DesignPatternTests;
 import Settings.CoffeeFactory.areas.StaffArea.Office;
 import Settings.CoffeeFactory.personnel.Personnel;
 import Settings.CoffeeFactory.personnel.staff.Manager;
+import Settings.CoffeeFactory.personnel.staff.worker.worker;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -36,15 +37,27 @@ public class NullObjectTest {
         System.out.println("\nPress ENTER to add workers...");
         new BufferedReader(new InputStreamReader(System.in)).readLine();
 
-        manager.hireWorker("OldWang", Personnel.Gender.male, 45,  26000, "13609884567",office);
-        manager.hireWorker("ZhangSan",  Personnel.Gender.male, 27, 13000,"18099775533", office);
-        manager.hireWorker("LucyLee", Personnel.Gender.female, 24, 9000, "18655443378",office);
-        manager.hireWorker("DavidHuang", Personnel.Gender.male, 33, 16000,"13535435996", office);
-        manager.hireWorker("PeterYang", Personnel.Gender.male, 35, 19000,"19833994224", office);
+        worker worker1=new worker("OldWang",45, Personnel.Gender.male,  "13609884567",26000, office);
+        worker worker2=new worker("ZhangSan",27, Personnel.Gender.male,  "18099775533",13000, office);
+        worker worker3=new worker("LucyLee",24, Personnel.Gender.female,  "18655443378",9000, office);
+        worker worker4=new worker("DavidHuang",33, Personnel.Gender.male,  "13535435996",16000, office);
+        worker worker5=new worker("PeterYang",35, Personnel.Gender.male,  "19833994224",19000, office);
+        //office.addWorker(worker1);
+        //office.addWorker(worker2);
+        //office.addWorker(worker3);
+        //office.addWorker(worker4);
+        //office.addWorker(worker5);
 
-        System.out.println("\nSome workers were added to the office, as shown below: ");
+        manager.hireWorker(worker1,"13609884567",office);
+        manager.hireWorker(worker2,"18099775533",office);
+        manager.hireWorker(worker3,"18655443378",office);
+        manager.hireWorker(worker4,"13535435996",office);
+        manager.hireWorker(worker5,"19833994224",office);
+
+        System.out.println("\nSome workers were added to the office.");
 
         office.displayAllStaffs();
+
 
         Scanner input = new Scanner(System.in);
 
