@@ -22,12 +22,21 @@ public class Bourbon extends Coffee{
         return bourbonPortion;
     }
 
+    /*
+     * @description Initiate the ingredient list for bourbon coffee
+     */
     @Override
     protected void initIngredientList(){
         super.ingredientList.add(new BourbonCoffeeBean());
         super.ingredientList.add(new Water());
     }
 
+
+
+    /*
+     * @return void
+     * @description Print the coffee name
+     */
     @Override
     public void display() {
         System.out.println("This is Bourbon :)");
