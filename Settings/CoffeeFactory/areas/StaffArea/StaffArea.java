@@ -95,7 +95,7 @@ public abstract class StaffArea extends Area implements Aggregate {
      * 展示本区域的所有员工
      */
     public void displayAllStaffs() {
-        System.out.printf("%-10s%-20s%-5s%-10s%s%n", "Id", "Name", "Age", "Sex", "Department");
+        System.out.printf("%-20s%-20s%-5s%-10s%s%n", "Name", "Gender", "Age", "Id", "Department");
         manager.display();
         for (Staff obj : workerList) {
             obj.display();
