@@ -9,7 +9,6 @@ import java.util.Scanner;
  * @description Test for multiton
  */
 public class MultitonTest {
-
     public static void main(String[] args) {
         System.out.println("—————————————-------------------------------------———— Test[Multiton]Pattern —————————————-------------------------------------————");
 
@@ -19,7 +18,7 @@ public class MultitonTest {
         System.out.println("Manager : getWorkShopManager() : Get workshop's manager which is single.");
         System.out.println("Manager : getWareHouseManager() : Get warehouse's manager which is single.");
         System.out.println("");
-
+        //Multiton: Multiple managers are being created
         System.out.println("");
         System.out.println("┌─────────────────────────────────   State Test   ───────────────────────────┐");
         System.out.println("│              1. get instance of dining room's manager                      │");

@@ -13,12 +13,10 @@ public class Robusta extends Coffee{
     private double sugar = 5;
     private double water = 0.5;
 
-    //constructor
     public Robusta() {
         super("Robusta", 24, 10, 0.9);
     }
 
-    //constructor
     public Robusta(BlendedCoffee blended) {
         super("Robusta", 24, 10, 0.9, blended);
         this.robustaContent = 0.9;
@@ -29,6 +27,10 @@ public class Robusta extends Coffee{
         return this.robustaContent;
     }
 
+    /*
+     * @return void
+     * @description Initiate the ingredient list for Robusta Coffee
+     */
     @Override
     protected void initIngredientList() {
         super.ingredientList.add(new RobustaCoffeeBean());
@@ -36,6 +38,10 @@ public class Robusta extends Coffee{
         super.ingredientList.add(new Water());
     }
 
+    /*
+     * @return
+     * @description Retrieve the name of the coffee bean within a blended coffee
+     */
     public String getBlendedCoffeeName() {
         return blended.getBlended() + " Robusta";
     }
@@ -51,6 +57,10 @@ public class Robusta extends Coffee{
         System.out.println("This is Robusta :)");
     }
 
+    /*
+     * @return java.lang.Object
+     * @description Clone an object
+     */
     @Override
     public Object clone() throws CloneNotSupportedException {
         return super.clone();

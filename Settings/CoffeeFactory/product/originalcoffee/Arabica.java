@@ -15,20 +15,36 @@ public class Arabica extends Coffee{
         this.initIngredientList();
     }
 
+    /*
+     * @return void
+     * @description Initiate the ingredient list for Arabica coffee
+     */
     @Override
     protected void initIngredientList() {
         super.ingredientList.add(new ArabicaCoffeeBean());
         super.ingredientList.add(new Water());
     }
 
+    /*
+     * @return void
+     * @description Display the name of Arabica Coffee
+     */
     @Override
     public void display() {
         System.out.println("This is Arabica :)");
     }
 
+    /*
+     * @return java.lang.String
+     * @description Retrieve the name of the coffee bean within a blended coffee
+     */
     @Override
     public String getBlendedCoffeeName(){return blended.getBlended()+ " Arabica Coffee";}
 
+    /*
+     * @return
+     * @description Display class information
+     */
     @Override
     public String toString() {
         return "subclass : Arabica";

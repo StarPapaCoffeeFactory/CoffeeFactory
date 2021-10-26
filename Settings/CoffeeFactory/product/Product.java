@@ -28,8 +28,7 @@ public abstract class Product {
     protected PackageInfo pack;
     public ArrayList<Material> ingredientList;
 
-    protected Product() {
-    }
+    protected Product() {}
 
     protected abstract void initIngredientList();
 
@@ -51,6 +50,7 @@ public abstract class Product {
         return this.productName;
     }
 
+    //Methods ment for the State pattern in ProductionStage
     public ProductionStage getStage() {
         return stage;
     }
@@ -102,6 +102,11 @@ public abstract class Product {
     public void pack() {
         this.wrapperMachine.process(this, 1);
     }
+
+    /*
+     * @return void
+     * @description Store the product, when and only when it's packaged
+     */
     public void store() {
         if (!(this.stage instanceof Packed)) {
             System.out.println("The product has not been packaged!");

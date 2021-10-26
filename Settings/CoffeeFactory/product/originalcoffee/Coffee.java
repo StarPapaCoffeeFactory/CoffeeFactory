@@ -6,7 +6,7 @@ import Settings.CoffeeFactory.product.blendedcoffee.BlendedCoffee;
 
 /**
  * @author LouTianyu
- * @description The basic abstract for Coffee.
+ * @description The basic abstract class for Coffee.
  */
 public abstract class Coffee extends Product {
     public double content;
@@ -24,9 +24,9 @@ public abstract class Coffee extends Product {
         this.blended = new AutumnBlend();
     }
 
-    public abstract void display();
+    public abstract void display(); //Abstract method to display class information
 
-    public abstract String getBlendedCoffeeName();
+    public abstract String getBlendedCoffeeName(); //Abstract method to get blended coffee name
 }
 
 

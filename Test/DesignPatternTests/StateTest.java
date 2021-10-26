@@ -37,7 +37,7 @@ public class StateTest {
         int op;
         boolean flag = true;
 
-        // You can create any product here.
+        // Create a product here.
         Product product = new Americano(1);
         System.out.println("The initial production stage of product is \"" + product.getStage() + "\"");
 
@@ -46,6 +46,7 @@ public class StateTest {
             System.out.print("Enter the order [0 to quit]:");
             op = input.nextInt();
 
+            //Illustrate the product state change.
             if (op == 1 && !(product.getStage() instanceof Producing)
                     || op == 2 && !(product.getStage() instanceof Produced)
                     || op == 3 && !(product.getStage() instanceof Packed)) {

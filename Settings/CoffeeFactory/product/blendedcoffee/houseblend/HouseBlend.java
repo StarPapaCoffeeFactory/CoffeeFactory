@@ -49,8 +49,6 @@ public class HouseBlend extends Product {
     }
 
     /**
-     * Get coffee instance at index.
-     *
      * @param index index of instance
      * @return coffee instance
      */
@@ -62,6 +60,9 @@ public class HouseBlend extends Product {
         }
     }
 
+    /*
+     * @description set the package for HouseBlend
+     */
     @Override
     public void pack() {
         super.nextStage();
@@ -76,6 +77,9 @@ public class HouseBlend extends Product {
         super.setProductionDate(df.format(day));
     }
 
+    /*
+     * @description set the material for HouseBlend
+     */
     @Override
     protected void initIngredientList() {
         for (Coffee coffee : coffeeList) {
