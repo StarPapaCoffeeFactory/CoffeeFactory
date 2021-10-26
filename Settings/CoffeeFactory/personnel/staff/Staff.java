@@ -2,6 +2,8 @@ package Settings.CoffeeFactory.personnel.staff;
 
 import Settings.CoffeeFactory.areas.StaffArea.StaffArea;
 import Settings.CoffeeFactory.personnel.Personnel;
+
+import java.util.Objects;
 import java.util.UUID;
 /**
  * @ program: coffeefactory
@@ -42,14 +44,21 @@ public abstract class Staff extends Personnel implements Observer{
     }
 
     protected String generate_ID()
-    {
-        return UUID.randomUUID().toString().replaceAll("-", "");
+    {/*
+     *
+     * @return java.lang.String
+     * @author YXJ
+     * @description 生成一个八位数字的id
+     * @date 2021/10/26 16:59
+     */
+
+        return UUID.randomUUID().toString().replaceAll("-|[a-z]", "").substring(0,8);
     }
 
     public void getPaid()
     {
         this.payroll_card += this.salary;
-        System.out.println( "The No." + this.getId() +"Worker :"+this.name +" has been paid："+ this.salary + " yuan as month salary , " +
+        System.out.println( "The No." + this.getId() +" worker :"+this.name +" has been paid："+ this.salary + " yuan as month salary , " +
                 "current asset：" + String.valueOf(this.payroll_card) + " yuan");
     }
 
@@ -61,14 +70,22 @@ public abstract class Staff extends Personnel implements Observer{
     }
 
     public void display()
-    {
-        String gender_str;
-        if(gender.toString()=="male")
-            gender_str="男";
-        else
-            gender_str="女";
+    {/*
+     *
+     * @return void
+     * @author YXJ
+     * @description  打印staff基本信息
+     * @date 2021/10/26 17:00
+     */
 
-        System.out.println("Name："+name+" Gender："+gender_str+"  Age："+getAge()+"  Id:"+ Id+"  department:"+department.toString());
+        String gender_str;
+        if(Objects.equals(gender.toString(), "male"))
+            gender_str="male";
+        else
+            gender_str="female";
+
+        System.out.println("Name："+name+" Gender："+gender_str+"  Age："+getAge()+"  Id:"+ Id+"  department:"+
+                (this.department == null ? "null" : this.department.toString()));
     }
 
     public String getId()

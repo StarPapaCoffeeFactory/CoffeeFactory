@@ -56,8 +56,8 @@ public class FacadeTest {
 
         logisticsWork someWork = new logisticsWork(machines, tools);
         LogisticsAdministrator logisticsAdministrator = new LogisticsAdministrator("Yuanxinjie" , 22 , Personnel.Gender.male , "1234567894" , 1000);
-//        System.out.println("Print basic information of the logistics administrator:");
-//        logisticsAdministrator.display();
+        System.out.println("Print basic information of the logistics administrator:");
+        logisticsAdministrator.display();
         System.out.println();
         System.out.println("Set work tasks for the logistics administrator...");
         logisticsAdministrator.setWorks(someWork);
