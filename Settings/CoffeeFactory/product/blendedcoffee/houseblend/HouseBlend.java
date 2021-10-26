@@ -49,8 +49,6 @@ public class HouseBlend extends Product {
     }
 
     /**
-     * Get coffee instance at index.
-     *
      * @param index index of instance
      * @return coffee instance
      */
