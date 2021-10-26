@@ -2,6 +2,10 @@ package Settings.CoffeeFactory.product.production;
 
 import Settings.CoffeeFactory.product.Product;
 
+/**
+ * @author LouTianyu
+ * @description Packaging
+ */
 public class Packaging extends ProductionStage {
     @Override
     public void nextState(Product product) {

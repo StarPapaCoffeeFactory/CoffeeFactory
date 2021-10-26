@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 /**
  * @author LouTianyu
- * @description Factory class for HouseBlend. Created for Design Pattern Bridge
+ * @description Factory class for HouseBlend. Created for Design Pattern Flyweight
  */
 public class HouseBlendFactory {
     private static final HashMap<Class<? extends Coffee>, Coffee> coffeeMap =
