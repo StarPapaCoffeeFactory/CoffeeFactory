@@ -8,9 +8,6 @@ public class QualifyPanel extends QualifySystem{
     @Override
     protected void add(QualifySystem qualityTestSystem) { }
 
-    /**
-     * Show the structure of the system
-     */
     @Override
     public void show(int depth) {
         for (int i = 0; i <= depth; i++) {
