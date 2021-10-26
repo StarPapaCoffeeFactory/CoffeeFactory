@@ -124,7 +124,7 @@ public class FlyweightTest {
         } catch (Exception e) {
             System.out.println("Failed to instantiate HouseBlend coffee.");
         }
-
+        System.out.println("—————————————---------------------------------------------- End ————------—————————-------------------------------------————");
     }
 
 

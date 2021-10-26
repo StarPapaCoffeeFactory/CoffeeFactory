@@ -29,50 +29,54 @@ public class logisticsWork {
     }
 
     public void checkMachines() {
-        System.out.println("现在开始对机器进行常规检查...");
+        System.out.println("Now start the routine inspection of the machines...");
 
         for (Machine machine : machines) {
-            System.out.println("现在开始对" + machine.getID() + "号机器设备进行检查。");
+            System.out.println("Now start check the No." + machine.getID() + " machine`s routine inspection");
             machine.fix();
-            System.out.println("已完成对机器设备" + machine.getID() + "号的安全检查。");
+            System.out.println("The No." + machine.getID() + " machine`s routine inspection completed");
+            System.out.println();
         }
-        System.out.println("所有机器设备检查完毕。");
+        System.out.println("All machines has been checked");
         machineChecked = true;
 
     }
 
     public void checkTools() {
-        System.out.println("现在开始对工具进行库存盘查。");
-        StringBuilder builder = new StringBuilder(this.toolCheckReport);
+        System.out.println("Now start the inventory check of the tools。");
+        StringBuilder builder = new StringBuilder();
         for(handmadeTool tool : tools)
         {
-            System.out.println("现在开始对" + tool.getBatchNumber() + "批工具进行库存盘查。");
+            System.out.println("Now start check the " + tool.getBatchNumber() + "batch tools` inventory check");
             if(tool.getStock() < this.toolsMinStock)
             {
 //                this.ToolCheckReport += "警告："+ tool.getType() + "库存不足，请及时补充\n";
-                builder.append("警告："+ tool.getType() + "库存不足，请及时补充\n");
+                builder.append("Logistic Management Warning：The ").append(tool.getType()).append(" is insufficient , please replenish in time\n");
             }
             else{
-                builder.append( tool.getType() + "库存容量充足\n");
+                builder.append( tool.getType() + " has sufficient inventory capacity\n");
             }
 
         }
+        this.toolCheckReport += builder.toString();
         this.toolChecked = true;
-        System.out.println("所有工具库存检查完毕。");
+        System.out.println("All tools inventory check completed");
         machineChecked = true;
     }
 
     public void report() {
 
-        System.out.println("后勤检查工作结束，开始汇报本次检查情况：");
+        System.out.println("The logistic inspection work is over, now start the report of this inspection:");
 
-        System.out.println("后勤工具库存检查:" + (this.toolChecked ? "已完成" : "未完成")  + "。");
-        System.out.println("工具库存检查报告如下：");
+        System.out.println("The tools inventory check :" + (this.toolChecked ? "completed" : "uncompleted")  + ".");
+        System.out.println("The tools inventory check report is as follows : ");
         System.out.print(toolCheckReport);
+        System.out.println();
 
-        System.out.println("生产机器安全检查:" + (this.machineChecked ? "已完成" : "未完成") + "。");
-        System.out.println("生产机器检查报告如下：");
-        System.out.print(machineCheckReport);
+        System.out.println("The machines routine check :" + (this.machineChecked ? "completed" : "uncompleted") + ".");
+        System.out.println("The machines routine check report is as follows ：");
+        System.out.print("All machines  work well now");
+        System.out.println();
     }
 
     public void checkClear()

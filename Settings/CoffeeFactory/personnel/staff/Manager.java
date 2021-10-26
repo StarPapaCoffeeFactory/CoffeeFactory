@@ -80,7 +80,7 @@ public class Manager extends Staff{
         if (diningRoomManager == null) {
             diningRoomManager = new Manager("diningRoomManager", 29, Gender.female,"13922049976");
         }
-        System.out.println("Our dining room manager is here.");
+//        System.out.println("Our dining room manager is here.");
         return diningRoomManager;
     }
 
@@ -95,7 +95,7 @@ public class Manager extends Staff{
         if (officeManager == null) {
             officeManager = new Manager("officeManager", 33, Gender.female, "18003434555");
         }
-        System.out.println("Our office manager is here.");
+//        System.out.println("Our office manager is here.");
         return officeManager;
     }
 
@@ -103,7 +103,7 @@ public class Manager extends Staff{
         if (workShopManager == null) {
             workShopManager = new Manager("workShopManager", 30, Gender.male, "123456");
         }
-        System.out.println("Here is our workshop manager.");
+//        System.out.println("Here is our workshop manager.");
         return workShopManager;
     }
 
@@ -116,7 +116,7 @@ public class Manager extends Staff{
         if (warehouseManager == null) {
             warehouseManager = new Manager("warehouseManager", 28, Gender.male, "234567");
         }
-        System.out.println("Here is our warehouse manager.");
+//        System.out.println("Here is our warehouse manager.");
         return warehouseManager;
     }
 

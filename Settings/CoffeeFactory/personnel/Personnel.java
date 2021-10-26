@@ -29,7 +29,7 @@ public abstract class Personnel {
         this.gender = gender;
         this.phonenum = phnum;
         this.identity = "abstract person";
-        this.SetVisitLimit();
+        SetVisitLimit();
         this.location = null;
 
     }
@@ -82,9 +82,7 @@ public abstract class Personnel {
     public void Goto(Area dest) {
 
         if (this.canEnter(dest)) {
-
             this.location = dest;
-
             System.out.println(this.identity + " " + this.name + "has entered " + dest.toString());
 
         } else {

@@ -7,6 +7,7 @@ package Test.DesignPatternTests;
  * @ date: 2021-10-15 12:55:29
  */
 
+
 import Settings.CoffeeFactory.machine.Machine;
 import Settings.CoffeeFactory.machine.transportmachine.SCAR;
 import Settings.CoffeeFactory.management.logistics.logisticsWork;
@@ -32,9 +33,20 @@ public class FacadeTest {
         System.out.println();
 
         //在此初始化一批machine
-        List<Machine> machines = new ArrayList<Machine>(){{
-            add(new SCAR("test machine" , "123" ));
 
+        SCAR m1 = new SCAR("Blender Machine" , "101" );
+        SCAR m2 = new SCAR("Blender Machine" , "102" );
+        SCAR m3 = new SCAR("Blender Machine" , "103" );
+        SCAR m4 = new SCAR("Blender Machine" , "104" );
+        SCAR m5 = new SCAR("Blender Machine" , "105" );
+        m1.setBroken(true);
+        m4.setBroken(true);
+        List<Machine> machines = new ArrayList<Machine>(){{
+            add(m1 );
+            add(m2 );
+            add(m3 );
+            add(m4 );
+            add(m5 );
         }};
         //在此初始化一批handmadetool
         List<handmadeTool> tools = new ArrayList<handmadeTool>(){{
@@ -44,14 +56,19 @@ public class FacadeTest {
 
         logisticsWork someWork = new logisticsWork(machines, tools);
         LogisticsAdministrator logisticsAdministrator = new LogisticsAdministrator("Yuanxinjie" , 22 , Personnel.Gender.male , "1234567894" , 1000);
-        System.out.println("Print basic information of the logistics administrator:");
+//        System.out.println("Print basic information of the logistics administrator:");
 //        logisticsAdministrator.display();
+        System.out.println();
         System.out.println("Set work tasks for the logistics administrator...");
         logisticsAdministrator.setWorks(someWork);
         System.out.println("work setup completed , start logistics check tasks...");
+        System.out.println();
         logisticsAdministrator.checkMachines();
+        System.out.println();
         logisticsAdministrator.checkTools();
+        System.out.println();
         logisticsAdministrator.submitReport();
+        System.out.println();
         System.out.println("logistics check tasks completed");
         System.out.println("");
         System.out.println("───────────────────End of the facade test───────────────────────");

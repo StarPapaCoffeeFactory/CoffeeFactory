@@ -30,10 +30,10 @@ public class ObserverTest {
         System.out.println();
 
         List<Staff> obstaffList = new ArrayList<Staff>(){{
-            add(new worker("zhangsan",18, Personnel.Gender.male, "151515151", 2000));
-            add(new worker("lisi",19, Personnel.Gender.male, "154655151", 2000));
-            add(new worker("wangwu",20, Personnel.Gender.female, "145325151", 2000));
-            add(new worker("heliu",21, Personnel.Gender.female, "151659851", 2000));
+            add(new worker("ZhangSan",18, Personnel.Gender.male, "151515151", 2000));
+            add(new worker("LiSi",19, Personnel.Gender.male, "154655151", 2000));
+            add(new worker("WangWu",20, Personnel.Gender.female, "145325151", 2000));
+            add(new worker("HeLiu",21, Personnel.Gender.female, "151659851", 2000));
         }};
 
         SalaryPayment salaryPay = new SalaryPayment();
@@ -41,7 +41,7 @@ public class ObserverTest {
         for (Staff staff : obstaffList) {
             salaryPay.addStaff(staff);
         }
-
+        System.out.println();
 
 
 //        SimpleDateFormat simFormat = new SimpleDateFormat("yyyy-MM-dd");
@@ -73,8 +73,8 @@ public class ObserverTest {
 
         System.out.println();
         double salaryChange =  1000.0;
-        System.out.println("Due to the satisfactory performance in this quarter, the salary of all workers increased"
-                + String.valueOf(salaryChange) + "yuan");
+        System.out.println("Due to the satisfactory performance in this quarter, the salary of all workers increased "
+                + String.valueOf(salaryChange) + " yuan");
         System.out.println();
         salaryPay.changeSalary(salaryChange);
 

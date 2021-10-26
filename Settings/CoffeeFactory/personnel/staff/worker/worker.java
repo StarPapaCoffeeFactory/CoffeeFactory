@@ -25,12 +25,20 @@ public class worker extends Staff{
     static private Product americano,caramelMacchiato,hazelnutLatte,latte,mocha,arabica,autumnBlend,houseBlend;
 
     public worker(String name, int age, Personnel.Gender gender, String phnum,double salary ) {
+
         super(name, age, gender ,phnum ,salary);
+        this.identity = "worker";
         state="rest";
+        this.SetVisitLimit();
     }
 
     public worker(String name, int age, Personnel.Gender gender, String phnum,double salary, StaffArea area ) {
+
         super(name, age, gender, phnum, salary, area);
+        this.identity = "worker";
+        state = "rest";
+        this.SetVisitLimit();
+
     }
 
     public void work()
@@ -57,13 +65,19 @@ public class worker extends Staff{
     }
 
     public void Goto(Area dest) {
-        System.out.println("This worker cannot move area.");
-    }
+        if (this.canEnter(dest)) {
+            this.location = dest;
+            System.out.println(this.identity + " " + this.name + "has entered " + dest.toString());
 
+        } else {
+            System.out.println("sorry，" + this.identity + " " + this.name + "has no access permission and fail to enter" + dest.toString());
+        }
+    }
+    @Override
     public void SetVisitLimit()
     {
         String[] persons = {this.identity};
-        String[] publicAreas = {AreaName.PUBLIC_AREA,AreaName.EXHIBITION_AREA, AreaName.COFFEE_EXPERIENCE_ROOM ,
+        String[] publicAreas = {AreaName.PUBLIC_AREA , AreaName.EXHIBITION_AREA, AreaName.COFFEE_EXPERIENCE_ROOM ,
                 AreaName.MANUFACTURING_AREA , AreaName.STAFF_AREA , AreaName.DINING_ROOM , AreaName.OFFICE};
 
         this.visitLimit = new LimitContext(persons, publicAreas);

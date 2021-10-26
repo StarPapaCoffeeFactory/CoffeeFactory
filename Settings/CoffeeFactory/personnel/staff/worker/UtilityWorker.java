@@ -15,7 +15,22 @@ import Settings.CoffeeFactory.personnel.staff.worker.worker;
 
 public class UtilityWorker extends worker{
 
+
+
     public UtilityWorker(String name, int age, Personnel.Gender gender, String phnum, double salary ) {
+        /*
+         *
+         * @param name
+         * @param age
+         * @param gender
+         * @param phnum
+         * @param salary
+         * @return
+         * @author YXJ
+         * @description
+         * @date 2021/10/25 21:31
+         */
+
         super(name, age, gender ,phnum ,salary);
     }
 

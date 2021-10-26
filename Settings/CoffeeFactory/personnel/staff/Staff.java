@@ -49,13 +49,15 @@ public abstract class Staff extends Personnel implements Observer{
     public void getPaid()
     {
         this.payroll_card += this.salary;
-        System.out.println( this.getId() +"号: "+this.name +" 收到工资："+ this.salary + "元,当前总资产为：" + String.valueOf(this.payroll_card));
+        System.out.println( "The No." + this.getId() +"Worker :"+this.name +" has been paid："+ this.salary + " yuan as month salary , " +
+                "current asset：" + String.valueOf(this.payroll_card) + " yuan");
     }
 
     public void updateSalary(double change)
     {
         this.salary += change;
-        System.out.println(this.getId() +"号: "+this.name + "收到通知 ， 当前工资变更为："+ this.salary);
+        System.out.println("The No." + this.getId() +" Worker :"+this.name+ " has received the notice ，its salary changes to ："+ this.salary
+         + " yuan");
     }
 
     public void display()
@@ -66,7 +68,7 @@ public abstract class Staff extends Personnel implements Observer{
         else
             gender_str="女";
 
-        System.out.println("姓名："+name+"  性别："+gender_str+"  年龄："+getAge()+"  Id:"+ Id+"  工作部门:"+department.toString());
+        System.out.println("Name："+name+" Gender："+gender_str+"  Age："+getAge()+"  Id:"+ Id+"  department:"+department.toString());
     }
 
     public String getId()

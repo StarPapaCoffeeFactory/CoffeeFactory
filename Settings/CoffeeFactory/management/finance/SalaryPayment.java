@@ -75,19 +75,21 @@ public class SalaryPayment {
     }
 
     private void payOut() {
+        System.out.println("Payment announcement : Notification sent to all employees: salary paid");
         for (Staff staff : staffList) {
             staff.getPaid();
         }
-        System.out.println("Notification sent to all employees: salary paid");
+
     }
 
     public void changeSalary(double change)
     {
+        System.out.println("Payment announcement : Notification sent to all employees: salary changed");
         for (Staff staff : staffList) {
 
             staff.updateSalary(change);
         }
-        System.out.println("Notification sent to all employees: salary changed");
+
     }
 
 }
