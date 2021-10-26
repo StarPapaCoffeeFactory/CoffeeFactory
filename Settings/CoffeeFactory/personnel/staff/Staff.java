@@ -84,8 +84,10 @@ public abstract class Staff extends Personnel implements Observer{
         else
             gender_str="female";
 
-        System.out.println("Name："+name+" Gender："+gender_str+"  Age："+getAge()+"  Id:"+ Id+"  department:"+
-                (this.department == null ? "null" : this.department.toString()));
+        //czq add :)
+        System.out.printf("%-20s%-20s%-5s%-10s%s%n", this.name,this.gender,this.age, this.Id, (this.department == null ? "null" : this.department.toString()));
+        //System.out.println("Name："+name+" Gender："+gender_str+"  Age："+getAge()+"  Id:"+ Id+"  department:"+
+        //        (this.department == null ? "null" : this.department.toString()));
     }
 
     public String getId()

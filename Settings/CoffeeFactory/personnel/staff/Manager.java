@@ -5,6 +5,7 @@ import Settings.CoffeeFactory.areas.StaffArea.StaffArea;
 import Settings.CoffeeFactory.management.staff.WorkerController;
 import Settings.CoffeeFactory.personnel.ChiefManager;
 import Settings.CoffeeFactory.personnel.Personnel;
+import Settings.CoffeeFactory.personnel.staff.worker.worker;
 
 import java.util.ArrayList;
 
@@ -138,6 +139,18 @@ public class Manager extends Staff{
 
     }
 
+    public void hireWorker(worker _worker, String phnum, StaffArea staffArea) {
+        String name=_worker.getName();
+        Gender gender=_worker.getGender();
+        int age=_worker.getAge();
+        double salary=_worker.salary;
+        if (this.departmentList.contains(staffArea)) {
+            WorkerController.addWorker(name, age, gender, phnum, salary, staffArea);
+        }
+        else {
+            System.out.println("The manager does not match the staff area.");
+        }
+    }
     public void hireWorker(String name, Gender gender, int age, double salary, String phnum, StaffArea staffArea) {
         if (this.departmentList.contains(staffArea)) {
             WorkerController.addWorker(name, age, gender, phnum, salary, staffArea);
