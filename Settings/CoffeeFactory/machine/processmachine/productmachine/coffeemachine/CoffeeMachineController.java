@@ -9,7 +9,7 @@ public class CoffeeMachineController {
         this.coffeeBasicMachine = coffeeBasicMachine;
         String name = coffeeBasicMachine.getID();
         System.out.println(name + " is ready.\n");
-        coffeeBasicMachine.setAimProcessNum(100);
+        coffeeBasicMachine.setAimProcessNum(50);
     }
 
 
