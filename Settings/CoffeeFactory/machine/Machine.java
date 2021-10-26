@@ -20,6 +20,20 @@ public abstract class Machine {
     private double lifeSpan = 20;
     //the maximum expected life of the machine,unit:year
     private int maxProcessNum = 500;
+
+    public void setBroken(boolean broken) {
+        /*
+         *
+         * @param broken
+         * @return void
+         * @author YXJ
+         * @description add for Facade Test
+         * @date 2021/10/26 13:39
+         */
+
+        isBroken = broken;
+    }
+
     //The maximum number that the machine can process at one time
     protected boolean isBroken = false;
     // Whether the machine is damaged
@@ -101,7 +115,7 @@ public abstract class Machine {
                 System.out.println("Nobody can fix" + type + ID + ".Its broken level is too high!\n");
             }
         } else {
-            System.out.println("There is nothing to be fixed.\n");
+            System.out.println("There is nothing to be fixed.");//YXJ delete \n
         }
     }
 
@@ -164,5 +178,7 @@ public abstract class Machine {
         System.out.println(type + ID + " starts to run...");
         return work(product);
     }
+
+
 }
 
