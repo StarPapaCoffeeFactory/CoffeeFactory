@@ -2,13 +2,7 @@ package Settings.CoffeeFactory.machine.transportmachine;
 
 import Settings.CoffeeFactory.product.Product;
 
-/**
- * @author Yuan.Cai
- * @project chocolateFactory
- * @classname BigTruck
- * @description Machine for transporting a large quantity of items.
- * @date 2020/11/8 19:55
- */
+
 public class LCAR extends TransportMachine {
     public LCAR(String type, String machineNum) {
         super(type, machineNum, 10, 1, 400);
@@ -25,6 +19,7 @@ public class LCAR extends TransportMachine {
     }
 
     @Override
+
     protected void arrive(Product product) {
         System.out.println(this.aimProcessNum + " " + product.getProductName() + " transport successfully.");
     }
