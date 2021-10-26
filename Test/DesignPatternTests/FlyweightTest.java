@@ -42,13 +42,11 @@ public class FlyweightTest {
                 + "└───────────────────────────────────────────────────────────────────────┘\n";
 
 
-
+        //Flyweight: Coffere here is the shareable resource, which serves as a flyweight
         System.out.println("");
-        System.out
-                .println("HouseBlend : HouseBlend(List<Class<? extends Coffee>> typeList) "
+        System.out.println("HouseBlend : HouseBlend(List<Class<? extends Coffee>> typeList) "
                         + "Get an instance of subclass of Coffee.");
-        System.out
-                .println("HouseBlend : at(index: int) : Return the Coffee instance at index.");
+        System.out.println("HouseBlend : at(index: int) : Return the Coffee instance at index.");
         System.out.println("");
         System.out.println(HINT1);
 
@@ -97,7 +95,7 @@ public class FlyweightTest {
         System.out.println("Each type will be displayed AT MOST ONCE:");
 
         try {
-            HouseBlend houseBlend = new HouseBlend(classes);
+            HouseBlend houseBlend = new HouseBlend(classes); //Use the factory method to create an instance of HouseBlend
             int index = 0;
             System.out.println("");
             System.out.println("HouseBlend is instantiated as following:");

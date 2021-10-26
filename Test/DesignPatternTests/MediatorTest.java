@@ -37,7 +37,7 @@ public class MediatorTest {
         System.out.println("│              2.Office manager send feedback received from workers to the general manager                              │");
         System.out.println("└───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘");
         System.out.println("");
-
+        //Mediator: Manager here is a mediator, which is the mediator of the worker and the general manager.
 
         Scanner input = new Scanner(System.in);
         int op;
