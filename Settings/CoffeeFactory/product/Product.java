@@ -81,9 +81,23 @@ public abstract class Product {
     }
 
     public void setWeight(int weight) {
+        /*
+         * @param weight(product weight)
+         * @return void
+         * @author Kaiyu Huang
+         * @description set product weight
+         * @date 2021/10/27 8:15
+         */
         this.weight = weight;
     }
     public int getWeight() {
+        /*
+         * @param
+         * @return int
+         * @author Kaiyu Huang
+         * @description get product weight
+         * @date 2021/10/27 8:15
+         */
         return this.weight;
     }
 
@@ -117,10 +131,24 @@ public abstract class Product {
     }
 
     public ProductMemento createMemento() {
+        /*
+         * @param
+         * @return Settings.CoffeeFactory.product.productmemento.ProductMemento
+         * @author Kaiyu Huang
+         * @description create product memento
+         * @date 2021/10/27 8:14
+         */
         return new ProductMemento(this.weight);
     }
 
     public void restoreMemento(ProductMemento memento) {
+        /*
+         * @param memento(a product memento)
+         * @return void
+         * @author Kaiyu Huang
+         * @description get weight from product memento
+         * @date 2021/10/27 8:14
+         */
         this.weight = memento.getWeight();
     }
 

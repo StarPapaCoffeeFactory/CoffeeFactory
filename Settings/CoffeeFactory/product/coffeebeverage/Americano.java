@@ -4,31 +4,47 @@ import Settings.CoffeeFactory.product.Product;
 import Settings.CoffeeFactory.material.Food.*;
 
 /**
- * @author Kaiyu Huang
- * @project CoffeeFactory
- * @classname Americano
- * @description Americano Beverage; Imitate Starbucks
- * @date 2021/10/11 21:45
+ * @ program: CoffeeFactory.iml
+ * @ description: Americano Beverage; Imitate Starbucks
+ * @ author: Kaiyu Huang
+ * @ date: 2021-10-27 08:31:25
  */
 
 public class Americano extends Product {
     protected int quantity;
-    // constructor
     public Americano(int quantity) {
+        /*
+         * @param quantity(product quantity)
+         * @return
+         * @author Kaiyu Huang
+         * @description constructor for Americano
+         * @date 2021/10/27 8:55
+         */
         super("Americano", 9, 228 * quantity);
         this.quantity = quantity;
         this.initIngredientList();
     }
-    // methods
-    // initialize the ingredient list of Americano
     @Override
     protected void initIngredientList() {
+        /*
+         * @param
+         * @return void
+         * @author Kaiyu Huang
+         * @description initialize the ingredient list of Americano
+         * @date 2021/10/27 8:56
+         */
         super.ingredientList.add(new CoffeeBean());
         super.ingredientList.add(new Water());
     }
-    // override the getProductName method
     @Override
     public String getProductName() {
+        /*
+         * @param
+         * @return java.lang.String
+         * @author Kaiyu Huang
+         * @description override the getProductName method
+         * @date 2021/10/27 8:56
+         */
         return "Americano";
     }
 }

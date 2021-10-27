@@ -1,8 +1,24 @@
 package Test.DesignPatternTests;
 
+import Settings.CoffeeFactory.personnel.staff.worker.*;
+
+/**
+ * @ program: CoffeeFactory.iml
+ * @ description: Test for Command
+ * @ author: Kaiyu Huang
+ * @ date: 2021-10-27 08:31:25
+ */
+
 public class CommandTest {
-    /*
+
     public static void main(String[] args) {
+        /*
+         * @param args
+         * @return void
+         * @author Kaiyu Huang
+         * @description main function for CommandTest
+         * @date 2021/10/27 8:12
+         */
         System.out.println("─────────────────────────   [Command] Test   ─────────────────────────");
 
         System.out.println("");
@@ -57,6 +73,6 @@ public class CommandTest {
                 }
             }
         } while (flag);
-    }*/
+    }
 }
 
