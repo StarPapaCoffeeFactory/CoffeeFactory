@@ -2,16 +2,16 @@ package Settings.CoffeeFactory.supplement.screen;
 
 import Settings.CoffeeFactory.supplement.supplement;
 
-public abstract class screen extends supplement {
-
-    private String context;//屏幕内容
-
-    public screen(String context){
-        this.type="screen";
-        this.context=context;
+public class screen extends supplement {
+    private static String context = "Hello! StarpapaCoffee!";//屏幕内容
+    public screen() {
+        this.type = "screen";
     }
 
-    private String getContext(){
+    public void setContent(String context) {
+        this.context = context;
+    }
+    public String getContext(){
         return this.context;
     }
 

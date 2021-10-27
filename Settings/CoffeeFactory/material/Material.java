@@ -18,7 +18,6 @@ public abstract class Material {
     public void acquire(double addQuant) {inventory += addQuant;}
     public double consume(double minusQuant) {
         double quantConsumed = minusQuant;
-
         if (inventory - minusQuant <= 0) {
             quantConsumed = inventory;
             inventory = 0.00f;
@@ -28,12 +27,9 @@ public abstract class Material {
         return quantConsumed;
     }
 
-    public boolean checkMaterialQuantity(Material obj, double needQuant) {
+    public boolean checkMaterialQuantity(Material obj) {
         return this.inventory==obj.inventory;
     }
-    public boolean checkExpirationDate(Material obj)//还没写完
-    {
-        return this.inventory==obj.inventory;
-    }
+    public boolean checkExpirationDate(Material obj) {return this.inventory==obj.inventory;}//尚待优化
 
 }
