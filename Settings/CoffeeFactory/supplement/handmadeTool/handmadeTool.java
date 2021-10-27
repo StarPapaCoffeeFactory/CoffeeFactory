@@ -14,10 +14,10 @@ public class handmadeTool extends supplement{
         this.type="handmadeTool";
         this.batchNumber= new Date().getTime();
         this.description="Default Description";
-        this.stock=getStock();
     }
 
     public handmadeTool(handmadeTool tool) {
+        type= tool.type;
         batchNumber = tool.batchNumber;
         description = tool.description;
         System.out.println("Copy Handmade Tool!");

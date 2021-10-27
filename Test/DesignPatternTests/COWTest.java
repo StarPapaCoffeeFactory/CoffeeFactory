@@ -27,6 +27,7 @@ public class COWTest {
                 + "***********************************************************************\n";
 
 
+        /*
         System.out.println(
                 "------------------------------------ [Copy on Write] Test ------------------------------------");
 
@@ -40,12 +41,21 @@ public class COWTest {
         System.out.println(
                 "ExperienceRoom: setToolDescription(description: String): Set the description of the tool.");
         System.out.println("");
+        */
 
         ExperienceRoom[] experienceRooms = new ExperienceRoom[2];
         experienceRooms[0] = new ExperienceRoom();
         experienceRooms[1] = new ExperienceRoom();
-        System.out.println("已成功创建两个房间：房间0 和 房间1");
-        System.out.println(HINT);
+        System.out.println("Creat two experience rooms successfully!\n");
+
+        System.out.println("┌─────────────────────   Copy On Write Test   ───────────────────────┐");
+        System.out.println("|        0 --- Quit                                                  |");
+        System.out.println("|        1 --- Display the Reference Count of Defalut Tool           |");
+        System.out.println("|        2 --- Modify Tool Description in Room 0                     |");
+        System.out.println("|        3 --- Modify Tool Description in Room 1                     |");
+        System.out.println("|        4 --- Display Tool Batch Number in Room 0                   |");
+        System.out.println("|        5 --- Display Tool Batch Number in Room 1                   |");
+        System.out.println("└────────────────────────────────────────────────────────────────────┘");
 
         Scanner input = new Scanner(System.in);
         int op;
@@ -76,15 +86,15 @@ public class COWTest {
                     break;
                 }
                 case 4: {
-                    //System.out.println(experienceRooms[0].getTool().getBatchNumber());
+                    System.out.println(experienceRooms[0].getTool().getBatchNumber());
                     break;
                 }
                 case 5: {
-                    //System.out.println(experienceRooms[1].getTool().getBatchNumber());
+                    System.out.println(experienceRooms[1].getTool().getBatchNumber());
                     break;
                 }
                 default:{
-                    System.out.println("无效的指令，请重新输入。");
+                    System.out.println("Invalid command. Please try again.");
                 }
             }
         } while (flag);
