@@ -1,7 +1,11 @@
 package Settings.CoffeeFactory.machine.processmachine.productmachine;
 import Settings.CoffeeFactory.product.Product;
 import Settings.CoffeeFactory.machine.processmachine.ProcessMachine;
-
+/**
+ * @author YSX
+ * @description The basic abstract class of the Product machine that extends Process Machine
+ * @date 2021/10/27 21:16
+ */
 public abstract class ProductMachine extends ProcessMachine {
 
     public ProductMachine(String type, String ID, double lifeSpan, double basicLoss, int maxProcessNum) {

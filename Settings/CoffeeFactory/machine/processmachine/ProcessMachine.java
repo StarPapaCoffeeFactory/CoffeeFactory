@@ -3,6 +3,13 @@ import Settings.CoffeeFactory.machine.Machine;
 import Settings.CoffeeFactory.product.Product;
 
 import java.util.Random;
+
+/**
+ * @author YSX
+ * @description The basic abstract class of the Process machine that extends Machine.
+ * Process includes producing,packing and qualification
+ * @date 2021/10/27 21:11
+ */
 public abstract class ProcessMachine extends Machine {
 
     public ProcessMachine(String type, String ID, double lifeSpan,  int maxProcessNum, double basicLoss) {
@@ -25,7 +32,7 @@ public abstract class ProcessMachine extends Machine {
             Random rand2 = new Random();
             int bounds = (int) (aimProcessNum * 0.02);
             int trashNum = rand2.nextInt(bounds);
-            // 返回的值是成功产出产品数
+            //return the exact number of products that successfully produced
             process(product, aimProcessNum - trashNum);
             increaseAge();
             return aimProcessNum - trashNum;
@@ -34,6 +41,15 @@ public abstract class ProcessMachine extends Machine {
             return 0;
         }
     }
+    /*
+     *
+ * @param product
+ * @param productNum
+     * @return void
+     * @author YSX
+     * @description abstract function
+     * @date 2021/10/27 21:51
+     */
     public abstract void process(Product product, int productNum);
 
     public ProcessMachine(String type) {

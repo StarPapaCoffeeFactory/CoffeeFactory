@@ -1,7 +1,11 @@
 package Settings.CoffeeFactory.machine.transportmachine;
 import Settings.CoffeeFactory.machine.Machine;
 import Settings.CoffeeFactory.product.Product;
-
+/**
+ * @author YSX
+ * @description The basic abstract class of the Transport machine that extends Machine
+ * @date 2021/10/27 21:09
+ */
 public abstract class TransportMachine extends Machine {
     public TransportMachine(String type, String ID, double lifeSpan, double basicLoss, int maxProcessNum) {
         super(type, ID, lifeSpan,  maxProcessNum,basicLoss);
