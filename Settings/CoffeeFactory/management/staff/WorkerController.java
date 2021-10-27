@@ -14,16 +14,36 @@ public class WorkerController {
         if (area.toString().equals(AreaName.OFFICE)) {
             workerObj = new worker(name, age, gender, phnum, salary, area);
             area.addWorker(workerObj);
-        } else if (area.toString().equals(AreaName.OFFICE)) {
+        } else if (area.toString().equals(AreaName.DINING_ROOM)) {
             workerObj = new worker(name, age, gender, phnum, salary, area);
             area.addWorker(workerObj);
-        } else if (area.toString().equals(AreaName.OFFICE)) {
+        } else if (area.toString().equals(AreaName.WORKSHOP)) {
             workerObj = new worker(name, age, gender, phnum, salary, area);
             area.addWorker(workerObj);
-        } else if (area.toString().equals(AreaName.OFFICE)) {
+        } else if (area.toString().equals(AreaName.MANUFACTURING_AREA)) {
+            workerObj = new worker(name, age, gender, phnum, salary, area);
+            area.addWorker(workerObj);
+        } else if (area.toString().equals(AreaName.STAFF_AREA)) {
+            workerObj = new worker(name, age, gender, phnum, salary, area);
+            area.addWorker(workerObj);
+        } else if (area.toString().equals(AreaName.COFFEE_EXPERIENCE_ROOM)) {
+            workerObj = new worker(name, age, gender, phnum, salary, area);
+            area.addWorker(workerObj);
+        } else if (area.toString().equals(AreaName.EXHIBITION_AREA)) {
+            workerObj = new worker(name, age, gender, phnum, salary, area);
+            area.addWorker(workerObj);
+        } else if (area.toString().equals(AreaName.PUBLIC_AREA)) {
+            workerObj = new worker(name, age, gender, phnum, salary, area);
+            area.addWorker(workerObj);
+        } else if (area.toString().equals(AreaName.GARBAGE_STATION)) {
+            workerObj = new worker(name, age, gender, phnum, salary, area);
+            area.addWorker(workerObj);
+        } else if (area.toString().equals(AreaName.RESIDENCE)) {
             workerObj = new worker(name, age, gender, phnum, salary, area);
             area.addWorker(workerObj);
         }
+
+
 
     }
 
