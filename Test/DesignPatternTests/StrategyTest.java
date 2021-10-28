@@ -44,7 +44,7 @@ public class StrategyTest {
                     System.out.println("Create a chocolate cake...");
                     ChocolateCake chocolateCake = new ChocolateCake(1);
                     chocolateCake.setState(new ProducedState());// 假装生产完成了
-                    PackMachine1.setStrategy(new BoxStrategy());
+                    PackMachine1.setStrategy(new MiddleCupStrategy());
                     PackMachine1.process(chocolateCake, 1);
                     break;
                 }
@@ -53,7 +53,7 @@ public class StrategyTest {
                     System.out.println("Create a chocolate cookie...");
                     ChocolateCookie chocolateCookie = new ChocolateCookie(ChocolateCookie.Shape.CAT);
                     chocolateCookie.setState(new ProducedState());
-                    PackMachine1.setStrategy(new BagStrategy());
+                    PackMachine1.setStrategy(new LargeCupStrategy());
                     PackMachine1.process(chocolateCookie, 1);
                     break;
                 }
@@ -62,7 +62,7 @@ public class StrategyTest {
                     System.out.println("Create a chocolate ice-cream...");
                     ChocolateIceCream chocolateIceCream = new ChocolateIceCream();
                     chocolateIceCream.setState(new ProducedState());
-                    PackMachine1.setStrategy(new CupStrategy());
+                    PackMachine1.setStrategy(new SmallCupStrategy());
                     PackMachine1.process(chocolateIceCream, 1);
                     break;
                 }

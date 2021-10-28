@@ -1,22 +1,23 @@
 package Settings.CoffeeFactory.material.Package;
 
-public class Box extends PackageInfo {
+public class SmallCup extends PackageInfo {
     /**
-     * ctor of Box
+     * ctor of SmallCup
      *
      * @param initialQuant initial quantity
      */
-    public Box(double initialQuant) {
+    public SmallCup(double initialQuant) {
         super(initialQuant);
     }
 
-    public Box() {
+    public SmallCup() {
         this(1);
     }
 
     @Override
     public Object clone() throws CloneNotSupportedException {
-        System.out.println("Successfully copy a box!");
-        return (Box) super.clone();
+        System.out.println("Successfully copy a SmallCup!");
+        return (SmallCup) super.clone();
     }
 }
+

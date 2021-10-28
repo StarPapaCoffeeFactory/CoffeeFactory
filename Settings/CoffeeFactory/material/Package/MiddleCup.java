@@ -1,23 +1,22 @@
 package Settings.CoffeeFactory.material.Package;
 
-public class Cup extends PackageInfo {
+public class MiddleCup extends PackageInfo {
     /**
-     * ctor of Cup
+     * ctor of MiddleCup
      *
      * @param initialQuant initial quantity
      */
-    public Cup(double initialQuant) {
+    public MiddleCup(double initialQuant) {
         super(initialQuant);
     }
 
-    public Cup() {
+    public MiddleCup() {
         this(1);
     }
 
     @Override
     public Object clone() throws CloneNotSupportedException {
-        System.out.println("Successfully copy a cup!");
-        return (Cup) super.clone();
+        System.out.println("Successfully copy a MiddleCup!");
+        return (MiddleCup) super.clone();
     }
 }
-
