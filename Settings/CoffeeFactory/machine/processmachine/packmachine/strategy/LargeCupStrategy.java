@@ -10,7 +10,7 @@ public class LargeCupStrategy extends PackStrategy{
     @Override
     public void packaging(Product product) {
 
-        System.out.println("Start packaging " + product.toString() + " with a large cup...");
+        System.out.println("Start packaging " + product.getProductName() + " with a large cup...");
         product.setPackage(new LargeCup());
         product.nextStage();
         System.out.println("Finish packaging.");

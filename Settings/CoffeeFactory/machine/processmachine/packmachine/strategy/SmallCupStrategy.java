@@ -11,7 +11,7 @@ public class SmallCupStrategy extends PackStrategy {
     @Override
     public void packaging(Product product) {
 
-        System.out.println("Start packaging " + product.toString() + " with a small cup...");
+        System.out.println("Start packaging " + product.getProductName() + " with a small cup...");
         product.setPackage(new SmallCup());
         product.nextStage();
         System.out.println("Finish packaging.");

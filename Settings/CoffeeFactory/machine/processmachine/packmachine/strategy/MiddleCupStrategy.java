@@ -11,7 +11,7 @@ public class MiddleCupStrategy extends PackStrategy {
     @Override
     public void packaging(Product product) {
 
-        System.out.println("Start packaging " + product.toString() + " with a middle cup...");
+        System.out.println("Start packaging " + product.getProductName() + " with a middle cup...");
         product.setPackage(new MiddleCup());
         product.nextStage();
         System.out.println("Finish packaging.");
