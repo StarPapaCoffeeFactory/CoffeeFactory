@@ -7,7 +7,10 @@ import Settings.CoffeeFactory.personnel.staff.Manager;
 
 import java.util.HashMap;
 
-//存放原料和产品的仓库
+/***
+ * @author ZJX
+ * @description This area is used to store raw materials and products
+ */
 public class Warehouse extends ManufacturingArea{
     protected HashMap<String, Double> materialAmount;
     protected HashMap<String, Integer> productionAmount;
@@ -26,13 +29,23 @@ public class Warehouse extends ManufacturingArea{
     }
 
 
-    //返回区域的名字
+    /**
+     * @return String
+     * @author ZJX
+     * @description Return area name
+     */
     @Override
     public String toString() {
         return AreaName.WAREHOUSE;
     }
 
-    //当其他类需要使用材料时，将调用该方法来修改材料的数量
+    /***
+     * @param amount
+     * @param type
+     * @return boolean
+     * @author ZJX
+     * @description This method is called to reduce the amount of material when other classes need to use it.
+     */
     public boolean useMaterial(String type, Double amount) {
         if (!materialAmount.containsKey(type))
         {
@@ -51,7 +64,13 @@ public class Warehouse extends ManufacturingArea{
         }
     }
 
-    //增加材料的数量
+    /***
+     * @param amount
+     * @param type
+     * @return boolean
+     * @author ZJX
+     * @description This method is called to add the amount of material.
+     */
     public boolean addMaterial(String type, Double amount) {
         if (materialAmount.containsKey(type) && amount >= 0)
         {
@@ -72,7 +91,12 @@ public class Warehouse extends ManufacturingArea{
         }
     }
 
-    //在仓库里增加一种新的材料
+    /***
+     * @param kind
+     * @return boolean
+     * @author ZJX
+     * @description This method is called to add a new material to the warehouse.
+     */
     public boolean createMaterialKind(String kind) {
         if (materialAmount.containsKey(kind))
         {
@@ -86,7 +110,12 @@ public class Warehouse extends ManufacturingArea{
         }
     }
 
-    //删除仓库中的一种材料
+    /***
+     * @param kind
+     * @return boolean
+     * @author ZJX
+     * @description This method is called to remove a material from a warehouse that already exists.
+     */
     public boolean deleteMaterialKind(String kind)
     {
         if (!materialAmount.containsKey(kind))
@@ -101,12 +130,20 @@ public class Warehouse extends ManufacturingArea{
         }
     }
 
-    //得到每种材料的数量
+    /***
+     * @return HashMap<String, Double>
+     * @author ZJX
+     * @description This method is called to get the quantity of each material.
+     */
     public HashMap<String, Double> getMaterialList() {
         return new HashMap<>(materialAmount);
     }
 
-    //Visitor
+    /***
+     * @param v
+     * @author ZJX
+     * @description The basic function of visitor design model
+     */
     public void accept(Visitor v) {
         v.visit(this);
     }

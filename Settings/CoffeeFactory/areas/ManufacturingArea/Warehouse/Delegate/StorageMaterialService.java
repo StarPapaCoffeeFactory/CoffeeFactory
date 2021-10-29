@@ -3,8 +3,19 @@ package Settings.CoffeeFactory.areas.ManufacturingArea.Warehouse.Delegate;
 import Settings.CoffeeFactory.areas.ManufacturingArea.Warehouse.Warehouse;
 import Settings.CoffeeFactory.material.Material;
 
-//一种帮助将材料储存在仓库里的仓储服务
+/***
+ * @author ZJX
+ * @description A warehousing service that helps store materials in a warehouse.
+ */
 public class StorageMaterialService implements WarehouseService {
+
+    /***
+     * @param warehouse
+     * @param Material
+     * @return void
+     * @author ZJX
+     * @description Store materials in the warehouse
+     */
     @Override
     public void doProcessing(Warehouse warehouse, Material Material)
     {

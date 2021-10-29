@@ -3,26 +3,33 @@ package Settings.CoffeeFactory.areas.ManufacturingArea.Warehouse.Delegate;
 import Settings.CoffeeFactory.areas.ManufacturingArea.Warehouse.Warehouse;
 import Settings.CoffeeFactory.material.Material;
 
-//使用设计模式Business Delegate
-//客户端可以通过这个委托类访问仓库的服务
+/***
+ * @author ZJX
+ * @description Use the design pattern Business Delegate
+ * The client can access the warehouse's services through this delegate class
+ */
 public class WarehouseDelegate {
-    /**
-     * 创建查询服务（LookUp Service）
+    /***
+     * @author ZJX
+     * @description Creating LookUp Service
      */
     private WarehouseLookup lookupService = new WarehouseLookup();
 
-    /**
-     * 创建业务服务（Business Service）
+    /***
+     * @author ZJX
+     * @description Creating Business Service
      */
     private WarehouseService warehouseService;
 
-    /**
-     * 仓库和业务服务连接起来
+    /***
+     * @author ZJX
+     * @description The warehouse is connected to the business service
      */
     private final Warehouse warehouse;
 
-    /**
-     * 服务类型
+    /***
+     * @author ZJX
+     * @description Service type
      */
     private String serviceType;
 
@@ -30,18 +37,24 @@ public class WarehouseDelegate {
         this.warehouse = warehouse;
     }
 
-    /**
+    /***
+     * @param serviceType
+     * @return
+     * @author ZJX
+     * @description
      * set the current service of warehouse:
      * 1. GetMaterial
      * 2. StorageMaterial
-     * 设置当前的服务类型
      */
     public void setServiceType(String serviceType) {
         this.serviceType = serviceType;
     }
 
-    /**
-     * 执行服务
+    /***
+     * @param material
+     * @return
+     * @author ZJX
+     * @description Perform the service
      */
     public void doTask(Material material) {
         if (serviceType == null) {
