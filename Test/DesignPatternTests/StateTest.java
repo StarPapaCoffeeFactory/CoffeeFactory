@@ -85,7 +85,7 @@ public class StateTest {
                     break;
                 }
                 default: {
-                    System.out.println("\nInvalid Input, Please input again.");
+                    System.out.println("\nInvalid Input, Please input again!");
                     break;
                 }
             }

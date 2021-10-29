@@ -88,7 +88,7 @@ public class MultitonTest {
                     break;
                 }
                 default:{
-                    System.out.println("Invalid Input, Please input again.");
+                    System.out.println("Invalid Input, Please input again!");
                 }
             }
         } while (flag);
