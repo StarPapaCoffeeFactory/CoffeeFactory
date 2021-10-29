@@ -2,22 +2,21 @@ package Settings.CoffeeFactory.areas.PublicArea;
 
 import Settings.CoffeeFactory.areas.AreaName;
 import Settings.CoffeeFactory.areas.Visitor.Visitor;
-
 import java.util.ArrayList;
 
+/***
+ * @author ZJX
+ * @description This area provide some exhibition rooms
+ */
 public class ExhibitionRoom extends PublicArea {
-
-
     /**
-     * number of this exh-room
-     *
-     * @modified by Ray
-     **/
+     * Max number of this room
+     */
     private int exhRoomNumber;
 
     /**
      * List of all exhibits
-     **/
+     */
     protected ArrayList<String> exhibitList;
 
     public ExhibitionRoom(String location, double cost, double area, int maxNumber) {
@@ -53,6 +52,12 @@ public class ExhibitionRoom extends PublicArea {
         }
     }
 
+    /***
+     * @param exhibitName
+     * @return void
+     * @author ZJX
+     * @description This function is used to add an exhibits
+     */
     public void addExhibits(String exhibitName) {
         if (exhibitList.contains(exhibitName)) {
             System.out.println("Exhibits are already in the room.");
@@ -61,6 +66,12 @@ public class ExhibitionRoom extends PublicArea {
         }
     }
 
+    /***
+     * @param exhibitName
+     * @return void
+     * @author ZJX
+     * @description This function is used to remove an exhibits
+     */
     public void removeExhibits(String exhibitName) {
         if (exhibitList.contains(exhibitName)) {
             exhibitList.remove(exhibitName);
@@ -77,9 +88,10 @@ public class ExhibitionRoom extends PublicArea {
         exhRoomNumber = number;
     }
 
-    /**
-     * Visitor Pattern
-     *
+    /***
+     * @param v
+     * @author ZJX
+     * @description The basic function of visitor design model
      */
     public void accept(Visitor v) {
         v.visit(this);
