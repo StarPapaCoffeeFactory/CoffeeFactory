@@ -1,7 +1,7 @@
 package Settings.CoffeeFactory.product.blendedcoffee.houseblend;
 
 import Settings.CoffeeFactory.material.Material;
-import Settings.CoffeeFactory.material.Package.Box;
+import Settings.CoffeeFactory.material.Package.MiddleCup;
 import Settings.CoffeeFactory.product.Product;
 import Settings.CoffeeFactory.product.originalcoffee.Coffee;
 
@@ -67,7 +67,7 @@ public class HouseBlend extends Product {
     public void pack() {
         super.nextStage();
         System.out.println("Start packing HouseBlend coffee bean...");
-        super.pack = new Box(1);
+        super.pack = new MiddleCup(1);
         super.nextStage();
         System.out.println("Finish packing HouseBlend coffee bean.");
         super.nextStage();

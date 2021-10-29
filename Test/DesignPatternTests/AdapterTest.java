@@ -54,7 +54,7 @@ public class AdapterTest {
             }
         };
 
-        System.out.println("无人机开始工作……");
+        System.out.println("Start Working……");
         plane.work(product);
 
         System.out.println("—————————————---------------------------------------------- End ————------—————————-------------------------------------————");
