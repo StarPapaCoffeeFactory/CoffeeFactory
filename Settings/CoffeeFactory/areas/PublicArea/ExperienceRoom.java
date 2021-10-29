@@ -4,6 +4,10 @@ import Settings.CoffeeFactory.areas.AreaName;
 import Settings.CoffeeFactory.areas.Visitor.Visitor;
 import Settings.CoffeeFactory.supplement.handmadeTool.*;
 
+/***
+ * @author ZJX
+ * @description This area provide some experience rooms
+ */
 public class ExperienceRoom extends PublicArea {
 
     private handmadeTool tool = handmadeToolFactory.getHandMadeTool();
@@ -65,11 +69,11 @@ public class ExperienceRoom extends PublicArea {
     public String toString() {
         return AreaName.COFFEE_EXPERIENCE_ROOM;}
 
-    /**
-     * Visitor Pattern
-     *
+    /***
+     * @param v
+     * @author ZJX
+     * @description The basic function of visitor design model
      */
-
     public void accept(Visitor v) {
         v.visit(this);
     }

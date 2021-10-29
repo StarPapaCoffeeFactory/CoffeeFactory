@@ -1,8 +1,16 @@
 package Settings.CoffeeFactory.areas.ManufacturingArea.AssemblyLine;
 
-//这个类用于获得我们特定的coffee生产线
+/***
+ * @author ZJX
+ * @description This class is used to get our specific coffee line
+ */
 public class CoffeeFactoryProducer {
-    //这个方法用于获得我们特定的coffee生产线
+    /***
+     * @param factoryName
+     * @return AssemblyLine
+     * @author ZJX
+     * @description This method is used to obtain our specific coffee line
+     */
     public static AssemblyLine newChocoMachine(String factoryName) {
         return new CoffeeAssemblyLine();
     }
