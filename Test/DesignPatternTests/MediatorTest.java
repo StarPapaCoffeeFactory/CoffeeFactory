@@ -8,6 +8,11 @@ import Settings.CoffeeFactory.personnel.staff.Manager;
  * @description Test for Mediator
  */
 import java.util.Scanner;
+
+/**
+ * @author LouTianyu
+ * @description Test for Mediator
+ */
 public class MediatorTest {
 
     public static void main(String[] args) {
@@ -63,7 +68,7 @@ public class MediatorTest {
                 }
 
                 default: {
-                    System.out.println("Invalid Input, Please input again.");
+                    System.out.println("Invalid Input, Please input again!");
                 }
             }
         } while (flag);

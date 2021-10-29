@@ -79,7 +79,7 @@ public class FlyweightTest {
                 }
                 default: {
                     classChosen = null;
-                    System.out.println("Invalid Input, Please try again.");
+                    System.out.println("Invalid Input, Please try again!");
                 }
             }
             if (classChosen != null) {
