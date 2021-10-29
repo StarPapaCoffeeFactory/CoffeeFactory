@@ -26,8 +26,8 @@ public class FlyweightTest {
                 + "│                  <Phase 1: Create an Array of Coffee>                 │\n"
                 + "│                  0. Produce HouseBlend Coffee Now                     │\n"
                 + "│                  1. Arabica Coffee                                    │\n"
-                + "│                  1. Bourbon Coffee                                    │\n"
-                + "│                  1. Robusta Coffee                                    │\n"
+                + "│                  2. Bourbon Coffee                                    │\n"
+                + "│                  3. Robusta Coffee                                    │\n"
                 + "└───────────────────────────────────────────────────────────────────────┘\n";
 
         final String HINT2 = "\n"
