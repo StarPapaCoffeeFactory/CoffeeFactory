@@ -38,7 +38,7 @@ public class MediatorTest {
 
         System.out.println("");
         System.out.println("┌───────────────────────────────────────────────────   Mediator Test   ─────────────────────────────────────────────────┐");
-        System.out.println("│              1.Office manager dispatch the task which general manager dispatched to him to the office workers         │");
+        System.out.println("│              1.Office manager dispatch the task which chief manager dispatched to him to the office workers           │");
         System.out.println("│              2.Office manager send feedback received from workers to the general manager                              │");
         System.out.println("└───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘");
         System.out.println("");
