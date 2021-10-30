@@ -46,7 +46,7 @@ public class ProxyTest {
                         } else {
                             State = "Not Used";
                         }
-                        System.out.println("powerBank No." + (i + 1) + ", State: " + State);
+                        System.out.println("powerBank No." + (powerBank.getStock() + 1) + ", State: " + State);
                     }
                     break;
                 }
@@ -54,7 +54,7 @@ public class ProxyTest {
                     powerBank powerBank = new powerBank();
                     powerBankProxy powerBankProxy = new powerBankProxy(powerBank);
                     ProxyList.add(powerBankProxy);
-                    System.out.println("Create a new powerBank! It's powerBank No." + ProxyList.size());
+                    System.out.println("Create a new powerBank! It's powerBank No." + powerBank.getStock() + 1);
                     break;
                 }
                 case 3: {
