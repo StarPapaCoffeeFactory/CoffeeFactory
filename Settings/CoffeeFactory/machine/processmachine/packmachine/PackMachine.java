@@ -10,9 +10,14 @@ import Settings.CoffeeFactory.product.Product;
  */
 public class PackMachine extends ProcessMachine {
 
-    // pack strategy
     private PackStrategy strategy;
 
+    /*
+     * @param type
+     * @param machineNum
+     * @author ShenBo
+     * @description constructor
+     */
     public PackMachine(String type, String machineNum) {
         this(type, machineNum, 10.0, 10,0.5);
     }
@@ -33,11 +38,17 @@ public class PackMachine extends ProcessMachine {
         return strategy;
     }
 
+    /*
+     * @param product
+     * @param productNum
+     * @return void
+     * @author ShenBo
+     * @description execute the packaging function
+     */
     @Override
     public void process(Product product, int productNum) {
         if (strategy == null) {
-            System.out.println("Fail to pack!");
-            System.out.println("Please invoke setStrategy() to set the pack strategy first.");
+            System.out.println("Fail to pack! Please set the pack strategy first!");
         } else {
             strategy.packaging(product);
         }

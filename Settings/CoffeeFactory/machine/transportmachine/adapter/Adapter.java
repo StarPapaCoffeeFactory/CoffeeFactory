@@ -17,6 +17,12 @@ public class Adapter implements Aircraft {
         this.adaptee = adaptee;
     }
 
+    /*
+     * @param product
+     * @return int
+     * @author ShenBo
+     * @description The aircraft start to fly and work
+     */
     @Override
     public int work(Product product) {
         this.fly();

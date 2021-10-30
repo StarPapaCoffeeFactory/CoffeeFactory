@@ -8,10 +8,16 @@ import java.util.Date;
 
 /**
  * @author ShenBo
- * @description pack coffee product with middle cup
+ * @description the strategy to pack coffee product with middle cup
  */
 public class MiddleCupStrategy extends PackStrategy {
 
+    /*
+     * @param product
+     * @return void
+     * @author ShenBo
+     * @description pack the coffee product with middle cup
+     */
     @Override
     public void packaging(Product product) {
 
