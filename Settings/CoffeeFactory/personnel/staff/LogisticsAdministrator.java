@@ -44,10 +44,11 @@ public class LogisticsAdministrator extends Staff{
 
     /*              end for facade              */
 
-    public void Goto(Area dest)
-    {
-
-    }
+//    public void Goto(Area dest)
+//    {
+//
+//    }
+    @Override
     public void SetVisitLimit()
     {/*
      *
