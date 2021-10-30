@@ -24,7 +24,7 @@ public class LargeCupStrategy extends PackStrategy{
         System.out.println("Start packaging " + product.getProductName() + " with a large cup...");
         product.setPackage(new LargeCup());
         product.nextStage();
-        System.out.println("Finish packaging.");
+        System.out.println("Complete packaging.");
         product.nextStage();
 
         Date day = new Date();

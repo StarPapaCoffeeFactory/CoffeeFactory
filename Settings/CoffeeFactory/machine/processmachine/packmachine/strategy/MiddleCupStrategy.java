@@ -24,7 +24,7 @@ public class MiddleCupStrategy extends PackStrategy {
         System.out.println("Start packaging " + product.getProductName() + " with a middle cup...");
         product.setPackage(new MiddleCup());
         product.nextStage();
-        System.out.println("Finish packaging.");
+        System.out.println("Complete packaging.");
         product.nextStage();
 
         Date day = new Date();

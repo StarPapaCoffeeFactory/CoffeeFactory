@@ -24,7 +24,7 @@ public class SmallCupStrategy extends PackStrategy {
         System.out.println("Start packaging " + product.getProductName() + " with a small cup...");
         product.setPackage(new SmallCup());
         product.nextStage();
-        System.out.println("Finish packaging.");
+        System.out.println("Complete packaging.");
         product.nextStage();
 
         Date day = new Date();
