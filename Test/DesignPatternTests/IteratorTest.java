@@ -7,9 +7,12 @@ import Settings.CoffeeFactory.personnel.Personnel;
 import Settings.CoffeeFactory.personnel.staff.LogisticsAdministrator;
 import Settings.CoffeeFactory.personnel.staff.Staff;
 import Settings.CoffeeFactory.personnel.staff.worker.worker;
-
 import java.util.Scanner;
 
+/***
+ * @author ZJX
+ * @description Test for iterator design model
+ */
 public class IteratorTest {
 
     public static void main(String[] args) {
