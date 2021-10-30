@@ -2,6 +2,7 @@ package Settings.CoffeeFactory.material;
 
 /**
  * @author wangling
+ * @description The basic abstract class for all materials. All basic elements for a material is defined here.
  * @date 2021-10-17
  */
 public abstract class Material {

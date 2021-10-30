@@ -47,7 +47,7 @@ public class PrototypeTest {
 
         System.out.println("");
         System.out.println("┌─────────────────────────   Prototype Test   ──────────────────────────┐");
-        System.out.println("│                     1. LargeCup (Package)                                  │");
+        System.out.println("│                     1. LargeCup (Package)                             │");
         System.out.println("│                     2. Milk (Food)                                    │");
         System.out.println("│                                                                       │");
         System.out.println("│               Input the object you want to clone.                     │");
