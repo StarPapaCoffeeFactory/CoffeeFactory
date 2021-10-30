@@ -13,14 +13,14 @@ import Settings.CoffeeFactory.areas.StaffArea.Office;
  * @author ZJX
  * @description The basic class of visitor design mode
  */
-public abstract class Visitor {
+public interface Visitor {
     /***
      * @param warehouse
      * @return void
      * @author ZJX
      * @description The visit function of warehouse
      */
-    public abstract void visit(Warehouse warehouse);
+    void visit(Warehouse warehouse);
 
     /***
      * @param coffeeWorkshop
@@ -28,7 +28,7 @@ public abstract class Visitor {
      * @author ZJX
      * @description The visit function of coffeeWorkshop
      */
-    public abstract void visit(CoffeeWorkshop coffeeWorkshop);
+    void visit(CoffeeWorkshop coffeeWorkshop);
 
     /***
      * @param coffeeProductWorkshop
@@ -36,7 +36,7 @@ public abstract class Visitor {
      * @author ZJX
      * @description The visit function of coffeeProductWorkshop
      */
-    public abstract void visit(CoffeeProductWorkshop coffeeProductWorkshop);
+    void visit(CoffeeProductWorkshop coffeeProductWorkshop);
 
     /***
      * @param exhibitionRoom
@@ -44,7 +44,7 @@ public abstract class Visitor {
      * @author ZJX
      * @description The visit function of exhibitionRoom
      */
-    public abstract void visit(ExhibitionRoom exhibitionRoom);
+    void visit(ExhibitionRoom exhibitionRoom);
 
     /***
      * @param experienceRoom
@@ -52,7 +52,7 @@ public abstract class Visitor {
      * @author ZJX
      * @description The visit function of experienceRoom
      */
-    public abstract void visit(ExperienceRoom experienceRoom);
+    void visit(ExperienceRoom experienceRoom);
 
     /***
      * @param diningRoom
@@ -60,7 +60,7 @@ public abstract class Visitor {
      * @author ZJX
      * @description The visit function of diningRoom
      */
-    public abstract void visit(DiningRoom diningRoom);
+    void visit(DiningRoom diningRoom);
 
     /***
      * @param office
@@ -68,5 +68,5 @@ public abstract class Visitor {
      * @author ZJX
      * @description The visit function of office
      */
-    public abstract void visit(Office office);
+    void visit(Office office);
 }

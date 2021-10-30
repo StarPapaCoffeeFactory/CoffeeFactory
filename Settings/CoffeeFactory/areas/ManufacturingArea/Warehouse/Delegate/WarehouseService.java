@@ -8,5 +8,5 @@ import Settings.CoffeeFactory.material.Material;
  * @description Interface to the warehouse service
  */
 public interface WarehouseService {
-    public void doProcessing(Warehouse warehouse, Material Material);
+    public void doProcessing(Warehouse warehouse, Material material);
 }

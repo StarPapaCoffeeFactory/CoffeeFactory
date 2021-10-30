@@ -126,12 +126,14 @@ public abstract class StaffArea extends Area implements Aggregate {
      * @return 一个复制WorkerList的迭代器
      */
     @Override
-    public Iterator getIterator() {
+    public WorkerListIterator getIterator() {
         return new WorkerListIterator(workerList);
     }
 
-    /**
-     * Visitor Pattern
+    /***
+     * @param v
+     * @author ZJX
+     * @description The basic function of visitor design model
      */
     public abstract void accept(Visitor v);
 }
