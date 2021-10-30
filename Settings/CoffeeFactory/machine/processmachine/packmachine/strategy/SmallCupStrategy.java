@@ -6,6 +6,10 @@ import Settings.CoffeeFactory.product.Product;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/**
+ * @author ShenBo
+ * @description pack coffee product with small cup
+ */
 public class SmallCupStrategy extends PackStrategy {
 
     @Override

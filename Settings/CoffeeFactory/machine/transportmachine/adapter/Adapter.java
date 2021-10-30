@@ -3,15 +3,15 @@ package Settings.CoffeeFactory.machine.transportmachine.adapter;
 import Settings.CoffeeFactory.machine.transportmachine.TransportMachine;
 import Settings.CoffeeFactory.product.Product;
 
+/**
+ * @author ShenBo
+ * @description The class Adapter that implements Aircraft
+ */
 public class Adapter implements Aircraft {
     private TransportMachine adaptee;
     private String mID;
 
-    public Adapter() {
-
-    }
-
-
+    public Adapter() { }
 
     public Adapter(TransportMachine adaptee) {
         this.adaptee = adaptee;
@@ -19,11 +19,10 @@ public class Adapter implements Aircraft {
 
     @Override
     public int work(Product product) {
-        this.navigate();
+        this.fly();
         adaptee.run(product);
         return 0;
     }
-
 
     @Override
     public void setID(String ID) {
@@ -35,17 +34,20 @@ public class Adapter implements Aircraft {
         return this.mID;
     }
 
-
     @Override
     public void setAimProcessNum(int aimProcessNum) {
         adaptee.setAimProcessNum(aimProcessNum);
     }
 
+    /*
+     * @return void
+     * @author ShenBo
+     * @description The aircraft is flying
+     */
     @Override
-    public void navigate() {
-        System.out.println("Aircraft " + this.mID + " is navigating to destination.\n");
+    public void fly() {
+        System.out.println("Aircraft " + this.mID + " is flying...\n");
     }
-
 
     public TransportMachine getAdaptee() {
         return adaptee;

@@ -1,5 +1,9 @@
 package Settings.CoffeeFactory.machine.processmachine.packmachine;
 
+/**
+ * @author ShenBo
+ * @description The class of the Advanced pack machine
+ */
 public class AdvancedPack extends PackMachine {
     public AdvancedPack(String type, String machineNum) {
         super(type, machineNum, 50, 500,1.2);

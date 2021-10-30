@@ -4,6 +4,10 @@ import Settings.CoffeeFactory.machine.processmachine.ProcessMachine;
 import Settings.CoffeeFactory.machine.processmachine.packmachine.strategy.PackStrategy;
 import Settings.CoffeeFactory.product.Product;
 
+/**
+ * @author ShenBo
+ * @description The class of the pack machine
+ */
 public class PackMachine extends ProcessMachine {
 
     // pack strategy
