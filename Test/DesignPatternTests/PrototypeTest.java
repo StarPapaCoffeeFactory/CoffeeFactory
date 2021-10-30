@@ -2,7 +2,7 @@ package Test.DesignPatternTests;
 
 import Settings.CoffeeFactory.material.Material;
 import Settings.CoffeeFactory.material.Food.Milk;
-import Settings.CoffeeFactory.material.Package.Bag;
+import Settings.CoffeeFactory.material.Package.LargeCup;
 
 import java.util.Scanner;
 import java.util.Calendar;
@@ -11,7 +11,7 @@ import java.util.Calendar;
  * @author wangling
  * @project CoffeeFactory
  * @classname PrototypeTest
- * @description Test for prototype pattern
+ * @description Test for prototype pattern1
  * @date 2021/10/26 15:46
  */
 
@@ -40,14 +40,14 @@ public class PrototypeTest {
 
         System.out.println("—————————————-------------------------------------———— Test[Prototype]Pattern —————————————-------------------------------------————");
         System.out.println("");
-        System.out.println("Bag : clone() :  clone a Bag instance");
+        System.out.println("LargeCup : clone() :  clone a LargeCup instance");
         System.out.println("Milk : clone() :  clone a Milk instance");
         System.out.println("Method named \"clone\" exists in every subclass of Material");
         System.out.println("");
 
         System.out.println("");
         System.out.println("┌─────────────────────────   Prototype Test   ──────────────────────────┐");
-        System.out.println("│                     1. Bag (Package)                                  │");
+        System.out.println("│                     1. LargeCup (Package)                                  │");
         System.out.println("│                     2. Milk (Food)                                    │");
         System.out.println("│                                                                       │");
         System.out.println("│               Input the object you want to clone.                     │");
@@ -69,9 +69,9 @@ public class PrototypeTest {
                 }
                 case 1: {
                     System.out.println("\nFirst we create 2 cup instances using prototype pattern: ");
-                    Bag bag1 = new Bag(10);
-                    Bag bag2 = (Bag) bag1.clone();
-                    testPrototype(bag1, bag2, "bag");
+                    LargeCup cup1 = new LargeCup(10);
+                    LargeCup cup2 = (LargeCup) cup1.clone();
+                    testPrototype(cup1, cup2, "cup");
                     break;
                 }
                 case 2: {

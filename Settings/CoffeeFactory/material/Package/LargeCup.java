@@ -2,26 +2,26 @@ package Settings.CoffeeFactory.material.Package;
 /**
  * @author WangLing
  * @project CoffeeFactory
- * @classname Bag
- * @description bag the package material
+ * @classname LargeCup
+ * @description the package material
  */
-public class Bag extends PackageInfo {
+public class LargeCup extends PackageInfo {
     /**
-     * ctor of Bag
+     * ctor of LargeCup
      *
      * @param initialQuant initial quantity
      */
-    public Bag(double initialQuant) {
+    public LargeCup(double initialQuant) {
         super(initialQuant);
     }
 
-    public Bag() {
+    public LargeCup() {
         this(1);
     }
 
     @Override
     public Object clone() throws CloneNotSupportedException {
-        System.out.println("Successfully copy a bag!");
-        return (Bag) super.clone();
+        System.out.println("Successfully copy a LargeCup!");
+        return (LargeCup) super.clone();
     }
 }

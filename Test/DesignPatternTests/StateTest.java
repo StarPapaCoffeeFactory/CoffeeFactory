@@ -1,7 +1,7 @@
 package Test.DesignPatternTests;
 
 import Settings.CoffeeFactory.machine.processmachine.packmachine.PackMachine;
-import Settings.CoffeeFactory.machine.processmachine.packmachine.strategy.BagStrategy;
+import Settings.CoffeeFactory.machine.processmachine.packmachine.strategy.LargeCupStrategy;
 import Settings.CoffeeFactory.machine.processmachine.productmachine.BasicProductMachine;
 import Settings.CoffeeFactory.product.Product;
 import Settings.CoffeeFactory.product.coffeebeverage.Americano;
@@ -72,7 +72,7 @@ public class StateTest {
                     System.out.println("Let's package the coffee cake.");
                     System.out.println("Create a wrapper machine...");
                     PackMachine packMachine = new PackMachine("PA","101");
-                    packMachine.setStrategy(new BagStrategy());
+                    packMachine.setStrategy(new LargeCupStrategy());
                     product.setWrapperMachine(packMachine);
                     product.pack();
 
@@ -85,7 +85,7 @@ public class StateTest {
                     break;
                 }
                 default: {
-                    System.out.println("\nInvalid Input, Please input again.");
+                    System.out.println("\nInvalid Input, Please input again!");
                     break;
                 }
             }

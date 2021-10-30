@@ -1,5 +1,6 @@
 package Test.DesignPatternTests;
 
+import Settings.CoffeeFactory.areas.ManufacturingArea.Workshop.Workshop;
 import Settings.CoffeeFactory.personnel.Personnel;
 import Settings.CoffeeFactory.personnel.staff.Manager;
 import Settings.CoffeeFactory.areas.StaffArea.DiningRoom;
@@ -32,8 +33,8 @@ public class IOCTest {
         System.out.println("│                         1. Init Office                          │");
         System.out.println("│                         2. Init DiningRoom                      │");
         System.out.println("│                         3. Init Warehouse                       │");
-        System.out.println("│                         4. Init DarkWorkshop                    │");
-        System.out.println("│                         5. Init WhiteWorkshop                   │");
+        System.out.println("│                         4. Init CoffeeWorkshop                  │");
+        System.out.println("│                         5. Init CoffeeProductWorkshop           │");
         System.out.println("│                                                                 │");
         System.out.println("│                                                                 │");
         System.out.println("│      You can select different scenarios, and the workers in the │");
@@ -79,19 +80,18 @@ public class IOCTest {
                     break;
                 }
                 case 4: {
-                    System.out.println("IOC Pattern: creating DarkWorkshop Walker will implicitly create DarkWorkshopWorker：");
-                    CoffeeWorkshop darkWorkshop = new CoffeeWorkshop();
-                    Manager.getWorkShopManager().hireWorker("Davis",  Personnel.Gender.male, 22, 7000, "13916301296",darkWorkshop);
-
-                    darkWorkshop.displayAllStaffs();
+                    System.out.println("IOC Pattern: creating CoffeeWorkshop Walker will implicitly create CoffeeWorkshopWorker：");
+                    CoffeeWorkshop coffeeWorkshop = new CoffeeWorkshop();
+                    Manager.getWorkShopManager().hireWorker("Davis",  Personnel.Gender.male, 22, 7000, "13916301296", coffeeWorkshop);
+                    coffeeWorkshop.displayAllStaffs();
                     System.out.println("");
                     break;
                 }
                 case 5: {
-                    System.out.println("IOC Pattern: creating WhiteWorkshop Walker will implicitly create WhiteWorkshopWorker：");
-                    CoffeeProductWorkshop whiteWorkshop = new CoffeeProductWorkshop();
-                    Manager.getWorkShopManager().hireWorker("Kevin", Personnel.Gender.male, 22,  7000, "15212312345",whiteWorkshop);
-                    whiteWorkshop.displayAllStaffs();
+                    System.out.println("IOC Pattern: creating CoffeeProductWorkshop Walker will implicitly create CoffeeProductWorkshopWorker：");
+                    CoffeeProductWorkshop coffeeProductWorkshop = new CoffeeProductWorkshop();
+                    Manager.getWorkShopManager().hireWorker("Kevin", Personnel.Gender.male, 22,  7000, "15212312345", coffeeProductWorkshop);
+                    coffeeProductWorkshop.displayAllStaffs();
                     System.out.println("");
                     break;
                 }

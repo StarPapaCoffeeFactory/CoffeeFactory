@@ -5,16 +5,22 @@ import Settings.CoffeeFactory.personnel.visitor.Visitor;
 
 import java.util.LinkedList;
 
+/***
+ * @author ZJX
+ * @description An abstract class of public area
+ */
 public abstract class PublicArea extends Area {
 
-    /**
-     * 最大参观者数
-     **/
+    /***
+     * @author ZJX
+     * @description Maximum visitors
+     */
     protected int maxVisitorNumber;
 
-    /**
-     * 参观者列表
-     **/
+    /***
+     * @author ZJX
+     * @description List of visitors
+     */
     protected LinkedList<Visitor> visitorList;
 
     public PublicArea(String location, double cost, double area, int maxNumber) {
@@ -85,8 +91,10 @@ public abstract class PublicArea extends Area {
         System.out.println("The exhibits have been maintained.");
     }
 
-    /**
-     * Visitor Pattern
+    /***
+     * @param v
+     * @author ZJX
+     * @description The basic function of visitor design model
      */
     public abstract void accept(Settings.CoffeeFactory.areas.Visitor.Visitor v);
 }

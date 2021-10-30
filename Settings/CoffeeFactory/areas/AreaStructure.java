@@ -33,6 +33,7 @@ public class AreaStructure {
      * @param name name of the area to be found
      * @return object of the area found (return null if not found)
      */
+
     public Area getAreaByName(String name) {
         for (Area item : areas) {
             if (item.toString().equals(name)) {
@@ -42,10 +43,6 @@ public class AreaStructure {
         return null;
     }
 
-    /**
-     * worker maintains all scenes in the list
-     *
-     */
     /*public void accept(Visitor v) {
         for (Object obj : areas) {
             ((Area) obj).accept(v);

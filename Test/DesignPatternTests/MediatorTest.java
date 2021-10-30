@@ -8,6 +8,11 @@ import Settings.CoffeeFactory.personnel.staff.Manager;
  * @description Test for Mediator
  */
 import java.util.Scanner;
+
+/**
+ * @author LouTianyu
+ * @description Test for Mediator
+ */
 public class MediatorTest {
 
     public static void main(String[] args) {
@@ -33,7 +38,7 @@ public class MediatorTest {
 
         System.out.println("");
         System.out.println("┌───────────────────────────────────────────────────   Mediator Test   ─────────────────────────────────────────────────┐");
-        System.out.println("│              1.Office manager dispatch the task which general manager dispatched to him to the office workers         │");
+        System.out.println("│              1.Office manager dispatch the task which chief manager dispatched to him to the office workers           │");
         System.out.println("│              2.Office manager send feedback received from workers to the general manager                              │");
         System.out.println("└───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘");
         System.out.println("");
@@ -63,7 +68,7 @@ public class MediatorTest {
                 }
 
                 default: {
-                    System.out.println("Invalid Input, Please input again.");
+                    System.out.println("Invalid Input, Please input again!");
                 }
             }
         } while (flag);

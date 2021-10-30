@@ -3,7 +3,7 @@ import Settings.CoffeeFactory.material.Material;
 import java.util.Calendar;
 import java.util.LinkedList;
 
-public abstract class FoodInfo extends Material{
+public abstract class FoodInfo extends Material implements Cloneable{
     enum State {
         POWDER, SOLID, LIQUID
     }

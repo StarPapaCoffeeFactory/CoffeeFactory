@@ -2,7 +2,11 @@ package Settings.CoffeeFactory.machine.processmachine.productmachine.coffeemachi
 
 import Settings.CoffeeFactory.machine.processmachine.productmachine.BasicProductMachine;
 import Settings.CoffeeFactory.product.originalcoffee.Coffee;
-
+/**
+ * @author YSX
+ * @description The abstract class of machine which producing coffee
+ * @date 2021/10/27 21:18
+ */
 public abstract class CoffeeBasicMachine extends BasicProductMachine {
     protected Coffee coffee;
 
@@ -19,7 +23,13 @@ public abstract class CoffeeBasicMachine extends BasicProductMachine {
     public Coffee getCoffee() {
         return coffee;
     }
-
+    /*
+     *
+     * @return void
+     * @author YSX
+     * @description make different coffee with different coffee bean
+     * @date 2021/10/27 21:54
+     */
     public abstract void useCoffeeBean();
 
 
