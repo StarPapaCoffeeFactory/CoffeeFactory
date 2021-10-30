@@ -12,7 +12,7 @@ import Settings.CoffeeFactory.areas.StaffArea.Office;
  * @author ZJX
  * @description Use the Visitor design pattern, which produces a subclass of Visitor, useVisitor
  */
-public class useVisitor extends Visitor{
+public class useVisitor implements Visitor{
 
     /***
      * @param warehouse

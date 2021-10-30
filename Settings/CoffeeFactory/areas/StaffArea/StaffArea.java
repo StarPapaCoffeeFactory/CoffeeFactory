@@ -130,8 +130,10 @@ public abstract class StaffArea extends Area implements Aggregate {
         return new WorkerListIterator(workerList);
     }
 
-    /**
-     * Visitor Pattern
+    /***
+     * @param v
+     * @author ZJX
+     * @description The basic function of visitor design model
      */
     public abstract void accept(Visitor v);
 }

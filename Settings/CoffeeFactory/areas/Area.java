@@ -1,5 +1,6 @@
 package Settings.CoffeeFactory.areas;
 
+import Settings.CoffeeFactory.areas.Visitor.Visitor;
 import Settings.CoffeeFactory.personnel.staff.EmptyStaff;
 import Settings.CoffeeFactory.personnel.staff.LogisticsAdministrator;
 import Settings.CoffeeFactory.personnel.staff.Manager;
@@ -67,10 +68,10 @@ public abstract class Area {
         }
     }
 
-    /**
-     * Visitor Pattern: accept a utility worker to maintain the scene
-     *
-     * @param worker the utility worker
-     *//*
-    public abstract void accept(Visitor v);*/
+    /***
+     * @param v
+     * @author ZJX
+     * @description The basic function of visitor design model
+     */
+    public abstract void accept(Visitor v);
 }
