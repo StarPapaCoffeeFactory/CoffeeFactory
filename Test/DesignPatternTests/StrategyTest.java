@@ -10,7 +10,10 @@ import Settings.CoffeeFactory.product.production.Produced;
 
 import java.util.Scanner;
 
-//被包装的产品的问题
+/**
+ * @author ShenBo
+ * @description test for Strategy
+ */
 public class StrategyTest {
     public static void main(String[] args) {
         System.out.println("");
