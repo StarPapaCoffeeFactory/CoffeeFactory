@@ -69,7 +69,7 @@ public class StateTest {
                     break;
                 }
                 case 2: {
-                    System.out.println("Let's package the coffee cake.");
+                    System.out.println("Let's package the Americano.");
                     System.out.println("Create a wrapper machine...");
                     PackMachine packMachine = new PackMachine("PA","101");
                     packMachine.setStrategy(new LargeCupStrategy());

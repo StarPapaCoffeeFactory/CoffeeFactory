@@ -30,7 +30,6 @@ public class MediatorTest {
         Office office = new Office();
         System.out.println("Next, we should get the instance of the office manager...");
         Manager officeManager = Manager.getOfficeManager();
-
         System.out.println("Then, office manager should hired some office workers... ");
         officeManager.hireWorker("worker1", Personnel.Gender.male, 21, 10, "12345", office);
         officeManager.hireWorker("worker2", Personnel.Gender.male, 22, 10, "23456", office);

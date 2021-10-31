@@ -35,8 +35,8 @@ public class FlyweightTest {
                 + "│                  <Phase 2: Compare Instance Refs>                     │\n"
                 + "│                  Input two indexes to compare.                        │\n"
                 + "│                  If they are referring to the same instance,          │\n"
-                + "│                  \"true\" is printed.                                 │\n"
-                + "│                  Else \"false\" is printed.                           │\n"
+                + "│                  \"true\" is printed.                                   │\n"
+                + "│                  Else \"false\" is printed.                             │\n"
                 + "│                  Input -1 to quit.                                    │\n"
                 + "│                  Index start from 0.                                  │\n"
                 + "└───────────────────────────────────────────────────────────────────────┘\n";
