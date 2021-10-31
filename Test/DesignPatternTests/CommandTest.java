@@ -2,7 +2,6 @@ package Test.DesignPatternTests;
 
 import Settings.CoffeeFactory.personnel.Personnel;
 import Settings.CoffeeFactory.personnel.staff.worker.*;
-
 import java.util.Scanner;
 
 /**
