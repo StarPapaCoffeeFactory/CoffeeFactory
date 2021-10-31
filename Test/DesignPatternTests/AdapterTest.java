@@ -14,10 +14,10 @@ import java.util.Scanner;
 public class AdapterTest {
     public static void main(String[] args) {
         System.out.println("");
-        System.out.println("─────────────────────────   [Adapter] Test   ─────────────────────────");
-        System.out.println("│                  1. Create An Aircraft                         │");
-        System.out.println("│                  2. Set the Attribute Value of the Machine             │");
-        System.out.println("│                  3. Start Working                       │");
+        System.out.println("┌────────────────────────   [Adapter] Test   ────────────────────────┐");
+        System.out.println("│                  1. Create An Aircraft                             │");
+        System.out.println("│                  2. Set the Attribute Value of the Machine         │");
+        System.out.println("│                  3. Start Working                                  │");
         System.out.println("└────────────────────────────────────────────────────────────────────┘");
         System.out.println("");
 

@@ -14,16 +14,16 @@ import java.util.Scanner;
 public class StrategyTest {
     public static void main(String[] args) {
         System.out.println("");
-        System.out.println("─────────────────────────   [Strategy] Test   ─────────────────────────");
-        System.out.println("│                  First, please choose the kind of product you want to pack                         │");
-        System.out.println("│                  0. Quit the System             │");
-        System.out.println("│                  1. Americano       2. CaramelMacchiato             │");
-        System.out.println("│                  3. HazelnutLatte   4. Latte   5. Mocha                      │");
-        System.out.println("│                  Then, please choose the pack strategy                       │");
-        System.out.println("│                  0. Quit the System                       │");
-        System.out.println("│                  1.Use LargeCup strategy to pack                       │");
-        System.out.println("│                  2.Use MiddleCup strategy to pack                       │");
-        System.out.println("│                  3.Use SmallCup strategy to pack                       │");
+        System.out.println("┌───────────────────────   [Strategy] Test   ────────────────────────┐");
+        System.out.println("│               First, choose the kind of product you want to pack   │");
+        System.out.println("│               0. Quit the System                                   │");
+        System.out.println("│               1. Americano       2. CaramelMacchiato               │");
+        System.out.println("│               3. HazelnutLatte   4. Latte   5. Mocha               │");
+        System.out.println("│               Then, please choose the pack strategy                │");
+        System.out.println("│               0. Quit the System                                   │");
+        System.out.println("│               1.Use LargeCup strategy to pack                      │");
+        System.out.println("│               2.Use MiddleCup strategy to pack                     │");
+        System.out.println("│               3.Use SmallCup strategy to pack                      │");
         System.out.println("└────────────────────────────────────────────────────────────────────┘");
         Scanner input = new Scanner(System.in);
         int op;
