@@ -52,7 +52,7 @@ public class Adapter implements Aircraft {
      */
     @Override
     public void fly() {
-        System.out.println("Aircraft " + this.mID + " is flying...\n");
+        System.out.println("Aircraft" + this.mID + " is flying...");
     }
 
     public TransportMachine getAdaptee() {

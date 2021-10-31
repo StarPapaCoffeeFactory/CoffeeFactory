@@ -12,15 +12,8 @@ import java.util.Scanner;
  * @description test for Adapter
  */
 public class AdapterTest {
-    public static void main(String[] args) {
-        System.out.println("");
-        System.out.println("┌────────────────────────   [Adapter] Test   ────────────────────────┐");
-        System.out.println("│                  1. Create An Aircraft                             │");
-        System.out.println("│                  2. Set the Attribute Value of the Machine         │");
-        System.out.println("│                  3. Start Working                                  │");
-        System.out.println("└────────────────────────────────────────────────────────────────────┘");
-        System.out.println("");
-
+    public Aircraft createAircraft()
+    {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Please set the id of the aircraft:");
@@ -32,7 +25,7 @@ public class AdapterTest {
         System.out.println("Please set the max capacity:");
         int maxCapacity = scanner.nextInt();
 
-        TransportMachine transportMachine = new TransportMachine("TR", machineNum, lifeSpan, baseLoss, maxCapacity) {
+        TransportMachine transportMachine = new TransportMachine("Aircraft", machineNum, lifeSpan, baseLoss, maxCapacity) {
             @Override
             protected void load(Product product) {
             }
@@ -45,14 +38,25 @@ public class AdapterTest {
         Aircraft plane = new Adapter(transportMachine);
         plane.setAimProcessNum(1);
         plane.setID(transportMachine.getID());
+        return plane;
+    }
+
+    public static void main(String[] args) {
+        System.out.println("");
+        System.out.println("┌────────────────────────   [Adapter] Test   ────────────────────────┐");
+        System.out.println("│                  1. Create An Aircraft                             │");
+        System.out.println("│                  2. Set the Attribute Value of the Aircraft        │");
+        System.out.println("│                  3. Start Working                                  │");
+        System.out.println("└────────────────────────────────────────────────────────────────────┘");
+        System.out.println("");
+
         Product product = new Product("product", 5, 5) {
             @Override
             protected void initIngredientList() {
             }
         };
-
-        System.out.println("Start Working……");
-        plane.work(product);
+        AdapterTest test=new AdapterTest();
+        test.createAircraft().work(product);
 
         System.out.println("────────────────────────────────────────────────────────────────────");
         }
