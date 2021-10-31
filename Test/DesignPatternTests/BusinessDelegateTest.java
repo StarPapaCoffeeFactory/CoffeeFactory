@@ -1,12 +1,14 @@
 package Test.DesignPatternTests;
 
-import Settings.CoffeeFactory.areas.ManufacturingArea.Warehouse.Delegate.WarehouseClient;
 import Settings.CoffeeFactory.areas.ManufacturingArea.Warehouse.Delegate.WarehouseDelegate;
 import Settings.CoffeeFactory.areas.ManufacturingArea.Warehouse.Warehouse;
 import Settings.CoffeeFactory.material.Food.Milk;
-
 import java.util.Scanner;
 
+/***
+ * @author ZJX
+ * @description Test for business delegate design model
+ */
 public class BusinessDelegateTest {
     public static void main(String[] args) {
 

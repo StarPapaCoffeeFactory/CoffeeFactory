@@ -4,6 +4,8 @@ import Settings.CoffeeFactory.personnel.Personnel;
 import Settings.CoffeeFactory.personnel.staff.worker.*;
 import java.util.Scanner;
 
+import java.util.Scanner;
+
 /**
  * @ program: CoffeeFactory.iml
  * @ description: Test for Command

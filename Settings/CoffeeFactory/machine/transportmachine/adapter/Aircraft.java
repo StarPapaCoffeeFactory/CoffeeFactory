@@ -2,9 +2,18 @@ package Settings.CoffeeFactory.machine.transportmachine.adapter;
 
 import Settings.CoffeeFactory.product.Product;
 
-
+/**
+ * @author ShenBo
+ * @description The interface of Aircraft
+ */
 public interface Aircraft {
 
+    /*
+     * @param product
+     * @return int
+     * @author ShenBo
+     * @description The work function of the aircraft
+     */
     int work(Product product);
 
     void setID(String ID);
@@ -13,8 +22,10 @@ public interface Aircraft {
 
     void setAimProcessNum(int aimProcessNum);
 
-
-    //导航
-    void navigate();
-
+    /*
+     * @return void
+     * @author ShenBo
+     * @description The aircraft can fly
+     */
+    void fly();
 }

@@ -8,7 +8,11 @@ import Settings.CoffeeFactory.personnel.staff.Maintainer.SkilledMaintainer;
 import Settings.CoffeeFactory.product.Product;
 
 import java.util.Random;
-
+/**
+ * @author YSX
+ * @description The basic abstract class of machine
+ * @date 2021/10/27 21:08
+ */
 public abstract class Machine {
 
     private String type;
@@ -20,20 +24,6 @@ public abstract class Machine {
     private double lifeSpan = 20;
     //the maximum expected life of the machine,unit:year
     private int maxProcessNum = 500;
-
-    public void setBroken(boolean broken) {
-        /*
-         *
-         * @param broken
-         * @return void
-         * @author YXJ
-         * @description add for Facade Test
-         * @date 2021/10/26 13:39
-         */
-
-        isBroken = broken;
-    }
-
     //The maximum number that the machine can process at one time
     protected boolean isBroken = false;
     // Whether the machine is damaged
@@ -82,12 +72,29 @@ public abstract class Machine {
     public Machine(String type) {
         this.type=type;
     }
-
     protected void malfunction() {
         isBroken = true;
         System.out.println("Sorry, " + type + ID + " breaks down! Please fix!\n");
     }
-
+    public void setBroken(boolean broken) {
+        /*
+         *
+         * @param broken
+         * @return void
+         * @author YXJ
+         * @description add for Facade Test
+         * @date 2021/10/26 13:39
+         */
+        isBroken = broken;
+    }
+    /*
+     *
+ * @param breakLevel
+     * @return void
+     * @author YSX
+     * @description Mark the extent of damage to the machine
+     * @date 2021/10/27 21:40
+     */
     public void markFault(int breakLevel) {
         isBroken = true;
         this.breakLevel = breakLevel;
@@ -95,7 +102,13 @@ public abstract class Machine {
         //czq add in 2021/10/24
         malfunction();
     }
-
+/*
+ *
+ * @return void
+ * @author YSX
+ * @description Fix the damaged machine
+ * @date 2021/10/27 21:41
+ */
     public void fix() {
         InternshipMaintainer maintainer1=new InternshipMaintainer("Tom", 18, Personnel.Gender.male, "1008611", 100);
         FreshmanMaintainer maintainer2=new FreshmanMaintainer("Jack", 19, Personnel.Gender.male, "1008612", 110);
@@ -119,7 +132,13 @@ public abstract class Machine {
         }
     }
 
-
+/*
+ *  
+ * @return void
+ * @author YSX
+ * @description Maintain the machine and prolong its service life
+ * @date 2021/10/27 21:42
+ */
     public void maintenance() {
         Random rand = new Random();
         int ageLonged = rand.nextInt(5);
@@ -131,6 +150,13 @@ public abstract class Machine {
         this.ID = ID;
         System.out.println("The code number of the machine is changed to " + ID + ".\n");
     }
+    /*
+     *  
+     * @return double
+     * @author YSX
+     * @description After the machine is in use, its available time will be reduced,its age will increase
+     * @date 2021/10/27 21:45
+     */
     public double increaseAge() {
         age = age + baseLoss+productionLoss;
         System.out.println("The age of " + type + ID + " increases to " + age + " years.\n");
@@ -160,9 +186,23 @@ public abstract class Machine {
         double totalLoss=productionLoss+baseLoss;
      //   System.out.println("Set aimProcessNum to " + aimProcessNum + ".");
     }
-
+/*
+ *
+ * @param product
+ * @return int
+ * @author YSX
+ * @description abstract function named work
+ * @date 2021/10/27 21:46
+ */
     protected abstract int work(Product product);
-
+/*
+ * 
+ * @param product  
+ * @return int
+ * @author YSX
+ * @description Determine whether the machine can run properly
+ * @date 2021/10/27 21:47
+ */
     public int run(Product product) {
         double virtualAge = age + baseLoss+productionLoss;
         if (virtualAge > lifeSpan) {
@@ -177,7 +217,5 @@ public abstract class Machine {
         System.out.println(type + ID + " starts to run...");
         return work(product);
     }
-
-
 }
 

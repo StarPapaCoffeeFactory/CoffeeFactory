@@ -1,6 +1,8 @@
 package Settings.CoffeeFactory.management;
 
 import Settings.CoffeeFactory.areas.*;
+import Settings.CoffeeFactory.areas.Visitor.Visitor;
+
 public class CoffeeFactory {
 
     private static CoffeeFactory instance = null; //Only one factory instance should exist.
@@ -12,6 +14,11 @@ public class CoffeeFactory {
             @Override
             public String toString() {
                 return null;
+            }
+
+            @Override
+            public void accept(Visitor v) {
+                return;
             }
         };
     }

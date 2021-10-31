@@ -11,7 +11,7 @@ public class Packed extends ProductionStage {
     public void nextState(Product product) {
         if(product.getStage() instanceof Packed){
             product.setStage(new Stored());
-            System.out.println("The produce is packed.");
+            System.out.println("The product is packed.");
         }
         else{
             System.out.println("The product CAN NOT be stored since it's not packed.");

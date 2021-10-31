@@ -3,9 +3,16 @@ package Settings.CoffeeFactory.areas.ManufacturingArea.AssemblyLine;
 import Settings.CoffeeFactory.areas.ManufacturingArea.ManufacturingArea;
 import Settings.CoffeeFactory.product.originalcoffee.Coffee;
 
-//抽象coffee工厂流水线
+/***
+ * @author ZJX
+ * @description Abstract coffee factory assembly line
+ */
 public abstract class AssemblyLine extends ManufacturingArea {
-
-    //返回相应的机装产品
+    /***
+     * @return Coffee
+     * @author ZJX
+     * @description Returns the corresponding coffee product
+     */
     public abstract Coffee getCoffee();
+
 }

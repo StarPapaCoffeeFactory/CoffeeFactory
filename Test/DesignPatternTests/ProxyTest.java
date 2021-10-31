@@ -18,22 +18,22 @@ public class ProxyTest {
 
         while (true) {
             System.out.println("");
-            System.out.println("----------------Proxy Test---------------");
-            System.out.println("**      1 --- Show all information     **");
-            System.out.println("**      2 --- New a powerBank          **");
-            System.out.println("**      3 --- Take a powerBank         **");
-            System.out.println("**      4 --- Return a powerBank       **");
-            System.out.println("**      5 --- Exit                     **");
-            System.out.println("-----------------------------------------");
+            System.out.println("┌─────────────────────────   Proxy Test   ───────────────────────────┐");
+            System.out.println("|                      0 --- Quit                                    |");
+            System.out.println("|                      1 --- Show all information                    |");
+            System.out.println("|                      2 --- New a powerBank                         |");
+            System.out.println("|                      3 --- Take a powerBank                        |");
+            System.out.println("|                      4 --- Return a powerBank                      |");
+            System.out.println("└────────────────────────────────────────────────────────────────────┘");
 
             Scanner sc = new Scanner(System.in);
             System.out.println("");
-            System.out.print("请输入指令：");
+            System.out.print("Enter the order [0 to quit]:");
             int order = 0;
             try {
                 order = sc.nextInt();
             } catch (ArrayIndexOutOfBoundsException | InputMismatchException e) {
-                System.out.println("无效的指令，请重新输入。\n");
+                System.out.println("Invalid command. Please try again.\n");
                 System.out.println("");
             }
             switch (order) {
@@ -46,7 +46,7 @@ public class ProxyTest {
                         } else {
                             State = "Not Used";
                         }
-                        System.out.println("powerBank No." + (i + 1) + ", State: " + State);
+                        System.out.println("powerBank No." + (powerBank.getStock() + 1) + ", State: " + State);
                     }
                     break;
                 }
@@ -54,7 +54,7 @@ public class ProxyTest {
                     powerBank powerBank = new powerBank();
                     powerBankProxy powerBankProxy = new powerBankProxy(powerBank);
                     ProxyList.add(powerBankProxy);
-                    System.out.println("Create a new powerBank! It's powerBank No." + ProxyList.size());
+                    System.out.println("Create a new powerBank! It's powerBank No." + powerBank.getStock() + 1);
                     break;
                 }
                 case 3: {
@@ -65,10 +65,10 @@ public class ProxyTest {
                         if (tool_num > 0 && tool_num <= ProxyList.size() + 1) {
                             ProxyList.get(tool_num - 1).get();
                         } else {
-                            System.out.println("无效的指令，请重新输入。\n");
+                            System.out.println("Invalid command. Please try again.\n");
                         }
                     } catch (ArrayIndexOutOfBoundsException | InputMismatchException e) {
-                        System.out.println("无效的指令，请重新输入。\n");
+                        System.out.println("Invalid command. Please try again.\n");
                         System.out.println("");
                     }
                     break;
@@ -81,20 +81,20 @@ public class ProxyTest {
                         if (tool_num > 0 && tool_num <= ProxyList.size() + 1) {
                             ProxyList.get(tool_num - 1).returnPowerBank();
                         } else {
-                            System.out.println("无效的指令，请重新输入。\n");
+                            System.out.println("Invalid command. Please try again.\n");
                         }
                     } catch (ArrayIndexOutOfBoundsException | InputMismatchException e) {
-                        System.out.println("无效的指令，请重新输入。\n");
+                        System.out.println("Invalid command. Please try again.\n");
                         System.out.println("");
                     }
 
                     break;
                 }
-                case 5: {
+                case 0: {
                     return;
                 }
                 default: {
-                    System.out.println("无效的指令，请重新输入。\n");
+                    System.out.println("Invalid command. Please try again.\n");
                 }
             }
         }
@@ -102,12 +102,15 @@ public class ProxyTest {
 
     public static void main(String[] args) {
 
+        /*
         System.out.println("—————————————-------------------------------------———— [Proxy] Test —————————————-------------------------------------————");
         System.out.println("powerBank : powerBank() : Inherited from Supply, create an instance of powerBank.");
         System.out.println("powerBankProxy : powerBankProxy() : Implements powerBankSubjects, create an instance of powerBankProxy and bind it to an powerBank.");
         System.out.println("powerBankProxy : take() : Implements powerBankSubjects, take the powerBank through the proxy.");
         System.out.println("powerBankProxy : returnpowerBank() : Implements powerBankSubjects, return the powerBank to the proxy.");
         System.out.println("");
+
+         */
 
         ProxyTest.runTest();
 

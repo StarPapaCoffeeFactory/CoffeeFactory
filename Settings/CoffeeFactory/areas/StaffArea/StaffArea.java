@@ -96,7 +96,10 @@ public abstract class StaffArea extends Area implements Aggregate {
      */
     public void displayAllStaffs() {
         System.out.printf("%-20s%-20s%-5s%-10s%s%n", "Name", "Gender", "Age", "Id", "Department");
-        manager.display();
+        if(manager != null) manager.display();
+        else {
+            Manager.getWorkShopManager().display();
+        }
         for (Staff obj : workerList) {
             obj.display();
         }
@@ -123,12 +126,14 @@ public abstract class StaffArea extends Area implements Aggregate {
      * @return 一个复制WorkerList的迭代器
      */
     @Override
-    public Iterator getIterator() {
+    public WorkerListIterator getIterator() {
         return new WorkerListIterator(workerList);
     }
 
-    /**
-     * Visitor Pattern
+    /***
+     * @param v
+     * @author ZJX
+     * @description The basic function of visitor design model
      */
     public abstract void accept(Visitor v);
 }

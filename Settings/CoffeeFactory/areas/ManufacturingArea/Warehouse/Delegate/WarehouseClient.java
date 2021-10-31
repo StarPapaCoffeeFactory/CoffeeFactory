@@ -2,7 +2,10 @@ package Settings.CoffeeFactory.areas.ManufacturingArea.Warehouse.Delegate;
 
 import Settings.CoffeeFactory.material.Material;
 
-//展示层
+/***
+ * @author ZJX
+ * @description Presentation layer
+ */
 public class WarehouseClient {
     WarehouseDelegate warehouseDelegate;
 
@@ -11,11 +14,20 @@ public class WarehouseClient {
         showServiceList();
     }
 
-    //通过调用此方法，将应用仓库的服务
+    /***
+     * @param Material
+     * @return void
+     * @author ZJX
+     * @description By calling this method, the services of the repository are applied.
+     */
     public void doTask(Material Material) {
         warehouseDelegate.doTask(Material);
     }
 
+    /***
+     * @author ZJX
+     * @description Show service list
+     */
     public static void showServiceList() {
         System.out.println("");
         System.out.println("┌─────────────────────────   Warehouse Service List   ──────────────────────────┐");

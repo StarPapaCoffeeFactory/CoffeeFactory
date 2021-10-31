@@ -32,6 +32,7 @@ public abstract class Product {
 
     protected abstract void initIngredientList();
 
+
     public Product(String name, int shelfLife, int weight) {
         this.productName = name;
         this.shelfLife = shelfLife;

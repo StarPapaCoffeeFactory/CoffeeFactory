@@ -42,7 +42,7 @@ public class MultitonTest {
                     flag = false;
                     break;
                 case 1: {
-                    System.out.println("Let's get an instance of dining room's manager for the first time: ");
+                    System.out.println("Let's get an instance of dining room's manager for the first time ");
                     Manager diningRoomManager1 = Manager.getDiningRoomManager();
                     System.out.println("");
                     System.out.println("Get an instance of dining room's manager manager again: ");
@@ -53,7 +53,7 @@ public class MultitonTest {
                     break;
                 }
                 case 2: {
-                    System.out.println("Let's get an instance of office's manager for the first time: ");
+                    System.out.println("Let's get an instance of office's manager for the first time ");
                     Manager officeManager1 = Manager.getOfficeManager();
                     System.out.println("");
                     System.out.println("Get an instance of office's manager again: ");
@@ -66,7 +66,7 @@ public class MultitonTest {
                 }
 
                 case 3: {
-                    System.out.println("Let's get an instance of workshop's manager for the first time: ");
+                    System.out.println("Let's get an instance of workshop's manager for the first time ");
                     Manager workshopManager1 = Manager.getWorkShopManager();
                     System.out.println("");
                     System.out.println("Get an instance of workshop's manager again: ");
@@ -77,7 +77,7 @@ public class MultitonTest {
                     break;
                 }
                 case 4: {
-                    System.out.println("Let's get an instance of warehouse's manager for the first time: ");
+                    System.out.println("Let's get an instance of warehouse's manager for the first time ");
                     Manager warehouseManager1 = Manager.getWarehouseManager();
                     System.out.println("");
                     System.out.println("Get an instance of warehouse's manager again: ");
@@ -88,7 +88,7 @@ public class MultitonTest {
                     break;
                 }
                 default:{
-                    System.out.println("Invalid Input, Please input again.");
+                    System.out.println("Invalid Input, Please input again!");
                 }
             }
         } while (flag);

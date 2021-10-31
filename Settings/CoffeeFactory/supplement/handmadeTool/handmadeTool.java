@@ -4,6 +4,14 @@ import Settings.CoffeeFactory.supplement.supplement;
 
 import java.util.Date;
 
+/**
+ *
+ * @return
+ * @author ZPZ
+ * @description
+ * @date 2021/10/27 14:10
+ */
+
 public class handmadeTool extends supplement{
 
     private long batchNumber;//生产批号
@@ -14,10 +22,10 @@ public class handmadeTool extends supplement{
         this.type="handmadeTool";
         this.batchNumber= new Date().getTime();
         this.description="Default Description";
-        this.stock=getStock();
     }
 
     public handmadeTool(handmadeTool tool) {
+        type= tool.type;
         batchNumber = tool.batchNumber;
         description = tool.description;
         System.out.println("Copy Handmade Tool!");

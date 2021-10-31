@@ -7,7 +7,11 @@ import Settings.CoffeeFactory.product.Product;
 import Settings.CoffeeFactory.product.coffeebeverage.Latte;
 
 import java.util.Scanner;
-
+/**
+ * @author YSX
+ * @description test for TemplateMethod
+ * @date 2021/10/27 21:01
+ */
 public class TemplateMethodTest {
     public TemplateMethodTest() {
     }

@@ -26,8 +26,8 @@ public class FlyweightTest {
                 + "│                  <Phase 1: Create an Array of Coffee>                 │\n"
                 + "│                  0. Produce HouseBlend Coffee Now                     │\n"
                 + "│                  1. Arabica Coffee                                    │\n"
-                + "│                  1. Bourbon Coffee                                    │\n"
-                + "│                  1. Robusta Coffee                                    │\n"
+                + "│                  2. Bourbon Coffee                                    │\n"
+                + "│                  3. Robusta Coffee                                    │\n"
                 + "└───────────────────────────────────────────────────────────────────────┘\n";
 
         final String HINT2 = "\n"
@@ -35,8 +35,8 @@ public class FlyweightTest {
                 + "│                  <Phase 2: Compare Instance Refs>                     │\n"
                 + "│                  Input two indexes to compare.                        │\n"
                 + "│                  If they are referring to the same instance,          │\n"
-                + "│                  \"true\" is printed.                                 │\n"
-                + "│                  Else \"false\" is printed.                           │\n"
+                + "│                  \"true\" is printed.                                   │\n"
+                + "│                  Else \"false\" is printed.                             │\n"
                 + "│                  Input -1 to quit.                                    │\n"
                 + "│                  Index start from 0.                                  │\n"
                 + "└───────────────────────────────────────────────────────────────────────┘\n";
@@ -79,7 +79,7 @@ public class FlyweightTest {
                 }
                 default: {
                     classChosen = null;
-                    System.out.println("Invalid Input, Please try again.");
+                    System.out.println("Invalid Input, Please try again!");
                 }
             }
             if (classChosen != null) {

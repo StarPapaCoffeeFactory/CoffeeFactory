@@ -48,7 +48,7 @@ public class Manager extends Staff{
      */
     public void dispatchTask()
     {
-        System.out.println(this.name + " get task.");
+        System.out.println(this.name + " get task and will distribute it to the workers.");
     }
 
     /**
@@ -62,7 +62,7 @@ public class Manager extends Staff{
     /**
      * send feedback to the ChiefManager
      */
-    private void reporttoChiefManager() {
+    public void reporttoChiefManager() {
         System.out.println(this.name + " report to the Chief manager.");
         ChiefManager.getInstance().getFeedBack();
     }

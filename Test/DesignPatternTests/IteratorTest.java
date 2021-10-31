@@ -2,14 +2,18 @@ package Test.DesignPatternTests;
 
 import Settings.CoffeeFactory.areas.ManufacturingArea.Workshop.CoffeeWorkshop;
 import Settings.CoffeeFactory.areas.StaffArea.Office;
+import Settings.CoffeeFactory.areas.WorkerIterator.Iterator;
 import Settings.CoffeeFactory.areas.WorkerIterator.WorkerListIterator;
 import Settings.CoffeeFactory.personnel.Personnel;
 import Settings.CoffeeFactory.personnel.staff.LogisticsAdministrator;
 import Settings.CoffeeFactory.personnel.staff.Staff;
 import Settings.CoffeeFactory.personnel.staff.worker.worker;
-
 import java.util.Scanner;
 
+/***
+ * @author ZJX
+ * @description Test for iterator design model
+ */
 public class IteratorTest {
 
     public static void main(String[] args) {
@@ -28,8 +32,9 @@ public class IteratorTest {
         coffeeWorkshop.addWorker(new worker("Anna", 22, Personnel.Gender.female, "12345678909", 10000));
         coffeeWorkshop.addWorker(new worker("Billie", 19, Personnel.Gender.male, "12345678908", 20000));
         coffeeWorkshop.addWorker(new worker("Justin", 24, Personnel.Gender.male, "12345678907", 30000));
-        WorkerListIterator workerIterator = new WorkerListIterator();
-        workerIterator.setWorkerList(coffeeWorkshop.getWorkerList());
+        WorkerListIterator workerIterator = coffeeWorkshop.getIterator();
+        /*WorkerListIterator workerIterator = new WorkerListIterator();
+        workerIterator.setWorkerList(coffeeWorkshop.getWorkerList());*/
         Staff firstStaff;
         Staff nextStaff;
 
@@ -38,8 +43,9 @@ public class IteratorTest {
         office.addWorker(new LogisticsAdministrator("Brian", 20, Personnel.Gender.male, "12345678906",50000));
         office.addWorker(new LogisticsAdministrator("Kerr", 20, Personnel.Gender.female, "12345678905",50000));
         office.addWorker(new LogisticsAdministrator("Young", 20, Personnel.Gender.male, "12345678904",50000));
-        WorkerListIterator staffIterator = new WorkerListIterator();
-        staffIterator.setWorkerList(office.getWorkerList());
+        WorkerListIterator staffIterator = office.getIterator();
+        /*WorkerListIterator staffIterator = new WorkerListIterator();
+        staffIterator.setWorkerList(office.getWorkerList());*/
         Staff currentStaff;
 
         Scanner input = new Scanner(System.in);

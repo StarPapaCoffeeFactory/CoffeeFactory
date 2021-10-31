@@ -9,6 +9,10 @@ import Settings.CoffeeFactory.areas.StaffArea.Office;
 import Settings.CoffeeFactory.areas.Visitor.useVisitor;
 import java.util.Scanner;
 
+/***
+ * @author ZJX
+ * @description Test for visitor design model
+ */
 public class VisitorTest {
     public VisitorTest() {
     }

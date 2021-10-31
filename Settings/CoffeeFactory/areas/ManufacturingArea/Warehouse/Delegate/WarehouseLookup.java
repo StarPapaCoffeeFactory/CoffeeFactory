@@ -1,8 +1,17 @@
 package Settings.CoffeeFactory.areas.ManufacturingArea.Warehouse.Delegate;
 
-//查找仓库服务，若找到，则返回相应对象
+/***
+ * @author ZJX
+ * @description Find the warehouse service and return the corresponding object if found.
+ */
 public class WarehouseLookup {
 
+    /***
+     * @param serviceType
+     * @return WarehouseService
+     * @author ZJX
+     * @description Returns the corresponding warehouse service object.
+     */
     public WarehouseService getWarehouseService(String serviceType) {
         if (serviceType.equalsIgnoreCase("GetMaterial")) {
             return new GetMaterialService();
