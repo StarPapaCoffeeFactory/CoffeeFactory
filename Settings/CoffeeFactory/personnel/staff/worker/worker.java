@@ -7,7 +7,11 @@ import Settings.CoffeeFactory.personnel.Personnel;
 import Settings.CoffeeFactory.personnel.staff.Staff;
 import Settings.CoffeeFactory.personnel.visitlimit.LimitContext;
 import Settings.CoffeeFactory.product.Product;
+import Settings.CoffeeFactory.product.blendedcoffee.PikePlace;
 import Settings.CoffeeFactory.product.coffeebeverage.*;
+import Settings.CoffeeFactory.product.originalcoffee.Arabica;
+import Settings.CoffeeFactory.product.originalcoffee.Robusta;
+
 /**
  * @author CZQ
  * @project CoffeeFactory
@@ -22,7 +26,12 @@ public class worker extends Staff{
     protected String state;
     protected String defaultarea;
 
-    static private Product americano,caramelMacchiato,hazelnutLatte,latte,mocha,arabica,autumnBlend,houseBlend;
+    static private Product americano = new Americano(1);
+    static private Product latte = new Latte(1);
+    static private Product arabica = new Arabica();
+    static private Product robusta = new Robusta();
+
+
 
     public worker(String name, int age, Personnel.Gender gender, String phnum,double salary ) {
 
@@ -87,18 +96,15 @@ public class worker extends Staff{
     {
         americano.produce();
     }
+    public static void produceLatte()
+    {
+        latte.produce();
+    }
     public static void produceArabica()
     {
         arabica.produce();
     }
-    public static void produceAutumnBlend()
-    {
-        autumnBlend.produce();
-    }
-    public static void produceHouseBlend()
-    {
-        houseBlend.produce();
-    }
+    public static void produceRobusta(){ robusta.produce(); }
 
 
 

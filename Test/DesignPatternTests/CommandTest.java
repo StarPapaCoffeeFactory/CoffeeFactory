@@ -64,11 +64,11 @@ public class CommandTest {
                     break;
                 }
                 case 3: {
-                    concreteWorker.produceAutumnBlend();
+                    concreteWorker.produceRobusta();
                     break;
                 }
                 case 4: {
-                    concreteWorker.produceHouseBlend();
+                    concreteWorker.produceLatte();
                     break;
                 }
                 default:{
