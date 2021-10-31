@@ -55,7 +55,7 @@ public class worker extends Staff{
 
     public void feedBack()
     {
-        System.out.println("Worker "+this.name+" gets feedback");
+        System.out.println("Worker "+this.name+"feedback");
     }
 
 

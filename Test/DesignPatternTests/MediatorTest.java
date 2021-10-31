@@ -1,7 +1,9 @@
 package Test.DesignPatternTests;
 import Settings.CoffeeFactory.areas.StaffArea.Office;
+import Settings.CoffeeFactory.personnel.ChiefManager;
 import Settings.CoffeeFactory.personnel.Personnel;
 import Settings.CoffeeFactory.personnel.staff.Manager;
+import Settings.CoffeeFactory.personnel.staff.worker.worker;
 
 /**
  * @author LouTianyu
@@ -21,19 +23,14 @@ public class MediatorTest {
 
         System.out.println("");
         System.out.println("GeneralManager : getInstance() : Get the only instance of the general manager " + "and create an instance if there's none,");
-        System.out.println("Manager : getOfficeManager() : Get office's manager which is single.");
+        System.out.println("GeneralManager : addManager() : Add a office manager to thr list.");
+        System.out.println("GeneralManager : distributeWork() : Distribute work to office manager.");
+        System.out.println("Manager : getOfficeManager() : Get office's manager.");
         System.out.println("Manager : hireWorker() : Add workers to a specific department.");
         System.out.println("Manager : dispatchTask() : Manager dispatch the task that general manager dispatch to him to the office workers.");
+        System.out.println("Manager : getFeedBack() : Manager gets workers' feedback.");
+        System.out.println("Manager : reporttoChiefManager() : Manager report feedback from workers to the general manager.");
         System.out.println("");
-
-        System.out.println("First, we need to create an office... ");
-        Office office = new Office();
-        System.out.println("Next, we should get the instance of the office manager...");
-        Manager officeManager = Manager.getOfficeManager();
-        System.out.println("Then, office manager should hired some office workers... ");
-        officeManager.hireWorker("worker1", Personnel.Gender.male, 21, 10, "12345", office);
-        officeManager.hireWorker("worker2", Personnel.Gender.male, 22, 10, "23456", office);
-        officeManager.hireWorker("worker3", Personnel.Gender.male, 19, 10, "34567", office);
 
         System.out.println("");
         System.out.println("┌───────────────────────────────────────────────────   Mediator Test   ─────────────────────────────────────────────────┐");
@@ -42,6 +39,19 @@ public class MediatorTest {
         System.out.println("└───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘");
         System.out.println("");
         //Mediator: Manager here is a mediator, which is the mediator of the worker and the general manager.
+
+        System.out.println("First, we need to create an office and a general manager... ");
+        Office office = new Office();
+        ChiefManager generalManager = ChiefManager.getInstance();
+        System.out.println("Next, we should get the instance of the office manager so that the general manager could distribute work to him ...");
+        Manager officeManager = Manager.getOfficeManager();
+        generalManager.addManager(officeManager);
+        generalManager.distributeWork();
+        System.out.println("Then, office manager should hired some office workers... ");
+        officeManager.hireWorker("worker1", Personnel.Gender.male, 21, 10, "12345", office);
+        officeManager.hireWorker("worker2", Personnel.Gender.male, 22, 10, "23456", office);
+        officeManager.hireWorker("worker3", Personnel.Gender.male, 19, 10, "34567", office);
+
 
         Scanner input = new Scanner(System.in);
         int op;
@@ -63,6 +73,7 @@ public class MediatorTest {
                 }
                 case 2: {
                     officeManager.getFeedBack();
+                    officeManager.reporttoChiefManager();
                     break;
                 }
 
