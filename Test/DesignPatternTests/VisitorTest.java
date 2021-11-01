@@ -21,7 +21,7 @@ public class VisitorTest {
 
         System.out.println("We will test the \"visitors\" design pattern using the methods represented by the \"useVisitor\" class");
         System.out.println("");
-        System.out.println("┌─────────────────────────   visitors Test   ─────────────────────────┐");
+        System.out.println("┌─────────────────────────   visitors Test   ────────────────────────┐");
         System.out.println("│              0. Exit!!!                                            │");
         System.out.println("│              1. Test the Warehouse class                           │");
         System.out.println("│              2. Test the CoffeeWorkshop class                      │");
