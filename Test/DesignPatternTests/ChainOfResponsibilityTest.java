@@ -12,7 +12,11 @@ import java.io.InputStreamReader;
 import java.io.IOException;
 import java.util.Scanner;
 
-
+/**
+ * @author Chen ZeQi
+ * @description test for ChainOfResponsibility
+ * @date 2021/11/1
+ */
 public class ChainOfResponsibilityTest {
 
     public static void main(String[] args)  throws IOException  {
@@ -24,14 +28,14 @@ public class ChainOfResponsibilityTest {
         System.out.println("│            4. Find if there is maintainer who can fix the problem.      │");
         System.out.println("└─────────────────────────────────────────────────────────────────────────┘");
         System.out.println("\n");
-        System.out.println("***************************************************************************");
-        System.out.println("****************************------NOTE------*******************************");
-        System.out.println("* broken level: [0~25]  can be fixed by an InternshipMaintainer           *");
-        System.out.println("*               [26~50] can be fixed by a FreshmanMaintainer              *");
-        System.out.println("*               [51~75] can be fixed by a SkilledMaintainer               *");
-        System.out.println("*               [76~100]can be fixed by a SeasonedMaintainer              *");
-        System.out.println("*               [101,+∞]cannot be fixed                                   *");
-        System.out.println("***************************************************************************");
+        System.out.println("┌─────────────────────────────────────────────────────────────────────────┐");
+        System.out.println("│                           ----- NOTE -----                              │");
+        System.out.println("│ broken level: [0~25]  can be fixed by an InternshipMaintainer           │");
+        System.out.println("│               [26~50] can be fixed by a FreshmanMaintainer              │");
+        System.out.println("│               [51~75] can be fixed by a SkilledMaintainer               │");
+        System.out.println("│               [76~100]can be fixed by a SeasonedMaintainer              │");
+        System.out.println("│               [101,+∞]cannot be fixed                                   │");
+        System.out.println("└─────────────────────────────────────────────────────────────────────────┘");
 
         int brokelevel;
 
