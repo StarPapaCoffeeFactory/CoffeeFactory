@@ -32,7 +32,7 @@ public class SeasonedMaintainer  extends Maintainer{
 
 
     public void Goto(Area dest){}
-    public void SetVisitLimit(){}
+    public void setVisitLimit(){}
 
 
 }

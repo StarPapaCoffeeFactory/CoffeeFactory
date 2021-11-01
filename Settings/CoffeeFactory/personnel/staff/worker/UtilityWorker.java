@@ -40,6 +40,9 @@ public class UtilityWorker extends worker{
         System.out.println("UtilityWorker "+this.name+" visits "+loc);
     }*/
 
+    /**
+     * set this state to work
+     */
     @Override
     public void work()
     {
@@ -47,6 +50,9 @@ public class UtilityWorker extends worker{
         System.out.println("UtilityWorker "+this.name+" starts working.");
     }
 
+    /**
+     * set this state to rest
+     */
     @Override
     public void rest()
     {
@@ -54,6 +60,9 @@ public class UtilityWorker extends worker{
         System.out.println("UtilityWorker "+this.name+" starts resting.");
     }
 
+    /**
+     * print get feedback
+     */
     @Override
     public void feedBack()
     {

@@ -79,11 +79,13 @@ public class ChiefManager extends Personnel {
         System.out.println("The Chief Manager " + this.name + "moves to " + dest.toString());
     }
 
-    public void SetVisitLimit()
+    public void setVisitLimit()
     {
 
     }
-
+    /**
+     * show basic info
+     */
     public void display()
     {
         String gender_str;

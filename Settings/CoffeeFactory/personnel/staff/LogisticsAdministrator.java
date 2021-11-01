@@ -48,7 +48,7 @@ public class LogisticsAdministrator extends Staff{
     {
 
     }
-    public void SetVisitLimit()
+    public void setVisitLimit()
     {/*
      *
      * @return void

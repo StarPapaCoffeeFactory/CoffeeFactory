@@ -99,7 +99,9 @@ public class Manager extends Staff{
 //        System.out.println("Our office manager is here.");
         return officeManager;
     }
-
+    /**
+     * @return Manager
+     */
     public static Manager getWorkShopManager() {
         if (workShopManager == null) {
             workShopManager = new Manager("workShopManager", 30, Gender.male, "123456");
@@ -109,8 +111,6 @@ public class Manager extends Staff{
     }
 
     /**
-     * return the warehouse's manager which is single!!
-     *
      * @return Manager
      */
     public static Manager getWarehouseManager() {
@@ -130,15 +130,26 @@ public class Manager extends Staff{
         return "public class Manager extends Staff";
     }
 
+    /**
+     * @param dest:go to dest area
+     * @return
+     */
     public void Goto(Area dest) {
         System.out.println("This manager cannot move area.");
     }
 
-    public void SetVisitLimit()
+    public void setVisitLimit()
     {
 
     }
 
+    /**
+     * hire a worker!
+     * @param _worker:the worker to be hired
+     * @param phnum:the worker's phnum
+     * @param staffArea:the worker's staffArea
+     * @return
+     */
     public void hireWorker(worker _worker, String phnum, StaffArea staffArea) {
         String name=_worker.getName();
         Gender gender=_worker.getGender();
@@ -151,6 +162,16 @@ public class Manager extends Staff{
             System.out.println("The manager does not match the staff area.");
         }
     }
+    /**
+     * hire a worker!(overload)
+     * @param name:the worker's name
+     * @param gender:the worker's gender
+     * @param age:the worker's age
+     * @param salary:the worker's salary
+     * @param phnum:the worker's phnum
+     * @param staffArea:the worker's staffArea
+     * @return
+     */
     public void hireWorker(String name, Gender gender, int age, double salary, String phnum, StaffArea staffArea) {
         if (this.departmentList.contains(staffArea)) {
             WorkerController.addWorker(name, age, gender, phnum, salary, staffArea);

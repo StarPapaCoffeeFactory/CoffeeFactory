@@ -7,7 +7,6 @@ import Settings.CoffeeFactory.personnel.Personnel;
 import Settings.CoffeeFactory.personnel.staff.Staff;
 import Settings.CoffeeFactory.personnel.visitlimit.LimitContext;
 import Settings.CoffeeFactory.product.Product;
-import Settings.CoffeeFactory.product.blendedcoffee.PikePlace;
 import Settings.CoffeeFactory.product.coffeebeverage.*;
 import Settings.CoffeeFactory.product.originalcoffee.Arabica;
 import Settings.CoffeeFactory.product.originalcoffee.Robusta;
@@ -38,7 +37,7 @@ public class worker extends Staff{
         super(name, age, gender ,phnum ,salary);
         this.identity = "worker";
         state="rest";
-        this.SetVisitLimit();
+        this.setVisitLimit();
     }
 
     public worker(String name, int age, Personnel.Gender gender, String phnum,double salary, StaffArea area ) {
@@ -46,22 +45,31 @@ public class worker extends Staff{
         super(name, age, gender, phnum, salary, area);
         this.identity = "worker";
         state = "rest";
-        this.SetVisitLimit();
+        this.setVisitLimit();
 
     }
 
+    /**
+     * set this state to work
+     */
     public void work()
     {
         state="work";
         System.out.println("Worker "+this.name+" starts working.");
     }
 
+    /**
+     * set this state to rest
+     */
     public void rest()
     {
         state="rest";
         System.out.println("Worker "+this.name+" starts resting.");
     }
 
+    /**
+     * print send feedback
+     */
     public void feedBack()
     {
         System.out.println("Worker "+this.name+"feedback");
@@ -73,6 +81,10 @@ public class worker extends Staff{
         return "public class worker extends Staff";
     }
 
+    /**
+     * @param dest:go to dest area
+     * @return
+     */
     public void Goto(Area dest) {
         if (this.canEnter(dest)) {
             this.location = dest;
@@ -82,8 +94,12 @@ public class worker extends Staff{
             System.out.println("sorry，" + this.identity + " " + this.name + "has no access permission and fail to enter" + dest.toString());
         }
     }
+
+    /**
+     * set VisitLimit
+     */
     @Override
-    public void SetVisitLimit()
+    public void setVisitLimit()
     {
         String[] persons = {this.identity};
         String[] publicAreas = {AreaName.PUBLIC_AREA , AreaName.EXHIBITION_AREA, AreaName.COFFEE_EXPERIENCE_ROOM ,
@@ -92,6 +108,9 @@ public class worker extends Staff{
         this.visitLimit = new LimitContext(persons, publicAreas);
     }
 
+    /**
+     * produce products
+     */
     public static void produceAmericano()
     {
         americano.produce();

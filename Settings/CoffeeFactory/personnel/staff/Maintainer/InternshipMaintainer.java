@@ -32,6 +32,6 @@ public class InternshipMaintainer extends Maintainer{
 
 
     public void Goto(Area dest){}
-    public void SetVisitLimit(){}
+    public void setVisitLimit(){}
 
 }

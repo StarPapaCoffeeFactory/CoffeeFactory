@@ -16,7 +16,7 @@ public class Visitor extends Personnel {
     public Visitor(String name, int age, Personnel.Gender gender, String Phone_num) {
         super(name, age, gender, Phone_num);
         this.identity = "Visitor";
-        this.SetVisitLimit();
+        this.setVisitLimit();
     }
 
 
@@ -26,7 +26,7 @@ public class Visitor extends Personnel {
         //可使用visitor实现
 
     }
-    public void SetVisitLimit()
+    public void setVisitLimit()
     {/*
      *
      * @return void

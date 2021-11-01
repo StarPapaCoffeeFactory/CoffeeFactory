@@ -32,7 +32,7 @@ public class EmptyStaff extends Staff {
         System.out.println("EmptyStaff cannot move area.");
     }
 
-    public void SetVisitLimit()
+    public void setVisitLimit()
     {
 
     }
