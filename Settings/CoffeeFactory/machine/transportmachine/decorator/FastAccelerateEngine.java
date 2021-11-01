@@ -18,7 +18,7 @@ public class FastAccelerateEngine extends Decorator {
      * @description specific features : super accelerate
      * @date 2021/10/31 23:58
      */
-    public void addedFunction() {
+    public void superAccelerate() {
         System.out.println("Super Accelerating...");
     }
 
@@ -31,6 +31,6 @@ public class FastAccelerateEngine extends Decorator {
     @Override
     public void accelerate() {
         super.accelerate();
-        addedFunction();
+        superAccelerate();
     }
 }

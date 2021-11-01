@@ -18,7 +18,7 @@ public class EFAccelerateEngine extends Decorator {
      * @description specific features : save energy
      * @date 2021/10/31 23:57
      */
-    public void addedFunction() {
+    public void saveEnergy() {
         System.out.println("Saving Energy...");
     }
 
@@ -31,5 +31,5 @@ public class EFAccelerateEngine extends Decorator {
     @Override
     public void accelerate() {
         super.accelerate();
-        addedFunction();
+        saveEnergy();
     }}
