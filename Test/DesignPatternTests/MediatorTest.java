@@ -24,7 +24,7 @@ public class MediatorTest {
 
         System.out.println("");
         System.out.println("GeneralManager : getInstance() : Get the only instance of the general manager " + "and create an instance if there's none,");
-        System.out.println("GeneralManager : addManager() : Add a office manager to thr list.");
+        System.out.println("GeneralManager : addManager() : Add an office manager to the list.");
         System.out.println("GeneralManager : distributeWork() : Distribute work to office manager.");
         System.out.println("Manager : getOfficeManager() : Get office's manager.");
         System.out.println("Manager : hireWorker() : Add workers to a specific department.");
@@ -49,12 +49,12 @@ public class MediatorTest {
         Manager officeManager = Manager.getOfficeManager();
         generalManager.addManager(officeManager);
         generalManager.distributeWork();
-        System.out.println("Then, office manager should hired some office workers... ");
+        System.out.println("Then, office manager should hire some workers... ");
         officeManager.hireWorker("worker1", Personnel.Gender.male, 21, 10, "12345", office);
         officeManager.hireWorker("worker2", Personnel.Gender.male, 22, 10, "23456", office);
         officeManager.hireWorker("worker3", Personnel.Gender.male, 19, 10, "34567", office);
 
-        WorkerListIterator workerListIterator = new WorkerListIterator();
+        WorkerListIterator workerListIterator = new WorkerListIterator();  //Get an iterator
         workerListIterator.setWorkerList(office.getWorkerList());
 
 
