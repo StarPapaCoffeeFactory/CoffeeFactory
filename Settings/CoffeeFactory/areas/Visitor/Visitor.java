@@ -1,13 +1,12 @@
 package Settings.CoffeeFactory.areas.Visitor;
 
-import Settings.CoffeeFactory.areas.ManufacturingArea.Warehouse.Warehouse;
-import Settings.CoffeeFactory.areas.ManufacturingArea.Workshop.CoffeeProductWorkshop;
-import Settings.CoffeeFactory.areas.ManufacturingArea.Workshop.CoffeeWorkshop;
-import Settings.CoffeeFactory.areas.ManufacturingArea.Workshop.Workshop;
-import Settings.CoffeeFactory.areas.PublicArea.ExhibitionRoom;
-import Settings.CoffeeFactory.areas.PublicArea.ExperienceRoom;
-import Settings.CoffeeFactory.areas.StaffArea.DiningRoom;
-import Settings.CoffeeFactory.areas.StaffArea.Office;
+import Settings.CoffeeFactory.areas.manufacturingarea.Warehouse.Warehouse;
+import Settings.CoffeeFactory.areas.manufacturingarea.Workshop.CoffeeProductWorkshop;
+import Settings.CoffeeFactory.areas.manufacturingarea.Workshop.CoffeeWorkshop;
+import Settings.CoffeeFactory.areas.publicarea.ExhibitionRoom;
+import Settings.CoffeeFactory.areas.publicarea.ExperienceRoom;
+import Settings.CoffeeFactory.areas.staffarea.DiningRoom;
+import Settings.CoffeeFactory.areas.staffarea.Office;
 
 /***
  * @author ZJX

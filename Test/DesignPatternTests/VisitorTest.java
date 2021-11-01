@@ -1,11 +1,11 @@
 package Test.DesignPatternTests;
 
-import Settings.CoffeeFactory.areas.ManufacturingArea.Warehouse.Warehouse;
-import Settings.CoffeeFactory.areas.ManufacturingArea.Workshop.CoffeeWorkshop;
-import Settings.CoffeeFactory.areas.PublicArea.ExhibitionRoom;
-import Settings.CoffeeFactory.areas.PublicArea.ExperienceRoom;
-import Settings.CoffeeFactory.areas.StaffArea.DiningRoom;
-import Settings.CoffeeFactory.areas.StaffArea.Office;
+import Settings.CoffeeFactory.areas.manufacturingarea.Warehouse.Warehouse;
+import Settings.CoffeeFactory.areas.manufacturingarea.Workshop.CoffeeWorkshop;
+import Settings.CoffeeFactory.areas.publicarea.ExhibitionRoom;
+import Settings.CoffeeFactory.areas.publicarea.ExperienceRoom;
+import Settings.CoffeeFactory.areas.staffarea.DiningRoom;
+import Settings.CoffeeFactory.areas.staffarea.Office;
 import Settings.CoffeeFactory.areas.Visitor.useVisitor;
 import java.util.Scanner;
 

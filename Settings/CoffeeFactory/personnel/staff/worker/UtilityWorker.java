@@ -1,9 +1,7 @@
 package Settings.CoffeeFactory.personnel.staff.worker;
 
-import Settings.CoffeeFactory.areas.Area;
-import Settings.CoffeeFactory.areas.StaffArea.StaffArea;
 import Settings.CoffeeFactory.personnel.Personnel;
-import Settings.CoffeeFactory.personnel.staff.worker.worker;
+
 /**
  * @author CZQ
  * @project CoffeeFactory

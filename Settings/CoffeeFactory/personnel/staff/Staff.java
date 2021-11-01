@@ -1,6 +1,6 @@
 package Settings.CoffeeFactory.personnel.staff;
 
-import Settings.CoffeeFactory.areas.StaffArea.StaffArea;
+import Settings.CoffeeFactory.areas.staffarea.StaffArea;
 import Settings.CoffeeFactory.personnel.Personnel;
 
 import java.util.Objects;

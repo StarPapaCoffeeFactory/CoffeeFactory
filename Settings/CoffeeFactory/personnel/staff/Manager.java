@@ -1,7 +1,7 @@
 package Settings.CoffeeFactory.personnel.staff;
 
 import Settings.CoffeeFactory.areas.Area;
-import Settings.CoffeeFactory.areas.StaffArea.StaffArea;
+import Settings.CoffeeFactory.areas.staffarea.StaffArea;
 import Settings.CoffeeFactory.management.staff.WorkerController;
 import Settings.CoffeeFactory.personnel.ChiefManager;
 import Settings.CoffeeFactory.personnel.Personnel;

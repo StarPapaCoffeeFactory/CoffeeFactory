@@ -1,11 +1,6 @@
 package Settings.CoffeeFactory.personnel.staff;
 
 import Settings.CoffeeFactory.areas.Area;
-import Settings.CoffeeFactory.areas.StaffArea.StaffArea;
-import Settings.CoffeeFactory.personnel.Personnel;
-import Settings.CoffeeFactory.personnel.staff.Staff;
-
-import java.util.ArrayList;
 
 /**
  * @author CZQ

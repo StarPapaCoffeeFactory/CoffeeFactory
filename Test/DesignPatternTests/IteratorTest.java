@@ -1,9 +1,8 @@
 package Test.DesignPatternTests;
 
-import Settings.CoffeeFactory.areas.ManufacturingArea.Workshop.CoffeeWorkshop;
-import Settings.CoffeeFactory.areas.StaffArea.Office;
-import Settings.CoffeeFactory.areas.WorkerIterator.Iterator;
-import Settings.CoffeeFactory.areas.WorkerIterator.WorkerListIterator;
+import Settings.CoffeeFactory.areas.manufacturingarea.Workshop.CoffeeWorkshop;
+import Settings.CoffeeFactory.areas.staffarea.Office;
+import Settings.CoffeeFactory.areas.workeriterator.WorkerListIterator;
 import Settings.CoffeeFactory.personnel.Personnel;
 import Settings.CoffeeFactory.personnel.staff.LogisticsAdministrator;
 import Settings.CoffeeFactory.personnel.staff.Staff;
