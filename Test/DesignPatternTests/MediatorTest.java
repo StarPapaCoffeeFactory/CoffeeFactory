@@ -41,7 +41,7 @@ public class MediatorTest {
 
         System.out.println("First, we need to create an office and a general manager... ");
         Office office = new Office();
-        ChiefManager generalManager = ChiefManager.getInstance();
+        ChiefManager generalManager = ChiefManager.getInstance(); //Singleton
         System.out.println("Next, we should get the instance of the office manager so that the general manager could distribute work to him ...");
         Manager officeManager = Manager.getOfficeManager();
         generalManager.addManager(officeManager);
