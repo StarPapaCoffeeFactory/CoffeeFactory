@@ -12,18 +12,23 @@ import Settings.CoffeeFactory.personnel.staff.Staff;
 
 import java.util.ArrayList;
 
+/**
+ * @author lc
+ * @description An abstract class of staff area
+ */
 public abstract class StaffArea extends Area implements Aggregate {
 
     /**
-     * 区域经理
-     **/
+     * @description area manager
+     * @author lc
+     */
     protected Manager manager;
 
     /**
-     * 区域员工列表
+     * @description a worker list of the area
+     * @author lc
      **/
     protected ArrayList<Staff> workerList = null;
-
 
     public StaffArea() {
         super();
@@ -31,7 +36,12 @@ public abstract class StaffArea extends Area implements Aggregate {
     }
 
     /**
-     * 指定经理的构造函数
+     * @param location
+     * @param cost
+     * @param area
+     * @param newManager
+     * @description a constructor with an assigned manager
+     * @author lc
      */
     public StaffArea(String location, double cost, double area, Manager newManager) {
         super(location, cost, area);
@@ -41,21 +51,24 @@ public abstract class StaffArea extends Area implements Aggregate {
     }
 
     /**
-     * 获取本区域的经理
+     * @description get the manager of the area
+     * @author lc
      */
     public Manager getManager() {
         return manager;
     }
 
     /**
-     * 设置本区域的新经理
+     * @description set a new manager of this area
+     * @author lc
      */
     public void setManager(Manager newManager) {
         manager = newManager;
     }
 
     /**
-     * 在工人列表中添加一个新员工
+     * @description add a new staff to workerList
+     * @author lc
      */
     public void addWorker(Staff workerObj) {
         if (!workerList.contains(workerObj)) {
@@ -66,7 +79,8 @@ public abstract class StaffArea extends Area implements Aggregate {
     }
 
     /**
-     * 删除该区域的单个员工（如果要删除的员工在该区域）
+     * @description remove a staff from this area,if the staff belongs to the area
+     * @author lc
      */
     public void removeWorker(Staff workerObj) {
         if (workerList.contains(workerObj)) {
@@ -77,7 +91,8 @@ public abstract class StaffArea extends Area implements Aggregate {
     }
 
     /**
-     * 从工厂中查找并删除某个员工
+     * @description search and remove a staff by name in the factory
+     * @author lc
      */
     public void removeWorker(String name) {
         workerList.removeIf(worker -> worker.getName().equals(name));
@@ -85,14 +100,16 @@ public abstract class StaffArea extends Area implements Aggregate {
     }
 
     /**
-     * 获取本区域的员工列表
+     * @description get the workerList of the area
+     * @author lc
      */
     public ArrayList<Staff> getWorkerList() {
         return workerList;
     }
 
     /**
-     * 展示本区域的所有员工
+     * @description show all staffs from the area
+     * @author lc
      */
     public void displayAllStaffs() {
         System.out.printf("%-20s%-20s%-5s%-10s%s%n", "Name", "Gender", "Age", "Id", "Department");
@@ -106,7 +123,8 @@ public abstract class StaffArea extends Area implements Aggregate {
     }
 
     /**
-     * 通过id查找和展示员工信息
+     * @description search and show worker information by id
+     * @author lc
      */
     public void searchStaffById(String id) {
         if (manager.getId().equals(id)) {
@@ -123,7 +141,8 @@ public abstract class StaffArea extends Area implements Aggregate {
     }
 
     /**
-     * @return 一个复制WorkerList的迭代器
+     * @return a iterator copies workerList
+     * @author lc
      */
     @Override
     public WorkerListIterator getIterator() {

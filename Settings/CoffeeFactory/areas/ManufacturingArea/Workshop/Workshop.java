@@ -29,7 +29,6 @@ public abstract class Workshop extends ManufacturingArea {
      */
     public abstract void accept(Visitor v);
 
-    //生产coffee
     /***
      * @return void
      * @author ZJX
