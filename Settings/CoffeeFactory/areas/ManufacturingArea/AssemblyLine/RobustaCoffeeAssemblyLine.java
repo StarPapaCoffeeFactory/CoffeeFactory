@@ -5,10 +5,10 @@ import Settings.CoffeeFactory.product.originalcoffee.Coffee;
 import Settings.CoffeeFactory.product.originalcoffee.Robusta;
 
 /***
- * @author ZJX
- * @description coffee assembly line
+ * @author ZJX,lc
+ * @description Robusta coffee assembly line
  */
-public class CoffeeAssemblyLine extends AssemblyLine {
+public class RobustaCoffeeAssemblyLine extends AssemblyLine {
     /***
      * @return Coffee
      * @author ZJX
