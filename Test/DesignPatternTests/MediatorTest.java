@@ -36,8 +36,8 @@ public class MediatorTest {
         System.out.println("");
         System.out.println("┌───────────────────────────────────────────────────   Mediator Test   ─────────────────────────────────────────────────┐");
         System.out.println("│              1.Office manager dispatch the task which chief manager dispatched to him to the office workers           │");
-        System.out.println("│              2.Office manager send feedback received from workers to the general manager                              │");
-        System.out.println("│              3.Test the Iterator which is used to search for worker that you enter                                    │");
+        System.out.println("│              2.Workers appoint a team leader for this task                                                            │");
+        System.out.println("│              3.Office manager send feedback received from workers to the general manager                              │");
         System.out.println("└───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘");
         System.out.println("");
         //Mediator: Manager here is a mediator, which is the mediator of the worker and the general manager.
@@ -54,9 +54,7 @@ public class MediatorTest {
         officeManager.hireWorker("worker2", Personnel.Gender.male, 22, 10, "23456", office);
         officeManager.hireWorker("worker3", Personnel.Gender.male, 19, 10, "34567", office);
 
-        System.out.println("Next, we will test that finding worker2 by Iterator");
         WorkerListIterator workerListIterator = new WorkerListIterator();
-        System.out.println("Building iterator! ");
         workerListIterator.setWorkerList(office.getWorkerList());
 
 
@@ -77,15 +75,13 @@ public class MediatorTest {
                     break;
                 case 1: {
                     officeManager.dispatchTask();
+                    for(int i = 0; i < office.getWorkerList().size(); i++) {
+                        System.out.println("Worker " + office.getWorkerList().get(i).getName() + " has received the task.");
+                    }
                     break;
                 }
                 case 2: {
-                    officeManager.getFeedBack();
-                    officeManager.reporttoChiefManager();
-                    break;
-                }
-                case 3: {
-                    System.out.println("Please enter the name of the worker you want to find:(Now we have worker1/worker2/worker3)");
+                    System.out.println("Please enter the name of the worker to be the team leader for this task. (Now we have worker1/worker2/worker3)");
                     input.nextLine();
                     String name = input.nextLine();
                     boolean judge = false;
@@ -98,10 +94,16 @@ public class MediatorTest {
                         if(workerListIterator.hasNext())searchStaff = workerListIterator.next();
                         else break;
                     }
-                    if(judge == true) System.out.println("Find the "+ name + "!");
+                    if(judge == true) System.out.println(name + " has been appointed the team leader");
                     else System.out.println("Don`t find the " + name + "!");
                     break;
                 }
+                case 3: {
+                    officeManager.getFeedBack();
+                    officeManager.reporttoChiefManager();
+                    break;
+                }
+
                 default: {
                     System.out.println("Invalid Input, Please input again!");
                 }
