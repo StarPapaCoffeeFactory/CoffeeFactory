@@ -7,6 +7,7 @@ import Settings.CoffeeFactory.areas.ManufacturingArea.ManufacturingArea;
 /**
  * @author ZJX
  * @description Production workshop
+ *
  */
 public abstract class Workshop extends ManufacturingArea {
     public ProductMachine productMachine;

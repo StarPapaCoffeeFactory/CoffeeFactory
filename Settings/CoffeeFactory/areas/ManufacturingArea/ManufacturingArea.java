@@ -8,6 +8,7 @@ import Settings.CoffeeFactory.personnel.staff.Manager;
  * @author ZJX
  * @description manufacturing area abstract class
  * This class provides an abstract class for assembly line, warehouse and workshop
+ *
  */
 public abstract class ManufacturingArea extends StaffArea{
     public ManufacturingArea(){

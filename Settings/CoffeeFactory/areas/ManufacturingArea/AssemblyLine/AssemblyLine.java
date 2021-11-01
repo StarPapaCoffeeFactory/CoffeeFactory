@@ -6,6 +6,7 @@ import Settings.CoffeeFactory.product.originalcoffee.Coffee;
 /***
  * @author ZJX
  * @description Abstract coffee factory assembly line
+ *
  */
 public abstract class AssemblyLine extends ManufacturingArea {
     /***

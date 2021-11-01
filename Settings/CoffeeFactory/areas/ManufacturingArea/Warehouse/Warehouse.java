@@ -10,6 +10,7 @@ import java.util.HashMap;
 /***
  * @author ZJX
  * @description This area is used to store raw materials and products
+ *
  */
 public class Warehouse extends ManufacturingArea{
     protected HashMap<String, Double> materialAmount;
