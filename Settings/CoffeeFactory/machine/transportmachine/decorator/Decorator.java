@@ -19,7 +19,7 @@ public abstract class Decorator implements Engine{
      * @description execute accelerate
      * @date 2021/10/31 23:57
      */
-    public void operation() {
+    public void accelerate() {
         engine.accelerate();
     }
 }

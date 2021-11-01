@@ -30,7 +30,7 @@ public class FastAccelerateEngine extends Decorator {
      */
     @Override
     public void accelerate() {
-        super.operation();
+        super.accelerate();
         addedFunction();
     }
 }

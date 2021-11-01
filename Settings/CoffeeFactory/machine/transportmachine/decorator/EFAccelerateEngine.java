@@ -30,6 +30,6 @@ public class EFAccelerateEngine extends Decorator {
      */
     @Override
     public void accelerate() {
-        super.operation();
+        super.accelerate();
         addedFunction();
     }}
