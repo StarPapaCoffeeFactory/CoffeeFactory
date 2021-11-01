@@ -1,6 +1,6 @@
 package Settings.CoffeeFactory.areas.manufacturingarea.AssemblyLine;
 
-import Settings.CoffeeFactory.areas.Visitor.Visitor;
+import Settings.CoffeeFactory.areas.visitors.Visitor;
 import Settings.CoffeeFactory.product.originalcoffee.Coffee;
 import Settings.CoffeeFactory.product.originalcoffee.Robusta;
 

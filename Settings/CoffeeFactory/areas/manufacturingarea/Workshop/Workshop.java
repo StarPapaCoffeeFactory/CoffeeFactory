@@ -1,6 +1,6 @@
 package Settings.CoffeeFactory.areas.manufacturingarea.Workshop;
 
-import Settings.CoffeeFactory.areas.Visitor.Visitor;
+import Settings.CoffeeFactory.areas.visitors.Visitor;
 import Settings.CoffeeFactory.machine.processmachine.productmachine.ProductMachine;
 import Settings.CoffeeFactory.areas.manufacturingarea.ManufacturingArea;
 

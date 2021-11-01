@@ -1,6 +1,6 @@
 package Settings.CoffeeFactory.areas.staffarea;
 
-import Settings.CoffeeFactory.areas.Visitor.Visitor;
+import Settings.CoffeeFactory.areas.visitors.Visitor;
 import Settings.CoffeeFactory.personnel.ChiefManager;
 import Settings.CoffeeFactory.personnel.staff.Manager;
 import Settings.CoffeeFactory.areas.AreaName;
@@ -39,7 +39,7 @@ public class Office extends StaffArea {
     }
 
     /**
-     * Visitor Pattern
+     * visitors Pattern
      *
      */
     public void accept(Visitor v) {

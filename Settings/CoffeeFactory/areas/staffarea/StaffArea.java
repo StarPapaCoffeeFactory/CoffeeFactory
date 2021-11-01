@@ -1,7 +1,7 @@
 package Settings.CoffeeFactory.areas.staffarea;
 
 import Settings.CoffeeFactory.areas.Area;
-import Settings.CoffeeFactory.areas.Visitor.Visitor;
+import Settings.CoffeeFactory.areas.visitors.Visitor;
 import Settings.CoffeeFactory.areas.workeriterator.Aggregate;
 import Settings.CoffeeFactory.areas.workeriterator.WorkerListIterator;
 import Settings.CoffeeFactory.personnel.staff.EmptyStaff;

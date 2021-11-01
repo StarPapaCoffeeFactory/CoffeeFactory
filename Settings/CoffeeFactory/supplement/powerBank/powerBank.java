@@ -95,7 +95,7 @@ public class powerBank extends supplement {
 
     @Override
     public String toString() {
-        return "class Visitor extends Person";
+        return "class visitors extends Person";
     }
 
 }

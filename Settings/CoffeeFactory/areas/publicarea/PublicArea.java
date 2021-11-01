@@ -96,5 +96,5 @@ public abstract class PublicArea extends Area {
      * @author ZJX
      * @description The basic function of visitor design model
      */
-    public abstract void accept(Settings.CoffeeFactory.areas.Visitor.Visitor v);
+    public abstract void accept(Settings.CoffeeFactory.areas.visitors.Visitor v);
 }

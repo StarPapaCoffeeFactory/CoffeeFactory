@@ -1,4 +1,4 @@
-package Settings.CoffeeFactory.areas.Visitor;
+package Settings.CoffeeFactory.areas.visitors;
 
 import Settings.CoffeeFactory.areas.manufacturingarea.Warehouse.Warehouse;
 import Settings.CoffeeFactory.areas.manufacturingarea.Workshop.CoffeeProductWorkshop;

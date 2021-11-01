@@ -15,7 +15,7 @@ public class Visitor extends Personnel {
 
     public Visitor(String name, int age, Personnel.Gender gender, String Phone_num) {
         super(name, age, gender, Phone_num);
-        this.identity = "Visitor";
+        this.identity = "visitors";
         this.setVisitLimit();
     }
 
@@ -47,7 +47,7 @@ public class Visitor extends Personnel {
      */
     public boolean visit(PublicArea dest) {
         if (!dest.isFull()) {
-            System.out.println("Visitor " + this.name + "visits" + dest.toString());
+            System.out.println("visitors " + this.name + "visits" + dest.toString());
             this.Goto(dest);
             return true;
         } else {
@@ -102,6 +102,6 @@ public class Visitor extends Personnel {
 
     @Override
     public String toString() {
-        return "class Visitor extends Person";
+        return "class visitors extends Person";
     }
 }

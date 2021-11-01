@@ -1,7 +1,7 @@
 package Settings.CoffeeFactory.management;
 
 import Settings.CoffeeFactory.areas.*;
-import Settings.CoffeeFactory.areas.Visitor.Visitor;
+import Settings.CoffeeFactory.areas.visitors.Visitor;
 
 public class CoffeeFactory {
 

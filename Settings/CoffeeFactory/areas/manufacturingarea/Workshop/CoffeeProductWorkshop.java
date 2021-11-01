@@ -1,7 +1,7 @@
 package Settings.CoffeeFactory.areas.manufacturingarea.Workshop;
 
 import Settings.CoffeeFactory.areas.AreaName;
-import Settings.CoffeeFactory.areas.Visitor.Visitor;
+import Settings.CoffeeFactory.areas.visitors.Visitor;
 import Settings.CoffeeFactory.machine.processmachine.productmachine.coffeemachine.CoffeeArabicaMachine;
 import Settings.CoffeeFactory.machine.processmachine.productmachine.coffeemachine.CoffeeRobustaMachine;
 

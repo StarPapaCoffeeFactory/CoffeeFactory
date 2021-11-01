@@ -16,7 +16,7 @@ import Settings.CoffeeFactory.product.originalcoffee.Robusta;
  * @project CoffeeFactory
  * @classname worker
  * @description 员工
- * @DesignPattern Visitor//partly
+ * @DesignPattern visitors//partly
  * @date 2021/10/17
  */
 

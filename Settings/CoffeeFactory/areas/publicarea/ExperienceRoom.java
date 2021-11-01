@@ -1,7 +1,7 @@
 package Settings.CoffeeFactory.areas.publicarea;
 
 import Settings.CoffeeFactory.areas.AreaName;
-import Settings.CoffeeFactory.areas.Visitor.Visitor;
+import Settings.CoffeeFactory.areas.visitors.Visitor;
 import Settings.CoffeeFactory.supplement.handmadeTool.*;
 
 /***

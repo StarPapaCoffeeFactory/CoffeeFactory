@@ -2,7 +2,7 @@ package Settings.CoffeeFactory.areas.manufacturingarea.Warehouse;
 
 import Settings.CoffeeFactory.areas.AreaName;
 import Settings.CoffeeFactory.areas.manufacturingarea.ManufacturingArea;
-import Settings.CoffeeFactory.areas.Visitor.Visitor;
+import Settings.CoffeeFactory.areas.visitors.Visitor;
 import Settings.CoffeeFactory.personnel.staff.Manager;
 
 import java.util.HashMap;
