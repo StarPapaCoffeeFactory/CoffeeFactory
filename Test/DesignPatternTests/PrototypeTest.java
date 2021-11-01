@@ -1,7 +1,7 @@
 package Test.DesignPatternTests;
 
 import Settings.CoffeeFactory.material.Material;
-import Settings.CoffeeFactory.material.Food.Milk;
+import Settings.CoffeeFactory.material.food.Milk;
 import Settings.CoffeeFactory.material.Package.LargeCup;
 
 import java.util.Scanner;
@@ -45,7 +45,7 @@ public class PrototypeTest {
         System.out.println("");
         System.out.println("┌─────────────────────────   Prototype Test   ──────────────────────────┐");
         System.out.println("│                     1. LargeCup (Package)                             │");
-        System.out.println("│                     2. Milk (Food)                                    │");
+        System.out.println("│                     2. Milk (food)                                    │");
         System.out.println("│                                                                       │");
         System.out.println("│               Input the object you want to clone.                     │");
         System.out.println("└───────────────────────────────────────────────────────────────────────┘");

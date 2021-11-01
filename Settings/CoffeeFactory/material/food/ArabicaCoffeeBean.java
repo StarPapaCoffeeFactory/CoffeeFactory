@@ -1,4 +1,4 @@
-package Settings.CoffeeFactory.material.Food;
+package Settings.CoffeeFactory.material.food;
 import java.util.Calendar;
 
 public class ArabicaCoffeeBean extends FoodInfo{

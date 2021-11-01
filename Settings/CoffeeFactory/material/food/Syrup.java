@@ -1,18 +1,18 @@
-package Settings.CoffeeFactory.material.Food;
+package Settings.CoffeeFactory.material.food;
 import java.util.Calendar;
 
-public class Water extends FoodInfo{
+public class Syrup extends FoodInfo{
     /**
-     * ctor of Water
+     * ctor of Syrup
      * This ctor sets state to LIQUID.
      *
      * @param initialQuant         initial quantity
      * @param initialExpireTime initial time to expire
      */
-    public Water(double initialQuant, Calendar initialExpireTime) {
+    public Syrup(double initialQuant, Calendar initialExpireTime) {
         super(initialQuant, initialExpireTime, State.LIQUID);
     }
-    public Water() {
+    public Syrup() {
         super(State.LIQUID);
     }
 
@@ -26,7 +26,7 @@ public class Water extends FoodInfo{
 
     @Override
     public Object clone() throws CloneNotSupportedException {
-        System.out.println("Successfully copy Water!");
-        return (Water) super.clone();
+        System.out.println("Successfully copy Syrup!");
+        return (Syrup) super.clone();
     }
 }

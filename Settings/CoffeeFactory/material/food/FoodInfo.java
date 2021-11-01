@@ -1,4 +1,4 @@
-package Settings.CoffeeFactory.material.Food;
+package Settings.CoffeeFactory.material.food;
 import Settings.CoffeeFactory.material.Material;
 import java.util.Calendar;
 import java.util.LinkedList;

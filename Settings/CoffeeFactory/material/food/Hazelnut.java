@@ -1,18 +1,18 @@
-package Settings.CoffeeFactory.material.Food;
+package Settings.CoffeeFactory.material.food;
 import java.util.Calendar;
 
-public class RobustaCoffeeBean extends FoodInfo{
+public class Hazelnut extends FoodInfo{
     /**
-     * ctor of RobustaCoffeeBean
+     * ctor of Hazelnut
      * This ctor sets state to SOLID.
      *
      * @param initialQuant         initial quantity
      * @param initialExpireTime initial time to expire
      */
-    public RobustaCoffeeBean(double initialQuant, Calendar initialExpireTime) {
+    public Hazelnut(double initialQuant, Calendar initialExpireTime) {
         super(initialQuant, initialExpireTime, State.SOLID);
     }
-    public RobustaCoffeeBean() {
+    public Hazelnut() {
         super(State.SOLID);
     }
 
@@ -26,9 +26,7 @@ public class RobustaCoffeeBean extends FoodInfo{
 
     @Override
     public Object clone() throws CloneNotSupportedException {
-        System.out.println("Successfully copy RobustaCoffeeBean!");
-        return (RobustaCoffeeBean) super.clone();
+        System.out.println("Successfully copy Hazelnut!");
+        return (Hazelnut) super.clone();
     }
 }
-
-

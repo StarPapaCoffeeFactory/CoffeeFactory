@@ -2,7 +2,7 @@ package Test.DesignPatternTests;
 
 import Settings.CoffeeFactory.areas.manufacturingarea.Warehouse.Delegate.WarehouseDelegate;
 import Settings.CoffeeFactory.areas.manufacturingarea.Warehouse.Warehouse;
-import Settings.CoffeeFactory.material.Food.Milk;
+import Settings.CoffeeFactory.material.food.Milk;
 import java.util.Scanner;
 
 /***
