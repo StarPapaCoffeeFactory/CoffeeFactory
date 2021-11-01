@@ -18,19 +18,16 @@ import java.util.Calendar;
 public class PrototypeTest {
     public static void testPrototype(Material obj1, Material obj2, String name) {
 
-        System.out.printf("\nNow we check whether the 2 %s instances are the same one: ", name);
+        System.out.printf("\nCheck whether the 2 %s instances are the same one: ", name);
         System.out.println(obj1 == obj2);
-        //System.out.printf("Now we check whether the attributes of the 2 %s instances are the same one: ", name);
-        //System.out.println(obj1.checkQuantityEqualOnStorage(obj2));
-        System.out.printf("Now check whether the value of the attributes in the 2 %s instances are the same: ", name);
+
+        System.out.printf("Check whether the value of the attributes in the 2 %s instances are the same: ", name);
         System.out.println(obj1.checkMaterialQuantity(obj2));
 
-        System.out.printf("\nNow we change the quantity of the second %s instance but make its value unchanged.\n", name);
+        System.out.printf("\nChange the quantity of the second %s instance but make its value unchanged.\n", name);
         obj2.acquire(0);
 
-        //System.out.print("\nNow we check whether the attributes of the 2 instances are the same one again: ");
-        //System.out.println(obj1.checkQuantityEqualOnStorage(obj2));
-        System.out.print("Now check whether the value of the attributes are the same: ");
+        System.out.print("Check whether the value of the attributes are the same: ");
         System.out.println(obj1.checkMaterialQuantity(obj2));
 
     }

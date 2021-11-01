@@ -22,7 +22,6 @@ public abstract class Material {
         if (inventory - minusQuant <= 0) {
             quantConsumed = inventory;
             inventory = 0.00f;
-            // notifyOnExhaustion();
         }
         inventory -= minusQuant;
         return quantConsumed;
@@ -31,6 +30,5 @@ public abstract class Material {
     public boolean checkMaterialQuantity(Material obj) {
         return this.inventory==obj.inventory;
     }
-    public boolean checkExpirationDate(Material obj) {return this.inventory==obj.inventory;}//尚待优化
 
 }
