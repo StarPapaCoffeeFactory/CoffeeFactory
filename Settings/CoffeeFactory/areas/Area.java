@@ -1,6 +1,6 @@
 package Settings.CoffeeFactory.areas;
 
-import Settings.CoffeeFactory.areas.Visitor.Visitor;
+import Settings.CoffeeFactory.areas.visitor.Visitor;
 import Settings.CoffeeFactory.personnel.staff.EmptyStaff;
 import Settings.CoffeeFactory.personnel.staff.LogisticsAdministrator;
 import Settings.CoffeeFactory.personnel.staff.Manager;

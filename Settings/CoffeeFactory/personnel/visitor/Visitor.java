@@ -1,7 +1,7 @@
 package Settings.CoffeeFactory.personnel.visitor;
 
 import Settings.CoffeeFactory.areas.*;
-import Settings.CoffeeFactory.areas.PublicArea.PublicArea;
+import Settings.CoffeeFactory.areas.publicarea.PublicArea;
 import Settings.CoffeeFactory.personnel.Personnel;
 import Settings.CoffeeFactory.personnel.visitlimit.LimitContext;
 /**

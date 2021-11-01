@@ -1,8 +1,8 @@
 package Test.DesignPatternTests;
 
-import Settings.CoffeeFactory.areas.ManufacturingArea.Warehouse.Delegate.WarehouseDelegate;
-import Settings.CoffeeFactory.areas.ManufacturingArea.Warehouse.Warehouse;
-import Settings.CoffeeFactory.material.Food.Milk;
+import Settings.CoffeeFactory.areas.manufacturingarea.warehouse.delegate.WarehouseDelegate;
+import Settings.CoffeeFactory.areas.manufacturingarea.warehouse.Warehouse;
+import Settings.CoffeeFactory.material.food.Milk;
 import java.util.Scanner;
 
 /***

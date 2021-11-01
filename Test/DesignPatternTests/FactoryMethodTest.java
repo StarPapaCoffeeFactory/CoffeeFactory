@@ -1,8 +1,8 @@
 package Test.DesignPatternTests;
 
-import Settings.CoffeeFactory.areas.ManufacturingArea.AssemblyLine.AssemblyLine;
-import Settings.CoffeeFactory.areas.ManufacturingArea.AssemblyLine.AssemblyLineName;
-import Settings.CoffeeFactory.areas.ManufacturingArea.AssemblyLine.CoffeeFactoryProducer;
+import Settings.CoffeeFactory.areas.manufacturingarea.assemblyline.AssemblyLine;
+import Settings.CoffeeFactory.areas.manufacturingarea.assemblyline.AssemblyLineName;
+import Settings.CoffeeFactory.areas.manufacturingarea.assemblyline.CoffeeFactoryProducer;
 import Settings.CoffeeFactory.product.originalcoffee.Coffee;
 
 import java.util.Scanner;

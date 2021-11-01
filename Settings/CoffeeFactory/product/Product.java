@@ -4,13 +4,12 @@ import Settings.CoffeeFactory.machine.processmachine.ProcessMachine;
 import Settings.CoffeeFactory.machine.processmachine.packmachine.PackMachine;
 import Settings.CoffeeFactory.machine.processmachine.productmachine.BasicProductMachine;
 import Settings.CoffeeFactory.material.Material;
-import Settings.CoffeeFactory.material.Package.PackageInfo;
+import Settings.CoffeeFactory.material.packages.PackageInfo;
 import Settings.CoffeeFactory.product.production.Packed;
 import Settings.CoffeeFactory.product.production.Producing;
 import Settings.CoffeeFactory.product.production.ProductionStage;
 import Settings.CoffeeFactory.product.productmemento.ProductMemento;
 
-import javax.swing.*;
 import java.util.ArrayList;
 
 /**
