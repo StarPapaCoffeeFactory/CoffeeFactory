@@ -1,7 +1,7 @@
 package Settings.CoffeeFactory.product.blendedcoffee.houseblend;
 
 import Settings.CoffeeFactory.material.Material;
-import Settings.CoffeeFactory.material.packages.MiddleCup;
+import Settings.CoffeeFactory.material.Package.MiddleCup;
 import Settings.CoffeeFactory.product.Product;
 import Settings.CoffeeFactory.product.originalcoffee.Coffee;
 

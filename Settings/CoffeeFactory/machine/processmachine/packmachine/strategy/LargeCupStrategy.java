@@ -1,6 +1,6 @@
 package Settings.CoffeeFactory.machine.processmachine.packmachine.strategy;
 
-import Settings.CoffeeFactory.material.packages.LargeCup;
+import Settings.CoffeeFactory.material.Package.LargeCup;
 import Settings.CoffeeFactory.product.Product;
 
 import java.text.SimpleDateFormat;

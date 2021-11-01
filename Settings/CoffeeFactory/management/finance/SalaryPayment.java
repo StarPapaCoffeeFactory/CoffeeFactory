@@ -2,7 +2,8 @@ package Settings.CoffeeFactory.management.finance;
 
 
 import Settings.CoffeeFactory.personnel.staff.*;
-import Settings.CoffeeFactory.areas.staffarea.*;
+import Settings.CoffeeFactory.areas.StaffArea.*;
+import Settings.CoffeeFactory.personnel.staff.worker.worker;
 
 import java.util.ArrayList;
 import java.util.Calendar;

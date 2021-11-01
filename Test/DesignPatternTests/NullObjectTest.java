@@ -1,6 +1,6 @@
 package Test.DesignPatternTests;
 
-import Settings.CoffeeFactory.areas.staffarea.Office;
+import Settings.CoffeeFactory.areas.StaffArea.Office;
 import Settings.CoffeeFactory.personnel.Personnel;
 import Settings.CoffeeFactory.personnel.staff.Manager;
 import Settings.CoffeeFactory.personnel.staff.worker.worker;

@@ -1,8 +1,8 @@
 package Test.DesignPatternTests;
 
 import Settings.CoffeeFactory.material.Material;
-import Settings.CoffeeFactory.material.food.Milk;
-import Settings.CoffeeFactory.material.packages.LargeCup;
+import Settings.CoffeeFactory.material.Food.Milk;
+import Settings.CoffeeFactory.material.Package.LargeCup;
 
 import java.util.Scanner;
 import java.util.Calendar;

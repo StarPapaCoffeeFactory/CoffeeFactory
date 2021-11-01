@@ -1,6 +1,6 @@
 package Settings.CoffeeFactory.product.originalcoffee;
 
-import Settings.CoffeeFactory.material.food.*;
+import Settings.CoffeeFactory.material.Food.*;
 import Settings.CoffeeFactory.product.blendedcoffee.BlendedCoffee;
 
 /**

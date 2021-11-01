@@ -1,7 +1,7 @@
 package Test.DesignPatternTests;
 
 import Settings.CoffeeFactory.supplement.handmadeTool.handmadeToolFactory;
-import Settings.CoffeeFactory.areas.publicarea.ExperienceRoom;
+import Settings.CoffeeFactory.areas.PublicArea.ExperienceRoom;
 
 import java.util.Scanner;
 

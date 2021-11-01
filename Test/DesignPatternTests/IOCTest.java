@@ -1,12 +1,13 @@
 package Test.DesignPatternTests;
 
+import Settings.CoffeeFactory.areas.ManufacturingArea.Workshop.Workshop;
 import Settings.CoffeeFactory.personnel.Personnel;
 import Settings.CoffeeFactory.personnel.staff.Manager;
-import Settings.CoffeeFactory.areas.staffarea.DiningRoom;
-import Settings.CoffeeFactory.areas.staffarea.Office;
-import Settings.CoffeeFactory.areas.manufacturingarea.warehouse.Warehouse;
-import Settings.CoffeeFactory.areas.manufacturingarea.workshop.CoffeeWorkshop;
-import Settings.CoffeeFactory.areas.manufacturingarea.workshop.CoffeeProductWorkshop;
+import Settings.CoffeeFactory.areas.StaffArea.DiningRoom;
+import Settings.CoffeeFactory.areas.StaffArea.Office;
+import Settings.CoffeeFactory.areas.ManufacturingArea.Warehouse.Warehouse;
+import Settings.CoffeeFactory.areas.ManufacturingArea.Workshop.CoffeeWorkshop;
+import Settings.CoffeeFactory.areas.ManufacturingArea.Workshop.CoffeeProductWorkshop;
 
 import java.util.Scanner;
 

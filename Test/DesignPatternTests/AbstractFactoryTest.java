@@ -1,8 +1,9 @@
 package Test.DesignPatternTests;
 
-import Settings.CoffeeFactory.areas.manufacturingarea.workshop.CoffeeProductWorkshop;
-import Settings.CoffeeFactory.areas.manufacturingarea.workshop.CoffeeWorkshop;
+import Settings.CoffeeFactory.areas.ManufacturingArea.Workshop.CoffeeProductWorkshop;
+import Settings.CoffeeFactory.areas.ManufacturingArea.Workshop.CoffeeWorkshop;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class AbstractFactoryTest {

@@ -8,10 +8,10 @@ package Test.DesignPatternTests;
  */
 
 import Settings.CoffeeFactory.areas.Area;
-import Settings.CoffeeFactory.areas.publicarea.ExhibitionRoom;
-import Settings.CoffeeFactory.areas.publicarea.ExperienceRoom;
-import Settings.CoffeeFactory.areas.staffarea.DiningRoom;
-import Settings.CoffeeFactory.areas.staffarea.Office;
+import Settings.CoffeeFactory.areas.PublicArea.ExhibitionRoom;
+import Settings.CoffeeFactory.areas.PublicArea.ExperienceRoom;
+import Settings.CoffeeFactory.areas.StaffArea.DiningRoom;
+import Settings.CoffeeFactory.areas.StaffArea.Office;
 import Settings.CoffeeFactory.personnel.Personnel;
 import Settings.CoffeeFactory.personnel.staff.worker.worker;
 import Settings.CoffeeFactory.personnel.visitor.Visitor;
