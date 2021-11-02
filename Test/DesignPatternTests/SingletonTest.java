@@ -50,6 +50,7 @@ public class SingletonTest {
         chiefmanager2=ChiefManager.getInstance();
         System.out.println("The result of (chiefmanager1==chiefmanager2) is:"+(chiefmanager1==chiefmanager2));
 
+        System.out.println("—————————————---------------------------------------------- End ————------—————————-------------------------------------————");
 
     }
 }

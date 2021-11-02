@@ -74,6 +74,7 @@ public class NullObjectTest {
             office.searchStaffById(Id);
         }while(true);
 
+        System.out.println("—————————————---------------------------------------------- End ————------—————————-------------------------------------————");
 
     }
 

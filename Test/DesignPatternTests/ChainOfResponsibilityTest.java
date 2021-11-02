@@ -68,5 +68,7 @@ public class ChainOfResponsibilityTest {
         System.out.println("\nTry to fix it again...\n");
         machine1.fix();
 
+        System.out.println("—————————————---------------------------------------------- End ————------—————————-------------------------------------————");
+
     }
 }

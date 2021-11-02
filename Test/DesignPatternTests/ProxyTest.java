@@ -14,6 +14,7 @@ public class ProxyTest {
 
     public static void runTest() {
 
+
         List<powerBankProxy> ProxyList = new ArrayList<powerBankProxy>();
 
         while (true) {
