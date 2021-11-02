@@ -11,6 +11,8 @@ import Settings.CoffeeFactory.product.coffeebeverage.*;
 import Settings.CoffeeFactory.product.originalcoffee.Arabica;
 import Settings.CoffeeFactory.product.originalcoffee.Robusta;
 
+import java.util.Objects;
+
 /**
  * @author CZQ
  * @project CoffeeFactory
@@ -125,6 +127,16 @@ public class Worker extends Staff{
     }
     public static void produceRobusta(){ robusta.produce(); }
 
+    @Override
+    public void display()
+    {
+        String gender_str;
+        if(Objects.equals(gender.toString(), "male"))
+            gender_str="male";
+        else
+            gender_str="female";
 
+        System.out.printf("%-20s%-20s%-5s%-10s%s%n", this.name,this.gender,this.age, this.Id, (this.department == null ? "null" : this.department.toString()));
+    }
 
 }
