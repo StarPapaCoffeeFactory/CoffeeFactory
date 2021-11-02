@@ -14,13 +14,13 @@ import Settings.CoffeeFactory.product.originalcoffee.Robusta;
 /**
  * @author CZQ
  * @project CoffeeFactory
- * @classname worker
+ * @classname Worker
  * @description 员工
  * @DesignPattern visitors//partly
  * @date 2021/10/17
  */
 
-public class worker extends Staff{
+public class Worker extends Staff{
 
     protected String state;
     protected String defaultarea;
@@ -32,18 +32,18 @@ public class worker extends Staff{
 
 
 
-    public worker(String name, int age, Personnel.Gender gender, String phnum,double salary ) {
+    public Worker(String name, int age, Personnel.Gender gender, String phnum, double salary ) {
 
         super(name, age, gender ,phnum ,salary);
-        this.identity = "worker";
+        this.identity = "Worker";
         state="rest";
         this.setVisitLimit();
     }
 
-    public worker(String name, int age, Personnel.Gender gender, String phnum,double salary, StaffArea area ) {
+    public Worker(String name, int age, Personnel.Gender gender, String phnum, double salary, StaffArea area ) {
 
         super(name, age, gender, phnum, salary, area);
-        this.identity = "worker";
+        this.identity = "Worker";
         state = "rest";
         this.setVisitLimit();
 
@@ -78,7 +78,7 @@ public class worker extends Staff{
 
     @Override
     public String toString() {
-        return "public class worker extends Staff";
+        return "public class Worker extends Staff";
     }
 
     /**

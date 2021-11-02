@@ -55,7 +55,7 @@ public class IOCTest {
                     flag = false;
                     break;
                 case 1: {
-                    System.out.println("IOC Pattern: creating office Walker will implicitly create office worker：");
+                    System.out.println("IOC Pattern: creating office Walker will implicitly create office Worker：");
                     Office office = new Office();
                     Manager.getOfficeManager().hireWorker("Tom",  Personnel.Gender.male, 18, 5000, "19812312345",office);
                     office.displayAllStaffs();

@@ -24,7 +24,7 @@ public abstract class StaffArea extends Area implements Aggregate {
     protected Manager manager;
 
     /**
-     * @description a worker list of the area
+     * @description a Worker list of the area
      * @author lc
      **/
     protected ArrayList<Staff> workerList = null;
@@ -73,7 +73,7 @@ public abstract class StaffArea extends Area implements Aggregate {
         if (!workerList.contains(workerObj)) {
             workerList.add(workerObj);
         } else {
-            System.out.println("The worker is in the area");
+            System.out.println("The Worker is in the area");
         }
     }
 
@@ -122,7 +122,7 @@ public abstract class StaffArea extends Area implements Aggregate {
     }
 
     /**
-     * @description search and show worker information by id
+     * @description search and show Worker information by id
      * @author lc
      */
     public void searchStaffById(String id) {

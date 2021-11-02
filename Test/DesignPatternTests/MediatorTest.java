@@ -40,7 +40,7 @@ public class MediatorTest {
         System.out.println("│              3.Office manager send feedback received from workers to the general manager                              │");
         System.out.println("└───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘");
         System.out.println("");
-        //Mediator: Manager here is a mediator, which is the mediator of the worker and the general manager.
+        //Mediator: Manager here is a mediator, which is the mediator of the Worker and the general manager.
 
         System.out.println("First, we need to create an office and a general manager... ");
         Office office = new Office();
@@ -81,7 +81,7 @@ public class MediatorTest {
                     break;
                 }
                 case 2: {
-                    System.out.println("Please enter the name of the worker to be the team leader for this task. (Now we have worker1/worker2/worker3)");
+                    System.out.println("Please enter the name of the Worker to be the team leader for this task. (Now we have worker1/worker2/worker3)");
                     input.nextLine();
                     String name = input.nextLine();
                     boolean judge = false;

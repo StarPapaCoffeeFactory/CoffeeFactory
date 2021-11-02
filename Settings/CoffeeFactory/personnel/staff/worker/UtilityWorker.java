@@ -11,7 +11,7 @@ import Settings.CoffeeFactory.personnel.Personnel;
  * @date 2021/10/17
  */
 
-public class UtilityWorker extends worker{
+public class UtilityWorker extends Worker {
 
 
 
@@ -69,7 +69,7 @@ public class UtilityWorker extends worker{
 
     @Override
     public String toString() {
-        return "public class UtilityWorker extends worker";
+        return "public class UtilityWorker extends Worker";
     }
 
 
