@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 /**
  * @author YSX
- * @description test for Composite
+ * @description test for Composite,combined with Command pattern
  * @date 2021/10/27 21:01
  */
 public class CompositeTest {
