@@ -14,7 +14,7 @@ import java.util.Scanner;
 
 /**
  * @author LouTianyu
- * @description Test for Mediator
+ * @description Test for Mediator combined with Singleton and Iterator
  */
 public class MediatorTest {
 
