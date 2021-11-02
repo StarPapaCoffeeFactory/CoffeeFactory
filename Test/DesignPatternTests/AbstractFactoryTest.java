@@ -2,6 +2,8 @@ package Test.DesignPatternTests;
 
 import Settings.CoffeeFactory.areas.manufacturingarea.Workshop.CoffeeProductWorkshop;
 import Settings.CoffeeFactory.areas.manufacturingarea.Workshop.CoffeeWorkshop;
+import Settings.CoffeeFactory.areas.manufacturingarea.Workshop.Workshop;
+import Settings.CoffeeFactory.areas.manufacturingarea.Workshop.WorkshopProducer;
 
 import java.util.Scanner;
 
@@ -14,9 +16,11 @@ public class AbstractFactoryTest {
         System.out.println("");
 
         System.out.println("Create a new workshop producing coffee...");
-        CoffeeWorkshop coffeeWorkshop=new CoffeeWorkshop();
+        Workshop coffeeWorkshop= WorkshopProducer.newWorkshop("CoffeeWorkshop");
+        //CoffeeWorkshop coffeeWorkshop=new CoffeeWorkshop();
         System.out.println("Create a new workshop producing coffee products...");
-        CoffeeProductWorkshop productWorkshop=new CoffeeProductWorkshop();
+        Workshop productWorkshop= WorkshopProducer.newWorkshop("CoffeeProductWorkshop");
+        //CoffeeProductWorkshop productWorkshop=new CoffeeProductWorkshop();
 
 
         Scanner input = new Scanner(System.in);

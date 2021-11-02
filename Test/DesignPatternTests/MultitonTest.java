@@ -13,12 +13,12 @@ public class MultitonTest {
         System.out.println("—————————————-------------------------------------———— Test[Multiton]Pattern —————————————-------------------------------------————");
 
         System.out.println("");
-        System.out.println("Manager : getDiningRoomManager() : Get dining room's manager which is single.");
-        System.out.println("Manager : getOfficeManager() : Get office's manager which is single.");
-        System.out.println("Manager : getWorkShopManager() : Get workshop's manager which is single.");
-        System.out.println("Manager : getWareHouseManager() : Get warehouse's manager which is single.");
+        System.out.println("Manager : getDiningRoomManager() : Get dining room's manager which is static.");
+        System.out.println("Manager : getOfficeManager() : Get office's manager which is static.");
+        System.out.println("Manager : getWorkShopManager() : Get workshop's manager which is static.");
+        System.out.println("Manager : getWareHouseManager() : Get warehouse's manager which is static.");
         System.out.println("");
-        //Multiton: Multiple managers are being created
+        //Multiton: Multiple static managers are being created
         System.out.println("");
         System.out.println("┌─────────────────────────────────   State Test   ───────────────────────────┐");
         System.out.println("│              1. get instance of dining room's manager                      │");
@@ -42,10 +42,10 @@ public class MultitonTest {
                     flag = false;
                     break;
                 case 1: {
-                    System.out.println("Let's get an instance of dining room's manager for the first time ");
+                    System.out.println("Let's get an instance of dining room's manager for the first time. ");
                     Manager diningRoomManager1 = Manager.getDiningRoomManager();
-                    System.out.println("");
-                    System.out.println("Get an instance of dining room's manager manager again: ");
+                    System.out.println("A manager is generated.");
+                    System.out.println("Get an instance of dining room's manager manager again. ");
                     Manager diningRoomManager2 = Manager.getDiningRoomManager();
                     System.out.println("Let's check whether the two instances are the same:");
                     System.out.println("Print the result of \"diningRoomManager1 == diningRoomManager2 \", which should be true.");
@@ -55,8 +55,8 @@ public class MultitonTest {
                 case 2: {
                     System.out.println("Let's get an instance of office's manager for the first time ");
                     Manager officeManager1 = Manager.getOfficeManager();
-                    System.out.println("");
-                    System.out.println("Get an instance of office's manager again: ");
+                    System.out.println("A manager is generated.");
+                    System.out.println("Get an instance of office's manager again. ");
                     Manager officeManager2 = Manager.getOfficeManager();
                     System.out.println("Let's check whether the two instances are the same:");
                     System.out.println("Print the result of \"officeManager1 == officeManager2 \", which should be true.");
@@ -68,8 +68,8 @@ public class MultitonTest {
                 case 3: {
                     System.out.println("Let's get an instance of workshop's manager for the first time ");
                     Manager workshopManager1 = Manager.getWorkShopManager();
-                    System.out.println("");
-                    System.out.println("Get an instance of workshop's manager again: ");
+                    System.out.println("A manager is generated.");
+                    System.out.println("Get an instance of workshop's manager again. ");
                     Manager workshopManager2 = Manager.getWorkShopManager();
                     System.out.println("Let's check whether the two instances are the same:");
                     System.out.println("Print the result of \"workshopManager1 == workshopManager2 \", which should be true.");
@@ -79,8 +79,8 @@ public class MultitonTest {
                 case 4: {
                     System.out.println("Let's get an instance of warehouse's manager for the first time ");
                     Manager warehouseManager1 = Manager.getWarehouseManager();
-                    System.out.println("");
-                    System.out.println("Get an instance of warehouse's manager again: ");
+                    System.out.println("A manager is generated.");
+                    System.out.println("Get an instance of warehouse's manager again. ");
                     Manager warehouseManager2 = Manager.getWarehouseManager();
                     System.out.println("Let's check whether the two instances are the same:");
                     System.out.println("Print the result of \"warehouseManager1 == warehouseManager2 \", which should be true.");
