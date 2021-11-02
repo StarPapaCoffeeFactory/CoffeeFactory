@@ -8,5 +8,11 @@ import Settings.CoffeeFactory.product.Product;
  */
 public abstract class PackStrategy {
 
+    /*
+     * @param product
+     * @return void
+     * @author ShenBo
+     * @description the abstract function to pack the product
+     */
     public abstract void packaging(Product product);
 }

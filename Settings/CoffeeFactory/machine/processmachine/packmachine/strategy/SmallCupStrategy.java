@@ -8,17 +8,23 @@ import java.util.Date;
 
 /**
  * @author ShenBo
- * @description pack coffee product with small cup
+ * @description the strategy to pack coffee product with small cup
  */
 public class SmallCupStrategy extends PackStrategy {
 
+    /*
+     * @param product
+     * @return void
+     * @author ShenBo
+     * @description pack the coffee product with small cup
+     */
     @Override
     public void packaging(Product product) {
 
         System.out.println("Start packaging " + product.getProductName() + " with a small cup...");
         product.setPackage(new SmallCup());
         product.nextStage();
-        System.out.println("Finish packaging.");
+        System.out.println("Complete packaging.");
         product.nextStage();
 
         Date day = new Date();

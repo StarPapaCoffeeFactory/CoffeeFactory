@@ -1,11 +1,11 @@
 package Settings.CoffeeFactory.personnel.staff;
 
 import Settings.CoffeeFactory.areas.Area;
-import Settings.CoffeeFactory.areas.StaffArea.StaffArea;
+import Settings.CoffeeFactory.areas.staffarea.StaffArea;
 import Settings.CoffeeFactory.management.staff.WorkerController;
 import Settings.CoffeeFactory.personnel.ChiefManager;
 import Settings.CoffeeFactory.personnel.Personnel;
-import Settings.CoffeeFactory.personnel.staff.worker.worker;
+import Settings.CoffeeFactory.personnel.staff.worker.Worker;
 
 import java.util.ArrayList;
 
@@ -48,7 +48,7 @@ public class Manager extends Staff{
      */
     public void dispatchTask()
     {
-        System.out.println(this.name + " get task.");
+        System.out.println(this.name + " get task and will distribute it to the workers.");
     }
 
     /**
@@ -62,7 +62,7 @@ public class Manager extends Staff{
     /**
      * send feedback to the ChiefManager
      */
-    private void reporttoChiefManager() {
+    public void reporttoChiefManager() {
         System.out.println(this.name + " report to the Chief manager.");
         ChiefManager.getInstance().getFeedBack();
     }
@@ -99,7 +99,9 @@ public class Manager extends Staff{
 //        System.out.println("Our office manager is here.");
         return officeManager;
     }
-
+    /**
+     * @return Manager
+     */
     public static Manager getWorkShopManager() {
         if (workShopManager == null) {
             workShopManager = new Manager("workShopManager", 30, Gender.male, "123456");
@@ -109,8 +111,6 @@ public class Manager extends Staff{
     }
 
     /**
-     * return the warehouse's manager which is single!!
-     *
      * @return Manager
      */
     public static Manager getWarehouseManager() {
@@ -130,16 +130,27 @@ public class Manager extends Staff{
         return "public class Manager extends Staff";
     }
 
+    /**
+     * @param dest:go to dest area
+     * @return
+     */
     public void Goto(Area dest) {
         System.out.println("This manager cannot move area.");
     }
 
-    public void SetVisitLimit()
+    public void setVisitLimit()
     {
 
     }
 
-    public void hireWorker(worker _worker, String phnum, StaffArea staffArea) {
+    /**
+     * hire a Worker!
+     * @param _worker:the Worker to be hired
+     * @param phnum:the Worker's phnum
+     * @param staffArea:the Worker's staffArea
+     * @return
+     */
+    public void hireWorker(Worker _worker, String phnum, StaffArea staffArea) {
         String name=_worker.getName();
         Gender gender=_worker.getGender();
         int age=_worker.getAge();
@@ -151,6 +162,16 @@ public class Manager extends Staff{
             System.out.println("The manager does not match the staff area.");
         }
     }
+    /**
+     * hire a Worker!(overload)
+     * @param name:the Worker's name
+     * @param gender:the Worker's gender
+     * @param age:the Worker's age
+     * @param salary:the Worker's salary
+     * @param phnum:the Worker's phnum
+     * @param staffArea:the Worker's staffArea
+     * @return
+     */
     public void hireWorker(String name, Gender gender, int age, double salary, String phnum, StaffArea staffArea) {
         if (this.departmentList.contains(staffArea)) {
             WorkerController.addWorker(name, age, gender, phnum, salary, staffArea);

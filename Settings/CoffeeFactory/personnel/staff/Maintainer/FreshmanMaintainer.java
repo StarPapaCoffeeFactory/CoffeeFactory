@@ -2,7 +2,7 @@ package Settings.CoffeeFactory.personnel.staff.Maintainer;
 
 import Settings.CoffeeFactory.areas.Area;
 import Settings.CoffeeFactory.personnel.Personnel;
-import Settings.CoffeeFactory.personnel.staff.Maintainer.Maintainer;
+
 /**
  * @author CZQ
  * @project CoffeeFactory
@@ -13,7 +13,6 @@ import Settings.CoffeeFactory.personnel.staff.Maintainer.Maintainer;
  */
 
 public class FreshmanMaintainer extends Maintainer{
-
 
     public FreshmanMaintainer(String name, int age, Personnel.Gender gender, String phnum, double salary ) {
         super(name, age, gender ,phnum ,salary);
@@ -28,10 +27,11 @@ public class FreshmanMaintainer extends Maintainer{
     public void SetMaintainAbility(int _Maintain_ability)
     {
         this.Maintain_ability=_Maintain_ability;
+        System.out.println();
     }
 
 
     public void Goto(Area dest){}
-    public void SetVisitLimit(){}
+    public void setVisitLimit(){}
 
 }

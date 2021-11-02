@@ -8,19 +8,19 @@ package Test.DesignPatternTests;
  */
 
 import Settings.CoffeeFactory.areas.Area;
-import Settings.CoffeeFactory.areas.PublicArea.ExhibitionRoom;
-import Settings.CoffeeFactory.areas.PublicArea.ExperienceRoom;
-import Settings.CoffeeFactory.areas.StaffArea.DiningRoom;
-import Settings.CoffeeFactory.areas.StaffArea.Office;
+import Settings.CoffeeFactory.areas.publicarea.ExhibitionRoom;
+import Settings.CoffeeFactory.areas.publicarea.ExperienceRoom;
+import Settings.CoffeeFactory.areas.staffarea.DiningRoom;
+import Settings.CoffeeFactory.areas.staffarea.Office;
 import Settings.CoffeeFactory.personnel.Personnel;
-import Settings.CoffeeFactory.personnel.staff.worker.worker;
+import Settings.CoffeeFactory.personnel.staff.worker.Worker;
 import Settings.CoffeeFactory.personnel.visitor.Visitor;
 
 import java.util.ArrayList;
 import java.util.List;
 public class InterpreterTest {
     public static void main(String[] args) {
-        worker workera = new worker("zhangsan",18, Personnel.Gender.male , "15007124567" , 5000.0);
+        Worker workera = new Worker("zhangsan",18, Personnel.Gender.male , "15007124567" , 5000.0);
         Visitor visitora = new Visitor("lisi" , 19 , Personnel.Gender.female , "1234567895" );
 
         List<Area> testAreas = new ArrayList<Area>(){{
@@ -36,7 +36,7 @@ public class InterpreterTest {
         System.out.println("┌──────────────────────── Interpreter Test ──────────────────────────┐");
         System.out.println("│                  1.  initialize the Area List to visit             │");
         System.out.println("│                  2.  let a visitor try to access all area          │");
-        System.out.println("│                  3.  let a worker try to access all area           │");
+        System.out.println("│                  3.  let a Worker try to access all area           │");
         System.out.println("└────────────────────────────────────────────────────────────────────┘");
         System.out.println();
 

@@ -1,23 +1,27 @@
 package Test.DesignPatternTests;
 
-import Settings.CoffeeFactory.areas.ManufacturingArea.Warehouse.Warehouse;
-import Settings.CoffeeFactory.areas.ManufacturingArea.Workshop.CoffeeWorkshop;
-import Settings.CoffeeFactory.areas.PublicArea.ExhibitionRoom;
-import Settings.CoffeeFactory.areas.PublicArea.ExperienceRoom;
-import Settings.CoffeeFactory.areas.StaffArea.DiningRoom;
-import Settings.CoffeeFactory.areas.StaffArea.Office;
-import Settings.CoffeeFactory.areas.Visitor.useVisitor;
+import Settings.CoffeeFactory.areas.manufacturingarea.Warehouse.Warehouse;
+import Settings.CoffeeFactory.areas.manufacturingarea.Workshop.CoffeeWorkshop;
+import Settings.CoffeeFactory.areas.publicarea.ExhibitionRoom;
+import Settings.CoffeeFactory.areas.publicarea.ExperienceRoom;
+import Settings.CoffeeFactory.areas.staffarea.DiningRoom;
+import Settings.CoffeeFactory.areas.staffarea.Office;
+import Settings.CoffeeFactory.areas.visitors.useVisitor;
 import java.util.Scanner;
 
+/***
+ * @author ZJX
+ * @description Test for visitor design model
+ */
 public class VisitorTest {
     public VisitorTest() {
     }
 
     public static void main(String[] args) {
 
-        System.out.println("We will test the \"Visitor\" design pattern using the methods represented by the \"useVisitor\" class");
+        System.out.println("We will test the \"visitors\" design pattern using the methods represented by the \"useVisitor\" class");
         System.out.println("");
-        System.out.println("┌─────────────────────────   Visitor Test   ─────────────────────────┐");
+        System.out.println("┌─────────────────────────   visitors Test   ────────────────────────┐");
         System.out.println("│              0. Exit!!!                                            │");
         System.out.println("│              1. Test the Warehouse class                           │");
         System.out.println("│              2. Test the CoffeeWorkshop class                      │");

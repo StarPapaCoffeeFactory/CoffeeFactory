@@ -1,15 +1,19 @@
 package Test.DesignPatternTests;
 
-import Settings.CoffeeFactory.areas.ManufacturingArea.Workshop.CoffeeWorkshop;
-import Settings.CoffeeFactory.areas.StaffArea.Office;
-import Settings.CoffeeFactory.areas.WorkerIterator.WorkerListIterator;
+import Settings.CoffeeFactory.areas.manufacturingarea.Workshop.CoffeeWorkshop;
+import Settings.CoffeeFactory.areas.staffarea.Office;
+import Settings.CoffeeFactory.areas.workeriterator.WorkerListIterator;
 import Settings.CoffeeFactory.personnel.Personnel;
 import Settings.CoffeeFactory.personnel.staff.LogisticsAdministrator;
 import Settings.CoffeeFactory.personnel.staff.Staff;
-import Settings.CoffeeFactory.personnel.staff.worker.worker;
+import Settings.CoffeeFactory.personnel.staff.worker.Worker;
 
 import java.util.Scanner;
 
+/***
+ * @author ZJX
+ * @description Test for iterator design model
+ */
 public class IteratorTest {
 
     public static void main(String[] args) {
@@ -25,11 +29,12 @@ public class IteratorTest {
 
         // create a coffee workshop and add 3 workers.
         CoffeeWorkshop coffeeWorkshop = new CoffeeWorkshop();
-        coffeeWorkshop.addWorker(new worker("Anna", 22, Personnel.Gender.female, "12345678909", 10000));
-        coffeeWorkshop.addWorker(new worker("Billie", 19, Personnel.Gender.male, "12345678908", 20000));
-        coffeeWorkshop.addWorker(new worker("Justin", 24, Personnel.Gender.male, "12345678907", 30000));
-        WorkerListIterator workerIterator = new WorkerListIterator();
-        workerIterator.setWorkerList(coffeeWorkshop.getWorkerList());
+        coffeeWorkshop.addWorker(new Worker("Anna", 22, Personnel.Gender.female, "12345678909", 10000));
+        coffeeWorkshop.addWorker(new Worker("Billie", 19, Personnel.Gender.male, "12345678908", 20000));
+        coffeeWorkshop.addWorker(new Worker("Justin", 24, Personnel.Gender.male, "12345678907", 30000));
+        WorkerListIterator workerIterator = coffeeWorkshop.getIterator();
+        /*WorkerListIterator workerIterator = new WorkerListIterator();
+        workerIterator.setWorkerList(coffeeWorkshop.getWorkerList());*/
         Staff firstStaff;
         Staff nextStaff;
 
@@ -38,8 +43,9 @@ public class IteratorTest {
         office.addWorker(new LogisticsAdministrator("Brian", 20, Personnel.Gender.male, "12345678906",50000));
         office.addWorker(new LogisticsAdministrator("Kerr", 20, Personnel.Gender.female, "12345678905",50000));
         office.addWorker(new LogisticsAdministrator("Young", 20, Personnel.Gender.male, "12345678904",50000));
-        WorkerListIterator staffIterator = new WorkerListIterator();
-        staffIterator.setWorkerList(office.getWorkerList());
+        WorkerListIterator staffIterator = office.getIterator();
+        /*WorkerListIterator staffIterator = new WorkerListIterator();
+        staffIterator.setWorkerList(office.getWorkerList());*/
         Staff currentStaff;
 
         Scanner input = new Scanner(System.in);
@@ -60,7 +66,7 @@ public class IteratorTest {
                 case 1:
                 {
                     firstStaff = workerIterator.first();
-                    System.out.println("Get the first worker:");
+                    System.out.println("Get the first Worker:");
                     System.out.println(" name: " + firstStaff.getName() + " sex: " + firstStaff.getGender() + " age: "
                             + firstStaff.getAge() );
                     break;
@@ -69,12 +75,12 @@ public class IteratorTest {
                 {
                     if(workerIterator.hasNext()){
                         nextStaff = workerIterator.next();
-                        System.out.println("Get the next worker:");
+                        System.out.println("Get the next Worker:");
                         System.out.println(" name: " + nextStaff.getName() + " sex: " + nextStaff.getGender() + " age: "
                                 + nextStaff.getAge() );
                     }
                     else{
-                        System.out.println("Don't have next worker!!!");
+                        System.out.println("Don't have next Worker!!!");
                     }
                     break;
                 }

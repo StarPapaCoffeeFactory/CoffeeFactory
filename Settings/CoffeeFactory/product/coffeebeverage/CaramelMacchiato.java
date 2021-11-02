@@ -1,7 +1,7 @@
 package Settings.CoffeeFactory.product.coffeebeverage;
 
-import Settings.CoffeeFactory.material.Food.CoffeeBean;
-import Settings.CoffeeFactory.material.Food.*;
+import Settings.CoffeeFactory.material.food.CoffeeBean;
+import Settings.CoffeeFactory.material.food.*;
 import Settings.CoffeeFactory.product.Product;
 
 /**

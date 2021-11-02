@@ -17,6 +17,12 @@ public class Adapter implements Aircraft {
         this.adaptee = adaptee;
     }
 
+    /*
+     * @param product
+     * @return int
+     * @author ShenBo
+     * @description The aircraft start to fly and work
+     */
     @Override
     public int work(Product product) {
         this.fly();
@@ -46,7 +52,7 @@ public class Adapter implements Aircraft {
      */
     @Override
     public void fly() {
-        System.out.println("Aircraft " + this.mID + " is flying...\n");
+        System.out.println("Aircraft" + this.mID + " is flying...");
     }
 
     public TransportMachine getAdaptee() {

@@ -1,13 +1,12 @@
 package Test.DesignPatternTests;
 
-import Settings.CoffeeFactory.areas.ManufacturingArea.Workshop.Workshop;
 import Settings.CoffeeFactory.personnel.Personnel;
 import Settings.CoffeeFactory.personnel.staff.Manager;
-import Settings.CoffeeFactory.areas.StaffArea.DiningRoom;
-import Settings.CoffeeFactory.areas.StaffArea.Office;
-import Settings.CoffeeFactory.areas.ManufacturingArea.Warehouse.Warehouse;
-import Settings.CoffeeFactory.areas.ManufacturingArea.Workshop.CoffeeWorkshop;
-import Settings.CoffeeFactory.areas.ManufacturingArea.Workshop.CoffeeProductWorkshop;
+import Settings.CoffeeFactory.areas.staffarea.DiningRoom;
+import Settings.CoffeeFactory.areas.staffarea.Office;
+import Settings.CoffeeFactory.areas.manufacturingarea.Warehouse.Warehouse;
+import Settings.CoffeeFactory.areas.manufacturingarea.Workshop.CoffeeWorkshop;
+import Settings.CoffeeFactory.areas.manufacturingarea.Workshop.CoffeeProductWorkshop;
 
 import java.util.Scanner;
 
@@ -56,7 +55,7 @@ public class IOCTest {
                     flag = false;
                     break;
                 case 1: {
-                    System.out.println("IOC Pattern: creating office Walker will implicitly create office worker：");
+                    System.out.println("IOC Pattern: creating office Walker will implicitly create office Worker：");
                     Office office = new Office();
                     Manager.getOfficeManager().hireWorker("Tom",  Personnel.Gender.male, 18, 5000, "19812312345",office);
                     office.displayAllStaffs();

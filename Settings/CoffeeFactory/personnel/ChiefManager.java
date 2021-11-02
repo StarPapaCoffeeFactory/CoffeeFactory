@@ -79,20 +79,22 @@ public class ChiefManager extends Personnel {
         System.out.println("The Chief Manager " + this.name + "moves to " + dest.toString());
     }
 
-    public void SetVisitLimit()
+    public void setVisitLimit()
     {
 
     }
-
+    /**
+     * show basic info
+     */
     public void display()
     {
         String gender_str;
         if(gender.toString()=="male")
-            gender_str="男";
+            gender_str="man";
         else
-            gender_str="女";
+            gender_str="woman";
 
-        System.out.println("姓名："+name+"  性别："+gender_str+"  年龄："+getAge()+"  身份:"+ identity);
+        System.out.println("name："+name+"  sex："+gender_str+"  age："+getAge()+"  identity:"+ identity);
     }
 
     /**

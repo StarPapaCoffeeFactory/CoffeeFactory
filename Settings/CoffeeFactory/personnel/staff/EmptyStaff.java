@@ -1,11 +1,6 @@
 package Settings.CoffeeFactory.personnel.staff;
 
 import Settings.CoffeeFactory.areas.Area;
-import Settings.CoffeeFactory.areas.StaffArea.StaffArea;
-import Settings.CoffeeFactory.personnel.Personnel;
-import Settings.CoffeeFactory.personnel.staff.Staff;
-
-import java.util.ArrayList;
 
 /**
  * @author CZQ
@@ -32,7 +27,7 @@ public class EmptyStaff extends Staff {
         System.out.println("EmptyStaff cannot move area.");
     }
 
-    public void SetVisitLimit()
+    public void setVisitLimit()
     {
 
     }
