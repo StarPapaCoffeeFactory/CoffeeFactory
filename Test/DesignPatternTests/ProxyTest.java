@@ -20,11 +20,11 @@ public class ProxyTest {
         while (true) {
             System.out.println("");
             System.out.println("┌─────────────────────────   Proxy Test   ───────────────────────────┐");
-            System.out.println("|                      0 --- Quit                                    |");
-            System.out.println("|                      1 --- Show all information                    |");
-            System.out.println("|                      2 --- New a powerBank                         |");
-            System.out.println("|                      3 --- Take a powerBank                        |");
-            System.out.println("|                      4 --- Return a powerBank                      |");
+            System.out.println("│                      0 --- Quit                                    │");
+            System.out.println("│                      1 --- Show all information                    │");
+            System.out.println("│                      2 --- New a powerBank                         │");
+            System.out.println("│                      3 --- Take a powerBank                        │");
+            System.out.println("│                      4 --- Return a powerBank                      │");
             System.out.println("└────────────────────────────────────────────────────────────────────┘");
 
             Scanner sc = new Scanner(System.in);

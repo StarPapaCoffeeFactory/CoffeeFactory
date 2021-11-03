@@ -68,6 +68,7 @@ public class powerBank extends supplement {
         return true;
     }
 
+    /*
     public boolean canEnter(String dest) {
         String move = this.id + " enter " + dest;
         if (this.visitLimit.canAccess(move)) {
@@ -77,7 +78,7 @@ public class powerBank extends supplement {
             System.out.println("Sorry! " + this.type + " cannot enter " + dest);
             return false;
         }
-    }
+    }*/
 
     /*
     @Override

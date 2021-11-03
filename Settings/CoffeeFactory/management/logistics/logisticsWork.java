@@ -47,7 +47,7 @@ public class logisticsWork {
         StringBuilder builder = new StringBuilder();
         for(handmadeTool tool : tools)
         {
-            System.out.println("Now start check the " + tool.getBatchNumber() + "batch tools` inventory check");
+            System.out.println("Now start check the " + tool.getSerialNumber() + "batch tools` inventory check");
             if(tool.getStock() < this.toolsMinStock)
             {
 //                this.ToolCheckReport += "警告："+ tool.getType() + "库存不足，请及时补充\n";

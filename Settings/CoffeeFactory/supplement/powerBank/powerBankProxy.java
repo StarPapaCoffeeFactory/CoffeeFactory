@@ -6,14 +6,14 @@ public class powerBankProxy implements powerBankSubject {
     private powerBank powerBankInstance;
 
     /**
-     * Proxy the portable battery proxy
+     * Proxy the powerBank proxy
      */
     public powerBankProxy(powerBank tool) {
         this.powerBankInstance = tool;
     }
 
     /**
-     * Take the portable battery
+     * Get a powerBank
      */
     @Override
     public boolean get() {
@@ -28,15 +28,15 @@ public class powerBankProxy implements powerBankSubject {
     }
 
     public void preGet() {
-        //System.out.println("Doing preTake functions");
+        System.out.println("Doing preTake functions");
     }
 
     public void postGet() {
-        //System.out.println("Doing postTake functions");
+        System.out.println("Doing postTake functions");
     }
 
     /**
-     * Return the portable battery
+     * Return the powerBank
      */
     @Override
     public boolean returnPowerBank() {
@@ -50,22 +50,22 @@ public class powerBankProxy implements powerBankSubject {
     }
 
     public void preReturn() {
-        //System.out.println("Doing preReturn functions");
+        System.out.println("Doing preReturn functions");
     }
 
     public void postReturn() {
-        //System.out.println("Doing postReturn functions");
+        System.out.println("Doing postReturn functions");
     }
 
     /**
-     * Return the instance of portable battery
+     * Return the instance of powerBank
      */
     public powerBank getPowerBankInstance() {
         return powerBankInstance;
     }
 
     /**
-     * Set the instance of the portable battery
+     * Set the instance of the powerBank
      */
     public void setPowerBankInstance(powerBank powerBankInstance) {
         this.powerBankInstance = powerBankInstance;
