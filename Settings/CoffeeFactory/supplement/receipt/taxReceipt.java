@@ -24,7 +24,7 @@ public final class taxReceipt extends receipt {
      * @param type : type of the receipt
      */
    protected taxReceipt(String info, receiptType type) {
-       super(info, type,new taxProvider("taxName","taxTel","taxAdd"));
+       super(info, type,new taxProvider("taxProviderName","taxProviderTel","taxProviderAdd"));
    }
 
 }

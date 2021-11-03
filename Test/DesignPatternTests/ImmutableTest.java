@@ -15,12 +15,12 @@ public class ImmutableTest {
 
         System.out.println("");
         System.out.println("┌────────────────────────   Immutable Test   ────────────────────────┐");
-        System.out.println("│                   1. Init commonReceipt                            │");
-        System.out.println("│                   2. Init TaxReceipt                               │");
-        System.out.println("│                   3. Init PurchaseReceipt                          │");
+        System.out.println("│                   1. Create a common receipt                       │");
+        System.out.println("│                   2. Create a tax receipt                          │");
+        System.out.println("│                   3. Create a purchase receipt                     │");
         System.out.println("│                                                                    │");
         System.out.println("│        Tips: You can choose the type of invoice to input.          │");
-        System.out.println("│            The invoice initialized here is immutable               │");
+        System.out.println("│                The invoice created here is immutable               │");
         System.out.println("└────────────────────────────────────────────────────────────────────┘");
         System.out.println("");
 
@@ -39,21 +39,21 @@ public class ImmutableTest {
                     flag = false;
                     break;
                 case 1: {
-                    // init common receipt;
-                    commonReceipt receipt = new commonReceipt("This is a common receipt.");
-                    receipt.displayAll();
+                    //create common receipt;
+                    commonReceipt cReceipt = new commonReceipt("This is a common receipt.");
+                    cReceipt.displayAll();
                     break;
                 }
                 case 2: {
-                    // init TaxReceipt;
-                    taxReceipt receipt = new taxReceipt("This is a tax receipt.");
-                    receipt.displayAll();
+                    //create tax receipt;
+                    taxReceipt tReceipt = new taxReceipt("This is a tax receipt.");
+                    tReceipt.displayAll();
                     break;
                 }
                 case 3: {
-                    // init PurchaseReceipt;
-                    purchaseReceipt receipt = new purchaseReceipt("This is a purchase receipt.");
-                    receipt.displayAll();
+                    //create purchase receipt;
+                    purchaseReceipt pReceipt = new purchaseReceipt("This is a purchase receipt.");
+                    pReceipt.displayAll();
                     break;
                 }
                 default: {

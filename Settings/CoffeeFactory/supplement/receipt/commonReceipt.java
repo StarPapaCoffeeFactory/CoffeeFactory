@@ -16,7 +16,6 @@ public final class commonReceipt extends receipt {
      * @param info:message of the receipt;
      */
     public commonReceipt(String info){
-        // constructor redirection
         this(info, receiptType.commonReceipt);
     }
 
@@ -25,7 +24,7 @@ public final class commonReceipt extends receipt {
      * @param type : type of the receipt
      */
     protected commonReceipt(String info, receiptType type) {
-        super(info, type, new commonProvider("commonName","commonTel","commonAdd"));
+        super(info, type, new commonProvider("commonProviderName","commonProviderTel","commonProviderAdd"));
     }
 
 

@@ -26,7 +26,7 @@ public final class purchaseReceipt extends receipt {
      * @param type : type of the receipt
      */
     protected purchaseReceipt(String info, receiptType type) {
-        super(info, type, new purchaseProvider("purchaseName","purchaseTel","purchaseAdd"));
+        super(info, type, new purchaseProvider("purchaseProviderName","purchaseProviderTel","purchaseProviderAdd"));
     }
 
 
