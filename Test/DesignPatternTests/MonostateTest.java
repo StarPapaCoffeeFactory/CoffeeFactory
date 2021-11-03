@@ -20,67 +20,57 @@ public class MonostateTest {
         List<screen> ScreenList = new ArrayList<screen>();
 
         System.out.println("—————————————-------------------------------------———— Test[Monostate]Pattern —————————————-------------------------------------————");
-        System.out.println("Screen : setContent(String content) : Set the information show on the Screen");
-        System.out.println("Screen : showContent() : Show the information");
-        System.out.println("");
-
         String choice;
 
         label:
         while (true) {
-            Scanner sc = new Scanner(System.in);
-
             System.out.println("┌────────────────────────   Monostate Test   ─────────────────────────┐");
-            System.out.println("│          1 --- Create the guard group                               │");
+            System.out.println("│          1 --- Create the security group                            │");
             System.out.println("│          2 --- Make an alert                                        │");
-            System.out.println("│          # --- Exit                                                 │");
             System.out.println("└─────────────────────────────────────────────────────────────────────┘");
             System.out.println("");
-
+            System.out.print("Enter the order [0 to quit]: ");
+            Scanner sc = new Scanner(System.in);
             choice = sc.next();
             int i;
             int j;
             switch (choice) {
                 case "1":
-                    System.out.print("Input how many guards you want to have：");
+                    System.out.print("Input the number of security: ");
                     Scanner reader = new Scanner(System.in);
                     i = reader.nextInt();
                     for (j = 1; j <= i; j++) {
                         screen Sc= new screen();
                         Sc.getContext();
                         ScreenList.add(Sc);
-
-                        System.out.println("Guard" + j + "'s Screen: " + Sc.getContext());
+                        System.out.println("Security" + j + "'s Screen: " + Sc.getContext());
                     }
                     break;
                 case "2":
                     Scanner input = new Scanner(System.in);
-                    Scanner sc1 = new Scanner(System.in);
-                    System.out.print("Input which Guard to make an alert：");
+                    System.out.print("Input which one is in trouble：");
                     try {
-                        int guard_num = input.nextInt();
-                        if (guard_num > 0 && guard_num <= ScreenList.size() + 1) {
-                            System.out.print("Input the alert：");
-                            String no = sc1.next();
+                        int security_no = input.nextInt();
+                        if (security_no > 0 && security_no <= ScreenList.size() + 1) {
+                            String no = "SECURITY "+security_no+" IN TROUBLE!";
 
-                            ScreenList.get(guard_num - 1).setContent(no);
+                            ScreenList.get(security_no - 1).setContent(no);
                             for (j = 1; j <= ScreenList.size(); j++) {
-
-                                System.out.println("Guard" + j + "'s screen: " + ScreenList.get(guard_num - 1).getContext());
+                                System.out.println("Security" + j + "'s screen: " + ScreenList.get(security_no - 1).getContext());
                             }
                         } else {
-                            System.out.println("Invalid Input, Please input again.\n");
+                            System.out.println("Invalid Input.\n");
                         }
                     } catch (ArrayIndexOutOfBoundsException | InputMismatchException e) {
-                        System.out.println("Invalid Input, Please input again.\n");
+                        System.out.println("Invalid Input.\n");
                         System.out.println("");
                     }
 
                     break;
-                case "#":
+                case "0":
                     break label;
                 default:
-                    System.out.println("Invalid Input, Please input again.\n");
+                    System.out.println("Invalid Input.\n");
                     break;
             }
         }

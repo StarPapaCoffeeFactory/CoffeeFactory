@@ -11,7 +11,7 @@ import java.util.Calendar;
  * @author wangling
  * @project CoffeeFactory
  * @classname PrototypeTest
- * @description Test for prototype pattern1
+ * @description Test for prototype pattern
  * @date 2021/10/26 15:46
  */
 
