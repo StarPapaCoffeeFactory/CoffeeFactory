@@ -31,13 +31,10 @@ public class IOCTest {
         System.out.println("┌─────────────────────────   IOC Test   ──────────────────────────┐");
         System.out.println("│                         1. Init Office                          │");
         System.out.println("│                         2. Init DiningRoom                      │");
-        System.out.println("│                         3. Init Warehouse                       │");
-        System.out.println("│                         4. Init CoffeeWorkshop                  │");
-        System.out.println("│                         5. Init CoffeeProductWorkshop           │");
         System.out.println("│                                                                 │");
         System.out.println("│                                                                 │");
-        System.out.println("│      You can select different scenarios, and the workers in the │");
-        System.out.println("│      scene will be filled automatically                         │");
+        System.out.println("│      You can select different areas, and the workers in the     │");
+        System.out.println("│      area will be filled automatically                          │");
         System.out.println("└─────────────────────────────────────────────────────────────────┘");
         System.out.println("");
 
@@ -67,30 +64,6 @@ public class IOCTest {
                     DiningRoom diningRoom = new DiningRoom();
                     Manager.getDiningRoomManager().hireWorker("Lisa", Personnel.Gender.female, 20, 6000, "18912312345",diningRoom);
                     diningRoom.displayAllStaffs();
-                    System.out.println("");
-                    break;
-                }
-                case 3: {
-                    System.out.println("IOC Pattern: creating warehouse Walker will implicitly create WarehouseWorker：");
-                    Warehouse warehouse = new Warehouse();
-                    Manager.getWarehouseManager().hireWorker("Winne",  Personnel.Gender.female, 22, 7000, "19824270264",warehouse);
-                    warehouse.displayAllStaffs();
-                    System.out.println("");
-                    break;
-                }
-                case 4: {
-                    System.out.println("IOC Pattern: creating CoffeeWorkshop Walker will implicitly create CoffeeWorkshopWorker：");
-                    CoffeeWorkshop coffeeWorkshop = new CoffeeWorkshop();
-                    Manager.getWorkShopManager().hireWorker("Davis",  Personnel.Gender.male, 22, 7000, "13916301296", coffeeWorkshop);
-                    coffeeWorkshop.displayAllStaffs();
-                    System.out.println("");
-                    break;
-                }
-                case 5: {
-                    System.out.println("IOC Pattern: creating CoffeeProductWorkshop Walker will implicitly create CoffeeProductWorkshopWorker：");
-                    CoffeeProductWorkshop coffeeProductWorkshop = new CoffeeProductWorkshop();
-                    Manager.getWorkShopManager().hireWorker("Kevin", Personnel.Gender.male, 22,  7000, "15212312345", coffeeProductWorkshop);
-                    coffeeProductWorkshop.displayAllStaffs();
                     System.out.println("");
                     break;
                 }
