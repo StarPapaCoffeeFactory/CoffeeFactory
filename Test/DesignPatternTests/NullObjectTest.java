@@ -3,14 +3,18 @@ package Test.DesignPatternTests;
 import Settings.CoffeeFactory.areas.staffarea.Office;
 import Settings.CoffeeFactory.personnel.Personnel;
 import Settings.CoffeeFactory.personnel.staff.Manager;
-import Settings.CoffeeFactory.personnel.staff.worker.worker;
+import Settings.CoffeeFactory.personnel.staff.worker.Worker;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-
+/**
+ * @author Chen ZeQi
+ * @description test for NullObject
+ * @date 2021/11/1
+ */
 public class NullObjectTest {
 
     public static void main(String[] args) throws IOException  {
@@ -26,7 +30,7 @@ public class NullObjectTest {
         System.out.println("");
         System.out.println("┌─────────────────────────   NullObject Test   ──────────────────────┐");
         System.out.println("│   1.There are some workers added into the office.                  │");
-        System.out.println("│   2.You can search a worker by him/her ID.                         │");
+        System.out.println("│   2.You can search a Worker by him/her ID.                         │");
         System.out.println("│   3.If the ID does not exist, the Null Object will be called.      │");
         System.out.println("└────────────────────────────────────────────────────────────────────┘");
         System.out.println("");
@@ -37,11 +41,11 @@ public class NullObjectTest {
         System.out.println("\nPress ENTER to add workers...");
         new BufferedReader(new InputStreamReader(System.in)).readLine();
 
-        worker worker1=new worker("OldWang",45, Personnel.Gender.male,  "13609884567",26000, office);
-        worker worker2=new worker("ZhangSan",27, Personnel.Gender.male,  "18099775533",13000, office);
-        worker worker3=new worker("LucyLee",24, Personnel.Gender.female,  "18655443378",9000, office);
-        worker worker4=new worker("DavidHuang",33, Personnel.Gender.male,  "13535435996",16000, office);
-        worker worker5=new worker("PeterYang",35, Personnel.Gender.male,  "19833994224",19000, office);
+        Worker worker1=new Worker("OldWang",45, Personnel.Gender.male,  "13609884567",26000, office);
+        Worker worker2=new Worker("ZhangSan",27, Personnel.Gender.male,  "18099775533",13000, office);
+        Worker worker3=new Worker("LucyLee",24, Personnel.Gender.female,  "18655443378",9000, office);
+        Worker worker4=new Worker("DavidHuang",33, Personnel.Gender.male,  "13535435996",16000, office);
+        Worker worker5=new Worker("PeterYang",35, Personnel.Gender.male,  "19833994224",19000, office);
         //office.addWorker(worker1);
         //office.addWorker(worker2);
         //office.addWorker(worker3);
@@ -70,6 +74,7 @@ public class NullObjectTest {
             office.searchStaffById(Id);
         }while(true);
 
+        System.out.println("—————————————---------------------------------------------- End ————------—————————-------------------------------------————");
 
     }
 

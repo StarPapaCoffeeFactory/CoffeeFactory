@@ -37,7 +37,7 @@ public class HouseBlend extends Product {
             weight += coffee.getWeight();
             coffeeShelfLife = coffee.getShelfLife();
             if (coffeeShelfLife < shelfLife) {
-                shelfLife = coffeeShelfLife;
+                shelfLife = coffeeShelfLife;  // update shelf life if needed
             }
             index++;
         }

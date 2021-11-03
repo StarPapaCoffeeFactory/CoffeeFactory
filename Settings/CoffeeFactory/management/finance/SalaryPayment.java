@@ -46,7 +46,7 @@ public class SalaryPayment {
         staffList.remove(staff);
     }
 
-    public void removeStaff(String name) {
+    public void removeStaffByName(String name) {
         if (staffList.removeIf(worker -> worker.getName().equals(name))) {
             System.out.println("Remove " + name + " successfully.");
         } else {

@@ -58,7 +58,7 @@ public abstract class Staff extends Personnel implements Observer{
     public void getPaid()
     {
         this.payroll_card += this.salary;
-        System.out.println( "The No." + this.getId() +" worker :"+this.name +" has been paid："+ this.salary + " yuan as month salary , " +
+        System.out.println( "The No." + this.getId() +" Worker :"+this.name +" has been paid："+ this.salary + " yuan as month salary , " +
                 "current asset：" + String.valueOf(this.payroll_card) + " yuan");
     }
 

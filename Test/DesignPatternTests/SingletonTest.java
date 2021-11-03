@@ -7,6 +7,11 @@ import java.io.IOException;
 
 import Settings.CoffeeFactory.personnel.ChiefManager;
 
+/**
+ * @author Chen ZeQi
+ * @description test for Singleton
+ * @date 2021/11/1
+ */
 public class SingletonTest {
     public static void main(String[] args) {
         System.out.println("");
@@ -45,6 +50,7 @@ public class SingletonTest {
         chiefmanager2=ChiefManager.getInstance();
         System.out.println("The result of (chiefmanager1==chiefmanager2) is:"+(chiefmanager1==chiefmanager2));
 
+        System.out.println("—————————————---------------------------------------------- End ————------—————————-------------------------------------————");
 
     }
 }

@@ -40,8 +40,13 @@ public class QualifyPanelGroup extends QualifySystem{
             System.out.print("-");
         }
         System.out.println("Group"+this.getKind() );
+        work();
         for (QualifySystem suc : succulents) {
             suc.show(depth + 2);
         }
+    }
+    public void work()
+    {
+        System.out.println("Group"+this.getKind()+" is working" );
     }
 }

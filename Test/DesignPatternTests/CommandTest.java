@@ -24,13 +24,13 @@ public class CommandTest {
         System.out.println("─────────────────────────   [Command] Test   ─────────────────────────");
 
         System.out.println("");
-        System.out.println("Worker : produceAmericano : Let the worker send a command to produce Americano");
+        System.out.println("Worker : produceAmericano : Let the Worker send a command to produce Americano");
         System.out.println("Product : producing : Transmit the command to a specific machine");
         System.out.println("ProductMachine : process : Execute specific production process");
         System.out.println("");
 
-        System.out.println("Firstly, we need to create a worker.");
-        worker concreteWorker = new worker("worker", 18, Personnel.Gender.male, "123456", 10);
+        System.out.println("Firstly, we need to create a Worker.");
+        Worker concreteWorker = new Worker("Worker", 18, Personnel.Gender.male, "123456", 10);
 
         System.out.println("");
         System.out.println("┌─────────────────────────   Command Test   ─────────────────────────┐");

@@ -7,13 +7,13 @@ import java.util.List;
 
 /***
  * @author ZJX
- * @description The iterator of worker
+ * @description The iterator of Worker
  */
 public class WorkerListIterator implements Iterator {
 
     /***
      * @author ZJX
-     * @description worker list
+     * @description Worker list
      */
     private ArrayList<Staff> workerList = null;
 

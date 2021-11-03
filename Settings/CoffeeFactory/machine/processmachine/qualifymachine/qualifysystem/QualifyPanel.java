@@ -31,8 +31,12 @@ public class QualifyPanel extends QualifySystem{
             System.out.print("-");
         }
         System.out.println(this.getKind());
+        work();
     }
-
+    public void work()
+    {
+        System.out.println("Panel"+this.getKind()+" is working" );
+    }
     public String toString() {
         return "class QualifyPanel";
     }

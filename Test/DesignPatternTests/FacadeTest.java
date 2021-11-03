@@ -70,6 +70,7 @@ public class FacadeTest {
         logisticsAdministrator.submitReport();
         System.out.println();
         System.out.println("logistics check tasks completed");
+
         System.out.println("");
         System.out.println("───────────────────End of the facade test───────────────────────");
 

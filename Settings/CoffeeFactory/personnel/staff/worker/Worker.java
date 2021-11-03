@@ -11,16 +11,18 @@ import Settings.CoffeeFactory.product.coffeebeverage.*;
 import Settings.CoffeeFactory.product.originalcoffee.Arabica;
 import Settings.CoffeeFactory.product.originalcoffee.Robusta;
 
+import java.util.Objects;
+
 /**
  * @author CZQ
  * @project CoffeeFactory
- * @classname worker
+ * @classname Worker
  * @description 员工
  * @DesignPattern visitors//partly
  * @date 2021/10/17
  */
 
-public class worker extends Staff{
+public class Worker extends Staff{
 
     protected String state;
     protected String defaultarea;
@@ -32,18 +34,18 @@ public class worker extends Staff{
 
 
 
-    public worker(String name, int age, Personnel.Gender gender, String phnum,double salary ) {
+    public Worker(String name, int age, Personnel.Gender gender, String phnum, double salary ) {
 
         super(name, age, gender ,phnum ,salary);
-        this.identity = "worker";
+        this.identity = "Worker";
         state="rest";
         this.setVisitLimit();
     }
 
-    public worker(String name, int age, Personnel.Gender gender, String phnum,double salary, StaffArea area ) {
+    public Worker(String name, int age, Personnel.Gender gender, String phnum, double salary, StaffArea area ) {
 
         super(name, age, gender, phnum, salary, area);
-        this.identity = "worker";
+        this.identity = "Worker";
         state = "rest";
         this.setVisitLimit();
 
@@ -78,7 +80,7 @@ public class worker extends Staff{
 
     @Override
     public String toString() {
-        return "public class worker extends Staff";
+        return "public class Worker extends Staff";
     }
 
     /**
@@ -125,6 +127,16 @@ public class worker extends Staff{
     }
     public static void produceRobusta(){ robusta.produce(); }
 
+    @Override
+    public void display()
+    {
+        String gender_str;
+        if(Objects.equals(gender.toString(), "male"))
+            gender_str="male";
+        else
+            gender_str="female";
 
+        System.out.printf("%-20s%-20s%-5s%-10s%s%n", this.name,this.gender,this.age, this.Id, (this.department == null ? "null" : this.department.toString()));
+    }
 
 }

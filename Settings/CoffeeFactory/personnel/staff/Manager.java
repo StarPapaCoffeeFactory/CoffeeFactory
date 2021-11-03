@@ -5,7 +5,7 @@ import Settings.CoffeeFactory.areas.staffarea.StaffArea;
 import Settings.CoffeeFactory.management.staff.WorkerController;
 import Settings.CoffeeFactory.personnel.ChiefManager;
 import Settings.CoffeeFactory.personnel.Personnel;
-import Settings.CoffeeFactory.personnel.staff.worker.worker;
+import Settings.CoffeeFactory.personnel.staff.worker.Worker;
 
 import java.util.ArrayList;
 
@@ -144,13 +144,13 @@ public class Manager extends Staff{
     }
 
     /**
-     * hire a worker!
-     * @param _worker:the worker to be hired
-     * @param phnum:the worker's phnum
-     * @param staffArea:the worker's staffArea
+     * hire a Worker!
+     * @param _worker:the Worker to be hired
+     * @param phnum:the Worker's phnum
+     * @param staffArea:the Worker's staffArea
      * @return
      */
-    public void hireWorker(worker _worker, String phnum, StaffArea staffArea) {
+    public void hireWorker(Worker _worker, String phnum, StaffArea staffArea) {
         String name=_worker.getName();
         Gender gender=_worker.getGender();
         int age=_worker.getAge();
@@ -163,13 +163,13 @@ public class Manager extends Staff{
         }
     }
     /**
-     * hire a worker!(overload)
-     * @param name:the worker's name
-     * @param gender:the worker's gender
-     * @param age:the worker's age
-     * @param salary:the worker's salary
-     * @param phnum:the worker's phnum
-     * @param staffArea:the worker's staffArea
+     * hire a Worker!(overload)
+     * @param name:the Worker's name
+     * @param gender:the Worker's gender
+     * @param age:the Worker's age
+     * @param salary:the Worker's salary
+     * @param phnum:the Worker's phnum
+     * @param staffArea:the Worker's staffArea
      * @return
      */
     public void hireWorker(String name, Gender gender, int age, double salary, String phnum, StaffArea staffArea) {
