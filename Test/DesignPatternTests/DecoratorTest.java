@@ -50,6 +50,7 @@ public class DecoratorTest {
             type = scanner.nextInt();
             if(type==1||type==2||type==3)
                 break;
+            System.out.println("Wrong! Please input again!");
         }
 
         plane.work(product);
