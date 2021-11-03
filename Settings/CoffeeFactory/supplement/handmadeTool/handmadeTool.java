@@ -14,7 +14,7 @@ import java.util.Date;
 
 public class handmadeTool extends supplement{
 
-    private long serialNumber;//序列号
+    private long serialNumber;//工具序列号
     public String description;//描述
     private int stock=999;//库存
 
@@ -31,18 +31,6 @@ public class handmadeTool extends supplement{
         System.out.println("Copy Handmade Tool!");
     }
 
-//    @Override
-//    public String getType()
-//    {/*
-//     *
-//     * @return java.lang.String
-//     * @author YXJ
-//     * @description
-//     * @date 2021/10/15 11:55
-//     */
-//
-//        return this.type;
-//    }
 
     @Override
     public String getType(){
