@@ -56,6 +56,8 @@ public abstract class receipt {
                 '}';
     }
 
+
+    //may need annotation
     public void displayAll() {
         System.out.println("----------------------------------------------------------"+ this.type +"--------------------------------------------------------------");
         System.out.printf("%-10s%-30s%-20s%-30s%-30s%-30s", "|money", "|info", "|type", "|providerName", "|providerTel", "|providerAdd");

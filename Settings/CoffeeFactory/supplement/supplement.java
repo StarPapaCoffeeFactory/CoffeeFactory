@@ -18,6 +18,10 @@ public abstract class supplement {
         this.type="abstractSupplement";
     }
 
+    public String getId(){
+        return this.id;
+    }
+
     public String getType()
     {
         /*

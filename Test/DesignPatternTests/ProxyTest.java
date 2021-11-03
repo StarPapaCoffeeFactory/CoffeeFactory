@@ -20,11 +20,12 @@ public class ProxyTest {
         while (true) {
             System.out.println("");
             System.out.println("┌─────────────────────────   Proxy Test   ───────────────────────────┐");
-            System.out.println("|                      0 --- Quit                                    |");
-            System.out.println("|                      1 --- Show all information                    |");
-            System.out.println("|                      2 --- New a powerBank                         |");
-            System.out.println("|                      3 --- Take a powerBank                        |");
-            System.out.println("|                      4 --- Return a powerBank                      |");
+            System.out.println("│                      0 --- Quit                                    │");
+            System.out.println("│                      1 --- Show all information                    │");
+            System.out.println("│                      2 --- Create a powerBank                      │");
+            System.out.println("│                      3 --- Take a powerBank                        │");
+            System.out.println("│                      4 --- Show port type&battery life             │");
+            System.out.println("│                      5 --- Return a powerBank                      │");
             System.out.println("└────────────────────────────────────────────────────────────────────┘");
 
             Scanner sc = new Scanner(System.in);
@@ -76,6 +77,22 @@ public class ProxyTest {
                 }
                 case 4: {
                     Scanner input = new Scanner(System.in);
+                    //System.out.print(ProxyList.size());
+                    try {
+                        powerBank powerBank = ProxyList.get(ProxyList.size()-1).getPowerBankInstance();
+                        System.out.print("The available ports for this power banks are：");
+                        System.out.print(powerBank.getPortType());
+                        System.out.print("\n");
+                        System.out.print("The battery life of this power banks is：");
+                        System.out.print(powerBank.getBatteryLife()+"%\n");
+                    } catch (ArrayIndexOutOfBoundsException | InputMismatchException e) {
+                        System.out.println("Invalid command. Please try again.\n");
+                        System.out.println("");
+                    }
+                    break;
+                }
+                case 5: {
+                    Scanner input = new Scanner(System.in);
                     System.out.print("Input the index of the powerBank to return：");
                     try {
                         int tool_num = input.nextInt();
@@ -103,19 +120,10 @@ public class ProxyTest {
 
     public static void main(String[] args) {
 
-        /*
-        System.out.println("—————————————-------------------------------------———— [Proxy] Test —————————————-------------------------------------————");
-        System.out.println("powerBank : powerBank() : Inherited from Supply, create an instance of powerBank.");
-        System.out.println("powerBankProxy : powerBankProxy() : Implements powerBankSubjects, create an instance of powerBankProxy and bind it to an powerBank.");
-        System.out.println("powerBankProxy : take() : Implements powerBankSubjects, take the powerBank through the proxy.");
-        System.out.println("powerBankProxy : returnpowerBank() : Implements powerBankSubjects, return the powerBank to the proxy.");
-        System.out.println("");
-
-         */
 
         ProxyTest.runTest();
 
-        System.out.println("—————————————---------------------------------------------- End ————------—————————-------------------------------------————");
+        System.out.println("————————————————————————————————— End ————————————————————————————————");
     }
 }
 
