@@ -11,6 +11,7 @@ public class powerBank extends supplement {
     protected boolean isUsed;
     protected int id;
     private int stock=9999;//库存
+    private int fixedStock=9999;//静态库存
     private int batteryLife;//电量
     public ArrayList<String> portType;//接口种类
 
@@ -21,8 +22,10 @@ public class powerBank extends supplement {
     public powerBank(){
         this.type="powerBank";
         this.isUsed=false;
-        this.id=stock;
+        fixedStock++;
+        this.id=fixedStock;
         stock++;
+
         this.batteryLife=100;
         this.portType=new ArrayList<String>() {
             {
@@ -52,9 +55,13 @@ public class powerBank extends supplement {
         return this.stock;
     }
 
+    public int getFixedStock(){
+        return fixedStock;
+    }
+
     public boolean getPowerBank(){
         if (this.isUsed) {
-            System.out.println("This supplement is being used!");
+            System.out.println("This power bank is being used! You can't take it!");
             return false;
         }
 
@@ -66,7 +73,7 @@ public class powerBank extends supplement {
 
     public boolean returnPowerBank(){
         if (!this.isUsed) {
-            System.out.println("This powerBank is idle!");
+            System.out.println("This powerBank is idle! You don't need to return!");
             return false;
         }
 

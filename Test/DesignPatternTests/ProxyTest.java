@@ -48,7 +48,7 @@ public class ProxyTest {
                         } else {
                             State = "Not Used";
                         }
-                        System.out.println("powerBank No." + (powerBank.getStock() + 1) + ", State: " + State);
+                        System.out.println("powerBank No." + (i + 1) + ", State: " + State);
                     }
                     break;
                 }
@@ -56,12 +56,12 @@ public class ProxyTest {
                     powerBank powerBank = new powerBank();
                     powerBankProxy powerBankProxy = new powerBankProxy(powerBank);
                     ProxyList.add(powerBankProxy);
-                    System.out.println("Create a new powerBank! It's powerBank No." + powerBank.getStock() + 1);
+                    System.out.println("Create a new powerBank! It's powerBank No." + (ProxyList.size()));
                     break;
                 }
                 case 3: {
                     Scanner input = new Scanner(System.in);
-                    System.out.print("Input the index of the powerBank to take：");
+                    System.out.print("Input the id of the powerBank to take：");
                     try {
                         int tool_num = input.nextInt();
                         if (tool_num > 0 && tool_num <= ProxyList.size() + 1) {
@@ -93,7 +93,7 @@ public class ProxyTest {
                 }
                 case 5: {
                     Scanner input = new Scanner(System.in);
-                    System.out.print("Input the index of the powerBank to return：");
+                    System.out.print("Input the id of the powerBank to return：");
                     try {
                         int tool_num = input.nextInt();
                         if (tool_num > 0 && tool_num <= ProxyList.size() + 1) {
