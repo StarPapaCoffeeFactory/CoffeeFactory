@@ -1,20 +1,22 @@
 package Settings.CoffeeFactory.supplement.powerBank;
 
+/**
+ *
+ * @return
+ * @author ZPZ
+ * @description class powerBankProxy
+ * @date 2021/10/27 14:10
+ */
 
 public class powerBankProxy implements powerBankSubject {
 
     private powerBank powerBankInstance;
 
-    /**
-     * Proxy the powerBank proxy
-     */
     public powerBankProxy(powerBank tool) {
         this.powerBankInstance = tool;
     }
 
-    /**
-     * Get a powerBank
-     */
+    //get powerBank
     @Override
     public boolean get() {
         if (powerBankInstance == null) {
@@ -35,9 +37,7 @@ public class powerBankProxy implements powerBankSubject {
         System.out.println("Doing postTake functions");
     }
 
-    /**
-     * Return the powerBank
-     */
+    //return powerBank
     @Override
     public boolean returnPowerBank() {
         if (powerBankInstance == null) {
@@ -57,16 +57,12 @@ public class powerBankProxy implements powerBankSubject {
         System.out.println("Doing postReturn functions");
     }
 
-    /**
-     * Return the instance of powerBank
-     */
+    //return powerBankInstance
     public powerBank getPowerBankInstance() {
         return powerBankInstance;
     }
 
-    /**
-     * Set the instance of the powerBank
-     */
+    //set powerBankInstance
     public void setPowerBankInstance(powerBank powerBankInstance) {
         this.powerBankInstance = powerBankInstance;
     }

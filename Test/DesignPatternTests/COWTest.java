@@ -1,10 +1,17 @@
 package Test.DesignPatternTests;
 
+import java.util.Scanner;
+
 import Settings.CoffeeFactory.supplement.handmadeTool.handmadeToolFactory;
 import Settings.CoffeeFactory.areas.publicarea.ExperienceRoom;
 
-import java.util.Scanner;
-
+/**
+ *
+ * @return
+ * @author ZPZ
+ * @description Test for copy on write design pattern
+ * @date 2021/10/27 14:10
+ */
 
 public class COWTest {
     public static void main(String[] args) {
@@ -62,7 +69,6 @@ public class COWTest {
                 case 4: {
                     System.out.println("The description for the tool in room[0] is:\n");
                     System.out.println(experienceRooms[0].getToolDescription());
-                    //getDescription
                     break;
                 }
                 case 5: {

@@ -6,6 +6,14 @@ import Settings.CoffeeFactory.supplement.supplement;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+/**
+ *
+ * @return
+ * @author ZPZ
+ * @description class powerBank
+ * @date 2021/10/27 14:10
+ */
+
 public class powerBank extends supplement {
 
     protected boolean isUsed;
@@ -67,7 +75,7 @@ public class powerBank extends supplement {
 
         System.out.println("Ready to use!");
         this.isUsed = true;
-        stock--;//or this.stock?
+        stock--;
         return true;
     }
 
@@ -79,7 +87,7 @@ public class powerBank extends supplement {
 
         System.out.println("Successfully returned!");
         this.isUsed = false;
-        stock++;//same above
+        stock++;
         return true;
     }
 

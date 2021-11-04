@@ -2,37 +2,33 @@ package Settings.CoffeeFactory.supplement.handmadeTool;
 
 import Settings.CoffeeFactory.supplement.handmadeTool.handmadeTool;
 
+/**
+ *
+ * @return
+ * @author ZPZ
+ * @description class handmadeToolFactory
+ * @date 2021/10/27 14:10
+ */
+
 public class handmadeToolFactory {
 
-    /**
-     * tool pool
-     */
+    //tool warehouse
     private static handmadeTool handmadeTool = new handmadeTool();
 
     public static void reset() {
         handmadeTool = new handmadeTool();
     }
 
-    /**
-     * Get a hand made tool (reference) from tool pool.
-     *
-     * @return tool ref
-     */
+    //get handmadeTool from tool warehouse
     public static handmadeTool getHandMadeTool() {
         handmadeTool.ref();
         return handmadeTool;
     }
 
-    /**
-     * @return the default handmade tool
-     */
     public static handmadeTool getDefaultHandmadeTool() {
         return handmadeTool;
     }
 
-    /**
-     * hide defalut ctor
-     */
     private handmadeToolFactory() {
     }
 }

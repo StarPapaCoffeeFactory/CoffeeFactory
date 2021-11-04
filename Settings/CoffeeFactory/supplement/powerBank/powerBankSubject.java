@@ -1,13 +1,17 @@
 package Settings.CoffeeFactory.supplement.powerBank;
 
+/**
+ *
+ * @return
+ * @author ZPZ
+ * @description class powerBankSubject
+ * @date 2021/10/27 14:10
+ */
 
 public interface powerBankSubject {
-    /**
-     * Get power bank
-     */
-    boolean get();
-    /**
-     * Return power bank
-     */
-    boolean returnPowerBank();
+
+    boolean get();//get power bank
+
+    boolean returnPowerBank();//return power bank
+
 }

@@ -1,71 +1,77 @@
 package Test.DesignPatternTests;
 
-import java.util.ArrayList;
-import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.InputMismatchException;
 
 import Settings.CoffeeFactory.supplement.supplement;
 import Settings.CoffeeFactory.supplement.powerBank.powerBank;
 import Settings.CoffeeFactory.supplement.powerBank.powerBankProxy;
 
+/**
+ *
+ * @return
+ * @author ZPZ
+ * @description Test for proxy design pattern
+ * @date 2021/10/27 14:10
+ */
 
 public class ProxyTest {
 
     public static void runTest() {
 
-
-        List<powerBankProxy> ProxyList = new ArrayList<powerBankProxy>();
+        List<powerBankProxy> ChargingBunker = new ArrayList<powerBankProxy>();//store power banks
 
         while (true) {
             System.out.println("");
             System.out.println("┌─────────────────────────   Proxy Test   ───────────────────────────┐");
-            System.out.println("│                      0 --- Quit                                    │");
-            System.out.println("│                      1 --- Show all information                    │");
-            System.out.println("│                      2 --- Create a powerBank                      │");
-            System.out.println("│                      3 --- Take a powerBank                        │");
+            System.out.println("│                      0 --- Exit                                    │");
+            System.out.println("│                      1 --- Show power bank list                    │");
+            System.out.println("│                      2 --- Add a new power bank                    │");
+            System.out.println("│                      3 --- Take a power bank                       │");
             System.out.println("│                      4 --- Show port type & battery life           │");
-            System.out.println("│                      5 --- Return a powerBank                      │");
+            System.out.println("│                      5 --- Return a power bank                     │");
             System.out.println("└────────────────────────────────────────────────────────────────────┘");
 
-            Scanner sc = new Scanner(System.in);
+            Scanner scn = new Scanner(System.in);
             System.out.println("");
-            System.out.print("Enter the order [0 to quit]:");
-            int order = 0;
+            System.out.print("Enter the command [0 to exit]:");
+            int command = 0;
             try {
-                order = sc.nextInt();
+                command = scn.nextInt();
             } catch (ArrayIndexOutOfBoundsException | InputMismatchException e) {
                 System.out.println("Invalid command. Please try again.\n");
                 System.out.println("");
             }
-            switch (order) {
+            switch (command) {
                 case 1: {
-                    for (int i = 0; i < ProxyList.size(); i++) {
+                    for (int i = 0; i < ChargingBunker.size(); i++) {
                         String State;
-                        powerBank powerBank = ProxyList.get(i).getPowerBankInstance();
+                        powerBank powerBank = ChargingBunker.get(i).getPowerBankInstance();
                         if (powerBank.getUsageState()) {
-                            State = "Used";
+                            State = "Unavailable";
                         } else {
-                            State = "Not Used";
+                            State = "Available";
                         }
-                        System.out.println("powerBank No." + (i + 1) + ", State: " + State);
+                        System.out.println("powerBank ID." + (i + 1) + ", State: " + State);
                     }
                     break;
                 }
                 case 2: {
                     powerBank powerBank = new powerBank();
                     powerBankProxy powerBankProxy = new powerBankProxy(powerBank);
-                    ProxyList.add(powerBankProxy);
-                    System.out.println("Create a new powerBank! It's powerBank No." + (ProxyList.size()));
+                    ChargingBunker.add(powerBankProxy);
+                    System.out.println("Successfully added a new powerBank! It's powerBank ID." + (ChargingBunker.size()));
                     break;
                 }
                 case 3: {
                     Scanner input = new Scanner(System.in);
-                    System.out.print("Input the id of the powerBank to take：");
+                    System.out.print("Input the ID of the powerBank to take：");
                     try {
                         int tool_num = input.nextInt();
-                        if (tool_num > 0 && tool_num <= ProxyList.size() + 1) {
-                            ProxyList.get(tool_num - 1).get();
+                        if (tool_num > 0 && tool_num <= ChargingBunker.size() + 1) {
+                            ChargingBunker.get(tool_num - 1).get();
                         } else {
                             System.out.println("Invalid command. Please try again.\n");
                         }
@@ -76,10 +82,8 @@ public class ProxyTest {
                     break;
                 }
                 case 4: {
-                    Scanner input = new Scanner(System.in);
-                    //System.out.print(ProxyList.size());
                     try {
-                        powerBank powerBank = ProxyList.get(ProxyList.size()-1).getPowerBankInstance();
+                        powerBank powerBank = ChargingBunker.get(ChargingBunker.size()-1).getPowerBankInstance();
                         System.out.print("The available ports for this power banks are：");
                         System.out.print(powerBank.getPortType());
                         System.out.print("\n");
@@ -93,11 +97,11 @@ public class ProxyTest {
                 }
                 case 5: {
                     Scanner input = new Scanner(System.in);
-                    System.out.print("Input the id of the powerBank to return：");
+                    System.out.print("Input the ID of the powerBank to return：");
                     try {
                         int tool_num = input.nextInt();
-                        if (tool_num > 0 && tool_num <= ProxyList.size() + 1) {
-                            ProxyList.get(tool_num - 1).returnPowerBank();
+                        if (tool_num > 0 && tool_num <= ChargingBunker.size() + 1) {
+                            ChargingBunker.get(tool_num - 1).returnPowerBank();
                         } else {
                             System.out.println("Invalid command. Please try again.\n");
                         }

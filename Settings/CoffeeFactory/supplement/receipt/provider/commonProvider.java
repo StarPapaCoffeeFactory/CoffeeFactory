@@ -1,9 +1,11 @@
 package Settings.CoffeeFactory.supplement.receipt.provider;
 
 /**
- * @author:zpz
- * @date 2021.10.16 星期六 20:07
- * @info :
+ *
+ * @return
+ * @author ZPZ
+ * @description class commonProvider
+ * @date 2021/10/27 14:10
  */
 
 public class commonProvider extends provider {
@@ -12,9 +14,6 @@ public class commonProvider extends provider {
         super(providerName, providerTel, providerAdd);
     }
 
-    /**
-     * Person Address in charge of provider
-     */
     public commonProvider() {
     }
 

@@ -4,9 +4,11 @@ import Settings.CoffeeFactory.supplement.receipt.receipt;
 import Settings.CoffeeFactory.supplement.receipt.provider.taxProvider;
 
 /**
- * @author:zpz
- * @date 2021.10.16 星期六 20:12
- * @info :
+ *
+ * @return
+ * @author ZPZ
+ * @description class taxReceipt
+ * @date 2021/10/27 14:10
  */
 
 public final class taxReceipt extends receipt {

@@ -1,10 +1,11 @@
 package Settings.CoffeeFactory.supplement.receipt.provider;
 
-
 /**
- * @author:zpz
- * @date 2021.10.16 星期六 20:09
- * @info :
+ *
+ * @return
+ * @author ZPZ
+ * @description class taxProvider
+ * @date 2021/10/27 14:10
  */
 
 public class taxProvider extends provider {

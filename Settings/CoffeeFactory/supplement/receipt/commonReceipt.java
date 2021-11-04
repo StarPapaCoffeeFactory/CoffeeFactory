@@ -4,9 +4,11 @@ import Settings.CoffeeFactory.supplement.receipt.receipt;
 import Settings.CoffeeFactory.supplement.receipt.provider.commonProvider;
 
 /**
- * @author:zpz
- * @date 2021.10.16 星期六 20:12
- * @info :common receipt, once determined, is immutable, so use final for a modification.
+ *
+ * @return
+ * @author ZPZ
+ * @description class commonReceipt
+ * @date 2021/10/27 14:10
  */
 
 public final class commonReceipt extends receipt {

@@ -5,9 +5,11 @@ import Settings.CoffeeFactory.supplement.receipt.provider.commonProvider;
 import Settings.CoffeeFactory.supplement.receipt.provider.purchaseProvider;
 
 /**
- * @author:zpz
- * @date 2021.10.16 星期六 20:12
- * @info :
+ *
+ * @return
+ * @author ZPZ
+ * @description class purchaseReceipt
+ * @date 2021/10/27 14:10
  */
 
 public final class purchaseReceipt extends receipt {
