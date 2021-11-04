@@ -24,7 +24,7 @@ public class ProxyTest {
             System.out.println("│                      1 --- Show all information                    │");
             System.out.println("│                      2 --- Create a powerBank                      │");
             System.out.println("│                      3 --- Take a powerBank                        │");
-            System.out.println("│                      4 --- Show port type&battery life             │");
+            System.out.println("│                      4 --- Show port type & battery life           │");
             System.out.println("│                      5 --- Return a powerBank                      │");
             System.out.println("└────────────────────────────────────────────────────────────────────┘");
 

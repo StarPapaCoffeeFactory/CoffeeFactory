@@ -38,20 +38,17 @@ public class ImmutableTest {
                 case 0:
                     flag = false;
                     break;
-                case 1: {
-                    //create common receipt;
+                case 1: {//create a common receipt;
                     commonReceipt cReceipt = new commonReceipt("This is a common receipt.");
                     cReceipt.displayAll();
                     break;
                 }
-                case 2: {
-                    //create tax receipt;
+                case 2: {//create a tax receipt;
                     taxReceipt tReceipt = new taxReceipt("This is a tax receipt.");
                     tReceipt.displayAll();
                     break;
                 }
-                case 3: {
-                    //create purchase receipt;
+                case 3: {//create a purchase receipt;
                     purchaseReceipt pReceipt = new purchaseReceipt("This is a purchase receipt.");
                     pReceipt.displayAll();
                     break;

@@ -2,6 +2,7 @@ package Settings.CoffeeFactory.supplement.handmadeTool;
 
 import Settings.CoffeeFactory.supplement.supplement;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -16,7 +17,8 @@ public class handmadeTool extends supplement{
 
     private long serialNumber;//工具序列号
     public String description;//描述
-    private int stock=999;//库存
+    private int usageCount=0;//使用次数
+    private int stock=999;
 
     public handmadeTool (){
         this.type="handmadeTool";
@@ -54,13 +56,17 @@ public class handmadeTool extends supplement{
         return this.stock;
     }
 
+    public int getUsageCount(){
+        return this.usageCount;
+    }
+
     //
     public void ref() {
-        stock++;
+        usageCount++;
     }
 
     public void deref(){
-        stock--;
+        usageCount--;
     }
 
 
