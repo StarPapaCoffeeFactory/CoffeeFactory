@@ -66,6 +66,7 @@ public class BusinessDelegateTest {
                 default:
                 {
                     System.out.println("Invalid Input, Please input again.");
+                    break;
                 }
             }
         }while(flag);

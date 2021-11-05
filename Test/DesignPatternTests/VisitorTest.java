@@ -52,40 +52,47 @@ public class VisitorTest {
                     System.out.println("Let's test method \"useVisitor\" of Warehouse");
                     Warehouse warehouse = new Warehouse();
                     warehouse.accept(test_Visitor_use);
+                    break;
                 }
                 case 2:
                 {
                     System.out.println("Let's test method \"useVisitor\" of CoffeeWorkshop");
                     CoffeeWorkshop coffeeWorkshop = new CoffeeWorkshop();
                     coffeeWorkshop.accept(test_Visitor_use);
+                    break;
                 }
                 case 3:
                 {
                     System.out.println("Let's test method \"useVisitor\" of ExhibitionRoom");
                     ExhibitionRoom exhibitionRoom = new ExhibitionRoom("exhibitionroom1",1000,500,100);
                     exhibitionRoom.accept(test_Visitor_use);
+                    break;
                 }
                 case 4:
                 {
                     System.out.println("Let's test method \"useVisitor\" of ExperienceRoom");
                     ExperienceRoom experienceRoom = new ExperienceRoom();
                     experienceRoom.accept(test_Visitor_use);
+                    break;
                 }
                 case 5:
                 {
                     System.out.println("Let's test method \"useVisitor\" of DiningRoom");
                     DiningRoom diningRoom = new DiningRoom();
                     diningRoom.accept(test_Visitor_use);
+                    break;
                 }
                 case 6:
                 {
                     System.out.println("Let's test method \"useVisitor\" of Office");
                     Office office = new Office();
                     office.accept(test_Visitor_use);
+                    break;
                 }
                 default:
                 {
                     System.out.println("Invalid Input, Please input again.");
+                    break;
                 }
             }
         }while (flag);
