@@ -71,7 +71,9 @@ public class NullObjectTest {
             if(Id.length()==1&&Id.charAt(0)=='0')
                 break;
             System.out.println("\nThe result is: ");
-            office.searchStaffById(Id);
+            //NOT use NullObject pattern:
+            //if(office.searchStaffById(Id)!=null)
+            office.searchStaffById(Id).display();
         }while(true);
 
         System.out.println("—————————————---------------------------------------------- End ————------—————————-------------------------------------————");
