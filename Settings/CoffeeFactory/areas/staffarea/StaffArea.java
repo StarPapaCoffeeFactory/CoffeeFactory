@@ -127,12 +127,12 @@ public abstract class StaffArea extends Area implements Aggregate {
      */
     public Staff searchStaffById(String id) {
         if (manager.getId().equals(id)) {
-            manager.display();
+            //manager.display();
             return manager;
         }
         for (Staff obj : workerList) {
             if (obj.getId().equals(id)) {
-                obj.display();
+                //obj.display();
                 return obj;
             }
         }
