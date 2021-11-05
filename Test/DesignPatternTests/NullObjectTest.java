@@ -15,7 +15,8 @@ import java.util.Scanner;
  * @description test for NullObject
  * @date 2021/11/1
  */
-public class NullObjectTest {
+public class
+NullObjectTest {
 
     public static void main(String[] args) throws IOException  {
 

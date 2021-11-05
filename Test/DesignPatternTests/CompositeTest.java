@@ -195,12 +195,16 @@ public class CompositeTest {
                 String choice = sc.next();
                 if (choice.equals("1")) {
                     createGroup();
+                    System.out.println("Enter the order [0 to quit]:");
                 } else if (choice.equals("2")) {
                     createPanel();
+                    System.out.println("Enter the order [0 to quit]:");
                 } else if (choice.equals("3")) {
                     addLeaf();
+                    System.out.println("Enter the order [0 to quit]:");
                 } else if (choice.equals("4")) {
                     showLeaf();
+                    System.out.println("Enter the order [0 to quit]:");
                 } else {
                     if (choice.equals("0")) {
                         System.out.println("───────────────────────────────  End  ────────────────────────────────");
