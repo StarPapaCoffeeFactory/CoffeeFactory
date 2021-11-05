@@ -205,6 +205,15 @@ public class CompositeTest {
                 } else if (choice.equals("4")) {
                     showLeaf();
                     System.out.println("Enter the order [0 to quit]:");
+                } else if (choice.equals("2")) {
+                    createPanel();
+                    System.out.println("Enter the order [0 to quit]:");
+                } else if (choice.equals("3")) {
+                    addLeaf();
+                    System.out.println("Enter the order [0 to quit]:");
+                } else if (choice.equals("4")) {
+                    showLeaf();
+                    System.out.println("Enter the order [0 to quit]:");
                 } else {
                     if (choice.equals("0")) {
                         System.out.println("───────────────────────────────  End  ────────────────────────────────");
