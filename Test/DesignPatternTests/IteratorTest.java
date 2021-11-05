@@ -101,6 +101,7 @@ public class IteratorTest {
                 default:
                 {
                     System.out.println("Invalid Input, Please input again.");
+                    break;
                 }
             }
         }while(flag);
