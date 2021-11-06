@@ -4,7 +4,7 @@ import java.util.Calendar;
 public class Hazelnut extends FoodInfo{
     /**
      * ctor of Hazelnut
-     * This ctor sets state to SOLID.
+     * @description This ctor sets state to SOLID.
      *
      * @param initialQuant         initial quantity
      * @param initialExpireTime initial time to expire

@@ -4,13 +4,11 @@ import Settings.CoffeeFactory.personnel.Personnel;
 import Settings.CoffeeFactory.personnel.staff.worker.*;
 import java.util.Scanner;
 
-/**
- * @ program: CoffeeFactory.iml
- * @ description: Test for Command
- * @ author: Kaiyu Huang
- * @ date: 2021-10-27 08:31:25
- */
 
+/**
+ * @author Kaiyu Huang
+ * @description Test for Command
+ */
 public class CommandTest {
 
     public static void main(String[] args) {

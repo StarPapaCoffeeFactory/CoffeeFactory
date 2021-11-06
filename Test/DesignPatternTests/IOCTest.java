@@ -10,13 +10,12 @@ import Settings.CoffeeFactory.areas.manufacturingarea.Workshop.CoffeeProductWork
 
 import java.util.Scanner;
 
+
 /**
- * @author wangling
- * @project CoffeeFactory
- * @classname IOCPatternTest
- * @description By passing different staffareas, we create different workers in our workeraddingcontroller
- * and inject them into our staffarea class to realize our IOC (dependency flipping) function
- * @date 2021/10/26 15:46
+ * @author WangLing
+ * @description Test for IOC
+ * *By passing different staffareas, we create different workers in our workeraddingcontroller
+ * *and inject them into our staffarea class to realize our IOC (dependency flipping) function
  */
 public class IOCTest {
     public static void main(String[] args) {

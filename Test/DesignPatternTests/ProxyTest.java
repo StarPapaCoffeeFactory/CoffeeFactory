@@ -9,14 +9,11 @@ import Settings.CoffeeFactory.supplement.supplement;
 import Settings.CoffeeFactory.supplement.powerBank.powerBank;
 import Settings.CoffeeFactory.supplement.powerBank.powerBankProxy;
 
-/**
- *
- * @return
- * @author ZPZ
- * @description Test for proxy design pattern
- * @date 2021/10/27 14:10
- */
 
+/**
+ * @author Zhang PeiZhi
+ * @description Test for proxy design pattern
+ */
 public class ProxyTest {
 
     public static void runTest() {

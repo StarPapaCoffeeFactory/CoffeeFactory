@@ -1,10 +1,9 @@
 package Settings.CoffeeFactory.product.productmemento;
 
 /**
- * @ program: CoffeeFactory.iml
- * @ description: ProductCaretaker
- * @ author: Kaiyu Huang
- * @ date: 2021-10-27 08:31:25
+ * @description: ProductCaretaker
+ * @author: Kaiyu Huang
+ * @date: 2021-10-27 08:31:25
  */
 
 public class ProductCaretaker {

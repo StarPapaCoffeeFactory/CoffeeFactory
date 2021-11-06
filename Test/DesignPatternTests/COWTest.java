@@ -5,14 +5,11 @@ import java.util.Scanner;
 import Settings.CoffeeFactory.supplement.handmadeTool.handmadeToolFactory;
 import Settings.CoffeeFactory.areas.publicarea.ExperienceRoom;
 
-/**
- *
- * @return
- * @author ZPZ
- * @description Test for copy on write design pattern
- * @date 2021/10/27 14:10
- */
 
+/**
+ * @author Zhang PeiZhi
+ * @description Test for copy on write design pattern
+ */
 public class COWTest {
     public static void main(String[] args) {
 

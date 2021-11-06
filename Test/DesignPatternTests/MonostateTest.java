@@ -7,12 +7,10 @@ import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
+
 /**
- * @author wangling
- * @project CoffeeFactory
- * @classname MonostateTest
- * @description test for monostate pattern
- * @date 2021/10/26 15:17
+ * @author WangLing
+ * @description Test for Monostate
  */
 public class MonostateTest {
 

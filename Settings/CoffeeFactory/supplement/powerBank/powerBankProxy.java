@@ -1,8 +1,6 @@
 package Settings.CoffeeFactory.supplement.powerBank;
 
 /**
- *
- * @return
  * @author ZPZ
  * @description class powerBankProxy
  * @date 2021/10/27 14:10

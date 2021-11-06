@@ -5,7 +5,7 @@ public class Chocolate extends FoodInfo{
 
     /**
      * ctor of Chocolate
-     * This ctor sets state to SOLID.
+     * @description This ctor sets state to SOLID.
      *
      * @param initialQuant         initial quantity
      * @param initialExpireTime initial time to expire

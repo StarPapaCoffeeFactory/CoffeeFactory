@@ -55,6 +55,7 @@ public class MainTest {
             if(op==0)
                 break;
             exectests(op);
+
         }
     }
 

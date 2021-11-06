@@ -125,18 +125,19 @@ public abstract class StaffArea extends Area implements Aggregate {
      * @description search and show Worker information by id
      * @author lc
      */
-    public void searchStaffById(String id) {
+    public Staff searchStaffById(String id) {
         if (manager.getId().equals(id)) {
-            manager.display();
-            return;
+            //manager.display();
+            return manager;
         }
         for (Staff obj : workerList) {
             if (obj.getId().equals(id)) {
-                obj.display();
-                return;
+                //obj.display();
+                return obj;
             }
         }
-        (new EmptyStaff()).display();
+        return (new EmptyStaff());
+        //Because of null object design pattern, no longer need return nullptr;//
     }
 
     /**

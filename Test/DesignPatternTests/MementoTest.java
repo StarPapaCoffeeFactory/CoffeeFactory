@@ -5,13 +5,11 @@ import Settings.CoffeeFactory.product.productmemento.*;
 
 import java.util.Scanner;
 
-/**
- * @ program: CoffeeFactory.iml
- * @ description: Test for Memento
- * @ author: Kaiyu Huang
- * @ date: 2021-10-27 08:31:25
- */
 
+/**
+ * @author Kaiyu Huang
+ * @description Test for Memento
+ */
 public class MementoTest {
     public static void main(String[] args) {
         /*

@@ -1,11 +1,5 @@
 package Test.DesignPatternTests;
 
-/**
- * @ program: coffeefactory
- * @ description:
- * @ author: YXJ
- * @ date: 2021-10-15 12:55:29
- */
 
 
 import Settings.CoffeeFactory.machine.Machine;
@@ -18,6 +12,10 @@ import Settings.CoffeeFactory.supplement.handmadeTool.handmadeTool;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author Yuan XinJie
+ * @description Test for Facade
+ */
 public class FacadeTest {
     public static void main(String[] args) {
 //        facade test

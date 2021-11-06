@@ -23,8 +23,7 @@ public abstract class CoffeeBasicMachine extends BasicProductMachine {
     public Coffee getCoffee() {
         return coffee;
     }
-    /*
-     *
+    /**
      * @return void
      * @author YSX
      * @description make different coffee with different coffee bean

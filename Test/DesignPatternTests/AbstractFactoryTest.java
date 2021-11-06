@@ -5,10 +5,12 @@ import Settings.CoffeeFactory.areas.manufacturingarea.Workshop.CoffeeWorkshop;
 import Settings.CoffeeFactory.areas.manufacturingarea.Workshop.Workshop;
 import Settings.CoffeeFactory.areas.manufacturingarea.Workshop.WorkshopProducer;
 
-
-
 import java.util.Scanner;
 
+/**
+ * @author LiuChuang
+ * @description test for Abstract Factory
+ */
 public class AbstractFactoryTest {
     public static void main(String[] args) {
         System.out.println("------------------------------------ [Abstract Factory] Test ------------------------------------");

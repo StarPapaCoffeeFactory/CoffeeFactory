@@ -7,14 +7,11 @@ import Settings.CoffeeFactory.material.Package.LargeCup;
 import java.util.Scanner;
 import java.util.Calendar;
 
-/**
- * @author wangling
- * @project CoffeeFactory
- * @classname PrototypeTest
- * @description Test for prototype pattern
- * @date 2021/10/26 15:46
- */
 
+/**
+ * @author WangLing
+ * @description Test for Prototype
+ */
 public class PrototypeTest {
     public static void testPrototype(Material obj1, Material obj2, String name) {
 

@@ -8,10 +8,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+
 /**
- * @author YSX
+ * @author YuShiXuan
  * @description test for Composite,combined with Command pattern
- * @date 2021/10/27 21:01
  */
 public class CompositeTest {
     private static Map<String, QualifyPanelGroup> PanelGroups = new HashMap();
@@ -195,6 +195,15 @@ public class CompositeTest {
                 String choice = sc.next();
                 if (choice.equals("1")) {
                     createGroup();
+                    System.out.println("Enter the order [0 to quit]:");
+                } else if (choice.equals("2")) {
+                    createPanel();
+                    System.out.println("Enter the order [0 to quit]:");
+                } else if (choice.equals("3")) {
+                    addLeaf();
+                    System.out.println("Enter the order [0 to quit]:");
+                } else if (choice.equals("4")) {
+                    showLeaf();
                     System.out.println("Enter the order [0 to quit]:");
                 } else if (choice.equals("2")) {
                     createPanel();

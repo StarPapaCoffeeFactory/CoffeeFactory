@@ -13,12 +13,12 @@ public class ExperienceRoom extends PublicArea {
     private handmadeTool tool = handmadeToolFactory.getHandMadeTool();
 
     /**
-     * number of this exp-room
+     * @description number of this exp-room
      **/
     private int expRoomNumber;
 
     /**
-     * constructor of ExperienceRoom
+     * @description  of ExperienceRoom
      */
     public ExperienceRoom(String location, double cost, double area, int maxNumber) {
         super(location, cost, area, maxNumber);
@@ -36,8 +36,7 @@ public class ExperienceRoom extends PublicArea {
     }
 
     /**
-     * Get description of tool in this room.
-     *
+     * @description Get description of tool in this room.
      * @return description
      */
     public String getToolDescription() {
@@ -45,8 +44,7 @@ public class ExperienceRoom extends PublicArea {
     }
 
     /**
-     * Set description of tool in this room. This is a part of COW pattern.
-     *
+     * @description Set description of tool in this room. This is a part of COW pattern.*
      * @return description
      */
     public void setToolDescription(String description) {

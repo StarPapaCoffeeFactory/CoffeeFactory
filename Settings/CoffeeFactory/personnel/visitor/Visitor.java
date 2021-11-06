@@ -5,10 +5,9 @@ import Settings.CoffeeFactory.areas.publicarea.PublicArea;
 import Settings.CoffeeFactory.personnel.Personnel;
 import Settings.CoffeeFactory.personnel.visitlimit.LimitContext;
 /**
- * @ program: coffeefactory
- * @ description: 实际意义上的游客/参观者  区别于设计模式中的visitor
- * @ author: YXJ
- * @ date: 2021-10-12 21:15:35
+ * @description: 实际意义上的游客/参观者  区别于设计模式中的visitor
+ * @author: YXJ
+ * @date: 2021-10-12 21:15:35
  */
 public class Visitor extends Personnel {
 
@@ -27,8 +26,7 @@ public class Visitor extends Personnel {
 
     }
     public void setVisitLimit()
-    {/*
-     *
+    {/**
      * @return void
      * @author YXJ
      * @description 设置visitor的访问权限
@@ -40,9 +38,8 @@ public class Visitor extends Personnel {
     }
 
     /**
-     * visit a public area
+     * @description visit a public area
      * However, a visitor can only be allowed to visit some place when it is not full.
-     *
      * @param dest destination
      */
     public boolean visit(PublicArea dest) {

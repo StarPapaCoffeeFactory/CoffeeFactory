@@ -8,7 +8,7 @@ import Settings.CoffeeFactory.product.Product;
  */
 public interface Aircraft {
 
-    /*
+    /**
      * @param product
      * @return int
      * @author ShenBo
@@ -22,7 +22,7 @@ public interface Aircraft {
 
     void setAimProcessNum(int aimProcessNum);
 
-    /*
+    /**
      * @return void
      * @author ShenBo
      * @description The aircraft can fly

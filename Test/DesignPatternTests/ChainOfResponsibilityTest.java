@@ -15,7 +15,6 @@ import java.util.Scanner;
 /**
  * @author Chen ZeQi
  * @description test for ChainOfResponsibility
- * @date 2021/11/1
  */
 public class ChainOfResponsibilityTest {
 

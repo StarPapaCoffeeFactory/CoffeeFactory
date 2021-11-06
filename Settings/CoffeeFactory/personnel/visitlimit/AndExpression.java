@@ -1,10 +1,9 @@
 package Settings.CoffeeFactory.personnel.visitlimit;
 
 /**
- * @ program: coffeefactory
- * @ description: 拆解表达式并判断合法
- * @ author: YXJ
- * @ date: 2021-10-12 20:01:22
+ * @description: 拆解表达式并判断合法
+ * @author: YXJ
+ * @date: 2021-10-12 20:01:22
  */
 public class AndExpression implements AbstractExpression {
 

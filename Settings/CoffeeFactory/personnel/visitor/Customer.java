@@ -6,10 +6,9 @@ import Settings.CoffeeFactory.product.Product;
 import java.util.HashMap;
 
 /**
- * @ program: coffeefactory
- * @ description: 顾客
- * @ author: YXJ
- * @ date: 2021-10-12 21:15:35
+ * @description: 顾客
+ * @author: YXJ
+ * @date: 2021-10-12 21:15:35
  */
 public class Customer extends Visitor{
 

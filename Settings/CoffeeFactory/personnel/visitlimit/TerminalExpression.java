@@ -5,10 +5,9 @@ import java.util.HashSet;
 import java.util.Arrays;
 
 /**
- * @ program: coffeefactory
- * @ description: 存储表达式的终结符  在此例中用于存储 person 或 area 的数据
- * @ author: YXJ
- * @ date: 2021-10-12 20:55:33
+ * @description: 存储表达式的终结符  在此例中用于存储 person 或 area 的数据
+ * @author: YXJ
+ * @date: 2021-10-12 20:55:33
  */
 public class TerminalExpression implements AbstractExpression{
     private Set<String> set = new HashSet<String>();

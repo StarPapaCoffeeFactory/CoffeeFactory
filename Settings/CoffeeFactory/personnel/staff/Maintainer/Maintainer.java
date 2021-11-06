@@ -2,15 +2,12 @@ package Settings.CoffeeFactory.personnel.staff.Maintainer;
 
 import Settings.CoffeeFactory.personnel.Personnel;
 import Settings.CoffeeFactory.personnel.staff.Staff;
+
 /**
  * @author CZQ
- * @project CoffeeFactory
- * @classname ${}
- * @description
  * @DesignPattern chain of responsibility
  * @date 2021/10/17
  */
-
 public abstract class Maintainer extends Staff{
 
     private Maintainer next;
@@ -31,8 +28,8 @@ public abstract class Maintainer extends Staff{
     }
 
     /**
-     *处理维修请求
-     * @param Maintain_difficulty:维修难度,1~100
+     * @description handle maintain request
+     * @param Maintain_difficulty: difficulty,1~100
      * @return viable of maintain ,T or F
      */
     public boolean handle(int Maintain_difficulty)
@@ -56,7 +53,7 @@ public abstract class Maintainer extends Staff{
     }
 
     /**
-     * 设置个人维修能力
+     * @description set maintain ability
      * @param Maintain_ability:个人维修能力，维修难度小于等于维修能力的维修请求可以被处理
      * @return
      */

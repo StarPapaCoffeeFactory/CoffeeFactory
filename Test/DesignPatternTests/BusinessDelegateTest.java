@@ -6,7 +6,7 @@ import Settings.CoffeeFactory.material.food.Milk;
 import java.util.Scanner;
 
 /***
- * @author ZJX
+ * @author ZhangJiXian
  * @description Test for business delegate design model
  */
 public class BusinessDelegateTest {

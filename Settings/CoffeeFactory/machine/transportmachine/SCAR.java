@@ -28,9 +28,8 @@ public class SCAR extends TransportMachine {
         System.out.println(aimProcessNum + " items transported successfully.");
         return 0;
     }
-    /*
-     *
- * @param product
+    /**
+     * @param product
      * @return void
      * @author YSX
      * @description the car loads something on it
@@ -41,9 +40,8 @@ public class SCAR extends TransportMachine {
         System.out.println("Four people are getting on the small car.");
     }
 
-    /*
-     *
- * @param product
+    /**
+     * @param product
      * @return void
      * @author YSX
      * @description the car successfully arrives at its destination

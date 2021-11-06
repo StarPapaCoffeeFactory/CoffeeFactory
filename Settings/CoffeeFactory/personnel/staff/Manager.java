@@ -9,15 +9,11 @@ import Settings.CoffeeFactory.personnel.staff.worker.Worker;
 
 import java.util.ArrayList;
 
+
 /**
  * @author CZQ
- * @project CoffeeFactory
- * @classname Manager
- * @description 经理
- * @DesignPattern
- * @date 2021/10/17
+ * @DesignPattern Mediator
  */
-
 public class Manager extends Staff{
 
     public String identity = "manager";
@@ -44,7 +40,7 @@ public class Manager extends Staff{
 
 
     /**
-     * 从总经理处获得任务
+     * @description get tasks from ChiefManager
      */
     public void dispatchTask()
     {
@@ -52,7 +48,7 @@ public class Manager extends Staff{
     }
 
     /**
-     * 发怒
+     * @description getangry
      */
     public void getangry()
     {
@@ -60,7 +56,7 @@ public class Manager extends Staff{
     }
 
     /**
-     * send feedback to the ChiefManager
+     * @description send feedback to the ChiefManager
      */
     public void reporttoChiefManager() {
         System.out.println(this.name + " report to the Chief manager.");
@@ -68,7 +64,7 @@ public class Manager extends Staff{
     }
 
     /**
-     * add a new department to the list.
+     * @description add a new department to the list.
      */
     public void addDepartment(StaffArea department) {
         this.departmentList.add(department);
@@ -132,7 +128,7 @@ public class Manager extends Staff{
 
     /**
      * @param dest:go to dest area
-     * @return
+     * @return void
      */
     public void Goto(Area dest) {
         System.out.println("This manager cannot move area.");
@@ -144,7 +140,7 @@ public class Manager extends Staff{
     }
 
     /**
-     * hire a Worker!
+     * @description hire a Worker!
      * @param _worker:the Worker to be hired
      * @param phnum:the Worker's phnum
      * @param staffArea:the Worker's staffArea
@@ -163,7 +159,7 @@ public class Manager extends Staff{
         }
     }
     /**
-     * hire a Worker!(overload)
+     * @description hire a Worker!(overload)
      * @param name:the Worker's name
      * @param gender:the Worker's gender
      * @param age:the Worker's age

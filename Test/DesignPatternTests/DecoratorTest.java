@@ -11,11 +11,10 @@ import Settings.CoffeeFactory.product.Product;
 
 import java.util.Scanner;
 
+
 /**
- * @ program: CoffeeFactory.iml
- * @ description: DecoratorTest
- * @ author: ShenBo
- * @ date: 2021-10-31 23:13:57
+ * @author ShenBo
+ * @description test for Decorator
  */
 public class DecoratorTest {
     public static void main(String[] args) {

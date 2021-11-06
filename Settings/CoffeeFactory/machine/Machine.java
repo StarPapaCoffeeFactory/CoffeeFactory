@@ -77,8 +77,7 @@ public abstract class Machine {
         System.out.println("Sorry, " + type + ID + " breaks down! Please fix!\n");
     }
     public void setBroken(boolean broken) {
-        /*
-         *
+        /**
          * @param broken
          * @return void
          * @author YXJ
@@ -87,9 +86,8 @@ public abstract class Machine {
          */
         isBroken = broken;
     }
-    /*
-     *
- * @param breakLevel
+    /**
+     * @param breakLevel
      * @return void
      * @author YSX
      * @description Mark the extent of damage to the machine
@@ -102,8 +100,7 @@ public abstract class Machine {
         //czq add in 2021/10/24
         malfunction();
     }
-/*
- *
+/**
  * @return void
  * @author YSX
  * @description Fix the damaged machine
@@ -132,13 +129,12 @@ public abstract class Machine {
         }
     }
 
-/*
- *  
- * @return void
- * @author YSX
- * @description Maintain the machine and prolong its service life
- * @date 2021/10/27 21:42
- */
+    /**
+     * @return void
+     * @author YSX
+     * @description Maintain the machine and prolong its service life
+     * @date 2021/10/27 21:42
+     */
     public void maintenance() {
         Random rand = new Random();
         int ageLonged = rand.nextInt(5);
@@ -150,8 +146,7 @@ public abstract class Machine {
         this.ID = ID;
         System.out.println("The code number of the machine is changed to " + ID + ".\n");
     }
-    /*
-     *  
+    /**
      * @return double
      * @author YSX
      * @description After the machine is in use, its available time will be reduced,its age will increase
@@ -186,23 +181,21 @@ public abstract class Machine {
         double totalLoss=productionLoss+baseLoss;
      //   System.out.println("Set aimProcessNum to " + aimProcessNum + ".");
     }
-/*
- *
- * @param product
- * @return int
- * @author YSX
- * @description abstract function named work
- * @date 2021/10/27 21:46
- */
+    /**
+     * @param product
+     * @return int
+     * @author YSX
+     * @description abstract function named work
+     * @date 2021/10/27 21:46
+     */
     protected abstract int work(Product product);
-/*
- * 
- * @param product  
- * @return int
- * @author YSX
- * @description Determine whether the machine can run properly
- * @date 2021/10/27 21:47
- */
+    /**
+     * @param product
+     * @return int
+     * @author YSX
+     * @description Determine whether the machine can run properly
+     * @date 2021/10/27 21:47
+     */
     public int run(Product product) {
         double virtualAge = age + baseLoss+productionLoss;
         if (virtualAge > lifeSpan) {

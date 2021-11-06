@@ -16,8 +16,7 @@ public class MCAR extends TransportMachine {
     public MCAR(String type, String machineNum, double age) {
         super(type, machineNum, age, 15, 0.8, 150);
     }
-    /*
-     *
+    /**
      * @param product
      * @return void
      * @author YSX
@@ -29,8 +28,7 @@ public class MCAR extends TransportMachine {
         System.out.println("Four people are getting on the van and " +
                 this.aimProcessNum + " " + product.getProductName() + " are being loaded on the van.");
     }
-    /*
-     *
+    /**
      * @param product
      * @return void
      * @author YSX

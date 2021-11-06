@@ -39,8 +39,7 @@ public class Office extends StaffArea {
     }
 
     /**
-     * visitors Pattern
-     *
+     * @description visitors Pattern
      */
     public void accept(Visitor v) {
         v.visit(this);

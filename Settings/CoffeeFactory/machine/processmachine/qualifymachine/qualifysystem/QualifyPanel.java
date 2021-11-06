@@ -8,19 +8,14 @@ public class QualifyPanel extends QualifySystem{
     public QualifyPanel(String kind){
         super(kind);
     }
-    /*
-     *
-     * @param qualifySystem
-     * @return void
+    /**
      * @author YSX
      * @description Add subsystems to the system
      * @date 2021/10/27 21:52
      */
     @Override
     protected void add(QualifySystem qualityTestSystem) { }
-    /*
-     *
-     * @return void
+    /**
      * @author YSX
      * @description show the subsystems of the system
      * @date 2021/10/27 21:53

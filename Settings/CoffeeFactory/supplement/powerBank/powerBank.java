@@ -7,8 +7,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- *
- * @return
  * @author ZPZ
  * @description class powerBank
  * @date 2021/10/27 14:10

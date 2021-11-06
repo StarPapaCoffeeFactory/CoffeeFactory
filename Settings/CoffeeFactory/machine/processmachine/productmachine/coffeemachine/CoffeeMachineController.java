@@ -16,14 +16,11 @@ public class CoffeeMachineController {
         coffeeBasicMachine.setAimProcessNum(50);
     }
 
-/*
- *
- * @param null
- * @return
- * @author YSX
- * @description The controller starts the machine
- * @date 2021/10/27 21:54
- */
+    /**
+     * @author YSX
+     * @description The controller starts the machine
+     * @date 2021/10/27 21:54
+     */
     public int startProduce() {
         coffeeBasicMachine.useCoffeeBean();
         int outNum = coffeeBasicMachine.run(coffeeBasicMachine.getCoffee());

@@ -4,7 +4,7 @@ import java.util.Calendar;
 public class RobustaCoffeeBean extends FoodInfo{
     /**
      * ctor of RobustaCoffeeBean
-     * This ctor sets state to SOLID.
+     * @description This ctor sets state to SOLID.
      *
      * @param initialQuant         initial quantity
      * @param initialExpireTime initial time to expire

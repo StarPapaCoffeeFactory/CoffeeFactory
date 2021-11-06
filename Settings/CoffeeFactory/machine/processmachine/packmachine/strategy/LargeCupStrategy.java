@@ -12,7 +12,7 @@ import java.util.Date;
  */
 public class LargeCupStrategy extends PackStrategy{
 
-    /*
+    /**
      * @param product
      * @return void
      * @author ShenBo

@@ -1,10 +1,9 @@
 package Settings.CoffeeFactory.management.logistics;
 
 /**
- * @ program: coffeefactory
- * @ description: facade  后勤工作
- * @ author: YXJ
- * @ date: 2021-10-15 11:18:38
+ * @description: facade  后勤工作
+ * @author: YXJ
+ * @date: 2021-10-15 11:18:38
  */
 import java.util.List;
 import Settings.CoffeeFactory.machine.Machine;
