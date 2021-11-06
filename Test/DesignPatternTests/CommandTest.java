@@ -36,8 +36,8 @@ public class CommandTest {
         System.out.println("┌─────────────────────────   Command Test   ─────────────────────────┐");
         System.out.println("│                       1. produce Americano                         │");
         System.out.println("│                       2. produce Arabica                           │");
-        System.out.println("│                       3. produce AutumnBlend                       │");
-        System.out.println("│                       4. produce HouseBlend                        │");
+        System.out.println("│                       3. produce Robusta                           │");
+        System.out.println("│                       4. produce Latte                             │");
         System.out.println("└────────────────────────────────────────────────────────────────────┘");
         System.out.println("");
 
