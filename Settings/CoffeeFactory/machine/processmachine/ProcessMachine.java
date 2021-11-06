@@ -41,10 +41,9 @@ public abstract class ProcessMachine extends Machine {
             return 0;
         }
     }
-    /*
-     *
- * @param product
- * @param productNum
+    /**
+     * @param product
+     * @param productNum
      * @return void
      * @author YSX
      * @description abstract function

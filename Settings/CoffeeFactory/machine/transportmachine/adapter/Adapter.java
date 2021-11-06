@@ -17,7 +17,7 @@ public class Adapter implements Aircraft {
         this.adaptee = adaptee;
     }
 
-    /*
+    /**
      * @param product
      * @return int
      * @author ShenBo
@@ -45,7 +45,7 @@ public class Adapter implements Aircraft {
         adaptee.setAimProcessNum(aimProcessNum);
     }
 
-    /*
+    /**
      * @return void
      * @author ShenBo
      * @description The aircraft is flying

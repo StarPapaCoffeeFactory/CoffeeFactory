@@ -2,8 +2,7 @@ package Settings.CoffeeFactory.material.Package;
 
 public class SmallCup extends PackageInfo {
     /**
-     * ctor of SmallCup
-     *
+     * @description ctor of SmallCup
      * @param initialQuant initial quantity
      */
     public SmallCup(double initialQuant) {

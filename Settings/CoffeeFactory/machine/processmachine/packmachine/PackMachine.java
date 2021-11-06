@@ -12,7 +12,7 @@ public class PackMachine extends ProcessMachine {
 
     private PackStrategy strategy;
 
-    /*
+    /**
      * @param type
      * @param machineNum
      * @author ShenBo
@@ -38,7 +38,7 @@ public class PackMachine extends ProcessMachine {
         return strategy;
     }
 
-    /*
+    /**
      * @param product
      * @param productNum
      * @return void

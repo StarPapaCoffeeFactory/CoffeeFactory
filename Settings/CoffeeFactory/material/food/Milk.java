@@ -4,7 +4,7 @@ import java.util.Calendar;
 public class Milk extends FoodInfo{
     /**
      * ctor of Milk
-     * This ctor sets state to LIQUID.
+     * @description This ctor sets state to LIQUID.
      *
      * @param initialQuant         initial quantity
      * @param initialExpireTime initial time to expire

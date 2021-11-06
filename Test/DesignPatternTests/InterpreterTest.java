@@ -1,11 +1,5 @@
 package Test.DesignPatternTests;
 
-/**
- * @ program: coffeefactory
- * @ description:
- * @ author: YXJ
- * @ date: 2021-10-15 12:53:07
- */
 
 import Settings.CoffeeFactory.areas.Area;
 import Settings.CoffeeFactory.areas.publicarea.ExhibitionRoom;
@@ -18,6 +12,11 @@ import Settings.CoffeeFactory.personnel.visitor.Visitor;
 
 import java.util.ArrayList;
 import java.util.List;
+
+/**
+ * @author Yuan XinJie
+ * @description Test for Interpreter
+ */
 public class InterpreterTest {
     public static void main(String[] args) {
         Worker workera = new Worker("zhangsan",18, Personnel.Gender.male , "15007124567" , 5000.0);

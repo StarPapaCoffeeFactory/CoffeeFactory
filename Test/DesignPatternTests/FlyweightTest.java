@@ -13,7 +13,6 @@ import java.util.Scanner;
  * @author LouTianyu
  * @description Test for Flyweight
  */
-
 public class FlyweightTest {
 
     public static void main(String[] args) {

@@ -40,8 +40,7 @@ public abstract class PublicArea extends Area {
     public abstract String toString();
 
     /**
-     * when a visitor enters the area, add him to the list
-     *
+     * @description when a visitor enters the area, add him to the list
      * @param visitorObj visitor object
      */
     public void addVisitor(Visitor visitorObj) {
@@ -55,8 +54,7 @@ public abstract class PublicArea extends Area {
     }
 
     /**
-     * when a visitor leaves the area, remove him from the list
-     *
+     * @description when a visitor leaves the area, remove him from the list
      * @param visitorObj visitor object
      */
     public void removeVisitor(Visitor visitorObj) {
@@ -68,8 +66,7 @@ public abstract class PublicArea extends Area {
     }
 
     /**
-     * check whether a visitor object is in the list
-     *
+     * @description check whether a visitor object is in the list
      * @param visitorObj visitor object
      * @return true if the visitor is in
      */
@@ -85,7 +82,7 @@ public abstract class PublicArea extends Area {
     }
 
     /**
-     * maintain exhibits
+     * @description maintain exhibits
      */
     public void getExhibitsMaintained() {
         System.out.println("The exhibits have been maintained.");

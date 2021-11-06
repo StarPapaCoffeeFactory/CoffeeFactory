@@ -10,12 +10,12 @@ import java.util.ArrayList;
  */
 public class ExhibitionRoom extends PublicArea {
     /**
-     * Max number of this room
+     * @description Max number of this room
      */
     private int exhRoomNumber;
 
     /**
-     * List of all exhibits
+     * @description  of all exhibits
      */
     protected ArrayList<String> exhibitList;
 
@@ -33,7 +33,7 @@ public class ExhibitionRoom extends PublicArea {
     }
 
     /**
-     * tourists visit the exhibition room, print all exhibits in the room
+     * @description tourists visit the exhibition room, print all exhibits in the room
      */
     public void visitExhibitionRoom() {
         if (exhibitList.size() > 0) {

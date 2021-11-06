@@ -1,11 +1,6 @@
 package Test.DesignPatternTests;
 
-/**
- * @ program: coffeefactory
- * @ description:
- * @ author: YXJ
- * @ date: 2021-10-15 12:53:54
- */
+
 
 import Settings.CoffeeFactory.management.finance.SalaryPayment;
 import Settings.CoffeeFactory.personnel.Personnel;
@@ -18,6 +13,10 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * @author Yuan XinJie
+ * @description Test for Observer
+ */
 public class ObserverTest {
     public static void main(String[] args) {
         System.out.println();

@@ -7,11 +7,7 @@ import java.util.ArrayList;
 
 /**
  * @author CZQ
- * @project CoffeeFactory
- * @classname ChiefManager
- * @description ChiefManager class
  * @DesignPattern Singleton
- * @date 2021/10/15
  */
 
 public class ChiefManager extends Personnel {
@@ -22,7 +18,7 @@ public class ChiefManager extends Personnel {
     public ArrayList<Manager> managerList;
 
     /**
-     *取得唯一ChiefManager对象
+     * @description 取得唯一ChiefManager对象
      * @return instance of Chief manager
      */
     public static ChiefManager getInstance() {
@@ -34,14 +30,14 @@ public class ChiefManager extends Personnel {
     }
 
     /**
-     * 获取并解决一个反馈的问题
+     * @description 获取并解决一个反馈的问题
      */
     public void getFeedBack() {
         System.out.println("Chief Manager \""+this.name+"\" has gotten the feedback and solve it.");
     }
 
     /**
-     * 添加一个经理
+     * @description 添加一个经理
      * @param manager manager
      */
     public void addManager(Manager manager) {
@@ -51,7 +47,7 @@ public class ChiefManager extends Personnel {
     }
 
     /**
-     * 为经理分配任务
+     * @description 为经理分配任务
      */
     public void distributeWork() {
         if (managerList.isEmpty()) {
@@ -71,7 +67,7 @@ public class ChiefManager extends Personnel {
 
 
     /**
-     * ChiefManager can move to anywhere.
+     * @description ChiefManager can move to anywhere.
      * @param dest destination
      */
     public void Goto(Area dest) {
@@ -84,7 +80,7 @@ public class ChiefManager extends Personnel {
 
     }
     /**
-     * show basic info
+     * @description show basic info
      */
     public void display()
     {
@@ -98,7 +94,7 @@ public class ChiefManager extends Personnel {
     }
 
     /**
-     *私有构造函数
+     * @description 私有构造函数
      * @param name 姓名
      * @param age  年龄
      * @param gender 性别

@@ -6,10 +6,9 @@ import Settings.CoffeeFactory.personnel.Personnel;
 import java.util.Objects;
 import java.util.UUID;
 /**
- * @ program: coffeefactory
- * @ description: 基本职工
- * @ author: YXJ
- * @ date: 2021-10-14 17:30:55
+ * @description: 基本职工
+ * @author: YXJ
+ * @date: 2021-10-14 17:30:55
  */
 public abstract class Staff extends Personnel implements Observer{
 
@@ -44,8 +43,7 @@ public abstract class Staff extends Personnel implements Observer{
     }
 
     protected String generate_ID()
-    {/*
-     *
+    {/**
      * @return java.lang.String
      * @author YXJ
      * @description 生成一个八位数字的id
@@ -70,8 +68,7 @@ public abstract class Staff extends Personnel implements Observer{
     }
 
     public void display()
-    {/*
-     *
+    {/**
      * @return void
      * @author YXJ
      * @description  打印staff基本信息

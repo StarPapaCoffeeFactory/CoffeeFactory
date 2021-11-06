@@ -3,15 +3,12 @@ package Settings.CoffeeFactory.personnel.staff.Maintainer;
 import Settings.CoffeeFactory.areas.Area;
 import Settings.CoffeeFactory.personnel.Personnel;
 import Settings.CoffeeFactory.personnel.staff.Maintainer.Maintainer;
+
 /**
  * @author CZQ
- * @project CoffeeFactory
- * @classname ${}
- * @description
  * @DesignPattern chain of responsibility
  * @date 2021/10/17
  */
-
 public class SeasonedMaintainer  extends Maintainer{
 
 
@@ -21,7 +18,7 @@ public class SeasonedMaintainer  extends Maintainer{
     }
 
     /**
-     * 设置维修能力
+     * @description set maintain ability
      * @param _Maintain_ability:个人维修能力，维修难度小于等于维修能力的维修请求可以被处理
      * @return
      */

@@ -7,10 +7,9 @@ import Settings.CoffeeFactory.personnel.visitlimit.LimitContext;
 import java.util.List;
 
 /**
- * @ program: coffeefactory
- * @ description: facade  后勤管理员
- * @ author: YXJ
- * @ date: 2021-10-15 12:12:45
+ * @description: facade  后勤管理员
+ * @author: YXJ
+ * @date: 2021-10-15 12:12:45
  */
 public class LogisticsAdministrator extends Staff{
     private logisticsWork works;//facade of work
@@ -58,8 +57,7 @@ public class LogisticsAdministrator extends Staff{
     }
     public void setVisitLimit()
 
-    {/*
-     *
+    {/**
      * @return void
      * @author YXJ
      * @description 设置LogisticsManager的访问权限

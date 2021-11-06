@@ -3,9 +3,8 @@ import java.util.Calendar;
 
 public class ArabicaCoffeeBean extends FoodInfo{
     /**
-     * ctor of ArabicaCoffeeBean
-     * This ctor sets state to SOLID.
-     *
+     * dctor of ArabicaCoffeeBean
+     * @description This ctor sets state to SOLID.
      * @param initialQuant         initial quantity
      * @param initialExpireTime initial time to expire
      */

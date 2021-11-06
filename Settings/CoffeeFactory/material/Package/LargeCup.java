@@ -1,14 +1,12 @@
 package Settings.CoffeeFactory.material.Package;
+
 /**
  * @author WangLing
- * @project CoffeeFactory
- * @classname LargeCup
  * @description the package material
  */
 public class LargeCup extends PackageInfo {
     /**
-     * ctor of LargeCup
-     *
+     * @description ctor of LargeCup
      * @param initialQuant initial quantity
      */
     public LargeCup(double initialQuant) {

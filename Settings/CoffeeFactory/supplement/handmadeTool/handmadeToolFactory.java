@@ -3,8 +3,6 @@ package Settings.CoffeeFactory.supplement.handmadeTool;
 import Settings.CoffeeFactory.supplement.handmadeTool.handmadeTool;
 
 /**
- *
- * @return
  * @author ZPZ
  * @description class handmadeToolFactory
  * @date 2021/10/27 14:10

@@ -8,7 +8,7 @@ import Settings.CoffeeFactory.product.Product;
  */
 public abstract class PackStrategy {
 
-    /*
+    /**
      * @param product
      * @return void
      * @author ShenBo

@@ -5,7 +5,6 @@ import Settings.CoffeeFactory.material.food.*;
 
 /**
  * @author Kaiyu Huang
- * @project CoffeeFactory
  * @classname Beverage
  * @description Mocha Beverage; Imitate Nestle
  * @date 2021/10/11 21:45

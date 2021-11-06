@@ -2,15 +2,11 @@ package Settings.CoffeeFactory.personnel.staff;
 
 import Settings.CoffeeFactory.areas.Area;
 
+
 /**
  * @author CZQ
- * @project CoffeeFactory
- * @classname EmptyStaff
- * @description
  * @DesignPattern Null object
- * @date 2021/10/17
  */
-
 public class EmptyStaff extends Staff {
 
     public EmptyStaff() {
@@ -33,7 +29,7 @@ public class EmptyStaff extends Staff {
     }
 
     /**
-     * no staff found
+     * @description no staff found
      */
     @Override
     public void display() {

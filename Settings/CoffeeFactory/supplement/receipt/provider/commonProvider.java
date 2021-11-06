@@ -1,8 +1,6 @@
 package Settings.CoffeeFactory.supplement.receipt.provider;
 
 /**
- *
- * @return
  * @author ZPZ
  * @description class commonProvider
  * @date 2021/10/27 14:10

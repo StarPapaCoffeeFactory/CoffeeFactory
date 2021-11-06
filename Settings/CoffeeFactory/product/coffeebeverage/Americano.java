@@ -4,10 +4,9 @@ import Settings.CoffeeFactory.product.Product;
 import Settings.CoffeeFactory.material.food.*;
 
 /**
- * @ program: CoffeeFactory.iml
- * @ description: Americano Beverage; Imitate Starbucks
- * @ author: Kaiyu Huang
- * @ date: 2021-10-27 08:31:25
+ * @description: Americano Beverage; Imitate Starbucks
+ * @author: Kaiyu Huang
+ * @date: 2021-10-27 08:31:25
  */
 
 public class Americano extends Product {

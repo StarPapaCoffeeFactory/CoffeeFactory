@@ -1,10 +1,9 @@
 package Settings.CoffeeFactory.machine.transportmachine.decorator;
 
 /**
- * @ program: CoffeeFactory.iml
- * @ description: EnvironmentFriendlyAcclerateEngine(环保)
- * @ author: ShenBo
- * @ date: 2021-10-31 22:38:15
+ * @description: EnvironmentFriendlyAcclerateEngine(环保)
+ * @author: ShenBo
+ * @date: 2021-10-31 22:38:15
  */
 public class EFAccelerateEngine extends Decorator {
 
@@ -12,7 +11,7 @@ public class EFAccelerateEngine extends Decorator {
         super(engine);
     }
 
-    /*
+    /**
      * @return void
      * @author ShenBo
      * @description specific features : save energy
@@ -22,7 +21,7 @@ public class EFAccelerateEngine extends Decorator {
         System.out.println("Saving Energy...");
     }
 
-    /*
+    /**
      * @return void
      * @author ShenBo
      * @description execute accelerate and execute specific features

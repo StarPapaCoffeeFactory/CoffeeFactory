@@ -5,10 +5,9 @@ import Settings.CoffeeFactory.material.food.*;
 import Settings.CoffeeFactory.product.Product;
 
 /**
- * @ program: CoffeeFactory.iml
- * @ description: CaramelMacchiato Beverage; Imitate Starbucks
- * @ author: Kaiyu Huang
- * @ date: 2021-10-27 08:31:25
+ * @description: CaramelMacchiato Beverage; Imitate Starbucks
+ * @author: Kaiyu Huang
+ * @date: 2021-10-27 08:31:25
  */
 
 public class CaramelMacchiato extends Product {

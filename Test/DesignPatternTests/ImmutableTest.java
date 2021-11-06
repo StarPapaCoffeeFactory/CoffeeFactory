@@ -7,14 +7,11 @@ import Settings.CoffeeFactory.supplement.receipt.taxReceipt;
 
 import java.util.Scanner;
 
-/**
- *
- * @return
- * @author ZPZ
- * @description Test for immutable design pattern
- * @date 2021/10/27 14:10
- */
 
+/**
+ * @author Zhang PeiZhi
+ * @description Test for immutable design pattern
+ */
 public class ImmutableTest {
 
     public static void main(String[] args) {

@@ -3,8 +3,6 @@ package Settings.CoffeeFactory.supplement.receipt;
 import Settings.CoffeeFactory.supplement.receipt.provider.provider;
 
 /**
- *
- * @return
  * @author ZPZ
  * @description class receipt
  * @date 2021/10/27 14:10

@@ -6,12 +6,11 @@ import Settings.CoffeeFactory.machine.processmachine.productmachine.coffeemachin
 import Settings.CoffeeFactory.machine.processmachine.productmachine.coffeemachine.CoffeeArabicaMachine;
 import Settings.CoffeeFactory.machine.processmachine.productmachine.coffeemachine.CoffeeMachineController;
 import Settings.CoffeeFactory.machine.processmachine.productmachine.coffeemachine.CoffeeRobustaMachine;
-/**
- * @author YSX
- * @description test for Builder
- * @date 2021/10/27 20:59
- */
 
+/**
+ * @author YuShiXuan
+ * @description test for Builder
+ */
 public class BuilderTest {
     public BuilderTest() {
     }

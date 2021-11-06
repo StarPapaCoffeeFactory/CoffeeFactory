@@ -13,15 +13,12 @@ import Settings.CoffeeFactory.product.originalcoffee.Robusta;
 
 import java.util.Objects;
 
+
 /**
  * @author CZQ
- * @project CoffeeFactory
- * @classname Worker
- * @description 员工
- * @DesignPattern visitors//partly
+ * @DesignPattern Null object
  * @date 2021/10/17
  */
-
 public class Worker extends Staff{
 
     protected String state;
@@ -52,7 +49,7 @@ public class Worker extends Staff{
     }
 
     /**
-     * set this state to work
+     * @description set this state to work
      */
     public void work()
     {
@@ -61,7 +58,7 @@ public class Worker extends Staff{
     }
 
     /**
-     * set this state to rest
+     * @description set this state to rest
      */
     public void rest()
     {
@@ -70,7 +67,7 @@ public class Worker extends Staff{
     }
 
     /**
-     * print send feedback
+     * @description print send feedback
      */
     public void feedBack()
     {
@@ -85,7 +82,7 @@ public class Worker extends Staff{
 
     /**
      * @param dest:go to dest area
-     * @return
+     * @return void
      */
     public void Goto(Area dest) {
         if (this.canEnter(dest)) {
@@ -98,7 +95,7 @@ public class Worker extends Staff{
     }
 
     /**
-     * set VisitLimit
+     * @description set VisitLimit
      */
     @Override
     public void setVisitLimit()
@@ -111,7 +108,7 @@ public class Worker extends Staff{
     }
 
     /**
-     * produce products
+     * @description produce products
      */
     public static void produceAmericano()
     {

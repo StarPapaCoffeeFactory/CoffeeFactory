@@ -5,8 +5,6 @@ import Settings.CoffeeFactory.supplement.receipt.provider.commonProvider;
 import Settings.CoffeeFactory.supplement.receipt.provider.purchaseProvider;
 
 /**
- *
- * @return
  * @author ZPZ
  * @description class purchaseReceipt
  * @date 2021/10/27 14:10

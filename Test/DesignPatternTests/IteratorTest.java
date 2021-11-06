@@ -10,9 +10,10 @@ import Settings.CoffeeFactory.personnel.staff.worker.Worker;
 
 import java.util.Scanner;
 
+
 /***
- * @author ZJX
- * @description Test for iterator design model
+ * @author ZhangJiXian
+ * @description Test for Iterator design model
  */
 public class IteratorTest {
 

@@ -4,7 +4,7 @@ import java.util.Calendar;
 public class Sugar extends FoodInfo{
     /**
      * ctor of Sugar
-     * This ctor sets state to POWDER.
+     * @description This ctor sets state to POWDER.
      *
      * @param initialQuant         initial quantity
      * @param initialExpireTime initial time to expire

@@ -18,8 +18,7 @@ public class HouseBlend extends Product {
     private final Coffee[] coffeeList;
 
     /**
-     * Constructor for HouseBlend
-     *
+     * @description Constructor for HouseBlend
      * @param typeList List of extended class of Coffee
      * @throws NewInstanceFailureException Thrown when failed to create an instance.
      */
@@ -60,7 +59,7 @@ public class HouseBlend extends Product {
         }
     }
 
-    /*
+    /**
      * @description set the package for HouseBlend
      */
     @Override
@@ -77,7 +76,7 @@ public class HouseBlend extends Product {
         super.setProductionDate(df.format(day));
     }
 
-    /*
+    /**
      * @description set the material for HouseBlend
      */
     @Override

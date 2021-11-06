@@ -7,6 +7,10 @@ import Settings.CoffeeFactory.product.originalcoffee.Coffee;
 
 import java.util.Scanner;
 
+/**
+ * @author LiuChuang
+ * @description test for Factory
+ */
 public class FactoryMethodTest {
 
     public static void main(String[] args) {

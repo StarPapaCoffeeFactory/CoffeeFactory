@@ -16,8 +16,7 @@ public class LCAR extends TransportMachine {
     public LCAR(String type, String machineNum, double age) {
         super(type, machineNum, age, 10, 1, 400);
     }
-    /*
-     *
+    /**
      * @param product
      * @return void
      * @author YSX
@@ -30,8 +29,7 @@ public class LCAR extends TransportMachine {
     }
 
     @Override
-    /*
-     *
+    /**
      * @param product
      * @return void
      * @author YSX

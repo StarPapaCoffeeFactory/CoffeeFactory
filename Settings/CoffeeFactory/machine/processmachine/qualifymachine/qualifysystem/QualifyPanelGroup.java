@@ -15,8 +15,7 @@ public class QualifyPanelGroup extends QualifySystem{
         super(kind);
     }
 
-    /*
-     *
+    /**
      * @param qualifySystem
      * @return void
      * @author YSX
@@ -27,8 +26,7 @@ public class QualifyPanelGroup extends QualifySystem{
     public void add(QualifySystem qualifySystem){
         succulents.add(qualifySystem);
     }
-    /*
-     *
+    /**
      * @return void
      * @author YSX
      * @description show the subsystems of the system

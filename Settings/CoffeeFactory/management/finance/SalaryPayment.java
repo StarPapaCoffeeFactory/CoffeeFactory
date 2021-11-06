@@ -9,10 +9,9 @@ import java.util.Calendar;
 import java.util.Date;
 
 /**
- * @ program: coffeefactory
- * @ description: 基本工资发放与修改
- * @ author: YXJ
- * @ date: 2021-10-14 18:36:12
+ * @description: 基本工资发放与修改
+ * @author: YXJ
+ * @date: 2021-10-14 18:36:12
  */
 public class SalaryPayment {
 
@@ -56,8 +55,7 @@ public class SalaryPayment {
     }
 
     public void setCurDate(Date date)
-    {/*
-     *
+    {/**
      * @param date
      * @return void
      * @author YXJ

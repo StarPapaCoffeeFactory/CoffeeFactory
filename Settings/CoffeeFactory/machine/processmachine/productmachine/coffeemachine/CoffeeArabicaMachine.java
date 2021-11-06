@@ -14,8 +14,7 @@ public class CoffeeArabicaMachine extends CoffeeBasicMachine{
     public CoffeeArabicaMachine(String number) {
         super(number);
     }
-    /*
-     *
+    /**
      * @return void
      * @author YSX
      * @description make different coffee with different coffee bean

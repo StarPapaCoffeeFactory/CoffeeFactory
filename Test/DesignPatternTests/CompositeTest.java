@@ -8,10 +8,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+
 /**
- * @author YSX
+ * @author YuShiXuan
  * @description test for Composite,combined with Command pattern
- * @date 2021/10/27 21:01
  */
 public class CompositeTest {
     private static Map<String, QualifyPanelGroup> PanelGroups = new HashMap();

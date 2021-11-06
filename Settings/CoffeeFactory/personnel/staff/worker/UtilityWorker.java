@@ -2,22 +2,17 @@ package Settings.CoffeeFactory.personnel.staff.worker;
 
 import Settings.CoffeeFactory.personnel.Personnel;
 
+
 /**
  * @author CZQ
- * @project CoffeeFactory
- * @classname ${}
- * @description
- * @DesignPattern
  * @date 2021/10/17
  */
-
 public class UtilityWorker extends Worker {
 
 
 
     public UtilityWorker(String name, int age, Personnel.Gender gender, String phnum, double salary ) {
-        /*
-         *
+        /**
          * @param name
          * @param age
          * @param gender
@@ -39,7 +34,7 @@ public class UtilityWorker extends Worker {
     }*/
 
     /**
-     * set this state to work
+     * @description set this state to work
      */
     @Override
     public void work()
@@ -49,7 +44,7 @@ public class UtilityWorker extends Worker {
     }
 
     /**
-     * set this state to rest
+     * @description set this state to rest
      */
     @Override
     public void rest()
@@ -59,7 +54,7 @@ public class UtilityWorker extends Worker {
     }
 
     /**
-     * print get feedback
+     * @description print get feedback
      */
     @Override
     public void feedBack()

@@ -12,8 +12,7 @@ public class HouseBlendFactory {
             new HashMap<>();
 
     /**
-     * Get an instance of certain subclass of Coffee or create a new one if absent.
-     *
+     * @description Get an instance of certain subclass of Coffee or create a new one if absent.
      * @param type Extended class of Coffee
      * @return Instance of (extended) Coffee.
      * @throws NewInstanceFailureException Thrown when failed to create an instance.
